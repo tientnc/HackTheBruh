@@ -1,8 +1,18 @@
 # HackTheBruh
 
-**Do successful wallets move before the crowd?** Starting with [Polymarket Finance](https://polymarket.com/finance).
+**How many wallets with strong or weak prior performance will buy or sell a new market?** Starting with [Polymarket Finance](https://polymarket.com/finance).
 
-**First backtest: 100 resolved finance markets → top/bottom wallet deciles → later outcomes.**
+**Current target: earlier wallet performance → wallet groups → later buyer/seller counts.**
+
+[Participation target and proposed profit-based groups →](docs/research/wallet-participation-target.md)
+
+```mermaid
+flowchart LR
+    A[Past resolved markets] --> B[Earlier wallet performance]
+    B --> C[Freeze wallet groups]
+    C --> D[New market]
+    D --> E[Predict buyer / seller counts by group]
+```
 
 **[Explore the 100-market dataset →](datasets/finance/resolved-100-2025/v1/README.md)** · [Single-market Anthropic example](datasets/finance/anthropic-ipo-1_25t-1_5t/v1/README.md)
 
@@ -12,7 +22,7 @@
 
 ![First test: cohort forecasts do not improve on market prices across 20 later markets.](analysis/finance-backtest/2025-12/v1/results.svg)
 
-The resolved sample has final labels from **September–December 2025**. The first implemented pilot ranks **43 wallets** on earlier evidence and tests frozen cohorts on **20 later markets**. It shows **no improvement over market prices**.
+The resolved sample has final labels from **September–December 2025**. Participation prediction is the current specification; its horizon and profit-based group aggregation remain open. The existing pilot below evaluates a **separate final-outcome forecasting task**: it ranks 43 wallets and shows no improvement over market prices on 20 later markets. It does not evaluate buyer/seller counts.
 
 [Wallet metrics and definitions →](analysis/finance-wallets/2025-12-01/v1/README.md) · [Forecast results and limitations →](analysis/finance-backtest/2025-12/v1/README.md)
 

@@ -33,6 +33,8 @@ Ranking existing downloaded data is inexpensive. Finding the true top 100 across
 
 ## What are we training to predict?
 
+**Updated target:** predict how many wallets in each earlier-performance group will buy/sell a new market. See the [current participation specification](../../docs/research/wallet-participation-target.md). The outcome-forecasting discussion below describes the earlier alternative experiment; it is no longer the primary project target.
+
 ```mermaid
 flowchart LR
     A[Earlier wallet performance] --> B[Wallet skill estimate]
@@ -42,10 +44,10 @@ flowchart LR
     E --> F[Compare with eventual YES / NO]
 ```
 
-For the original project, the main target is the **eventual outcome** `y = 0 or 1`. Inputs are only data available at forecast time: current market probability, earlier wallet evidence and current observed wallet flow. The model estimates `P(YES | available information)`. Train by minimizing Brier loss `(predicted_probability - y)^2` or log loss. Then ask whether that loss is lower than the contemporaneous market's loss on the **same later events**. See the [implemented pilot](../finance-backtest/2025-12/v1/README.md).
+For the earlier alternative experiment, the target was the **eventual outcome** `y = 0 or 1`. Inputs are only data available at forecast time: current market probability, earlier wallet evidence and current observed wallet flow. That model estimates `P(YES | available information)` and minimizes Brier loss or log loss. See the [implemented pilot](../finance-backtest/2025-12/v1/README.md). Those scores do not evaluate future participation.
 
 For example, with market probability 0.60, model probability 0.70 and eventual YES, model Brier loss is 0.09 versus the market's 0.16. If NO occurs, the model loses that comparison: 0.49 versus 0.36. Evaluate many outcomes and calibration; a 70% forecast should not be expected to equal a single binary outcome.
 
 **Predicting profit is a separate target.** In that experiment, the label could be a wallet's net realized PnL during a fixed later period, and a regression minimizes prediction error between predicted and measured profit. Define positions, exposure, accounting, fees and the time window first; use only earlier features. Current lifetime PnL is not the target for an earlier forecast, and raw dollar profit favors larger wallets. Capital-normalized performance is more comparable when reliable capital data exists. A prediction is evaluated against realized profit; equality is an idealized zero-error case, not the training signal itself.
 
-Profitability can inform the earlier skill estimate, but the project succeeds when that estimate improves **later market forecasts beyond prices already available**. A separate price-forecasting experiment would use the price at a fixed future horizon as its target and current-price persistence as its benchmark.
+Profitability can inform the earlier wallet-group definition. The current project succeeds when those groups and market features support useful **later buyer/seller count predictions**. Outcome forecasting and fixed-horizon price forecasting remain separate possible experiments.

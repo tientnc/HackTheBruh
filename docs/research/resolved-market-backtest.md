@@ -1,5 +1,7 @@
 # First backtest: rank wallets, then predict later events
 
+**Scope update:** this document describes the earlier final-outcome experiment. The current primary target is [future buyer/seller counts by wallet group](wallet-participation-target.md); the existing outcome scores do not evaluate participation prediction.
+
 The first evaluation uses **resolved finance markets**. Final YES/NO outcomes make historical evaluation possible immediately. Closed trading alone is insufficient: require a final resolution record, binary payout, and a timestamp for when the label could become available.
 
 ```text
