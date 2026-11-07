@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/how-many-dissent-at-the-next-fed-meeting-265/will-two-people-dissent-the-december-fed-decision",
+  "condition_id": "0xa1d87dd6fe5704489486bda31a2f72f7bef90f479cade1315b94c634349fa2f7",
+  "start": 1761696000,
+  "end_exclusive": 1765405555,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

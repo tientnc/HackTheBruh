@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/pltr-above-on-november-28-2025/pltr-above-150-on-november-28-2025",
+  "condition_id": "0xb780bfe7b915fff6fcd7859018747eb02673ba0df2623df2207ef3e1c61bb3dd",
+  "start": 1763683200,
+  "end_exclusive": 1764381794,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

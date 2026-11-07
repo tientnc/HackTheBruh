@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/amzn-above-on-december-19-2025/amzn-above-230-on-december-19-2025",
+  "condition_id": "0xff5a7b82a8fa76cf63c1897d41917c403c895b9a97080e254422a664d15c0649",
+  "start": 1765497600,
+  "end_exclusive": 1766192196,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

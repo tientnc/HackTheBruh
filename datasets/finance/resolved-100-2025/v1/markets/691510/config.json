@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/3rd-largest-company-end-of-november/will-company-a-be-the-third-largest-company-in-the-world-by-market-cap-on-november-30",
+  "condition_id": "0xd175618f8498385f88f7d4ddfcd5ef031c14c7cfe5feac9c37d78cb2890dfa67",
+  "start": 1763510400,
+  "end_exclusive": 1764551545,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

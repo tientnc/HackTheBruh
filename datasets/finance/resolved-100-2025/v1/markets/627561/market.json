@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/will-draftkings-acquire-railbird-by-october-31/will-draftkings-acquire-railbird-by-december-31",
+  "market_id": "627561",
+  "condition_id": "0xc88d538aba181e707f27db33d30a5e6c282a50311c1cd1fd7acb07127efa5ed9",
+  "event_id": "32555",
+  "slug": "will-draftkings-acquire-railbird-by-december-31",
+  "question": "Will DraftKings acquire Railbird by December 31?",
+  "created_at": "2025-10-08T16:01:19.893847Z",
+  "start_date": "2025-10-08T21:32:06.252458Z",
+  "end_date": "2025-10-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if it is announced that Railbird will be, has been, or is being acquired by or merged with DraftKings (DraftKings Inc.) by December 31, 2025, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nAn announcement by Railbird or DraftKings will qualify for a \"Yes\" resolution, regardless of whether the announced acquisition or merger actually occurs.\n\nThe primary resolution source for this market will be official information from DraftKings or Railbird; however, a consensus of credible reporting may also be used.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0xc88d538aba181e707f27db33d30a5e6c282a50311c1cd1fd7acb07127efa5ed9",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "14207177070178062560168781418853036481346286832872792982953508547466155080713"
+    },
+    {
+      "condition_id": "0xc88d538aba181e707f27db33d30a5e6c282a50311c1cd1fd7acb07127efa5ed9",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "19483249730771390283110756355139225392189185078325525774102245063056316927328"
+    }
+  ]
+}

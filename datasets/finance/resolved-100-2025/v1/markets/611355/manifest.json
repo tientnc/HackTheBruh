@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-611355-v1",
+  "built_at": "2026-11-07T19:05:20.276000+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/will-gold-hit-4000-by/will-gold-hit-4000-by-march-31",
+    "condition_id": "0x882e95dc28b1b970974a892c7183067ee3d9aa45d2f8c27ffbdf14eb761ade1d",
+    "start": 1758672000,
+    "end_exclusive": 1759851537,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Gold hit $4000 by March 31, 2026?",
+  "market_opened": "2025-09-24T19:42:48.862524Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 42,
+    "wallet_trade_leg_rows": 98,
+    "price_points": 54,
+    "wallets": 40,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-09": 20,
+    "2025-10": 22
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/will-gold-hit-4000-by/will-gold-hit-4000-by-march-31",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 426,
+      "sha256": "83875d23b47cd0082072e5717a05cac9d1db779a2144bccf829e8b20fccb4c27"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 240,
+      "sha256": "c2689dd19ea9ec23a68e165e62586d60f9335ba3e585a239bd11426f19fa135e"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1489,
+      "sha256": "58d1bc68fe9f4b5d0ac066d6c88a6ba5376276f4cbc1ea5667a2b8f58f309649"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "ec90189f313342f02e18122c52ed148ba05919886108697e8de9a0805fcb2a96"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 978,
+      "sha256": "db864d9290e0a91f5fb92df2b520c807381b79f188fc44f78e7e71b40cfacef2"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 1948,
+      "sha256": "93bedee8afc450cc73ee4c5d45a96886349b834b14cf014720fcd981db497349"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 627,
+      "sha256": "ddb183a5ff29bdf6a1c71272a540ad78418384fbe134e80952dc31fa464782e4"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 627,
+      "sha256": "0b1b405872e60b773c817f71787276b3dbc8db914f5876a81b1bab94c6dc608a"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 9743,
+      "sha256": "f68ceb3d69cb41c2a03a52dcb4703d453f1d934b329dadec0a9e2582d7cedd9d"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 13273,
+      "sha256": "491e6ab51846b2b722a41cd6c18f462a01faad2725678e56425cd0226ff51c2c"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 3859,
+      "sha256": "a13eebc4a61c5ee4386570699deb155295fb2697aaa7c8ee769ed656e9fa8f1c"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 4826,
+      "sha256": "246732407794338b0d559ce0d55494c128297ff93c05943265d3a59aa58e15b0"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 4219,
+      "sha256": "ac5853d438ee69e5ae67a8861cd2944eaa1cc9134b00066dcf462448b4459b19"
+    }
+  ]
+}

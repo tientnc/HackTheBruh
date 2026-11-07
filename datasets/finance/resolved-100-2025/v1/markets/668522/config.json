@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/deft-quarterly-earnings-gaap-eps-11-13-2025-0pt05/deft-quarterly-earnings-gaap-eps-11-13-2025-0pt05",
+  "condition_id": "0x4de7e7e4899e512d0e3ac0b649237bfffec3d038d0cb5535c531e1a27f1dfe84",
+  "start": 1762387200,
+  "end_exclusive": 1763137923,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

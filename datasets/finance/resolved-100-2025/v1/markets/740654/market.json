@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/msft-above-in-december-2025/msft-above-555-on-december-31-2025",
+  "market_id": "740654",
+  "condition_id": "0xebf0010c46a5678fb189615baa3a6a6beacf48873053e9eed6f7a7d33a95d184",
+  "event_id": "92863",
+  "slug": "msft-above-555-on-december-31-2025",
+  "question": "Will Microsoft (MSFT) close above $555 end of December?",
+  "created_at": "2025-11-28T23:00:03.232287Z",
+  "start_date": "2025-11-28T23:22:35.963726Z",
+  "end_date": "2025-12-31T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the official closing price for Microsoft Corporation (MSFT) on the final trading day of December 2025 is higher than the listed price. Otherwise, this market will resolve to \"No\".\n\nIf the final trading day of the month is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nThe resolution source for this market is Yahoo Finance \u2014 specifically, the Microsoft Corporation (MSFT) \"Close\" prices available at https://finance.yahoo.com/quote/MSFT/history, published under \"Historical Prices.\"\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/MSFT/history",
+  "outcomes": [
+    {
+      "condition_id": "0xebf0010c46a5678fb189615baa3a6a6beacf48873053e9eed6f7a7d33a95d184",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "69418251626467447499031488216148909297088597729867447312841658817326123001826"
+    },
+    {
+      "condition_id": "0xebf0010c46a5678fb189615baa3a6a6beacf48873053e9eed6f7a7d33a95d184",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "17015624816552646641594700263867411338693431858496179114398511759810663297023"
+    }
+  ]
+}

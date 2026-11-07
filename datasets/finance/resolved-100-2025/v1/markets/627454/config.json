@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/cb-quarterly-earnings-nongaap-eps-10-21-2025-5pt78/cb-quarterly-earnings-nongaap-eps-10-21-2025-5pt78",
+  "condition_id": "0x51b35684d2937730df80e0e55c13451c85bfecbd58dcb509720b71d24001c6db",
+  "start": 1759881600,
+  "end_exclusive": 1761092122,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

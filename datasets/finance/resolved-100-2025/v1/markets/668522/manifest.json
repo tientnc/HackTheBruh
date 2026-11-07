@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-668522-v1",
+  "built_at": "2026-11-07T19:05:33.967483+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/deft-quarterly-earnings-gaap-eps-11-13-2025-0pt05/deft-quarterly-earnings-gaap-eps-11-13-2025-0pt05",
+    "condition_id": "0x4de7e7e4899e512d0e3ac0b649237bfffec3d038d0cb5535c531e1a27f1dfe84",
+    "start": 1762387200,
+    "end_exclusive": 1763137923,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will DeFi Technologies (DEFT) beat quarterly earnings?",
+  "market_opened": "2025-11-06T22:11:52.7Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 249,
+    "wallet_trade_leg_rows": 630,
+    "price_points": 34,
+    "wallets": 171,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-11": 249
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/deft-quarterly-earnings-gaap-eps-11-13-2025-0pt05/deft-quarterly-earnings-gaap-eps-11-13-2025-0pt05",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 473,
+      "sha256": "f24a35cbd9bf482ef95ac3afdde03cf241d5b3d5b5906289f695ccc2c636ab9c"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 242,
+      "sha256": "62b85612b65dc78bdb6e4f456ef736aebb36f5a664fd5a170454ad7cbcd269ff"
+    },
+    {
+      "path": "market.json",
+      "bytes": 3290,
+      "sha256": "e0cd6ed8151c951d44d35372781e505855404f3735e06194ef7875d64aceaba0"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "29c6de4fae89c33ba5d180646c43370049bd7d14853f0c42c6a0a600a79e9f29"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 730,
+      "sha256": "05199d0de928427f812c8f79baa4c6d1d55641884b8aa3bd961dafacef78e70d"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2745,
+      "sha256": "f45924c48d906a189c3eb7a0551530f542417dd9b323bccb1e5c85ca2b324565"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 557,
+      "sha256": "3f0e01d9aeea152af9e9c7bcdb18ce8f3b056278d4fe2ea193e7d3ac4179f07b"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 559,
+      "sha256": "d87d80efacda3952141654ad94aeccadf67ed2de83d3d5848071c063ab2296db"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 48004,
+      "sha256": "154887c8a9bbb4a5b625b30ac8cf105424e2a47c6adafc063ba1edd765f37d4f"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 72658,
+      "sha256": "411f121a622bb5fd6a082270ded47dc51d708ef8f0535d5653b4ea63e0a1c762"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 19793,
+      "sha256": "ae0232b3384d89b40a5d42889f52b2d1147a01825d873b8e5ac26765261d9fa2"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 26160,
+      "sha256": "777ce2c27b00d15e4b72118a01fcb4c974d0a8956eff59497e119040390ce629"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 18312,
+      "sha256": "d84d24aa8c901b39eb3e1ed8a94e24686c7d7c2a443745ff9d40114bd1b9a992"
+    }
+  ]
+}

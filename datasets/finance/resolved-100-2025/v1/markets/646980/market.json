@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/earnings-mentions-palantir-2025-11-03/earnings-mentions-palantir-2025-11-03-warp-speed-1-times",
+  "market_id": "646980",
+  "condition_id": "0xf7e77e7e8dac0d23097b5edff74f53ceb7c069fef70b5bc5b8f6ba7b3ada7f86",
+  "event_id": "64161",
+  "slug": "earnings-mentions-palantir-2025-11-03-warp-speed-1-times",
+  "question": "Will Palantir say \"Warp Speed\" during earnings call?",
+  "created_at": "2025-10-23T19:48:35.373222Z",
+  "start_date": "2025-10-23T21:52:32.33435Z",
+  "end_date": "2025-11-03T22:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve based on the next earnings announcement of Palantir currently scheduled to take place on November 3, 2025 at 5:00 PM EST.\n\nThis market will resolve to \"Yes\" if the listed term is mentioned by anyone during this event. Otherwise, the market will resolve to \"No\".\n\nAny usage of the term, regardless of context, will count toward the resolution of this market.\n\nPluralization/possessive of the term will count toward the resolution of this market; however, other forms will NOT count.\n\nInstances where the term is used in a compound word will count regardless of context (e.g. joyful is not a compound word for \"joy,\" however \"killjoy\" is a compounding of the words \"kill\" and \"joy\").\n\nIf this market requires a specified number of mentions of a person\u2019s first or last name, a full-name mention will count as one mention (e.g., if a market is about \u201cJoe / Biden 5+ times,\u201d a mention of \u201cJoe Biden\u201d will count once).\n\nA Q&A event will count toward the resolution of this market.\n\nIf this event is definitely cancelled, or otherwise is not aired by December 31, 2025, 11:59 PM ET, this market will resolve to \"No\".\n\nThe resolution source will be audio of the event.",
+  "resolution_source": null,
+  "outcomes": [
+    {
+      "condition_id": "0xf7e77e7e8dac0d23097b5edff74f53ceb7c069fef70b5bc5b8f6ba7b3ada7f86",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "109270099900941853960524475930590035310574371386740467393466687065869694369925"
+    },
+    {
+      "condition_id": "0xf7e77e7e8dac0d23097b5edff74f53ceb7c069fef70b5bc5b8f6ba7b3ada7f86",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "16569527943310343451183464814392909866681601367674905735801878333954184778345"
+    }
+  ]
+}

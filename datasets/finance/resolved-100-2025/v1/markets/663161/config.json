@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/tsla-above-on-november-14-2025/tsla-above-445-on-november-14-2025",
+  "condition_id": "0x29097279920a0d1d173de4c6d5b8f2bc6ccfe20adf90a2d6cf37a00239785237",
+  "start": 1762128000,
+  "end_exclusive": 1763170181,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

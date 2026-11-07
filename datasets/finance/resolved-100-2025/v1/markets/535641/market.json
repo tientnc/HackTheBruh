@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/how-high-will-10-year-treasury-yield-go-in-2025/will-the-10-year-treasury-yield-hit-5pt0-in-2025",
+  "market_id": "535641",
+  "condition_id": "0xb51e060a04691204a9678f5a0418146c4629283b1c04a887501c173b22f0fcdd",
+  "event_id": "22509",
+  "slug": "will-the-10-year-treasury-yield-hit-5pt0-in-2025",
+  "question": "Will the 10-year Treasury yield hit 5.0% in 2025?",
+  "created_at": "2025-04-09T06:21:19.481079Z",
+  "start_date": "2025-04-09T07:03:56.889538Z",
+  "end_date": "2025-12-31T12:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the Treasury 10-year yield reaches or is higher than the listed value for any date between April 9 and December 31, 2025. Otherwise this market will resolve to \"No\".\n\nThe resolution source for this market is the Department of the treasury, specially the data listed under \"Daily Treasury Par Yield Curve Rates\" for the column \"10 Yr\" (see: https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2025).",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0xb51e060a04691204a9678f5a0418146c4629283b1c04a887501c173b22f0fcdd",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "79604344613439995371840933943175322575184603950809621153343324506882467021078"
+    },
+    {
+      "condition_id": "0xb51e060a04691204a9678f5a0418146c4629283b1c04a887501c173b22f0fcdd",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "78407997959106348251529492057011297595096912581632598618553202650715576452565"
+    }
+  ]
+}

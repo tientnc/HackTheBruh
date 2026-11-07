@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="610" viewBox="0 0 1120 610" role="img" aria-labelledby="title desc">
+  <title id="title">Wallet skill is evidence of an edge</title>
+  <desc id="desc">Proposed research design, not implemented labels. Score prior wallet history for incremental predictive edge within a domain and horizon, then assess uncertainty and historical persistence. Positive evidence supports skilled, negative evidence supports below benchmark, and insufficient evidence remains unknown. One unresolved Anthropic market cannot establish cross-event skill.</desc>
+  <rect width="1120" height="610" rx="22" fill="#0b1726"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="48" y="51" fill="#72e0bc" font-size="15" font-weight="700" letter-spacing="2">RESEARCH PROPOSAL / NOT YET IMPLEMENTED</text>
+    <text x="48" y="102" fill="#f3f7fc" font-size="36" font-weight="700">Skill = evidence of a repeatable edge.</text>
+    <text x="48" y="139" fill="#a9bbce" font-size="20">Separate forecasting ability, trading profit, and confidence.</text>
+    <g fill="#12243a" stroke="#2b425b">
+      <rect x="48" y="177" width="316" height="137" rx="14"/><rect x="402" y="177" width="316" height="137" rx="14"/><rect x="756" y="177" width="316" height="137" rx="14"/>
+    </g>
+    <g fill="#f3f7fc" font-size="23" font-weight="700">
+      <text x="68" y="216">01 / Past evidence</text><text x="422" y="216">02 / Predictive edge</text><text x="776" y="216">03 / Reliability</text>
+    </g>
+    <g fill="#a9bbce" font-size="18">
+      <text x="68" y="255">History before the cutoff</text><text x="68" y="283">Independent economic events</text>
+      <text x="422" y="255">Beyond current price + trend</text><text x="422" y="283">For a domain + time horizon</text>
+      <text x="776" y="255">Uncertainty + luck tests</text><text x="776" y="283">Later historical validation</text>
+    </g>
+    <g fill="none" stroke="#6f879e" stroke-width="2"><path d="M371 246H393m-6-5 6 5-6 5"/><path d="M725 246H747m-6-5 6 5-6 5"/></g>
+    <g stroke-width="1">
+      <rect x="48" y="348" width="316" height="104" rx="14" fill="#14362f" stroke="#337d69"/>
+      <rect x="402" y="348" width="316" height="104" rx="14" fill="#3b2c23" stroke="#8f6847"/>
+      <rect x="756" y="348" width="316" height="104" rx="14" fill="#172b43" stroke="#44678f"/>
+    </g>
+    <g font-size="23" font-weight="700"><text x="68" y="388" fill="#9bf1d4">SKILLED</text><text x="422" y="388" fill="#ffd08d">BELOW BENCHMARK</text><text x="776" y="388" fill="#b5d3fb">UNKNOWN</text></g>
+    <g fill="#c0cedd" font-size="18"><text x="68" y="422">Supported positive edge</text><text x="422" y="422">Supported negative edge</text><text x="776" y="422">Too little / inconclusive evidence</text></g>
+    <rect x="48" y="484" width="1024" height="79" rx="12" fill="#172337"/>
+    <text x="68" y="516" fill="#e4edf8" font-size="20" font-weight="700">Our snapshot: 603 wallets · 1 underlying event · 0 resolved outcomes</text>
+    <text x="68" y="545" fill="#a9bbce" font-size="18">Prototype the signal here. Add prior wallet history before assigning research skill labels.</text>
+  </g>
+</svg>

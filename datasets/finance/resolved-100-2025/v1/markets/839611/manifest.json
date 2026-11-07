@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-839611-v1",
+  "built_at": "2026-11-07T19:05:29.608703+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/aapl-week-december-12-2025/will-aapl-close-above-305-week-december-12-2025",
+    "condition_id": "0xcfc4376998a069d8e6433b651960d1b666bac84ebaf26ceb87e88f7b2569c622",
+    "start": 1764892800,
+    "end_exclusive": 1765588727,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Apple (AAPL) close at >$305 on the final day of trading of the week of Dec 8 \u2013 Dec 12?",
+  "market_opened": "2025-12-05T23:25:23.693547Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 14,
+    "wallet_trade_leg_rows": 34,
+    "price_points": 30,
+    "wallets": 23,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-12": 14
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/aapl-week-december-12-2025/will-aapl-close-above-305-week-december-12-2025",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 448,
+      "sha256": "d6ed57398c54cac54600033958c6f03bacf2b6e543bb2f4517991c5ae40e813f"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 240,
+      "sha256": "3b662cc10fd273e431ac51580028d20e39e78108bd47259827aa36f6e2f8acc4"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2585,
+      "sha256": "42458e3547a811e4d7a6a9ee5ad41c71e953de3e74924cee65e8b75e8817d135"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "50e5937bfcdd8ff1015bd2236137cbdf05be3acefffdb715d8df184d60de2518"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 659,
+      "sha256": "ef59bf54ddf909b8a7fc0d17d41804e268687171c3c29c71378435f647cc6aed"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2708,
+      "sha256": "4578818582b9886b146d0316141d8725588eb8d53086f212822094d62bef7f7c"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 522,
+      "sha256": "cd519cf3a2f880bee48bc1cad208c3ce0d69e12e507d0ced889fbd7899acc7df"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 524,
+      "sha256": "103ba247a7f0208b9acae5e0297037b86d56c64a0c2c4b53e9bc67307fa7d9b5"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 2245,
+      "sha256": "0180cd423cb56d9842df93a01eeb4cb38af6c357698b6675c4f6e74655d9ffb7"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 3194,
+      "sha256": "8b18d42fcb17c6000f0d84370e8e6cc3885aa0041c9c811e6f0d687cb939decc"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 1445,
+      "sha256": "092138335f2ee462ee679186d5178a41e19ce1bfe07e5b703388fcb9c4058466"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 2038,
+      "sha256": "6af18a09c6c5d3eab2a29fa89e8999be9ea777ec776654aceae681f43b353ab7"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 2325,
+      "sha256": "8293a0702bde0455aa5a7de9d0e2f7229f79534aa24a09111356a3365e89d179"
+    }
+  ]
+}

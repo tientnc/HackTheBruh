@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/xom-quarterly-earnings-nongaap-eps-2025-10-31-1pt75/xom-quarterly-earnings-nongaap-eps-2025-10-31-1pt75",
+  "condition_id": "0x8b7ffa2267c76412d7eff4b0382e8ad411ec128ad6d09cebbe10ca02d25d67bc",
+  "start": 1758758400,
+  "end_exclusive": 1761921333,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

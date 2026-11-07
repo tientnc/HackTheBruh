@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-will-nvda-hit-before-2026/will-nvda-hit-190-before-2026",
+  "condition_id": "0x1cdfd1c80e31282f5387f62e99af9bc23706f4892f6736f68aad7f1b721331ac",
+  "start": 1763683200,
+  "end_exclusive": 1766773918,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

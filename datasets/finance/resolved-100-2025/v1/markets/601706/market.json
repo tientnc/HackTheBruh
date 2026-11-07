@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/how-many-dissent-at-the-next-fed-meeting-337/will-three-people-dissent-the-october-fed-decision",
+  "market_id": "601706",
+  "condition_id": "0x563be8358ef9a4f63e2ba4029ff7474b33d324b6b4060cf2818cb086753c9a60",
+  "event_id": "45886",
+  "slug": "will-three-people-dissent-the-october-fed-decision",
+  "question": "Will three people dissent the October Fed decision?",
+  "created_at": "2025-09-17T16:32:04.63166Z",
+  "start_date": "2025-09-17T19:03:59.029301Z",
+  "end_date": "2025-10-29T00:00:00Z",
+  "closed_now": true,
+  "description": "The next Federal Open Market Committee (FOMC) meeting is scheduled for October 28 - 29, 2025. The policy decision will be announced at 2:00 PM Eastern Time on October 29, followed by the Fed Chair\u2019s press conference at around 2:30 PM ET.\n\nThis market will resolve according to the number of dissenting votes recorded at the next Federal Reserve Open Market Committee monetary policy meeting, specifically those dissenting on the Fed Funds Rate decision.\n\nThe resolution source for this market is the FOMC\u2019s statement after its meeting scheduled for October 28 - 29, 2025, according to the official calendar: https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x563be8358ef9a4f63e2ba4029ff7474b33d324b6b4060cf2818cb086753c9a60",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "69325109468951795512184076294915199712986620141492587351327160686870638220843"
+    },
+    {
+      "condition_id": "0x563be8358ef9a4f63e2ba4029ff7474b33d324b6b4060cf2818cb086753c9a60",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "46805307969459030166543439115782924264841838651293520760150962017794599998828"
+    }
+  ]
+}

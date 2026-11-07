@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/aapl-week-november-21-2025/will-aapl-close-between-255-and-260-week-november-21-2025",
+  "condition_id": "0x6a8b13adcd238d0df8f280277b3273fc95117b100c68c8a44a375c8ab3d34f00",
+  "start": 1762819200,
+  "end_exclusive": 1763779456,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

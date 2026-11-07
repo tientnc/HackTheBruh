@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/earnings-mentions-broadcom-2025-12-11/earnings-mentions-broadcom-2025-12-11-acquisition-1-times",
+  "condition_id": "0x13f197297e2516771f1b8b6a98492550ac1de15d617e0d80cef5a574d1d27cfe",
+  "start": 1764806400,
+  "end_exclusive": 1765527783,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

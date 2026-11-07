@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/who-will-acquire-tiktok-559/will-larry-ellisonoracle-acquire-tiktok-835-636-575",
+  "condition_id": "0xa529f6172053308b6a658c516cd03ead5fb3a2e75769e20bc369fe2bfd750173",
+  "start": 1757980800,
+  "end_exclusive": 1766403806,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

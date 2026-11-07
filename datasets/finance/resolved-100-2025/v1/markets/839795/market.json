@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/tsla-above-on-december-12-2025/tsla-above-470-on-december-12-2025",
+  "market_id": "839795",
+  "condition_id": "0x16900e3074b3f987424bd92eea84486732d1903cb7ca3d10af25cb0f8fff21d3",
+  "event_id": "98314",
+  "slug": "tsla-above-470-on-december-12-2025",
+  "question": "Will Tesla (TSLA) finish week of December 8 above $470?",
+  "created_at": "2025-12-05T23:00:08.022373Z",
+  "start_date": "2025-12-05T23:24:37.848721Z",
+  "end_date": "2025-12-12T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the official closing price for Tesla, Inc. (TSLA) on the final day of trading of the specified week (normally Friday) is higher than the listed price. Otherwise, this market will resolve to \"No.\"\n\nIf the final session is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nThe resolution source for this market is Yahoo Finance, specifically the Tesla, Inc. (TSLA) \"Close\" prices available at https://finance.yahoo.com/quote/TSLA/history, published under \"Historical Prices.\"\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/TSLA/history",
+  "outcomes": [
+    {
+      "condition_id": "0x16900e3074b3f987424bd92eea84486732d1903cb7ca3d10af25cb0f8fff21d3",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "65553787508939236921267609388169049082277361715320253806255196301678927482935"
+    },
+    {
+      "condition_id": "0x16900e3074b3f987424bd92eea84486732d1903cb7ca3d10af25cb0f8fff21d3",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "35133205750364909553846566845260187046660358328620799105368420339835035880715"
+    }
+  ]
+}

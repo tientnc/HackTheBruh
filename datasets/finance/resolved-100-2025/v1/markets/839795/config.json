@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/tsla-above-on-december-12-2025/tsla-above-470-on-december-12-2025",
+  "condition_id": "0x16900e3074b3f987424bd92eea84486732d1903cb7ca3d10af25cb0f8fff21d3",
+  "start": 1764892800,
+  "end_exclusive": 1765584773,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

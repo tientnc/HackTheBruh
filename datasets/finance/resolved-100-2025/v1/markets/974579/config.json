@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/nflx-week-december-26-2025/will-nflx-close-below-50-week-december-26-2025",
+  "condition_id": "0x3cb6b5caab0d0f5550d3a16eb48d4f50a5d321d5b61e0f326ae3df2c55c0eafb",
+  "start": 1766102400,
+  "end_exclusive": 1766797740,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

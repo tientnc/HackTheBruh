@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/googl-week-november-21-2025/will-googl-close-between-290-and-295-week-november-21-2025",
+  "condition_id": "0xad6fdbb9b2595b076f91ded3f3225dcfd726d00d24faa51b61efb91693c61788",
+  "start": 1762819200,
+  "end_exclusive": 1763778098,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/how-many-dissent-at-the-next-fed-meeting-337/will-three-people-dissent-the-october-fed-decision",
+  "condition_id": "0x563be8358ef9a4f63e2ba4029ff7474b33d324b6b4060cf2818cb086753c9a60",
+  "start": 1758067200,
+  "end_exclusive": 1761772868,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/abnb-week-november-28-2025/will-abnb-close-between-100-and-105-week-november-28-2025",
+  "market_id": "695957",
+  "condition_id": "0xedad7a8afdfa4bc1b0367cd5924b15ef2eca0bae5acf5265f8ae7b8644220702",
+  "event_id": "87182",
+  "slug": "will-abnb-close-between-100-and-105-week-november-28-2025",
+  "question": "Will Airbnb (ABNB) close at $100-$105 on the final day of trading of the week of Nov 24 \u2013 Nov 28?",
+  "created_at": "2025-11-21T23:00:20.048713Z",
+  "start_date": "2025-11-21T23:25:36.596418Z",
+  "end_date": "2025-11-28T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve according to the official closing price for Airbnb (ABNB) on the final day of trading of the specified week (normally Friday).\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf the final session of the week is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Yahoo Finance after any adjustments have been applied.\n\nThe resolution source for this market is Yahoo Finance, specifically the Airbnb (ABNB) \"Close\" prices available at https://finance.yahoo.com/quote/ABNB/history, published under \"Historical Prices.\"",
+  "resolution_source": "https://finance.yahoo.com/quote/ABNB/history",
+  "outcomes": [
+    {
+      "condition_id": "0xedad7a8afdfa4bc1b0367cd5924b15ef2eca0bae5acf5265f8ae7b8644220702",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "18285985264785199235430382542229203758713700540547196055894732000984873994000"
+    },
+    {
+      "condition_id": "0xedad7a8afdfa4bc1b0367cd5924b15ef2eca0bae5acf5265f8ae7b8644220702",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "111451285920310091539160460986125655428062372259928968570078482582285281536877"
+    }
+  ]
+}

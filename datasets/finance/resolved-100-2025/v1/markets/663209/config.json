@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/open-above-on-november-14-2025/open-above-5-on-november-14-2025",
+  "condition_id": "0xe3b657ee99397c7746cbfd748ea8692e6b6ee31c2f0418147457c551d00eb0df",
+  "start": 1762128000,
+  "end_exclusive": 1763171023,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

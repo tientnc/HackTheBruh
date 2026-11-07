@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/any-dcm-acquired-in-2025/any-dcm-acquired-in-2025",
+  "condition_id": "0x8598be66243f179531744b403d1dc07f7646f74ecc85ac352128ccb2b2be232e",
+  "start": 1763596800,
+  "end_exclusive": 1764602505,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

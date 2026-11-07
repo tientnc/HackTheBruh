@@ -1,0 +1,110 @@
+{
+  "dataset": "polymarket-554565-v1",
+  "built_at": "2026-11-07T19:05:26.160030+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/will-apple-acquire-perplexity-before-september/will-apple-acquire-perplexity-before-september",
+    "condition_id": "0x0e5e2ab01564b18347fb7cb3e723b6b6b7e355672abb2acdf6455b0dae4556f8",
+    "start": 1750377600,
+    "end_exclusive": 1756708311,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Apple acquire Perplexity before September?",
+  "market_opened": "2025-06-20T21:52:48.707214Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 509,
+    "wallet_trade_leg_rows": 1328,
+    "price_points": 300,
+    "wallets": 336,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-06": 131,
+    "2025-07": 78,
+    "2025-08": 294,
+    "2025-09": 6
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/will-apple-acquire-perplexity-before-september/will-apple-acquire-perplexity-before-september",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 467,
+      "sha256": "ce5e0ca5dd23e2487793f4fc7bb5ae3f0505e03b6ff4f4b41931471eed44c9e3"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 245,
+      "sha256": "90274e4bfec72fcd1488e4c57404faff61dba7d1b0a3a02ea683b39633a9beab"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1674,
+      "sha256": "3d999135d1357316265b3e31b108cadd4de868214de71675a27ca4c8a5be5349"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "25b176dca6e92055c7826dca00cffbae928274aaf81ca9bae6f7ecb453643bf0"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 4794,
+      "sha256": "75eeccd57397569fc5709e97b35b539eb0730d69bdfd7ec0bf7a2f4aff869928"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2094,
+      "sha256": "63becb2aaae1e4a5c9b29e25e781e10eeeae5fe36c3cd7c597c174473b0a8916"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1495,
+      "sha256": "e5d1c7cf3d65084e2ad706db1b8444ebf77bc39048a378481216bde49ea9c23f"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1493,
+      "sha256": "c9cabf78f0c9ee9855fca1d6e1a99f376b258aa268e4886f8a686e53e49327e9"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 104079,
+      "sha256": "9487748ae21f43b1679cb5cf0bd843bee4e79a4adcc43b798127810d92c0d403"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 151026,
+      "sha256": "8926ddd95d17d6611229bab2280506fec888b42969934caaadfa2b1900429d53"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 43520,
+      "sha256": "a889ba06dbc675265a3e44202cdf1930139cfe7189355d95fe0db4066a04d649"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 56988,
+      "sha256": "73722b076217c23d0e587c8bdf3d4f04389aa15a797fc65a5c89c4fb07574bfe"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 36927,
+      "sha256": "594503bb0ca6fbcea9eac374ca9d1898de7e952bbe929646b21f6b29ff758316"
+    }
+  ]
+}

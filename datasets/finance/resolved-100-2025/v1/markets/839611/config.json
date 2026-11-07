@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/aapl-week-december-12-2025/will-aapl-close-above-305-week-december-12-2025",
+  "condition_id": "0xcfc4376998a069d8e6433b651960d1b666bac84ebaf26ceb87e88f7b2569c622",
+  "start": 1764892800,
+  "end_exclusive": 1765588727,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

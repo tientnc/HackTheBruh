@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/ripple-etf-approved-in-2025/ripple-etf-approved-in-2025",
+  "condition_id": "0xa64b6a05ed2aa20d2cb6c373314c0d9931acbd24e7fe95bd1920784b23ab9da0",
+  "start": 1735516800,
+  "end_exclusive": 1758219065,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

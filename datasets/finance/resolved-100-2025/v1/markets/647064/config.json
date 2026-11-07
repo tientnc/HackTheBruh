@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/earnings-mentions-lyft-2025-11-05/earnings-mentions-lyft-2025-11-05-freenow-free-now-1-times",
+  "condition_id": "0xafdc7f44a68ef93f341bf2c803378abc5f0d5f6c345156191cbcccb88dd01a9c",
+  "start": 1761177600,
+  "end_exclusive": 1762398576,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

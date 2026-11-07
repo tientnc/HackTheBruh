@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/aapl-week-november-21-2025/will-aapl-close-between-255-and-260-week-november-21-2025",
+  "market_id": "677436",
+  "condition_id": "0x6a8b13adcd238d0df8f280277b3273fc95117b100c68c8a44a375c8ab3d34f00",
+  "event_id": "79247",
+  "slug": "will-aapl-close-between-255-and-260-week-november-21-2025",
+  "question": "Will Apple (AAPL) close at $255-$260 on the final day of trading of the week of Nov 17 \u2013 Nov 21?",
+  "created_at": "2025-11-11T23:11:43.346505Z",
+  "start_date": "2025-11-11T23:23:58.302444Z",
+  "end_date": "2025-11-21T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve according to the official closing price for Apple (AAPL) on the final day of trading of the specified week (normally Friday).\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf the final session of the week is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Yahoo Finance after any adjustments have been applied.\n\nThe resolution source for this market is Yahoo Finance, specifically the Apple (AAPL) \"Close\" prices available at https://finance.yahoo.com/quote/AAPL/history, published under \"Historical Prices.\"",
+  "resolution_source": "https://finance.yahoo.com/quote/AAPL/history",
+  "outcomes": [
+    {
+      "condition_id": "0x6a8b13adcd238d0df8f280277b3273fc95117b100c68c8a44a375c8ab3d34f00",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "31810105053658997026871296894979182359432305629878728718424765383423807165678"
+    },
+    {
+      "condition_id": "0x6a8b13adcd238d0df8f280277b3273fc95117b100c68c8a44a375c8ab3d34f00",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "19181034325122888791505487078256614226284301934932508467508870749979206619173"
+    }
+  ]
+}

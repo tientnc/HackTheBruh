@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/earnings-mentions-apple-2025-10-30/earnings-mentions-apple-2025-10-30-apple-pay-1-times",
+  "condition_id": "0x74372c1cec04c754b0093901744e5e5a3af93bddfffe143ef49d5f824a2fb406",
+  "start": 1761177600,
+  "end_exclusive": 1761867566,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

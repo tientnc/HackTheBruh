@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-641518-v1",
+  "built_at": "2026-11-07T19:05:20.553912+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/maplight-therapeutics-inc-ipo-closing-market-capitalization/will-maplight-therapeutics-inc-ipo-closing-market-capitalization-be-between-700-million-and-1-billion",
+    "condition_id": "0xc870b625bc59d9d429c44912f9fda23b141e0ad4287ea4dfd3f42f9485360c18",
+    "start": 1760918400,
+    "end_exclusive": 1761665072,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will MapLight Therapeutics Inc IPO closing market capitalization be between 700 million and 1 billion?",
+  "market_opened": "2025-10-21T00:49:59.69505Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 45,
+    "wallet_trade_leg_rows": 105,
+    "price_points": 32,
+    "wallets": 34,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-10": 45
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/maplight-therapeutics-inc-ipo-closing-market-capitalization/will-maplight-therapeutics-inc-ipo-closing-market-capitalization-be-between-700-million-and-1-billion",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 535,
+      "sha256": "2f5a8d7aa61fc0955026b6acb604dee3dffa2edb9109e86c2677d4d11d86b263"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 241,
+      "sha256": "e82d32047cd2d82f456e0eb522e4a6ef36adf88791f530a865735ca85787ea0e"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2733,
+      "sha256": "5b239fd97c0b18d0f2c94465022f74a8fd7b7a9e307020456e35452ac02f7d47"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "26a598ffa1aa695933aacc8bc48d72587647a0a2150e3c5c3a02568e3b4b7779"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 698,
+      "sha256": "06268dc1c98aca04926c41ad5cddd284b852c1192664fbd8c574967144142dda"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2514,
+      "sha256": "2084d5b861dd5fd4f8f50728dd75fa6f29d9c367e0c53781cbea55fde82a1768"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 555,
+      "sha256": "bf67efbcafeb52e91f458fff41fd2eccde99dab59c789a2c85590b4fc3cd4dbf"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 555,
+      "sha256": "bf8b6cb6f6898c33f5f99b078e7fedabd878d125070e04675f7337ee24368d33"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 8778,
+      "sha256": "c07f5458c74d01213b8543d48dd6c6f95bcd66f0e0082d62a731e9405de1563a"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 13122,
+      "sha256": "1da5f4750896ceaa60e02ce7e3798b76a676f59ff484d55721c650bd6a6253ff"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 3712,
+      "sha256": "679f473f6568280241885d3ac6c3bb2421649e90dd31869b8fc9d60c87b2a525"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 4808,
+      "sha256": "aa100b0f6f93efb7f49164ce64114adbde439521ac9d787f3ed39af9537efa16"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 3688,
+      "sha256": "29e6f6ebdfdb2a8db52522e6de53b00a7eb599f9c40367a80cd6f5bad47ce03b"
+    }
+  ]
+}

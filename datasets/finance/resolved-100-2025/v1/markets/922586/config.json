@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/nflx-week-december-19-2025/will-nflx-close-above-140-week-december-19-2025",
+  "condition_id": "0x9433bf785bc870d929fd445911c98bc19f0c6e733743113feda7e8f5edf943a2",
+  "start": 1765497600,
+  "end_exclusive": 1766197203,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

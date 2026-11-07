@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/maplight-therapeutics-inc-ipo-closing-market-capitalization/will-maplight-therapeutics-inc-ipo-closing-market-capitalization-be-between-700-million-and-1-billion",
+  "condition_id": "0xc870b625bc59d9d429c44912f9fda23b141e0ad4287ea4dfd3f42f9485360c18",
+  "start": 1760918400,
+  "end_exclusive": 1761665072,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

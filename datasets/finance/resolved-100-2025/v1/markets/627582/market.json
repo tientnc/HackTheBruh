@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/ko-quarterly-earnings-nongaap-eps-10-21-2025-0pt78/ko-quarterly-earnings-nongaap-eps-10-21-2025-0pt78",
+  "market_id": "627582",
+  "condition_id": "0x3ab00b6c2fbfcd78e455c135b1b57e2089bc2c3a9d28ee3905c411d2a5804067",
+  "event_id": "56536",
+  "slug": "ko-quarterly-earnings-nongaap-eps-10-21-2025-0pt78",
+  "question": "Will Coca-Cola (KO) beat quarterly earnings?",
+  "created_at": "2025-10-08T16:05:29.037282Z",
+  "start_date": "2025-10-08T16:17:16.749704Z",
+  "end_date": "2025-10-21T13:00:00Z",
+  "closed_now": true,
+  "description": "Coca-Cola is estimated to release earnings on October 21, 2025. The Street consensus estimate for Coca-Cola\u2019s non-GAAP EPS for the relevant quarter is $0.78. This market will resolve to \"Yes\" if Coca-Cola reports non-GAAP EPS greater than $0.78 for the relevant quarter in its next quarterly earnings release. Otherwise, it will resolve to \"No.\" The resolution source will be the non-GAAP EPS listed in the company\u2019s official earnings documents. \n\nIf Coca-Cola releases earnings without non-GAAP EPS, then the market will resolve according to the non-GAAP EPS figure reported by SeekingAlpha. If no such figure is published within 96h of market close (4:00:00pm ET) on the day earnings are announced, the market will resolve according to the GAAP EPS listed in the company\u2019s official earnings documents; or, if not published there, according to the GAAP EPS provided by SeekingAlpha. If no GAAP EPS number is available from either source at that time, the market will resolve to \u201cNo.\u201d (For the purposes of this market, GAAP EPS refers to diluted GAAP EPS, unless it is not published, in which case it refers to basic GAAP EPS.)\n\nIf the company does not release earnings within 45 calendar days of the estimated earnings date, this market will resolve to \u201cNo.\u201d \n\nNote: Subsequent restatements, corrections, or revisions made to the initially announced non-GAAP EPS figure will not qualify for resolution, except in the case of obvious and immediate mistakes (e.g., fat finger errors, as with Lyft's (LYFT) earnings release in February 2024).\nNote: The strike prices used in these markets are derived from SeekingAlpha estimates, and reflect the consensus of sell-side analyst estimates for non-GAAP EPS.\nNote: All figures will be rounded to the nearest cent using standard rounding.\nNote: For the purposes of this market, IFRS EPS will be treated as GAAP EPS.\nNote: If multiple versions of non-GAAP EPS are published, the market will resolve according to the primary headline non-GAAP EPS number, which is typically presented on a diluted basis. If diluted is not published, then basic non-GAAP EPS will qualify.\nNote: All figures are expressed in USD, unless otherwise indicated.",
+  "resolution_source": "https://seekingalpha.com/",
+  "outcomes": [
+    {
+      "condition_id": "0x3ab00b6c2fbfcd78e455c135b1b57e2089bc2c3a9d28ee3905c411d2a5804067",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "8248119824003981191986839285388016197692047820571869496839187744338591792948"
+    },
+    {
+      "condition_id": "0x3ab00b6c2fbfcd78e455c135b1b57e2089bc2c3a9d28ee3905c411d2a5804067",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "94181349701162671346604916133840215673895562449222354400467291206013923077740"
+    }
+  ]
+}

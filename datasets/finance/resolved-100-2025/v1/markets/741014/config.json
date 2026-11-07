@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/open-above-in-december-2025/open-above-7-on-december-31-2025",
+  "condition_id": "0xc824c62d8eca0e70ad693e864d9fd0f79f6bac753722d51f4ae27e1a2eae4fe5",
+  "start": 1764288000,
+  "end_exclusive": 1767224628,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

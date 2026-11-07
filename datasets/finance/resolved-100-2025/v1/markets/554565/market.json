@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/will-apple-acquire-perplexity-before-september/will-apple-acquire-perplexity-before-september",
+  "market_id": "554565",
+  "condition_id": "0x0e5e2ab01564b18347fb7cb3e723b6b6b7e355672abb2acdf6455b0dae4556f8",
+  "event_id": "28164",
+  "slug": "will-apple-acquire-perplexity-before-september",
+  "question": "Will Apple acquire Perplexity before September?",
+  "created_at": "2025-06-20T21:45:37.764744Z",
+  "start_date": "2025-06-20T21:52:48.707214Z",
+  "end_date": "2025-08-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if it is announced that Perplexity AI will be, has been, or is being acquired by or merged with Apple (Apple inc.) by August 31, 2025, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nAn announcement by Perplexity AI will qualify for a \"Yes\" resolution, regardless of whether the announced acquisition/merger actually occurs.\n\nThe primary resolution source for this market will be official information from Apple or Perplexity, however a consensus of credible reporting may also be used.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x0e5e2ab01564b18347fb7cb3e723b6b6b7e355672abb2acdf6455b0dae4556f8",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "66380401095718090586215146248703939613673188000364621005694574108176358549906"
+    },
+    {
+      "condition_id": "0x0e5e2ab01564b18347fb7cb3e723b6b6b7e355672abb2acdf6455b0dae4556f8",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "50950129811278459718762112447541305077678028575141567923850861608580179110747"
+    }
+  ]
+}

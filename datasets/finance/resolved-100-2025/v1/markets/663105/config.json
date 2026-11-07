@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/msft-above-on-november-14-2025/msft-above-460-on-november-14-2025",
+  "condition_id": "0x148fb30b59cbca944f5c5717b23f65c32355ff474a9fc4430b5727187a825a90",
+  "start": 1762128000,
+  "end_exclusive": 1763170485,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

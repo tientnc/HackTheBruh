@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/meta-week-december-26-2025/will-meta-close-between-680-and-690-week-december-26-2025",
+  "condition_id": "0xe00e8d3833f65c61e5089e987035c56800ab5ca57c39e2ac4acd55acc50fc74b",
+  "start": 1766102400,
+  "end_exclusive": 1766796854,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

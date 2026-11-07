@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/unty-quarterly-earnings-gaap-eps-2025-10-10-1pt29/unty-quarterly-earnings-gaap-eps-2025-10-10-1pt29",
+  "condition_id": "0x5a58ac95347476118d188fc1b3651ec5a603a505abb673b6fefa677cd11686d5",
+  "start": 1759363200,
+  "end_exclusive": 1760537722,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

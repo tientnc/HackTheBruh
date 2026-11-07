@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/googl-above-on-december-12-2025/googl-above-325-on-december-12-2025",
+  "market_id": "839721",
+  "condition_id": "0xe4b09b0d58d2b4948b508f6262250dd6523c8be7aa188e10b17f9263f0fb7fff",
+  "event_id": "98307",
+  "slug": "googl-above-325-on-december-12-2025",
+  "question": "Will Google (GOOGL) finish week of December 8 above $325?",
+  "created_at": "2025-12-05T23:00:06.267589Z",
+  "start_date": "2025-12-05T23:02:27.853722Z",
+  "end_date": "2025-12-12T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the official closing price for Alphabet Inc. (GOOGL) on the final day of trading of the specified week (normally Friday) is higher than the listed price. Otherwise, this market will resolve to \"No.\"\n\nIf the final session is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nThe resolution source for this market is Yahoo Finance, specifically the Alphabet Inc. (GOOGL) \"Close\" prices available at https://finance.yahoo.com/quote/GOOGL/history, published under \"Historical Prices.\"\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/GOOGL/history",
+  "outcomes": [
+    {
+      "condition_id": "0xe4b09b0d58d2b4948b508f6262250dd6523c8be7aa188e10b17f9263f0fb7fff",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "9334412190378255562597735334491628439389621596356058539998684107549129271793"
+    },
+    {
+      "condition_id": "0xe4b09b0d58d2b4948b508f6262250dd6523c8be7aa188e10b17f9263f0fb7fff",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "68485177464583164937952747000958953513364977242822778283343993551033482650210"
+    }
+  ]
+}

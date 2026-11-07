@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/meta-week-november-28-2025/will-meta-close-between-580-and-590-week-november-28-2025",
+  "condition_id": "0x5b87554afb10d7f8344fdb4c1d9f77a8be1aceb19fc92fc39cd925f3e2d67977",
+  "start": 1763683200,
+  "end_exclusive": 1764382506,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

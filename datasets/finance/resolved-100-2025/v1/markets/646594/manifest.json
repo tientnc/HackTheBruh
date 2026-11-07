@@ -1,0 +1,105 @@
+{
+  "dataset": "polymarket-646594-v1",
+  "built_at": "2026-11-07T19:05:20.381146+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/who-will-acquire-warner-bros-discovery/will-placeholder-i-acquire-warner-bros-discovery",
+    "condition_id": "0xf51e2dc784e8d99575d05d42eef50c233441ec516ca2d59f55e9cd10378ee247",
+    "start": 1761177600,
+    "end_exclusive": 1764952076,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will placeholder i acquire Warner Bros. Discovery?",
+  "market_opened": "2025-10-23T19:58:19.12736Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 0,
+    "wallet_trade_leg_rows": 0,
+    "price_points": 0,
+    "wallets": 0,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {},
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/who-will-acquire-warner-bros-discovery/will-placeholder-i-acquire-warner-bros-discovery",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 461,
+      "sha256": "4cd7a9082795b16dcfe91e219644b38a58753e40eb21bffff3ed169081bd03e0"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 156,
+      "sha256": "f689e1458d528bac7da72feb33e9cadac81004b7675047b9dbba1517bb1786e1"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2024,
+      "sha256": "2277a4f3c4d5bcad83f07b94f2006d8ffe1c212e25644b0b6300162e2611bddf"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "fa50c7f0e931c884bcefe2ee005e0cb23d78457515bac30336f4ff26897f4406"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 110,
+      "sha256": "eb7a6385bc09050ff966d8de40ca9c480b0ed54404a560d105fff2f49551e3cd"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2363,
+      "sha256": "de72613602b46b2dc13ca63f5158fd0825bbe6e81e4723aafa21de4deaf21fb2"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 427,
+      "sha256": "b061c289f969eea73c0bd62bbfd7ce99ca4ca7e4a3451ccb2e558a5954c3fe94"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 426,
+      "sha256": "f46214a9ecf2609d6cbf9751d14f923663d38f54222c36760816e5221f878c23"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 386,
+      "sha256": "e6d3f3498624d13d43f7d6fc01c58601f920754b8fd49990b2485a1f26a34bcf"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 319,
+      "sha256": "98c4ab0a55115eeec7836434027b1e83719e71b28190e6dc5b5c98ee0f8558b1"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 120,
+      "sha256": "1b523ee6e516f3f2008a0e6c857a8da211f05a0ea29583e2b0946cb026c1bc96"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 131,
+      "sha256": "6cc98d069b6d0bec13d1a3388451f28840cf0a705fe4e705efe979f87a5f21e5"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 125,
+      "sha256": "3ef9512de247ee00901ab648731f3d22c1a87f62a3dfb0508ef3126cbea8e8f5"
+    }
+  ]
+}

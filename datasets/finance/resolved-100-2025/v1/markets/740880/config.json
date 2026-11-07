@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/nflx-week-december-5-2025/will-nflx-close-between-80-and-90-week-december-5-2025",
+  "condition_id": "0x6998309e543cd0a193854862dd4f536ed124422516e713cff50847951d878f70",
+  "start": 1764288000,
+  "end_exclusive": 1764992228,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/meta-week-november-21-2025/will-meta-close-between-620-and-630-week-november-21-2025",
+  "condition_id": "0x621c68805a9be73c2880af83996ec0798525a4f2044c10e5028346e2ff507735",
+  "start": 1762819200,
+  "end_exclusive": 1763777984,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

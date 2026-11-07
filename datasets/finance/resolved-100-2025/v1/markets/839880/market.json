@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/open-week-december-12-2025/will-open-close-between-4-and-5-week-december-12-2025",
+  "market_id": "839880",
+  "condition_id": "0x73a57bc6a076713c6f66e1beabc405ae8f249df94e5997fb36435d5236caf453",
+  "event_id": "98322",
+  "slug": "will-open-close-between-4-and-5-week-december-12-2025",
+  "question": "Will Opendoor (OPEN) close at $4.00-$5.00 on the final day of trading of the week of Dec 8 \u2013 Dec 12?",
+  "created_at": "2025-12-05T23:00:10.00929Z",
+  "start_date": "2025-12-05T23:25:31.424853Z",
+  "end_date": "2025-12-12T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve according to the official closing price for Opendoor (OPEN) on the final day of trading of the specified week (normally Friday).\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf the final session of the week is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Yahoo Finance after any adjustments have been applied.\n\nThe resolution source for this market is Yahoo Finance, specifically the Opendoor (OPEN) \"Close\" prices available at https://finance.yahoo.com/quote/OPEN/history, published under \"Historical Prices.\"",
+  "resolution_source": "https://finance.yahoo.com/quote/OPEN/history",
+  "outcomes": [
+    {
+      "condition_id": "0x73a57bc6a076713c6f66e1beabc405ae8f249df94e5997fb36435d5236caf453",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "47508101884967445799604927085552751379121478201472434363247039694031326727420"
+    },
+    {
+      "condition_id": "0x73a57bc6a076713c6f66e1beabc405ae8f249df94e5997fb36435d5236caf453",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "49833467620012768955710403434295667298694880316112008402871495526778089920106"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-googl-hit-in-november-2025/will-googl-dip-to-175-in-november-289-162-629",
+  "condition_id": "0x736af1a1070f455955f37c399a3334c48a19d59ebff7d0926bd1ede9e8069935",
+  "start": 1761782400,
+  "end_exclusive": 1764387624,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

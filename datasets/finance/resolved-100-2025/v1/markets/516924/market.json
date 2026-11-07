@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/doge-etf-approved-in-2025/doge-etf-approved-in-2025",
+  "market_id": "516924",
+  "condition_id": "0xb643afacc478a059b67089ac1bca30cda972a006784ed51bae2241ce87d884d0",
+  "event_id": "16165",
+  "slug": "doge-etf-approved-in-2025",
+  "question": "Doge ETF approved in 2025?",
+  "created_at": "2024-12-31T15:29:41.885627Z",
+  "start_date": "2024-12-31T18:50:59.285Z",
+  "end_date": "2025-12-31T12:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if any spot Dogecoin ETF receives approval from the SEC by December 31, 2025, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nApproval under Rule 19-4b will qualify for a \"Yes\" resolution, even if there has not been an S-1 approval. Similarly, an S-1 approval without a 19-4b approval will also qualify for a \"Yes\" resolution.\n\nThe primary resolution source for this market will be information from the SEC, however a consensus of credible reporting may also be used.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0xb643afacc478a059b67089ac1bca30cda972a006784ed51bae2241ce87d884d0",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "97596255936903137767040947474559528230305568318726927450134949066230503243196"
+    },
+    {
+      "condition_id": "0xb643afacc478a059b67089ac1bca30cda972a006784ed51bae2241ce87d884d0",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "9147579966375161500014246306863931798902263663474673995292793451104727521023"
+    }
+  ]
+}

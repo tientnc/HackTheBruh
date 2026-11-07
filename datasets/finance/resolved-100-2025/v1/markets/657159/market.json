@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-price-will-googl-hit-in-november-2025/will-googl-dip-to-175-in-november-289-162-629",
+  "market_id": "657159",
+  "condition_id": "0x736af1a1070f455955f37c399a3334c48a19d59ebff7d0926bd1ede9e8069935",
+  "event_id": "69120",
+  "slug": "will-googl-dip-to-175-in-november-289-162-629",
+  "question": "Will Google dip to $175 in November?",
+  "created_at": "2025-10-30T19:04:16.698589Z",
+  "start_date": "2025-10-30T19:05:28.375Z",
+  "end_date": "2025-12-01T04:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point during November 2025 (ET), any 1-minute candle for Alphabet Inc. (GOOGL) has a final \"Low\" price equal to or below the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during regular trading hours (ET) will be considered.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Yahoo Finance after any adjustments have been applied.\n\nThe resolution source for this market is Yahoo Finance \u2014 specifically, the Alphabet Inc. (GOOGL) \"Low\" prices available at https://finance.yahoo.com/quote/GOOGL/, with the chart settings on \"1m\" for candle intervals.",
+  "resolution_source": "https://finance.yahoo.com/quote/GOOGL/",
+  "outcomes": [
+    {
+      "condition_id": "0x736af1a1070f455955f37c399a3334c48a19d59ebff7d0926bd1ede9e8069935",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "95596173116877293370270204973988126799371959126061394730265073365044661802830"
+    },
+    {
+      "condition_id": "0x736af1a1070f455955f37c399a3334c48a19d59ebff7d0926bd1ede9e8069935",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "10725740667795617017898300794991885724426662312463145082509464373781537053311"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/navan-ipo-day-1-closing-market-cap/will-navan-inc-ipo-closing-market-capitalization-be-between-8-billion-and-9-billion",
+  "condition_id": "0xfff0909b880107d1ba1fb783ebc4fe6489d7cdfc74613da16997a002c515b411",
+  "start": 1760918400,
+  "end_exclusive": 1762034525,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

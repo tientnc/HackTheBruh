@@ -1,0 +1,109 @@
+{
+  "dataset": "polymarket-583721-v1",
+  "built_at": "2026-11-07T19:05:26.887225+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/will-apple-acquire-mistral-before-by-november-30/will-apple-acquire-mistral-before-by-november-30",
+    "condition_id": "0x6cd827626df41b698b234e79cce1757918e2bf21b47a746a21f24d74c7fe6ef3",
+    "start": 1756425600,
+    "end_exclusive": 1764572707,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Apple acquire Mistral by November 30?",
+  "market_opened": "2025-09-02T01:57:17.222Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 348,
+    "wallet_trade_leg_rows": 826,
+    "price_points": 372,
+    "wallets": 308,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-09": 56,
+    "2025-10": 51,
+    "2025-11": 241
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/will-apple-acquire-mistral-before-by-november-30/will-apple-acquire-mistral-before-by-november-30",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 471,
+      "sha256": "66d10c1b70cc2f67cb846186cc751d19ae5de3ead0e2c055d200004280ba951d"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 244,
+      "sha256": "7d5e0f17d0c971672a02ff8bcf0118e2458843a0b4f2c5bf3bcd6e639ad40d7c"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1668,
+      "sha256": "daf54f1057b5754a44bce72bdde9f2c6c7edf14ecdaba1768723847ed4bba9e9"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "6a148ca412f598e28ecab85d01dbec6a8065cafc848fbc6642cf28360713311d"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 5737,
+      "sha256": "5ace7915ab0f094b432b0247d80cc7623159523eaf051403fa19b786b70a3959"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2288,
+      "sha256": "6c012aad46bcb586bc2ec19df9adc29ce1fdbf918911971decae6b57d54544b5"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1699,
+      "sha256": "e45de0b48fb32270a7048a9d98289f5990da7a6b9d6de228425e235bac73c7e7"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1706,
+      "sha256": "a3587c950142bb246cfa2a22b33bbbb3ded8cccd79799838542f2297687f3369"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 72728,
+      "sha256": "a98147d319396b4e2e184a7a3f8144b4a8efd4f7a183f15fe3e9c3ddbb36b3e9"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 96606,
+      "sha256": "b0ed5167e8fe12adeebcb982bbe2d91026bec5b70c06c17b4034dd90ae85ab42"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 29262,
+      "sha256": "28a50756382de4e61e11f1a6e1f6f62062d7dc4602387d9722d3554d82a97530"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 36948,
+      "sha256": "133bff3ecd9f6c1be9a1428460ee372aae4cea3099fdf2011d59a79a7b69c6ed"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 30796,
+      "sha256": "3bd66a9c7c7ac7738584448f1a73d4908a6ff4807df92f91dfca23c4ae3c8a0d"
+    }
+  ]
+}

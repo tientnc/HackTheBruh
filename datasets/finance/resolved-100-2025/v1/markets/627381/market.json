@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/ipos-in-2025/wealthfront-ipo-in-2025",
+  "market_id": "627381",
+  "condition_id": "0x04687392f030b1473219273b501af9844bd8762a0df2c156860c34d7e001c8a3",
+  "event_id": "43850",
+  "slug": "wealthfront-ipo-in-2025",
+  "question": "Wealthfront IPO in 2025?",
+  "created_at": "2025-10-08T14:31:10.844407Z",
+  "start_date": "2025-10-08T19:29:07.170955Z",
+  "end_date": "2025-12-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the listed company completes an Initial Public Offering (IPO) by December 31, 2025, 11:59 PM ET, as confirmed by official company announcements or credible news sources. The IPO refers to the first sale of stock by the listed company to the public on any recognized stock exchange.\n\nIf the listed company merges with another entity, is acquired, or ceases to exist before the market resolves, the market will also resolve to \"No\".\n\nThis market will resolve early if the listed company completes an IPO by December 31, 2025, 11:59 PM ET.\n\nThe resolution source for this market is a consensus of credible reporting.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x04687392f030b1473219273b501af9844bd8762a0df2c156860c34d7e001c8a3",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "74455780633523316139922727660747618075844376073253466030152510124541912762558"
+    },
+    {
+      "condition_id": "0x04687392f030b1473219273b501af9844bd8762a0df2c156860c34d7e001c8a3",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "28455571598933809499094118653569520171180877361325539449741222344572680149105"
+    }
+  ]
+}

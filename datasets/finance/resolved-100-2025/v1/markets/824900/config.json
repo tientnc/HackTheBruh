@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/earnings-mentions-nike-2025-12-18/earnings-mentions-nike-2025-12-18-amazon-1-times",
+  "condition_id": "0xd6b00bd97d6377c9c8e1d42d8ac3d092100a429d11b63697dcc69fe6bff4d106",
+  "start": 1764806400,
+  "end_exclusive": 1766196319,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

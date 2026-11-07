@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-824856-v1",
+  "built_at": "2026-11-07T19:05:20.389878+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/earnings-mentions-costco-2025-12-11/earnings-mentions-costco-2025-12-11-inflation-1-times",
+    "condition_id": "0x8a38a42face7d03526f9d822ada09506fecede32c447cd7837a0d5835bf2135c",
+    "start": 1764806400,
+    "end_exclusive": 1765517285,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Costco say \"Inflation\" during earnings call?",
+  "market_opened": "2025-12-04T21:41:20.023629Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 38,
+    "wallet_trade_leg_rows": 102,
+    "price_points": 32,
+    "wallets": 36,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-12": 38
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/earnings-mentions-costco-2025-12-11/earnings-mentions-costco-2025-12-11-inflation-1-times",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 463,
+      "sha256": "e1894cab3dea0f433b91c26bb016488a61cf0f40e91c453402100116a77e589b"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 241,
+      "sha256": "25efa3fa155f7b5caf401d70adffdf453666d094a210be6f93a6bc9a56c733d6"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2381,
+      "sha256": "6a215bcfcc28f615f89775637e0ffd6b29356bd7086417fae325f70d0643bddd"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "6dbab3ea03d5f636ab1781809bb7eb996be3b615a5b8aa8f3cc3e8952bad7cb4"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 704,
+      "sha256": "57eecb9cc731e91e318d3d7008a9db2dcadb84212b1bacb3ec1ccff329ba0493"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2249,
+      "sha256": "3a18ac51fb992cc9dce8547bd4848e217698c43605eac83dd97b154e8f234ad9"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 557,
+      "sha256": "d64fcbfb37d273d71bd53cd0599e2a771f893ee579aaf5bb31076e8a33e2a97a"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 558,
+      "sha256": "8586dd83f21c77bde6f6130f60c3bc81a339a45fa676a100686f7336ebb5baa7"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 4539,
+      "sha256": "7c4be9059536109493181761fb55a46aa6ad5d8c62c27b97683f24f7abb0899f"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 11119,
+      "sha256": "7785dbfc43e92b4c642149a57766a6bd380605538abb1bc119a24b6a720e8fa9"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 3279,
+      "sha256": "eed82f0405674b2ffd15cfbfeb02904fd44fbb46d2b160adb0f575f49cd8b78c"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 4566,
+      "sha256": "3054b0a3f82c6238f1b22d290a510d80892f76d7a5651e627f931baee02a48b5"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 3783,
+      "sha256": "af4eaa7022ea7e28ab9cbdd89afc18af201a34c72541d45d120707b5a9091fbf"
+    }
+  ]
+}

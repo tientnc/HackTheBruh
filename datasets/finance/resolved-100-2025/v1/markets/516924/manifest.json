@@ -1,0 +1,116 @@
+{
+  "dataset": "polymarket-516924-v1",
+  "built_at": "2026-11-07T19:05:20.893133+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/doge-etf-approved-in-2025/doge-etf-approved-in-2025",
+    "condition_id": "0xb643afacc478a059b67089ac1bca30cda972a006784ed51bae2241ce87d884d0",
+    "start": 1735603200,
+    "end_exclusive": 1758217205,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Doge ETF approved in 2025?",
+  "market_opened": "2024-12-31T18:50:59.285Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 1318,
+    "wallet_trade_leg_rows": 3431,
+    "price_points": 1080,
+    "wallets": 744,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2024-12": 1,
+    "2025-01": 354,
+    "2025-02": 220,
+    "2025-03": 117,
+    "2025-04": 41,
+    "2025-05": 38,
+    "2025-06": 117,
+    "2025-07": 79,
+    "2025-08": 130,
+    "2025-09": 221
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/doge-etf-approved-in-2025/doge-etf-approved-in-2025",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 425,
+      "sha256": "6935a55c331041cf205faa589ab38527e9edc33ad0782fcd9e153f83b27b9b63"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 246,
+      "sha256": "5a0176046ab20763092bcaeef0b2d22a2d7a05b9c924db89e7d4477a2cbf70fb"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1569,
+      "sha256": "3b09e14f05cc8db2f500b15857b965a1225928d1b55597a756d2b094ad833187"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 344,
+      "sha256": "9a49a71782e1efd0fc944ca9d067ec88472b33706b237110bed9d2322a7cfcd6"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 15875,
+      "sha256": "0202faf5f1006b874363c851d4d58700993f647465e48775506699055f28f6fa"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2191,
+      "sha256": "1c7a22eeaee2111761e2c489cc5d701028b342557e0d5e7a263da469db3ecdd7"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 6301,
+      "sha256": "5d9c9b8c6a94fd6d0daf849bc81c4c763784766a6895b0999f86fc954506a38f"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 6318,
+      "sha256": "bd01837b1649e2c0193214b06045b9852580c2a4b1cc293c961e819d3b8273f9"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 273097,
+      "sha256": "3603a3849682f68ccd13080e29633a2ee577a433d0f2414b8f9d5d65ee9940f5"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 390454,
+      "sha256": "033e9582e8bb1ac7ec25f96afb983c12f982c990e845fbec9d96620736ce7ae9"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 109714,
+      "sha256": "8e1963ecce6a62ae9d3abb564b90a71b77e14ef23098b26d46744e02997feabd"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 145431,
+      "sha256": "e3c9474c2198e4bbb8a0c4ce440a6456d72bf1a7f56ae68b845123218c71ac94"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 81019,
+      "sha256": "0dd04ca3e19c761dda85a31b394892e48c33e1007eebfec1dd5d2516d091391b"
+    }
+  ]
+}

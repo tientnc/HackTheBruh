@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/how-low-will-10-year-treasury-yield-get-in-2025/will-the-10-year-treasury-yield-dip-below-3pt7-in-2025-921-458",
+  "market_id": "637897",
+  "condition_id": "0x74bcf7f874aaa5ace73cd348e21fac79f78efbac06a7b885d53b04387ec4d019",
+  "event_id": "19637",
+  "slug": "will-the-10-year-treasury-yield-dip-below-3pt7-in-2025-921-458",
+  "question": "Will the 10-year Treasury yield dip below 3.7% in 2025?",
+  "created_at": "2025-10-16T23:13:52.560759Z",
+  "start_date": "2025-10-17T12:33:33.557298Z",
+  "end_date": "2025-12-31T12:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the Treasury 10-year yield is lower than the listed value for any date between February 24 and December 31, 2025. Otherwise this market will resolve to \"No\".\n\nThe resolution source for this market is the Department of the treasury, specially the data listed under \"Daily Treasury Par Yield Curve Rates\" for the column \"10 Yr\" (see: https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2025).\n",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x74bcf7f874aaa5ace73cd348e21fac79f78efbac06a7b885d53b04387ec4d019",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "32229547581442124673032170360751974553677810270742982075994843313756524203250"
+    },
+    {
+      "condition_id": "0x74bcf7f874aaa5ace73cd348e21fac79f78efbac06a7b885d53b04387ec4d019",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "2168348134474160531870291034708463299738397786682399071846192176764019280708"
+    }
+  ]
+}

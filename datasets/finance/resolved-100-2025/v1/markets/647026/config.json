@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/earnings-mentions-roku-2025-10-30/earnings-mentions-roku-2025-10-30-acquisition-1-times",
+  "condition_id": "0x612348e5e29fe7668527512c59d0ae9106d5b3e6a40cc2bf0e976bfafa7e8bf5",
+  "start": 1761177600,
+  "end_exclusive": 1761920967,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

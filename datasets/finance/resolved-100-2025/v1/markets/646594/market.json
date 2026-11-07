@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/who-will-acquire-warner-bros-discovery/will-placeholder-i-acquire-warner-bros-discovery",
+  "market_id": "646594",
+  "condition_id": "0xf51e2dc784e8d99575d05d42eef50c233441ec516ca2d59f55e9cd10378ee247",
+  "event_id": "64099",
+  "slug": "will-placeholder-i-acquire-warner-bros-discovery",
+  "question": "Will placeholder i acquire Warner Bros. Discovery?",
+  "created_at": "2025-10-23T16:08:21.680398Z",
+  "start_date": "2025-10-23T19:58:19.12736Z",
+  "end_date": "2026-04-30T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if it is announced that Warner Bros. Discovery will be, has been, or is being acquired by or merged with the listed entity by 11:59 PM ET on May 31, 2026. Otherwise, this market will resolve to \"No\".\n\nIf no merger or acquisition takes place by the specified date, this market will resolve to \"No Acquisition by May 31, 2026\".\n\nAn official announcement will qualify for a \"Yes\" resolution, regardless of whether the merger or acquisition is ultimately completed. \n\nAny merger or acquisition will qualify regardless of whether it regards Warner Bros Discovery's entire company or separate transactions for its Warner Bros. or Discovery Global businesses.\n\nThe primary resolution source for this market is official information from the listed individual and/or Warner Bros. Discovery; however, a consensus of credible reporting will also be used.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0xf51e2dc784e8d99575d05d42eef50c233441ec516ca2d59f55e9cd10378ee247",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "44259779593397667823739934163697667090706644922668587172913774368417561590559"
+    },
+    {
+      "condition_id": "0xf51e2dc784e8d99575d05d42eef50c233441ec516ca2d59f55e9cd10378ee247",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "35315601135115767522342043202533487401560611809385694742197478165277210018703"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/pltr-above-on-november-14-2025/pltr-above-202-on-november-14-2025",
+  "market_id": "663204",
+  "condition_id": "0x9614a489b019b3a085d1408da9374f0290bb020f3684c7638f72c042145f1579",
+  "event_id": "72240",
+  "slug": "pltr-above-202-on-november-14-2025",
+  "question": "Will Palantir (PLTR) finish week of November 10 above $202?",
+  "created_at": "2025-11-03T19:11:18.62096Z",
+  "start_date": "2025-11-03T19:38:38.534164Z",
+  "end_date": "2025-11-14T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the official closing price for Palantir Technologies Inc. (PLTR) on the final day of trading of the specified week (normally Friday) is higher than the listed price. Otherwise, this market will resolve to \"No.\"\n\nIf the final session is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nThe resolution source for this market is Yahoo Finance, specifically the Palantir Technologies Inc. (PLTR) \"Close\" prices available at https://finance.yahoo.com/quote/PLTR/history, published under \"Historical Prices.\"\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/PLTR/history",
+  "outcomes": [
+    {
+      "condition_id": "0x9614a489b019b3a085d1408da9374f0290bb020f3684c7638f72c042145f1579",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "5541757921256834766505982748786249186367501439765160788818282675196362823841"
+    },
+    {
+      "condition_id": "0x9614a489b019b3a085d1408da9374f0290bb020f3684c7638f72c042145f1579",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "105572888171904897763094345255425877478442474997131526116588759703581778019210"
+    }
+  ]
+}

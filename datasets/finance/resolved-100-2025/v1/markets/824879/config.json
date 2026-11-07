@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/earnings-mentions-fedex-2025-12-18/earnings-mentions-fedex-2025-12-18-guidance-1-times",
+  "condition_id": "0x329e48daf2c7c1a25bd5f42c30c6793d4565c4e4bd5751b7383a208d27e38c74",
+  "start": 1764806400,
+  "end_exclusive": 1766140603,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

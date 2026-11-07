@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/how-low-will-10-year-treasury-yield-get-in-2025/will-the-10-year-treasury-yield-dip-below-3pt7-in-2025-921-458",
+  "condition_id": "0x74bcf7f874aaa5ace73cd348e21fac79f78efbac06a7b885d53b04387ec4d019",
+  "start": 1760572800,
+  "end_exclusive": 1767223258,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

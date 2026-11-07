@@ -1,0 +1,109 @@
+{
+  "dataset": "polymarket-581247-v1",
+  "built_at": "2026-11-07T19:05:23.144820+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/lisa-cook-out-as-fed-governor-by-september-30/lisa-cook-out-as-fed-governor-by-september-30",
+    "condition_id": "0xfae907b4c7d9b39fcd27683e3f9e4bdbbafc24f36765b6240a93b8c94ed206fa",
+    "start": 1756166400,
+    "end_exclusive": 1759300006,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Lisa Cook out as Fed Governor by September 30?",
+  "market_opened": "2025-08-26T00:48:21.398Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 6978,
+    "wallet_trade_leg_rows": 19338,
+    "price_points": 150,
+    "wallets": 3374,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-08": 914,
+    "2025-09": 6000,
+    "2025-10": 64
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/lisa-cook-out-as-fed-governor-by-september-30/lisa-cook-out-as-fed-governor-by-september-30",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 465,
+      "sha256": "145edd9e23d3a40391e7db495d94fe1c6bb85ab23731226332aa0da2aca503c8"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 245,
+      "sha256": "e4d2d19d1ffdec2a82025d4aa6913a509ad3bfe53caaa72be876fef0d55c6800"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1953,
+      "sha256": "e190d0c20b417918b2a78f983f18c9e2db5ebb2d028dbf2271e6b1e231bfbec5"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "9cda69945809e655883b7a7e5be96ae1ec86e10f4f31025a554e7159d0ec2b4b"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 2245,
+      "sha256": "e4aa15133d5b08f881159d97da5ecc0a413654a04460b674f1985a777389975d"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2450,
+      "sha256": "f73659e51fbc7eec80c330b24d9914f9faff0d328768458aa66d1094e73ba662"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1000,
+      "sha256": "1c3587b4f956fe6ae0dd8ff45983088e2459e14a2a048f0175b667a358173ca3"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1005,
+      "sha256": "c47dd6da005662d7db0ee39935034094d2f63ca5420f7720eefbff0d2d1cc814"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 1441649,
+      "sha256": "4080cf09a4569847d1c0ae5775dd197c1865e51f0492b650fa77aa9ed0cedd65"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 2316865,
+      "sha256": "45dd4d749197f3394563d68b24ff710d96eec727700db189eb3c0da2d2ff1d61"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 553518,
+      "sha256": "d53ddffd49eac84b120cb1a8ef0aa1b3b742338216db1ba9cb811a8b9120dbe3"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 785136,
+      "sha256": "4e24ad3a37216812cdc7b85a663fd8bc3c6e9bcd22bfc05c036a9c9e92bc183c"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 360674,
+      "sha256": "15691c1bb27717766681ba0b61976bdcf6757410816bad059ba2da4091b35f2d"
+    }
+  ]
+}

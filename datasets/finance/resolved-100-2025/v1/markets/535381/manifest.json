@@ -1,0 +1,112 @@
+{
+  "dataset": "polymarket-535381-v1",
+  "built_at": "2026-11-07T19:05:25.917262+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/klarna-ipo-in-2025/klarna-ipo-in-2025",
+    "condition_id": "0x1a0cd9ae444bc57683ebd68bff89108752c4a2438b5c4bdc749c1f0ed9f08808",
+    "start": 1744070400,
+    "end_exclusive": 1757532418,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Klarna IPO in 2025?",
+  "market_opened": "2025-04-08T20:37:07.149Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 453,
+    "wallet_trade_leg_rows": 1106,
+    "price_points": 642,
+    "wallets": 268,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-04": 204,
+    "2025-05": 23,
+    "2025-06": 26,
+    "2025-07": 61,
+    "2025-08": 69,
+    "2025-09": 70
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/klarna-ipo-in-2025/klarna-ipo-in-2025",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 411,
+      "sha256": "cbd370a39c5a317ff5614b0141e577b80965d0e746562ece24fd4bf05e01f6e1"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 245,
+      "sha256": "e47cee659802759eef040fa4ff32bd356f2709bc3b0d4b820bcde0e41289cc67"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1457,
+      "sha256": "58016eedbd75e5b18599dee3661ccd025c80fa94ac2559da9c4b574fd6b8dd0f"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "004f5491f44792f5d039b43b24cc58e0851f9b7fc9c019981a54e5377102bd37"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 9774,
+      "sha256": "8f0a6be565fb79496c135dd1275093feeb9a505e9c52755dd008921aece9492b"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 1859,
+      "sha256": "4079aabc3b7c65a6b6068bdae70e0e8ed07066ce6471861c0357cb13efaed45e"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 2665,
+      "sha256": "918cd9dbcee617ff9f01c7a2c6c4bfcc29cb56b07cca9c8e7da4c73376f3d094"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 2670,
+      "sha256": "1219909625512a3980cea8f15adcf49ae8745d9a3a0f00f43d554d9346243949"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 82586,
+      "sha256": "ddec2b6738a85f1ede2e27b6568dfcf4f61738491720097ed55fa399228fb14b"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 120467,
+      "sha256": "db99de48ea2718a3c82bc9aef0e5c9209231955bdaa82e05e61452930d041587"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 36884,
+      "sha256": "46a4490fe3f7593ee504b0bdcb68d696c8c2d6ff1e6636ee63fc0b2e0872b7d9"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 47682,
+      "sha256": "ff069b378ca7303233bbcc9424739eefae367893f7c24d9939c7f8e1f2381db2"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 29849,
+      "sha256": "18ec6dc3e06e4640a451b7498d09f4cddcb15c7a62edc76c92a5ed71f4ef8825"
+    }
+  ]
+}

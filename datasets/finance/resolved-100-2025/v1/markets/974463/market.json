@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/amzn-above-on-december-26-2025/amzn-above-225-on-december-26-2025",
+  "market_id": "974463",
+  "condition_id": "0x5c6d270bebf11cf19c7072ae8623da42c3c399bbeedc9efa8255252ce41509b6",
+  "event_id": "112378",
+  "slug": "amzn-above-225-on-december-26-2025",
+  "question": "Will Amazon (AMZN) finish week of December 22 above $225?",
+  "created_at": "2025-12-19T23:00:04.47599Z",
+  "start_date": "2025-12-19T23:22:19.872861Z",
+  "end_date": "2025-12-26T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the official closing price for Amazon.com, Inc. (AMZN) on the final day of trading of the specified week (normally Friday) is higher than the listed price. Otherwise, this market will resolve to \"No.\"\n\nIf the final session is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nThe resolution source for this market is Yahoo Finance, specifically the Amazon.com, Inc. (AMZN) \"Close\" prices available at https://finance.yahoo.com/quote/AMZN/history, published under \"Historical Prices.\"\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/AMZN/history",
+  "outcomes": [
+    {
+      "condition_id": "0x5c6d270bebf11cf19c7072ae8623da42c3c399bbeedc9efa8255252ce41509b6",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "31259047207599666968196235735230443242409146558004985787346067705729725697045"
+    },
+    {
+      "condition_id": "0x5c6d270bebf11cf19c7072ae8623da42c3c399bbeedc9efa8255252ce41509b6",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "49174950986804579350021782436222123667769264212332416662031204978045658567664"
+    }
+  ]
+}

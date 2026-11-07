@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-will-nvda-hit-before-2026/will-nvda-hit-190-before-2026",
+  "market_id": "694392",
+  "condition_id": "0x1cdfd1c80e31282f5387f62e99af9bc23706f4892f6736f68aad7f1b721331ac",
+  "event_id": "86622",
+  "slug": "will-nvda-hit-190-before-2026",
+  "question": "Will NVIDIA (NVDA) hit $190 before 2026??",
+  "created_at": "2025-11-21T05:55:52.460969Z",
+  "start_date": "2025-11-21T16:00:01.697171Z",
+  "end_date": "2025-12-31T23:59:59Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point between November 21 and December 31 2025, any 1-minute candle for NVIDIA (NVDA) has a final \"High\" price equal to or above $190. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during regular trading hours (ET) will be considered.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Yahoo Finance after any adjustments have been applied.\n\nThe resolution source for this market is Yahoo Finance \u2014 specifically, the NVIDIA (NVDA) \"High\" prices available at https://finance.yahoo.com/quote/NVDA/, with the chart settings on \"1m\" for candle intervals.",
+  "resolution_source": "https://finance.yahoo.com/quote/NVDA/",
+  "outcomes": [
+    {
+      "condition_id": "0x1cdfd1c80e31282f5387f62e99af9bc23706f4892f6736f68aad7f1b721331ac",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "34269302439664033256080627870240586218448745854567058005576954743718038537514"
+    },
+    {
+      "condition_id": "0x1cdfd1c80e31282f5387f62e99af9bc23706f4892f6736f68aad7f1b721331ac",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "93580809577623483999417078415859677316323342579910658560304535524838037477515"
+    }
+  ]
+}

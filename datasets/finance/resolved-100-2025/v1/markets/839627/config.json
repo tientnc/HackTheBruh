@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/msft-week-december-12-2025/will-msft-close-between-490-and-500-week-december-12-2025",
+  "condition_id": "0xdee8253debe08571be47d007335f003a0b0cc7b50eb92ba76ac0d8c0c1252bd0",
+  "start": 1764892800,
+  "end_exclusive": 1765587967,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

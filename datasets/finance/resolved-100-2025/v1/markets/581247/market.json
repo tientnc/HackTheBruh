@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/lisa-cook-out-as-fed-governor-by-september-30/lisa-cook-out-as-fed-governor-by-september-30",
+  "market_id": "581247",
+  "condition_id": "0xfae907b4c7d9b39fcd27683e3f9e4bdbbafc24f36765b6240a93b8c94ed206fa",
+  "event_id": "39671",
+  "slug": "lisa-cook-out-as-fed-governor-by-september-30",
+  "question": "Lisa Cook out as Fed Governor by September 30?",
+  "created_at": "2025-08-26T00:42:40.368292Z",
+  "start_date": "2025-08-26T00:48:21.398Z",
+  "end_date": "2025-09-30T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \u201cYes\u201d if Lisa Cook announces her resignation or otherwise ceases to be a member of the Federal Reserve Board of Governors for any period of time between August 25, and September 30, 2025, 11:59 PM ET. Otherwise, this market will resolve to \u201cNo\u201d.\n\nOnly official announcements of Cook's resignation or removal before her term is scheduled to end, made by either Cook or the Board of Governors, will qualify. Announcements from Trump or his administration will not alone qualify. \n\nTemporary absences or attempts at termination which do not actually remove Cook from the Board of Governors of the Federal Reserve will not qualify. \n\nThe resolution source for this market will be information from the U.S. Government however a consensus of credible reporting will also suffice.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0xfae907b4c7d9b39fcd27683e3f9e4bdbbafc24f36765b6240a93b8c94ed206fa",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "38484256995266976783423891875386013444504145592687500464358182429656203266059"
+    },
+    {
+      "condition_id": "0xfae907b4c7d9b39fcd27683e3f9e4bdbbafc24f36765b6240a93b8c94ed206fa",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "83857780204850404846994602635055280729234785750020583001259135829359538415657"
+    }
+  ]
+}

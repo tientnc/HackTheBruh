@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/nvda-above-in-november-2025/nvda-above-220-on-november-28-2025",
+  "condition_id": "0x7c5844e4469d8915ef619dd356aa2c3bef915145f065ce7c13ffbdcb4005fe1f",
+  "start": 1762128000,
+  "end_exclusive": 1764379598,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

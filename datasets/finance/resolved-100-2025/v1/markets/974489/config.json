@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/googl-week-december-26-2025/will-googl-close-between-305-and-310-week-december-26-2025",
+  "condition_id": "0x311b05c14d3375eeab15764be345dfd3a1f8412d0286dffbae6d5fc33d66de8a",
+  "start": 1766102400,
+  "end_exclusive": 1766797400,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "dataset": "polymarket-691510-v1",
+  "built_at": "2026-11-07T19:05:20.526090+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/3rd-largest-company-end-of-november/will-company-a-be-the-third-largest-company-in-the-world-by-market-cap-on-november-30",
+    "condition_id": "0xd175618f8498385f88f7d4ddfcd5ef031c14c7cfe5feac9c37d78cb2890dfa67",
+    "start": 1763510400,
+    "end_exclusive": 1764551545,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Company A be the third-largest company in the world by market cap on November 30?",
+  "market_opened": "2025-11-19T23:00:43.407743Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 0,
+    "wallet_trade_leg_rows": 0,
+    "price_points": 0,
+    "wallets": 0,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {},
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/3rd-largest-company-end-of-november/will-company-a-be-the-third-largest-company-in-the-world-by-market-cap-on-november-30",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 495,
+      "sha256": "41103901152362295557aa70d32b3f9ad12c1f47b897dd184273877ba9ef475b"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 156,
+      "sha256": "f689e1458d528bac7da72feb33e9cadac81004b7675047b9dbba1517bb1786e1"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1448,
+      "sha256": "469a72d46f94f4850247b5664573ca4048b5659b1673abd6bd0c42e03f053ce1"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "1641be820966ea19073247aa21963c28d045cbce2a5cfcb1e18205c90adbef3e"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 110,
+      "sha256": "eb7a6385bc09050ff966d8de40ca9c480b0ed54404a560d105fff2f49551e3cd"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2202,
+      "sha256": "c957b30d40779896ab8d56c43ee1160305e1698a6cc7ad7aa22c42da299e1d54"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 401,
+      "sha256": "9da858b4fabc94752d6b3c731a2e12f33df3bb5b7cf965f1f63c91ecd3f01835"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 400,
+      "sha256": "2f6431830da0aee3151062abb1d5aa6e5a9faee3c4ad7099fab12838aaa43233"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 387,
+      "sha256": "8ca94ae932e7d154aac00976e3c0f02b62ae8006141010bd75468c368faffbb0"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 320,
+      "sha256": "6b294affe0cbaf149ca4a7265268ab286b539d175b8cb7a4cf8867d04428d663"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 120,
+      "sha256": "1b523ee6e516f3f2008a0e6c857a8da211f05a0ea29583e2b0946cb026c1bc96"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 131,
+      "sha256": "6cc98d069b6d0bec13d1a3388451f28840cf0a705fe4e705efe979f87a5f21e5"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 125,
+      "sha256": "3ef9512de247ee00901ab648731f3d22c1a87f62a3dfb0508ef3126cbea8e8f5"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="480" viewBox="0 0 1120 480" role="img" aria-labelledby="title desc">
+  <title id="title">Proposed chronological backtest</title>
+  <desc id="desc">Rank wallets from 51 markets with labels before December 1, use 26 December 1 to 14 markets for development, and 23 December 15 to 31 markets for testing. At December 1 only 43 wallets have taker activity in at least five earlier markets, so each decile would contain four wallets. This is proposed design, not model results.</desc>
+  <rect width="1120" height="480" rx="22" fill="#0b1726"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="48" y="51" fill="#8bb9fa" font-size="15" font-weight="700" letter-spacing="2">PROPOSED EXPERIMENT / NOT YET TRAINED</text>
+    <text x="48" y="101" fill="#f3f7fc" font-size="35" font-weight="700">Rank first. Predict later.</text>
+    <text x="48" y="138" fill="#a9bbce" font-size="20">A future winner cannot help determine an earlier wallet ranking.</text>
+    <g fill="#12243a" stroke="#2b425b"><rect x="48" y="177" width="316" height="137" rx="14"/><rect x="402" y="177" width="316" height="137" rx="14"/><rect x="756" y="177" width="316" height="137" rx="14"/></g>
+    <g fill="#72e0bc" font-size="23" font-weight="700"><text x="68" y="216">51 earlier markets</text><text x="422" y="216">26 development</text><text x="776" y="216">23 test markets</text></g>
+    <g fill="#a9bbce" font-size="18"><text x="68" y="255">Labels before Dec 1</text><text x="68" y="284">Rank + freeze wallet cohorts</text><text x="422" y="255">December 1–14</text><text x="422" y="284">Choose settings on past data</text><text x="776" y="255">December 15–31</text><text x="776" y="284">Measure unseen performance</text></g>
+    <g fill="none" stroke="#6f879e" stroke-width="2"><path d="M371 246H393m-6-5 6 5-6 5"/><path d="M725 246H747m-6-5 6 5-6 5"/></g>
+    <rect x="48" y="347" width="1024" height="83" rx="12" fill="#3b2c23"/>
+    <text x="68" y="380" fill="#ffd08d" font-size="21" font-weight="700">Pilot constraint: 43 eligible taker wallets → about 4 per decile</text>
+    <text x="68" y="410" fill="#d8c5b5" font-size="18">At least 5 earlier markets · others remain unranked · historical label availability checked at every cutoff</text>
+  </g>
+</svg>

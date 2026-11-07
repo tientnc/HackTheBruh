@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/earnings-mentions-uber-2025-10-30/earnings-mentions-uber-2025-10-30-lyft-1-times",
+  "market_id": "647098",
+  "condition_id": "0x692bee4bb72ef8d7ba79207dc4257c9499fae484320e73c2301408359e903e17",
+  "event_id": "64169",
+  "slug": "earnings-mentions-uber-2025-10-30-lyft-1-times",
+  "question": "Will Uber say \"Lyft\" during earnings call?",
+  "created_at": "2025-10-23T19:49:05.461293Z",
+  "start_date": "2025-10-23T22:03:35.147Z",
+  "end_date": "2025-11-04T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve based on the next earnings announcement of Uber currently scheduled to take place on November 4, 2025 at 8:00 AM ET.\n\nThis market will resolve to \"Yes\" if the listed term is mentioned by anyone during this event. Otherwise, the market will resolve to \"No\".\n\nAny usage of the term, regardless of context, will count toward the resolution of this market.\n\nPluralization/possessive of the term will count toward the resolution of this market; however, other forms will NOT count.\n\nInstances where the term is used in a compound word will count regardless of context (e.g. joyful is not a compound word for \"joy,\" however \"killjoy\" is a compounding of the words \"kill\" and \"joy\").\n\nIf this market requires a specified number of mentions of a person\u2019s first or last name, a full-name mention will count as one mention (e.g., if a market is about \u201cJoe / Biden 5+ times,\u201d a mention of \u201cJoe Biden\u201d will count once).\n\nA Q&A event will count toward the resolution of this market.\n\nIf this event is definitely cancelled, or otherwise is not aired by December 31, 2025, 11:59 PM ET, this market will resolve to \"No\".\n\nThe resolution source will be audio of the event.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x692bee4bb72ef8d7ba79207dc4257c9499fae484320e73c2301408359e903e17",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "108824791075449938344507154193375511737040611066066621951304880241788532595738"
+    },
+    {
+      "condition_id": "0x692bee4bb72ef8d7ba79207dc4257c9499fae484320e73c2301408359e903e17",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "40986685063612681919827382485635911727839331944329210953740436222931428417681"
+    }
+  ]
+}

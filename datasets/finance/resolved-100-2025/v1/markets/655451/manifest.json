@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-655451-v1",
+  "built_at": "2026-11-07T19:05:30.015841+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/ato-quarterly-earnings-gaap-eps-11-05-2025-0pt97/ato-quarterly-earnings-gaap-eps-11-05-2025-0pt97",
+    "condition_id": "0x5880d5ea3d38f4fc3dd68cbda0e82bf4fdd87240be6c823df98fadbbce097852",
+    "start": 1761696000,
+    "end_exclusive": 1762451118,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Atmos Energy (ATO) beat quarterly earnings?",
+  "market_opened": "2025-10-29T16:55:06.195Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 69,
+    "wallet_trade_leg_rows": 163,
+    "price_points": 34,
+    "wallets": 63,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-10": 19,
+    "2025-11": 50
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/ato-quarterly-earnings-gaap-eps-11-05-2025-0pt97/ato-quarterly-earnings-gaap-eps-11-05-2025-0pt97",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 471,
+      "sha256": "442b6b66cade5c2176916457e69e1e30a89f63f5f0c41b1fff0b781dc3bdb72f"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 241,
+      "sha256": "3b2c9724f81ca991b221e0183f561b90d93263a6094c2285dc9c4163354a055f"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2868,
+      "sha256": "692b2716c7a6351754d2114abc93d0d6d7ec6ad29809726b4dcf3efe77a09ea6"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "f13c75794b8c029ff6c77ae497b1581268f240fb0e37540533bc42fc272e6ed8"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 722,
+      "sha256": "8f6fdd93a3a101ff6aa10a297e277032524fbd41082fa343186c8f9aa357e18d"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2584,
+      "sha256": "77cfab45acec383f7901f27ea894d47a315bd70175914eb01805a93e5d7a54b0"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 562,
+      "sha256": "8506b293cc070aba5807d584ed0e0c45a2b0fb4b694bf500d3f378f819d08fd0"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 559,
+      "sha256": "7beb546871a198caa04823404a6f850b68513d257dfbc60441f2a3597bf5a12e"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 14434,
+      "sha256": "ed8b4513c3d566dd382127ef4daff3a16d9ec1df38c032cfe4857c3a3d5607f7"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 20976,
+      "sha256": "ac2e7685a4d8727bbbb621cd060e03ac03b3db418f2623411194726ceb83e0ad"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 6112,
+      "sha256": "bf0cef37ce32aa0872bf9d846a28e581b348ffc97f4d960fc1294710ddead7a4"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 7769,
+      "sha256": "929609713fb2b847fb72e466ea1f3bac9a8614963585f05bd5af5f140ba18148"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 6765,
+      "sha256": "cda21b79cdb12e8d408a0fc4b207398560640d12fc19bfb483f608c65fec22d1"
+    }
+  ]
+}

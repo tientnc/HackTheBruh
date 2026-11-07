@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/meta-above-on-december-5-2025/meta-above-620-on-december-5-2025",
+  "condition_id": "0xe04426b26fb6156584a2a29f5e7114a70b6ac0d11bb28753cb715d7271d2907b",
+  "start": 1764288000,
+  "end_exclusive": 1764987564,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

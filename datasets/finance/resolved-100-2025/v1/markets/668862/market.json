@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/nya-above-on-november-14-2025/nya-above-18750-on-november-14-2025",
+  "market_id": "668862",
+  "condition_id": "0xa8afc4da1dd46205bc5ebbe9ccd8a78a42092e5fd4ee130d99bd590ad0efa2fa",
+  "event_id": "75020",
+  "slug": "nya-above-18750-on-november-14-2025",
+  "question": "Will NYSE Composite (NYA) close over 18,750 on Friday of the week of Nov 10 \u2013 Nov 14?",
+  "created_at": "2025-11-07T03:24:23.375504Z",
+  "start_date": "2025-11-07T03:25:34.008349Z",
+  "end_date": "2025-11-14T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the official closing price for NYSE Composite (NYA) on the final day of trading of the specified week (normally Friday) is higher than the listed price. Otherwise, this market will resolve to \"No\".\n\nIf the final session is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nThe resolution source for this market is Yahoo Finance, specifically the NYSE Composite (NYA) \"Close\" prices available at https://finance.yahoo.com/quote/%5ENYA/history, published under \"Historical Prices.\"\n\nNote: NYSE Composite (NYA) is represented by ^NYA on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/%5ENYA/history",
+  "outcomes": [
+    {
+      "condition_id": "0xa8afc4da1dd46205bc5ebbe9ccd8a78a42092e5fd4ee130d99bd590ad0efa2fa",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "53745328204089217726614796544652494421142499560621638388425878058307655066610"
+    },
+    {
+      "condition_id": "0xa8afc4da1dd46205bc5ebbe9ccd8a78a42092e5fd4ee130d99bd590ad0efa2fa",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "25880266315528107916389716541576485901709071160694828726952005271623229226041"
+    }
+  ]
+}

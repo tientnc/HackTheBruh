@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/ripple-etf-approved-in-2025/ripple-etf-approved-in-2025",
+  "market_id": "516909",
+  "condition_id": "0xa64b6a05ed2aa20d2cb6c373314c0d9931acbd24e7fe95bd1920784b23ab9da0",
+  "event_id": "16150",
+  "slug": "ripple-etf-approved-in-2025",
+  "question": "Ripple ETF approved in 2025?",
+  "created_at": "2024-12-30T22:49:22.456842Z",
+  "start_date": "2024-12-31T16:27:08.643Z",
+  "end_date": "2025-12-31T12:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if any spot Ripple (XRP) ETF receives approval from the SEC by December 31, 2025, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nApproval under Rule 19-4b will qualify for a \"Yes\" resolution, even if there has not been an S-1 approval. Similarly, an S-1 approval without a 19-4b approval will also qualify for a \"Yes\" resolution.\n\nThe primary resolution source for this market will be information from the SEC, however a consensus of credible reporting may also be used.\n",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0xa64b6a05ed2aa20d2cb6c373314c0d9931acbd24e7fe95bd1920784b23ab9da0",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "78079109845641367151494324629719289128490141024243348969677580023454960860119"
+    },
+    {
+      "condition_id": "0xa64b6a05ed2aa20d2cb6c373314c0d9931acbd24e7fe95bd1920784b23ab9da0",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "45054874719508043008435328249300392990230706337026375169639446812487388687614"
+    }
+  ]
+}

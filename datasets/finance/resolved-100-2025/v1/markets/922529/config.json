@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/tsla-week-december-19-2025/will-tsla-close-between-465-and-470-week-december-19-2025",
+  "condition_id": "0x48f5196cc35dcaf1b0fd5272abfabea78728eb536fcbc0f15ea91ade63b2a1e7",
+  "start": 1765497600,
+  "end_exclusive": 1766196913,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

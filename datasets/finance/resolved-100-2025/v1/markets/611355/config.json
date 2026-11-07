@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/will-gold-hit-4000-by/will-gold-hit-4000-by-march-31",
+  "condition_id": "0x882e95dc28b1b970974a892c7183067ee3d9aa45d2f8c27ffbdf14eb761ade1d",
+  "start": 1758672000,
+  "end_exclusive": 1759851537,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

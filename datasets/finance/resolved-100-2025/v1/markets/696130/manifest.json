@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-696130-v1",
+  "built_at": "2026-11-07T19:05:31.698268+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/pltr-above-on-november-28-2025/pltr-above-150-on-november-28-2025",
+    "condition_id": "0xb780bfe7b915fff6fcd7859018747eb02673ba0df2623df2207ef3e1c61bb3dd",
+    "start": 1763683200,
+    "end_exclusive": 1764381794,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Palantir (PLTR) finish week of November 24 above $150?",
+  "market_opened": "2025-11-21T23:24:57.310723Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 14,
+    "wallet_trade_leg_rows": 36,
+    "price_points": 30,
+    "wallets": 24,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-11": 14
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/pltr-above-on-november-28-2025/pltr-above-150-on-november-28-2025",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 439,
+      "sha256": "f0fa23e25014bd1102ed6679d28792a943bde6314eb3baca0b32e5a055f6756d"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 240,
+      "sha256": "129d6d3e96d55745988a651f0255a67c29ee5e4f7697654131ff881af7b47786"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2314,
+      "sha256": "1aaeda0c362240a540be1e25a7d50faeffdb91efd137d2c4f5c932391877f24f"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "e8045624f64362a69be1510a79f5e7b29f439ed872de7b298fda6e977b54e1c9"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 668,
+      "sha256": "0ee7608ffb21ce5db7fe010122aab87129f2d6b38d8fb6750c8d76c5e57f7178"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2622,
+      "sha256": "d0375517a3a0a8d20b811ef307a083ef711e3befcfbf08a346c315e46bc5122a"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 540,
+      "sha256": "a0da84339c4803b3f230f75adbe35aa866b76c654820a59229bcda79502654ff"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 538,
+      "sha256": "61695bb82eed9dcb88c3a1d0ee672a1201e15b778c341903b1dec0a32b635f53"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 2408,
+      "sha256": "96d743487da265aa0dae276618756a4b7f3127096c82bd851a9808093c7b6958"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 3374,
+      "sha256": "69d67ee8159a7a32ecd454b666aba7199f6fa928512501bd777d3be7798c6b41"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 1505,
+      "sha256": "05f64a68668568d5d8e4167d5e3667dd669c72e1daef1409fcd2d4350d563f63"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 2108,
+      "sha256": "afdae8af3f3c1719ef603a5c3995430140ecb2652b5da35b7ab02d12f23c0990"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 2321,
+      "sha256": "61812970d5a5fd24ee7fd789c94fac4d49e07636edeadf8e22d4e0e641cf5b95"
+    }
+  ]
+}

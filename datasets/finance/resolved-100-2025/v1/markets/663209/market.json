@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/open-above-on-november-14-2025/open-above-5-on-november-14-2025",
+  "market_id": "663209",
+  "condition_id": "0xe3b657ee99397c7746cbfd748ea8692e6b6ee31c2f0418147457c551d00eb0df",
+  "event_id": "72241",
+  "slug": "open-above-5-on-november-14-2025",
+  "question": "Will Opendoor (OPEN) finish week of November 10 above $5.00?",
+  "created_at": "2025-11-03T19:11:25.639455Z",
+  "start_date": "2025-11-03T19:38:43.220846Z",
+  "end_date": "2025-11-14T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the official closing price for Opendoor Technologies Inc. (OPEN) on the final day of trading of the specified week (normally Friday) is higher than the listed price. Otherwise, this market will resolve to \"No.\"\n\nIf the final session is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nThe resolution source for this market is Yahoo Finance, specifically the Opendoor Technologies Inc. (OPEN) \"Close\" prices available at https://finance.yahoo.com/quote/OPEN/history, published under \"Historical Prices.\"\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/OPEN/history",
+  "outcomes": [
+    {
+      "condition_id": "0xe3b657ee99397c7746cbfd748ea8692e6b6ee31c2f0418147457c551d00eb0df",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "31984262240222321381678224706399684245747708738043348151353175692823539106201"
+    },
+    {
+      "condition_id": "0xe3b657ee99397c7746cbfd748ea8692e6b6ee31c2f0418147457c551d00eb0df",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "88661716325083162739065440191394930438117959278891836009704783663535387137170"
+    }
+  ]
+}

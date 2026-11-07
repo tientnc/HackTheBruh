@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/googl-above-on-december-12-2025/googl-above-325-on-december-12-2025",
+  "condition_id": "0xe4b09b0d58d2b4948b508f6262250dd6523c8be7aa188e10b17f9263f0fb7fff",
+  "start": 1764892800,
+  "end_exclusive": 1765582725,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

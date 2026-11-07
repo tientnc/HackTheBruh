@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/nvda-week-december-5-2025/will-nvda-close-below-160-week-december-5-2025",
+  "condition_id": "0xf16163e62a76378c88dfafc19541af1fb1dee30d7f513e400f89e9626d8b95cb",
+  "start": 1764288000,
+  "end_exclusive": 1764993050,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

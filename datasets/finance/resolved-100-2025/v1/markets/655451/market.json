@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/ato-quarterly-earnings-gaap-eps-11-05-2025-0pt97/ato-quarterly-earnings-gaap-eps-11-05-2025-0pt97",
+  "market_id": "655451",
+  "condition_id": "0x5880d5ea3d38f4fc3dd68cbda0e82bf4fdd87240be6c823df98fadbbce097852",
+  "event_id": "67832",
+  "slug": "ato-quarterly-earnings-gaap-eps-11-05-2025-0pt97",
+  "question": "Will Atmos Energy (ATO) beat quarterly earnings?",
+  "created_at": "2025-10-29T16:43:56.413796Z",
+  "start_date": "2025-10-29T16:55:06.195Z",
+  "end_date": "2025-11-05T22:00:00Z",
+  "closed_now": true,
+  "description": "Atmos Energy is estimated to release earnings on November 5, 2025. The Street consensus estimate for Atmos Energy's GAAP EPS for the relevant quarter is $0.97. This market will resolve to \"Yes\" if Atmos Energy reports GAAP EPS greater than $0.97 for the relevant quarter in its next quarterly earnings release. Otherwise, it will resolve to \"No.\" The resolution source will be the GAAP EPS listed in the company\u2019s official earnings documents. \n\nIf Atmos Energy releases earnings without GAAP EPS, then the market will resolve according to the GAAP EPS figure reported by SeekingAlpha. If no such figure is published within 96h of market close (4:00:00pm ET) on the day earnings are announced, the market will resolve to \u201cNo\u201d.\n\nIf the company does not release earnings within 45 calendar days of the estimated earnings date, this market will resolve to \u201cNo.\u201d \n\nNote: Subsequent restatements, corrections, or revisions made to the initially announced GAAP EPS figure will not qualify for resolution, except in the case of obvious and immediate mistakes (e.g., fat finger errors, as with Lyft's (LYFT) earnings release in February 2024).\nNote: The strike prices used in these markets are derived from SeekingAlpha estimates, and reflect the consensus of sell-side analyst estimates for GAAP EPS. \nNote: All figures will be rounded to the nearest cent using standard rounding.\nNote: For the purposes of this market, IFRS EPS will be treated as GAAP EPS.\nNote: For the purposes of this market, GAAP EPS refers to diluted GAAP EPS, unless this is not published, in which case it refers to basic GAAP EPS.\nNote: All figures are expressed in USD, unless otherwise indicated.",
+  "resolution_source": "https://seekingalpha.com/",
+  "outcomes": [
+    {
+      "condition_id": "0x5880d5ea3d38f4fc3dd68cbda0e82bf4fdd87240be6c823df98fadbbce097852",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "56309355226654361649000138302307184648124464472266846125691445016523817098603"
+    },
+    {
+      "condition_id": "0x5880d5ea3d38f4fc3dd68cbda0e82bf4fdd87240be6c823df98fadbbce097852",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "34468598340923639483115235339776173691332909465282665085646867554866588396291"
+    }
+  ]
+}

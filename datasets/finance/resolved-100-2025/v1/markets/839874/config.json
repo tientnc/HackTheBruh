@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/nflx-above-on-december-12-2025/nflx-above-140-on-december-12-2025",
+  "condition_id": "0x2f2d9e0b0cefdb89b866ce59abb166965779d2379ac245206939481383f7b409",
+  "start": 1764892800,
+  "end_exclusive": 1765583765,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

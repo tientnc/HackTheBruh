@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-641515-v1",
+  "built_at": "2026-11-07T19:05:21.312051+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/navan-ipo-day-1-closing-market-cap/will-navan-inc-ipo-closing-market-capitalization-be-between-8-billion-and-9-billion",
+    "condition_id": "0xfff0909b880107d1ba1fb783ebc4fe6489d7cdfc74613da16997a002c515b411",
+    "start": 1760918400,
+    "end_exclusive": 1762034525,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Navan Inc IPO closing market capitalization be between 8 billion and 9 billion?",
+  "market_opened": "2025-10-21T00:49:59.022315Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 21,
+    "wallet_trade_leg_rows": 65,
+    "price_points": 46,
+    "wallets": 24,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-10": 3,
+    "2025-11": 18
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/navan-ipo-day-1-closing-market-cap/will-navan-inc-ipo-closing-market-capitalization-be-between-8-billion-and-9-billion",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 492,
+      "sha256": "a50b1926281a76ebad186ab662747021f13953a390fe13fad3f9f804340e7f60"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 240,
+      "sha256": "d1e1622a36581144c4294cc38994a0b376a71f76a91b7ea3728b91183d1f1b2d"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2628,
+      "sha256": "784e85edb69ce3d3fbe05d500e9768e0922b3b5543497203cd646d7574cfbc9a"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "0b9a9cc2f1eec339accb02c082ba34d77bd2d9f240340bb99e6291a0ea39f3e4"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 868,
+      "sha256": "fe3584d4ecdc46bd3b929a93328f2c133319c78b509f3b39390baeeaea7435dc"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2519,
+      "sha256": "345e6a3c066d547e2991d32dfdab193ec286b39987a72b711ba1546bc9bfba0e"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 594,
+      "sha256": "cecc1b2828e3602cc4ec920a4627344131c5d38ffa474b378128eb999a276ad3"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 594,
+      "sha256": "9b930a44d890adaa9d80d92dac92f8b079e811010bcc2547250782d7cdecda83"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 2885,
+      "sha256": "763eecc00e2c156fac521c51bfe6331c4a312e0c90643b488ed7c73b88c05fa6"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 6411,
+      "sha256": "5996878275782135b3612d713ab81d975f72cc4829cf95cb178110222c3ed6b6"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 1833,
+      "sha256": "972245087418d28e7e3c847614c1171c23008ceb1deb17e08261b5960874eace"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 2679,
+      "sha256": "1a98a038c66bc3ae8b04269a7c3aa98fb2edded8ca567a7c640102469be3ee3b"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 2527,
+      "sha256": "5691e03f86d8c2edbcbe5c5a80bb4661d8ac0822d79caf632d9006dd0089fd80"
+    }
+  ]
+}

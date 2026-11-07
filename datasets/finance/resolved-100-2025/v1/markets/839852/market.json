@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/pltr-week-december-12-2025/will-pltr-close-between-182-and-184-week-december-12-2025",
+  "market_id": "839852",
+  "condition_id": "0x7db75f31477d1d73ffe79c066f9ceb5f9e4b9aa5480aa0d1f2543a1bfe3fc6a7",
+  "event_id": "98319",
+  "slug": "will-pltr-close-between-182-and-184-week-december-12-2025",
+  "question": "Will Palantir (PLTR) close at $182-$184 on the final day of trading of the week of Dec 8 \u2013 Dec 12?",
+  "created_at": "2025-12-05T23:00:09.376247Z",
+  "start_date": "2025-12-05T23:27:10.390955Z",
+  "end_date": "2025-12-12T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve according to the official closing price for Palantir (PLTR) on the final day of trading of the specified week (normally Friday).\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf the final session of the week is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Yahoo Finance after any adjustments have been applied.\n\nThe resolution source for this market is Yahoo Finance, specifically the Palantir (PLTR) \"Close\" prices available at https://finance.yahoo.com/quote/PLTR/history, published under \"Historical Prices.\"",
+  "resolution_source": "https://finance.yahoo.com/quote/PLTR/history",
+  "outcomes": [
+    {
+      "condition_id": "0x7db75f31477d1d73ffe79c066f9ceb5f9e4b9aa5480aa0d1f2543a1bfe3fc6a7",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "46221409637545823210799712120052377072067453842430205561749537673098132100239"
+    },
+    {
+      "condition_id": "0x7db75f31477d1d73ffe79c066f9ceb5f9e4b9aa5480aa0d1f2543a1bfe3fc6a7",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "63564271357362837703597540185807688019689826705489683109769953542281776898410"
+    }
+  ]
+}

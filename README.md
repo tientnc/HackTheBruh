@@ -2,15 +2,15 @@
 
 **Do successful wallets move before the crowd?** Starting with [Polymarket Finance](https://polymarket.com/finance).
 
-**First market: Anthropic IPO closing market cap · $1.25T–$1.5T**
+**First backtest: 100 resolved finance markets → top/bottom wallet deciles → later outcomes.**
 
-**[Explore the dataset →](datasets/finance/anthropic-ipo-1_25t-1_5t/v1/README.md)** · [View the market](https://polymarket.com/event/anthropic-ipo-closing-market-cap-higher-strikes/will-anthropics-market-cap-be-between-1pt25t-and-1pt5t-at-market-close-on-ipo-day)
+**[Explore the 100-market dataset →](datasets/finance/resolved-100-2025/v1/README.md)** · [Single-market Anthropic example](datasets/finance/anthropic-ipo-1_25t-1_5t/v1/README.md)
 
-![Anthropic IPO dataset: one binary market, 2,499 taker trade records, 6,619 wallet activity records including makers and takers, 2,125 price observations and 603 wallets. June through November 2026.](datasets/finance/anthropic-ipo-1_25t-1_5t/v1/overview.svg)
+![100 resolved finance markets: 12,282 observed wallets, 25,473 taker trade records and 10,638 price observations.](datasets/finance/resolved-100-2025/v1/overview.svg)
 
-Data first → historical wallet profit → skill groups → test the forecast.
+![Proposed backtest: 51 earlier markets for ranking, 26 for development and 23 for testing. Only earlier available labels may enter wallet rankings.](datasets/finance/resolved-100-2025/v1/backtest.svg)
 
-This market opened in June 2026. Its first dataset covers **June 1–November 7, 2026**, rather than the original 2025 research window.
+The resolved sample has final labels from **September–December 2025**. Rankings and forecasts are the next experiment; the dataset includes verified outcomes, not model results.
 
 ## Try it
 
@@ -29,16 +29,16 @@ If PowerShell blocks activation, use `.\.venv\Scripts\python.exe` in place of `p
 **2 · Verify the downloaded dataset**
 
 ```powershell
-python -m polyresearch.market_dataset --verify-only
+python -m polyresearch.resolved_dataset --verify-only
 ```
 
 **3 · Collect a fresh snapshot**
 
 ```powershell
-python -m polyresearch.market_dataset --out data/anthropic-fresh
+python -m polyresearch.resolved_dataset --out data/resolved-100-fresh
 ```
 
-The exact market URL is already configured. Use a new output directory for each snapshot.
+The 100-market selection rules are configured. Use a new output directory for each snapshot.
 
 **4 · Check the tests**
 
@@ -46,8 +46,10 @@ The exact market URL is already configured. Use a new output directory for each 
 python -m unittest discover -s tests -v
 ```
 
-![Planned wallet groups: skilled or unskilled crossed with agree or disagree. Missing history stays unknown.](docs/images/wallet-groups.svg)
+Top/bottom deciles are relative historical rankings. Wallets without enough earlier evidence remain unknown.
 
-Wallet history enrichment and skill labels come next. This release contains observed data and wallet activity summaries.
+[Research: how should we define wallet skill? →](docs/research/wallet-skill.md)
+
+[Experiment: rank wallets first, predict later →](docs/research/resolved-market-backtest.md)
 
 [Methodology, assumptions & API references →](docs/methodology.md)

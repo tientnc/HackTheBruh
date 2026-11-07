@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/earnings-mentions-uber-2025-10-30/earnings-mentions-uber-2025-10-30-lyft-1-times",
+  "condition_id": "0x692bee4bb72ef8d7ba79207dc4257c9499fae484320e73c2301408359e903e17",
+  "start": 1761177600,
+  "end_exclusive": 1762304432,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

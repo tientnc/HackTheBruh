@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-697474-v1",
+  "built_at": "2026-11-07T19:05:30.545698+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/vsco-quarterly-earnings-nongaap-eps-12-05-2025-neg0pt59/vsco-quarterly-earnings-nongaap-eps-12-05-2025-neg0pt59",
+    "condition_id": "0xc70a9913e6ee7ca55cf159a1b82489e0ca976d5471551aa9c7742f7566622ca2",
+    "start": 1763769600,
+    "end_exclusive": 1764948868,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Victoria's Secret (VSCO) beat quarterly earnings?",
+  "market_opened": "2025-11-22T20:46:32.606Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 250,
+    "wallet_trade_leg_rows": 657,
+    "price_points": 53,
+    "wallets": 228,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-11": 70,
+    "2025-12": 180
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/vsco-quarterly-earnings-nongaap-eps-12-05-2025-neg0pt59/vsco-quarterly-earnings-nongaap-eps-12-05-2025-neg0pt59",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 485,
+      "sha256": "b807f435d4745fa94b5d6316229802d1aef7164d7a0ba33b801cd2b53c23c7ca"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 242,
+      "sha256": "11def744ff4155c84f0615462d8d28ab616a895eb8f8d07c3aeeb42e45a59d71"
+    },
+    {
+      "path": "market.json",
+      "bytes": 3847,
+      "sha256": "4832639e98b37ef97336a07151be1aa0071439733ce7d804e5c45d5c06842199"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "7d90f06b5c06d4e101d4d570f09005585afd78f96e397abec5da4d7f03f569d9"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 963,
+      "sha256": "3ebe1532ecc4871c2a2872d65bdf5e435f1d6e48b2aa1faa470cca00d683551b"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 3010,
+      "sha256": "04f9f76fa1b5965af9d50cbe05517562b8b1e808c92bc1d89ceab2555a592f64"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 618,
+      "sha256": "d750366d54207a0e50d799bf55d375cf68a556ecf24b4bf0aa37071d5c891490"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 613,
+      "sha256": "df60c5759d2c536f821b27958b02d2904d94094c183f5938d8a32a4fef139f06"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 53935,
+      "sha256": "7d6f583a3840198806648eeaac673fb1685567280e9ce51118faba7213816a84"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 79675,
+      "sha256": "4c875c6bef8a32730efacb78b3a0b67018479ecd28ecb2c7c08f478a05090369"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 21335,
+      "sha256": "11b3e499c22059d066aa998639bb2f78862ca36a680e296e2f1a98feb6b21885"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 29263,
+      "sha256": "42a5e94e90e0d931ab3a48b85fbfc160a6ec861340c9c7ed5d6dcaa5d2a47677"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 23999,
+      "sha256": "692b3e0ca7a23d786f3c596c7c81b2b6c51a68bddfe9444ccfe8028ac4995ab1"
+    }
+  ]
+}

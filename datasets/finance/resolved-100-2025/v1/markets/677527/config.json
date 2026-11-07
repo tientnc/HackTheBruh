@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/open-week-november-21-2025/will-open-close-between-8-and-9-week-november-21-2025",
+  "condition_id": "0xb5f55ce6eefc4ccf8497a58d09f8bc7a918c77b731cc0b330d911c6f59c5e5c4",
+  "start": 1762819200,
+  "end_exclusive": 1763778154,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

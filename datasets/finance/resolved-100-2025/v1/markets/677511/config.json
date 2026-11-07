@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/pltr-week-november-21-2025/will-pltr-close-between-184-and-186-week-november-21-2025",
+  "condition_id": "0xe4331e3aac98d6005963afe35bf229509e80aadc0425c12f5c407456a29e7522",
+  "start": 1762819200,
+  "end_exclusive": 1763779158,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

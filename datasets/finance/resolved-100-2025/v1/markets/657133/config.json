@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-amzn-hit-in-november-2025/will-amzn-reach-292-in-november",
+  "condition_id": "0xd829122c08d98a4da4cc6fe4cccce3f1f4f0da441bdaeab450ec6ad73a1c8a84",
+  "start": 1761782400,
+  "end_exclusive": 1764387448,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

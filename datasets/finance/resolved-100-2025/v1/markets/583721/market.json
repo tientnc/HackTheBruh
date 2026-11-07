@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/will-apple-acquire-mistral-before-by-november-30/will-apple-acquire-mistral-before-by-november-30",
+  "market_id": "583721",
+  "condition_id": "0x6cd827626df41b698b234e79cce1757918e2bf21b47a746a21f24d74c7fe6ef3",
+  "event_id": "40695",
+  "slug": "will-apple-acquire-mistral-before-by-november-30",
+  "question": "Will Apple acquire Mistral by November 30?",
+  "created_at": "2025-08-29T21:00:32.94843Z",
+  "start_date": "2025-09-02T01:57:17.222Z",
+  "end_date": "2025-11-30T23:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if it is announced that Mistral AI will be, has been, or is being acquired by or merged with Apple (Apple inc.) by November 30, 2025, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nAn announcement by Mistral AI will qualify for a \"Yes\" resolution, regardless of whether the announced acquisition/merger actually occurs.\n\nThe primary resolution source for this market will be official information from Apple or Mistral AI, however a consensus of credible reporting may also be used.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x6cd827626df41b698b234e79cce1757918e2bf21b47a746a21f24d74c7fe6ef3",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "98776470402681288641816884735493332105334504548771853558243345298467997952217"
+    },
+    {
+      "condition_id": "0x6cd827626df41b698b234e79cce1757918e2bf21b47a746a21f24d74c7fe6ef3",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "114387761852042567775751127378830087731713838438978640728258440823782894086262"
+    }
+  ]
+}

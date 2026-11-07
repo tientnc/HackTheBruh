@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/klarna-ipo-in-2025/klarna-ipo-in-2025",
+  "condition_id": "0x1a0cd9ae444bc57683ebd68bff89108752c4a2438b5c4bdc749c1f0ed9f08808",
+  "start": 1744070400,
+  "end_exclusive": 1757532418,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

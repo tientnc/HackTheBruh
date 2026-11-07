@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-647026-v1",
+  "built_at": "2026-11-07T19:05:28.281882+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/earnings-mentions-roku-2025-10-30/earnings-mentions-roku-2025-10-30-acquisition-1-times",
+    "condition_id": "0x612348e5e29fe7668527512c59d0ae9106d5b3e6a40cc2bf0e976bfafa7e8bf5",
+    "start": 1761177600,
+    "end_exclusive": 1761920967,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Roku say \"Acquisition\" during earnings call?",
+  "market_opened": "2025-10-23T21:57:55.310303Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 1,
+    "wallet_trade_leg_rows": 2,
+    "price_points": 30,
+    "wallets": 2,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-10": 1
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/earnings-mentions-roku-2025-10-30/earnings-mentions-roku-2025-10-30-acquisition-1-times",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 461,
+      "sha256": "3e8c7eac8a767dbdf1eee0e38f3c118b9bb60dd6711bdaa337798b4cd1e77374"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 238,
+      "sha256": "8619e9f78aaf832892cb3545f583ede7584154d71d31fd928b3a806cdf99bc58"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2375,
+      "sha256": "ffe33d2336ad2863199a48710a71c9baf81ed6e5e4641c47ae6d746689a313cc"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 344,
+      "sha256": "1b8e07e416e2db14abf20259521b3c29feed650f4dd70a345278d3e813601fed"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 660,
+      "sha256": "d85d40116c7bfec35fbc9041d94b2ed7b385da2a3c801087ceeff4c378c84999"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2266,
+      "sha256": "7999de8c4357cdcdf2093bdf15cd4c98c6706fa870c7887ee699f56a9e3f914f"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 539,
+      "sha256": "f0903d9ac51f5617222a3395d8ede715abd51d04753e2940b64444ee08f2da51"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 541,
+      "sha256": "fe28e7e61ef1613b6e8fe708782b7d7410b93629bac91f1e3db4d724f91d1ae0"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 824,
+      "sha256": "3eb6a10b9f46171c83ce2277d544e4cb5ce05714b28a7f8184bd2d6fb653e71c"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 893,
+      "sha256": "dd8be96111fb84f15cf7b6c4f1f830ff2cea2bf2fbf45c5929282a107f644fb4"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 334,
+      "sha256": "f5c02a852e68559588a8df54b14d8ec56964c29188a753b9d62a3815fc72a930"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 429,
+      "sha256": "39af9a9657cef3805837997ce7104442fb63271dafcb579a4358b1b125d2f6ff"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 290,
+      "sha256": "818be653bce9c10a229c432a6bbfed7f1e098095153dcb8b02ab3e4374f763dd"
+    }
+  ]
+}

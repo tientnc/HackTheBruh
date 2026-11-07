@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/earnings-mentions-palantir-2025-11-03/earnings-mentions-palantir-2025-11-03-warp-speed-1-times",
+  "condition_id": "0xf7e77e7e8dac0d23097b5edff74f53ceb7c069fef70b5bc5b8f6ba7b3ada7f86",
+  "start": 1761177600,
+  "end_exclusive": 1762219108,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

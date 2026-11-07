@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/pltr-week-december-5-2025/will-pltr-close-between-170-and-172-week-december-5-2025",
+  "condition_id": "0xd8f0d1cd63bede9ef4b1d5d88c2df980d85dd129848a67868d0e7bc16b54117e",
+  "start": 1764288000,
+  "end_exclusive": 1764992404,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

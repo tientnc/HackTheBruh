@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/tsla-week-december-26-2025/will-tsla-close-above-505-week-december-26-2025",
+  "condition_id": "0x1cc1bb78345cd662b7678017f2673dd20f13a70b0c7c688d397f28182ab92c64",
+  "start": 1766102400,
+  "end_exclusive": 1766797046,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

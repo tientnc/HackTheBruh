@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-646990-v1",
+  "built_at": "2026-11-07T19:05:28.383181+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/earnings-mentions-draftkings-2025-11-07/earnings-mentions-draftkings-2025-11-07-igaming-1-times",
+    "condition_id": "0x0e9b8605118850c7bdc9e52d70f83f4ed27c677c90ba5baa04f805bc49ab22b2",
+    "start": 1761177600,
+    "end_exclusive": 1762533864,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will DraftKings say \"iGaming\" during earnings call?",
+  "market_opened": "2025-10-23T21:54:52.808458Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 15,
+    "wallet_trade_leg_rows": 38,
+    "price_points": 62,
+    "wallets": 25,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-10": 1,
+    "2025-11": 14
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/earnings-mentions-draftkings-2025-11-07/earnings-mentions-draftkings-2025-11-07-igaming-1-times",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 469,
+      "sha256": "4a0f19d54d2a051b016cea26b05cab37dcf44a994baf100323d6ecd40f4b931c"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 240,
+      "sha256": "f240c0e104f07e466645bd70cfbcfc3dc8b1b278e9d402271a1453d41c5d82f0"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2394,
+      "sha256": "5f7d20e5cee218a6bfd57ce4146254bc88d56cf9e1ed01f6b25414b08ca68e83"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "ddb29057a93c076539419570daaaf4c13066033939a3369735e8b9e94aa28290"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 1060,
+      "sha256": "51b2a177935bc6f5b2b5bd7f5dba4aa98dcbd8ce778faf99a153f3ca117023de"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2301,
+      "sha256": "d19e141b2bf64878eac6b7274aaa7141b6c3a80064960e36aa2d178f45455da5"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 666,
+      "sha256": "0269edc9741d00f99a642cadb8fc7f4382597994d37882d0aba2f52b37c0bdd3"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 665,
+      "sha256": "261e68573f3bc8f5e6368fc24b18c3316671b150622f28e8c3f33570521eed42"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 2685,
+      "sha256": "fae5cf04fb7614c7cb0e8e284302a0761680d8a255640707daee4b665b223b1e"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 3690,
+      "sha256": "fc6459a37dae2958d48c3d8b72611195a7306796aad35e8ba9a47ffffbc75b08"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 1534,
+      "sha256": "e75e7b2622465f413ed5ff464483f572408e9280055ec039f57be2e67d358f57"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 2149,
+      "sha256": "cf60d553992db4d61af23be029f8e3ac49c0f25cfc1ae45115a6286d921022b2"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 2590,
+      "sha256": "84b9fe0ec8c86a3c8d1a40422fbdd6c41bee2894ac937a264988a6610364f2aa"
+    }
+  ]
+}

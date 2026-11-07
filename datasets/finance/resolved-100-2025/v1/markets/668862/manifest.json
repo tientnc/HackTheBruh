@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-668862-v1",
+  "built_at": "2026-11-07T19:05:23.833041+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/nya-above-on-november-14-2025/nya-above-18750-on-november-14-2025",
+    "condition_id": "0xa8afc4da1dd46205bc5ebbe9ccd8a78a42092e5fd4ee130d99bd590ad0efa2fa",
+    "start": 1762473600,
+    "end_exclusive": 1763165287,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will NYSE Composite (NYA) close over 18,750 on Friday of the week of Nov 10 \u2013 Nov 14?",
+  "market_opened": "2025-11-07T03:25:34.008349Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 72,
+    "wallet_trade_leg_rows": 161,
+    "price_points": 32,
+    "wallets": 72,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-11": 72
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/nya-above-on-november-14-2025/nya-above-18750-on-november-14-2025",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 439,
+      "sha256": "9e8082edcc5249dc7769908d89126d3cc5e6f57a53ad939df07c46ce8b608bd0"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 241,
+      "sha256": "ef4847b409687a0a6616c9ce40116a06223ce6a915edce4be10a186cc6508ed0"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2155,
+      "sha256": "2d7315d695cc7a5ade75a06b78ccd7c0d4d7c1c9f5e31d1dc4080db6c0080472"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "009d46682dea40ecdd04b7277d6bbb6ee8d812566e1854ab10edbdb01a356932"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 696,
+      "sha256": "644172b65f10c75db74acabc33186415d176b761860b72692cfc7698f67be7c7"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2458,
+      "sha256": "ee8ff7dd90006fee09585ed5f2bc95ef3888c9a2f6482ca7c1f7317f69d8c9cd"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 546,
+      "sha256": "74c0d559873fb16ec5d45e529342cc32e0b4765ac6039f97df439a5df23cabe7"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 544,
+      "sha256": "4591109559287964f03963002ec8d6817c33e6ef38dbe5d5143c3dda46aa7f86"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 15500,
+      "sha256": "0c9fb6b9b476729045116f49bc3dfa87b10f233741bf9dbd64fa2c5a38fb81e4"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 19699,
+      "sha256": "1d2adcb3068035a7f689d13e32cb978680495c3e319754e79cc0a5c3c1b89d3a"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 6650,
+      "sha256": "2be15d772ce19f6f8cae82cf61d7baed6a1d32a97bf275ebb92e0041bc139035"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 7976,
+      "sha256": "a4972aabc02049575affebd13533a85cdd3182fc18379a41e456362d308c2e7a"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 7488,
+      "sha256": "665d30aa9f0c993d415d3bd55bea71ba90cdb497294d94962e2f6c68f8f98674"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/ipos-in-2025/wealthfront-ipo-in-2025",
+  "condition_id": "0x04687392f030b1473219273b501af9844bd8762a0df2c156860c34d7e001c8a3",
+  "start": 1759881600,
+  "end_exclusive": 1765579521,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

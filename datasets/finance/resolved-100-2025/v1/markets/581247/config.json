@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/lisa-cook-out-as-fed-governor-by-september-30/lisa-cook-out-as-fed-governor-by-september-30",
+  "condition_id": "0xfae907b4c7d9b39fcd27683e3f9e4bdbbafc24f36765b6240a93b8c94ed206fa",
+  "start": 1756166400,
+  "end_exclusive": 1759300006,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

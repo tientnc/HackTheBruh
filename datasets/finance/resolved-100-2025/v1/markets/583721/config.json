@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/will-apple-acquire-mistral-before-by-november-30/will-apple-acquire-mistral-before-by-november-30",
+  "condition_id": "0x6cd827626df41b698b234e79cce1757918e2bf21b47a746a21f24d74c7fe6ef3",
+  "start": 1756425600,
+  "end_exclusive": 1764572707,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

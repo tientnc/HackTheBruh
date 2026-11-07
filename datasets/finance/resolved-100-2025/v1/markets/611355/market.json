@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/will-gold-hit-4000-by/will-gold-hit-4000-by-march-31",
+  "market_id": "611355",
+  "condition_id": "0x882e95dc28b1b970974a892c7183067ee3d9aa45d2f8c27ffbdf14eb761ade1d",
+  "event_id": "49352",
+  "slug": "will-gold-hit-4000-by-march-31",
+  "question": "Will Gold hit $4000 by March 31, 2026?",
+  "created_at": "2025-09-24T16:05:10.901386Z",
+  "start_date": "2025-09-24T19:42:48.862524Z",
+  "end_date": "2025-12-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the price of the COMEX Gold Continuous Contract (GC00) reaches or exceeds $4,000.00 per troy ounce during regular trading hours at any point between September 24, and market close on March 31, 2026. Otherwise, this market will resolve to \"No\".\n\nThe resolution source will be COMEX trading data for the Gold Continuous Contract (https://www.google.com/finance/quote/GCW00:COMEX).",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x882e95dc28b1b970974a892c7183067ee3d9aa45d2f8c27ffbdf14eb761ade1d",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "26394170978041098764568894779161163633457417017619477423222139340743079070998"
+    },
+    {
+      "condition_id": "0x882e95dc28b1b970974a892c7183067ee3d9aa45d2f8c27ffbdf14eb761ade1d",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "106424698555188063170394465001188052479642499293217172403073252125459794236680"
+    }
+  ]
+}

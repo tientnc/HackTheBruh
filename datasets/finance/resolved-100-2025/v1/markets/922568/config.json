@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/nvda-above-on-december-19-2025/nvda-above-175-on-december-19-2025",
+  "condition_id": "0x5a5bfd74bfce657dcd0b1b37bae4f7285a6d468a0e40fe30c74b71a5f86ae02c",
+  "start": 1765497600,
+  "end_exclusive": 1766193737,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

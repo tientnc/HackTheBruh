@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-694934-v1",
+  "built_at": "2026-11-07T19:05:25.209454+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-irobot-be-acquired-before-2027-115-666",
+    "condition_id": "0x12e1edee9b55d54704dd9321660cf327cd8cbd8181988bc612bc1115d95cb4ec",
+    "start": 1763683200,
+    "end_exclusive": 1765768148,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will iRobot be acquired before 2027?",
+  "market_opened": "2025-11-24T17:49:17.629Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 12,
+    "wallet_trade_leg_rows": 51,
+    "price_points": 85,
+    "wallets": 23,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-12": 12
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-irobot-be-acquired-before-2027-115-666",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 462,
+      "sha256": "b851ea928001fc15ab7d9bafaca643feec1ca17061b2c22db9e28dac410aaa54"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 240,
+      "sha256": "4e3c8019793e0b66c965c74561e84b96546e55a37345f6eec080097abc2112c9"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1821,
+      "sha256": "0df894f584bb9cf539649b9f9a8070c2501246094bf3e0215fc8a2886cfcdd05"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "88d2def523fd5b26dff9b16a1b6c7464187cd240ecaacfe2ba5ee09b9ac363bc"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 1367,
+      "sha256": "74d9ed1aecd3e00e4787a26613511872ed58eccf7c52cae75a6ad4978469970c"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2560,
+      "sha256": "671581799670b23e5516b288e5f660cec95f2c1ff2cadaea36595f0cdd24b3a7"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 767,
+      "sha256": "d11c2c8d026573009646635c2fcef18e0e273a74c190a09033f5351897a44910"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 771,
+      "sha256": "e6937d3dd228871ff9f3b2b17917bc724ce3b6a1f1ad39cb06e68dc3b4b350d2"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 1907,
+      "sha256": "94dd43bf6b1ad5798c4cefc2c7ab2c796db6edb55bdf7aec4caf024ed4cf5648"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 5339,
+      "sha256": "390b99fc39f52ac77c9c6f5473ce23ba64e6aa89fa4fb7c6acfef56d4dad4bfd"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 1120,
+      "sha256": "27f3a44becab1d9ee105b3295d4daccec09d78c6dcea396ca88ff0116257f4a5"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 2110,
+      "sha256": "443dcda0502af1d2c665772b9e134935d19ccbbfdc6dfad9d24aff5e6bbb8fc4"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 2292,
+      "sha256": "619ad90ca13cf16997803fa1ba765a99a6d582bd7686147087e436f3c5463ab0"
+    }
+  ]
+}

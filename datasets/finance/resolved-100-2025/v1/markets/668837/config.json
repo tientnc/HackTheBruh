@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/spx-above-on-november-14-2025/spx-above-5850-on-november-14-2025",
+  "condition_id": "0xa024f9843ed2280c08a75eb172e24f63591a81112ce1d6f4f02ae809f426fa9f",
+  "start": 1762473600,
+  "end_exclusive": 1763162555,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

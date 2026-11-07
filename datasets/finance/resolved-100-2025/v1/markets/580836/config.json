@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/jerome-powell-out-as-fed-chair-by-september-30/jerome-powell-out-as-fed-chair-by-september-30",
+  "condition_id": "0x85a115a94338967c33f6e2c7cd4c514cab2194130a2e58be1adeb91735961f29",
+  "start": 1756080000,
+  "end_exclusive": 1759299222,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

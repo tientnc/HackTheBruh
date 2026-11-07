@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/will-coinbase-acquire-circle-before-september/will-coinbase-acquire-circle-before-september",
+  "condition_id": "0xe7305fbdabdb9a6959c8e94bf3e8a0d63e2df854d4c56e8235b6fb715b7d8108",
+  "start": 1747699200,
+  "end_exclusive": 1756707165,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

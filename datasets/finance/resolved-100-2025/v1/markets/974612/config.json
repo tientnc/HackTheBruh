@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/pltr-week-december-26-2025/will-pltr-close-between-192-and-194-week-december-26-2025",
+  "condition_id": "0xe34fa6961b98cc47c2e138fba14c030247e76cc640eeb603a4981bae3a6a8c74",
+  "start": 1766102400,
+  "end_exclusive": 1766796736,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

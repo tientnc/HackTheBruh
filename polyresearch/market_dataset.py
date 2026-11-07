@@ -168,7 +168,8 @@ def build(root, url=MARKET_URL, max_pages=250):
     table(root / "coverage.csv", coverage, ["feed", "pagination_exhausted", "raw_window_rows",
                                           "first_observation", "last_observation"])
     month_counts = Counter(row["timestamp_utc"][:7] for row in trades)
-    manifest = {"dataset": "anthropic-ipo-1_25t-1_5t-v1", "built_at": now(), "config": config,
+    dataset_id = "anthropic-ipo-1_25t-1_5t-v1" if url == MARKET_URL else f"polymarket-{market['id']}-v1"
+    manifest = {"dataset": dataset_id, "built_at": now(), "config": config,
                 "question": market["question"], "market_opened": market["startDate"],
                 "counts": {"markets": 1, "outcomes": len(outcomes), "taker_trade_rows": len(trades),
                            "wallet_trade_leg_rows": len(legs), "price_points": len(price_rows),

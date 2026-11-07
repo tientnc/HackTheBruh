@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/earnings-mentions-hims-2025-11-03/earnings-mentions-hims-2025-11-03-fda-1-times",
+  "condition_id": "0x5956c745e99a0f010b001ca21944b39585cae4b176d1aa769f56ee987b1a9afb",
+  "start": 1761177600,
+  "end_exclusive": 1762225694,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

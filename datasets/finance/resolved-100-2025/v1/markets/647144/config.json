@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/earnings-mentions-coinbase-2025-10-29/earnings-mentions-coinbase-2025-10-29-stablecoin-1-times",
+  "condition_id": "0x51291cd60a82b8773a302ed0cff87e48fb0f56bd80cf5ea22dd8bb52978d7853",
+  "start": 1761177600,
+  "end_exclusive": 1761867322,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

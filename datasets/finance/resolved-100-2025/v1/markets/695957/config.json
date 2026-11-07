@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/abnb-week-november-28-2025/will-abnb-close-between-100-and-105-week-november-28-2025",
+  "condition_id": "0xedad7a8afdfa4bc1b0367cd5924b15ef2eca0bae5acf5265f8ae7b8644220702",
+  "start": 1763683200,
+  "end_exclusive": 1764385338,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

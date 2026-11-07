@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/doge-etf-approved-in-2025/doge-etf-approved-in-2025",
+  "condition_id": "0xb643afacc478a059b67089ac1bca30cda972a006784ed51bae2241ce87d884d0",
+  "start": 1735603200,
+  "end_exclusive": 1758217205,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/msft-above-in-december-2025/msft-above-555-on-december-31-2025",
+  "condition_id": "0xebf0010c46a5678fb189615baa3a6a6beacf48873053e9eed6f7a7d33a95d184",
+  "start": 1764288000,
+  "end_exclusive": 1767223864,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

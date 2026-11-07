@@ -1,0 +1,116 @@
+{
+  "dataset": "polymarket-516909-v1",
+  "built_at": "2026-11-07T19:05:20.348332+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/ripple-etf-approved-in-2025/ripple-etf-approved-in-2025",
+    "condition_id": "0xa64b6a05ed2aa20d2cb6c373314c0d9931acbd24e7fe95bd1920784b23ab9da0",
+    "start": 1735516800,
+    "end_exclusive": 1758219065,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Ripple ETF approved in 2025?",
+  "market_opened": "2024-12-31T16:27:08.643Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 1115,
+    "wallet_trade_leg_rows": 3182,
+    "price_points": 1080,
+    "wallets": 513,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2024-12": 6,
+    "2025-01": 263,
+    "2025-02": 95,
+    "2025-03": 81,
+    "2025-04": 68,
+    "2025-05": 43,
+    "2025-06": 155,
+    "2025-07": 50,
+    "2025-08": 240,
+    "2025-09": 114
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/ripple-etf-approved-in-2025/ripple-etf-approved-in-2025",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 429,
+      "sha256": "6608a5cab5a964674717792f86421ac20704185fbf9830085efc437a41d6ad4f"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 246,
+      "sha256": "e36b5119aa9d562783c654b8dde3d66f09580dd3a641df44d3e4e4145088328c"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1584,
+      "sha256": "8e5d2a059a77bd6670ca78edf7bd12831246f3000f917c202cc9ed71854189d3"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "a7697c902e2619f2e224088f8d9124a3d2e83cdd711abf7b791c5ef5890c7967"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 16673,
+      "sha256": "c90e71c8c4a17629b3e2e2b9c80f2c1dc0e0c88af308a8c3750a37863228103d"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2211,
+      "sha256": "ae46d0e89599bcd574c9bf61b86b2afd15e921a208fb2cef98a983058de5eae2"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 7094,
+      "sha256": "708d65eb12dd128e54ac16e9f678e9c8df2efc3304f5c3ec8b00d80bdfd708f2"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 7107,
+      "sha256": "11887af6033eb0441b0c62700d8c7211f9dc29309e4aedcccb865d8ae03c9234"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 210702,
+      "sha256": "1e52c38d6781f2bc32283e2cb66f6fe4063373b26e3a1b5385709bec41047b85"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 323661,
+      "sha256": "bb99ce460ce569620ad16296152ee945ac0b116a85c2b0b3c397fa2338e43fd2"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 90565,
+      "sha256": "71f62eae400e8d017a72173b3ead255b454006602b202b6253b81a27a78b40a9"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 123595,
+      "sha256": "34f231dabace27f73ba870e98445ef154429236209146ef21940af46c36e53eb"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 57858,
+      "sha256": "a5a7df4025115cb0434e8c88f02cc3462d383cfdf493f8a5fb4c3879af55ed0f"
+    }
+  ]
+}

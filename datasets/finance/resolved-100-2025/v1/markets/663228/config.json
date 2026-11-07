@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/rklb-above-on-november-14-2025/rklb-above-63-on-november-14-2025",
+  "condition_id": "0xc0be491a44cfb07778d99fcd2e9043ec892ea6ffeb7b62da195bbc932a40064f",
+  "start": 1762128000,
+  "end_exclusive": 1763171263,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

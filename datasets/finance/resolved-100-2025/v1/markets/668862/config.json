@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/nya-above-on-november-14-2025/nya-above-18750-on-november-14-2025",
+  "condition_id": "0xa8afc4da1dd46205bc5ebbe9ccd8a78a42092e5fd4ee130d99bd590ad0efa2fa",
+  "start": 1762473600,
+  "end_exclusive": 1763165287,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

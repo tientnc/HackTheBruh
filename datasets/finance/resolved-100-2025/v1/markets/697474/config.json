@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/vsco-quarterly-earnings-nongaap-eps-12-05-2025-neg0pt59/vsco-quarterly-earnings-nongaap-eps-12-05-2025-neg0pt59",
+  "condition_id": "0xc70a9913e6ee7ca55cf159a1b82489e0ca976d5471551aa9c7742f7566622ca2",
+  "start": 1763769600,
+  "end_exclusive": 1764948868,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

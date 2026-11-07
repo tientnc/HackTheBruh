@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-irobot-be-acquired-before-2027-115-666",
+  "condition_id": "0x12e1edee9b55d54704dd9321660cf327cd8cbd8181988bc612bc1115d95cb4ec",
+  "start": 1763683200,
+  "end_exclusive": 1765768148,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

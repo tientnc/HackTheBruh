@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-580836-v1",
+  "built_at": "2026-11-07T19:05:22.441008+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/jerome-powell-out-as-fed-chair-by-september-30/jerome-powell-out-as-fed-chair-by-september-30",
+    "condition_id": "0x85a115a94338967c33f6e2c7cd4c514cab2194130a2e58be1adeb91735961f29",
+    "start": 1756080000,
+    "end_exclusive": 1759299222,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Jerome Powell out as Fed Chair by September 30?",
+  "market_opened": "2025-08-25T22:24:00.922251Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 858,
+    "wallet_trade_leg_rows": 1913,
+    "price_points": 152,
+    "wallets": 622,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-08": 68,
+    "2025-09": 790
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/jerome-powell-out-as-fed-chair-by-september-30/jerome-powell-out-as-fed-chair-by-september-30",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 467,
+      "sha256": "3ea11ded224bedb373ca6d278c365eeb704ca68074e1307c2687db9594d106dc"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 243,
+      "sha256": "17b817ccc238f8835db25872de22e20b316bf1752c218c7184692babc8828cfa"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1527,
+      "sha256": "5d2044755f5db504d9faf8708219c58e2d5f0528e96f0ea4c812eea436f58527"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "1fad07e9d6413ed7f35004ae2d0b32d526b0418cc8520382bc6e69b47254d3ed"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 2194,
+      "sha256": "c8d843735eba75b7837a84dbb1770c823accaf99b964a77b56522191c5f2d81b"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2220,
+      "sha256": "9e127da50ad6cbdebe78d37b24c5da2ab74eaa147a8ec8173f1de09486e5ce76"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 953,
+      "sha256": "c164bb19f8b9f0f7edb2db70a8874eb08f40e21021f98589dde00e8dd5011991"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 953,
+      "sha256": "2d427b4ef72227ac444ca228629d6ad6c7d0e7edba1303a441d2f14bc24b81e7"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 168158,
+      "sha256": "2cf55b90fb12a32028dd5b66a55175cf667e851b47202b01c9e7f110bd8c7d45"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 213959,
+      "sha256": "aa20ba188c7d95fbfe9199230a0e692b3cea820357abd59e2c24e1e02eb883a7"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 70202,
+      "sha256": "ac531900cbf2814d07dfd2fd031f7f2ab4f1c64548f4e51c96a539edb38005f0"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 85160,
+      "sha256": "a94a5d983b31e85748f870f4f4063ad8f9a0b29adeb2ac702ecfb6d26666e566"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 64332,
+      "sha256": "c220b9bb88f889f6acc1810787e664d85a39affdef788bfd404e15bbded1298f"
+    }
+  ]
+}

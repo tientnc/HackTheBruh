@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/earnings-mentions-robinhood-2025-11-05/earnings-mentions-robinhood-2025-11-05-acquisition-1-times",
+  "condition_id": "0xb11dc27d5f0dac34357a70898ac771c936fdaf0be8192d99bb98105a4e4ebd44",
+  "start": 1761177600,
+  "end_exclusive": 1762411720,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

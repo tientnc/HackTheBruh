@@ -1,0 +1,10 @@
+{
+  "count": 100,
+  "resolution_start": 1754006400,
+  "resolution_end_exclusive": 1767225600,
+  "minimum_trading_lifetime_days": 7,
+  "selection_seed": "hackthebruh-finance-resolved-v1",
+  "max_pages_per_feed": 250,
+  "one_market_per_gamma_event": true,
+  "economic_grouping_version": 1
+}

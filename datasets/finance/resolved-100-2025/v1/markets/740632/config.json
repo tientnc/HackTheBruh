@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/msft-week-december-5-2025/will-msft-close-below-440-week-december-5-2025",
+  "condition_id": "0xfec9a59094f70726fa6bf6fc8c5303c5a43dace704df7ae919ca113d112f0ef3",
+  "start": 1764288000,
+  "end_exclusive": 1764991384,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-irobot-be-acquired-before-2027-115-666",
+  "market_id": "694934",
+  "condition_id": "0x12e1edee9b55d54704dd9321660cf327cd8cbd8181988bc612bc1115d95cb4ec",
+  "event_id": "86832",
+  "slug": "will-irobot-be-acquired-before-2027-115-666",
+  "question": "Will iRobot be acquired before 2027?",
+  "created_at": "2025-11-21T13:00:13.839792Z",
+  "start_date": "2025-11-24T17:49:17.629Z",
+  "end_date": "2026-12-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \u201cYes\u201d if credible reporting confirms that any entity enters into an agreement to acquire the listed company by December 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \u201cNo\u201d.\n\nMergers where the listed company is subsumed by another entity will count toward a \"Yes\" resolution.\n\nAn announced agreement between the listed company and an acquiring entity will qualify for a \u201cYes\u201d resolution, regardless of whether the acquisition is ultimately completed.\n\nThe primary resolution source for this market is official information from the listed company and/or its leadership; however, a consensus of credible reporting will also be used.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x12e1edee9b55d54704dd9321660cf327cd8cbd8181988bc612bc1115d95cb4ec",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "12182286211637921446370169987007803837857054158953564859153897353921083835304"
+    },
+    {
+      "condition_id": "0x12e1edee9b55d54704dd9321660cf327cd8cbd8181988bc612bc1115d95cb4ec",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "82763842325395995771390420902139289362895203361969533317477638852878388363340"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/earnings-mentions-costco-2025-12-11/earnings-mentions-costco-2025-12-11-inflation-1-times",
+  "condition_id": "0x8a38a42face7d03526f9d822ada09506fecede32c447cd7837a0d5835bf2135c",
+  "start": 1764806400,
+  "end_exclusive": 1765517285,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

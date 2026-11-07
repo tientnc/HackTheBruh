@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/will-draftkings-acquire-railbird-by-october-31/will-draftkings-acquire-railbird-by-december-31",
+  "condition_id": "0xc88d538aba181e707f27db33d30a5e6c282a50311c1cd1fd7acb07127efa5ed9",
+  "start": 1759881600,
+  "end_exclusive": 1761089465,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

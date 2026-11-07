@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-922586-v1",
+  "built_at": "2026-11-07T19:05:27.272235+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/nflx-week-december-19-2025/will-nflx-close-above-140-week-december-19-2025",
+    "condition_id": "0x9433bf785bc870d929fd445911c98bc19f0c6e733743113feda7e8f5edf943a2",
+    "start": 1765497600,
+    "end_exclusive": 1766197203,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Netflix (NFLX) close at >$140 on the final day of trading of the week of Dec 15 \u2013 Dec 19?",
+  "market_opened": "2025-12-12T23:21:34.773872Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 33,
+    "wallet_trade_leg_rows": 76,
+    "price_points": 30,
+    "wallets": 44,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-12": 33
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/nflx-week-december-19-2025/will-nflx-close-above-140-week-december-19-2025",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 448,
+      "sha256": "091e25bf8f67ffea6e416cf2edd69a59a354762806cf445645d97c47e810cdff"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 240,
+      "sha256": "485d9cd78bc462dc1101e08f2618ca1c860ceb5af4cfdd6abb436b85afce9b0c"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2593,
+      "sha256": "0d1ecaa26a72d347789f0c45def5b113a5eff46e2eb9b99c37a6c2ef77e68a8d"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "5d516feec62024a941e892153e1bd225548d65eb6157aa73a12ea5e0a5980c5e"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 662,
+      "sha256": "d044069a3b6fd0eaa967f7d282e54f11b517ba5b8cc04770bf2bbe96464159af"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2711,
+      "sha256": "7cc8d8cde4a6b3631b6d1da5dfb41964f28eecc6827d4b91188d9bd3ead4c0a3"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 526,
+      "sha256": "a685da32d5cade89535428463c751cd7f39f0b040f5128cf36bef2c3406c1de4"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 527,
+      "sha256": "ba61a2d953772448e99cf3994efcaf90584fe494c24bcf132d4fcf6da674a9e1"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 4428,
+      "sha256": "d9e8226c8596ea4cc0ecc498d4b2043afbe8f05300134ed6192e46a16e6b6f1c"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 9638,
+      "sha256": "0f1c49108b0c2e7c68e09452b6de3bd7108b40b0ade6d150e8eb2aee3a040e38"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 3070,
+      "sha256": "d379478d33cd5edcbeed57f9f3c2c2dd75d5b61fb68e2c4a882f5192c9fcc2fd"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 4000,
+      "sha256": "633a8a8de1151bb410d78b99935fbb3e80e91fb862b599b5571206854beb1869"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 4243,
+      "sha256": "e0595e428c1512821e4fbac0f192dd73611f2f9735db9459df6f265398bd0578"
+    }
+  ]
+}

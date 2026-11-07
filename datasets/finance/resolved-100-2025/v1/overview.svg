@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="500" viewBox="0 0 1120 500" role="img" aria-labelledby="title desc">
+  <title id="title">100 resolved finance markets</title>
+  <desc id="desc">A historical dataset with 100 resolved markets from distinct parent events and heuristic economic families. 12282 observed wallets, 25473 taker trade records and 10638 price observations. 98 markets have history and two empty markets remain visible.</desc>
+  <rect width="1120" height="500" rx="22" fill="#0b1726"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="48" y="52" fill="#72e0bc" font-size="15" font-weight="700" letter-spacing="2">FINANCE / HISTORICAL DATASET</text>
+    <text x="48" y="104" fill="#f3f7fc" font-size="37" font-weight="700">Known outcomes. A fairer first test.</text>
+    <text x="48" y="143" fill="#a9bbce" font-size="20">100 resolved markets · labels from September–December 2025</text>
+    <g fill="#12243a" stroke="#2b425b"><rect x="48" y="181" width="238" height="133" rx="14"/><rect x="310" y="181" width="238" height="133" rx="14"/><rect x="572" y="181" width="238" height="133" rx="14"/><rect x="834" y="181" width="238" height="133" rx="14"/></g>
+    <g fill="#f3f7fc" font-size="42" font-weight="700"><text x="68" y="240">100</text><text x="330" y="240">12,282</text><text x="592" y="240">25,473</text><text x="854" y="240">10,638</text></g>
+    <g fill="#a9bbce" font-size="18"><text x="68" y="282">settled markets</text><text x="330" y="282">observed wallets</text><text x="592" y="282">taker trade records</text><text x="854" y="282">price observations</text></g>
+    <rect x="48" y="345" width="1024" height="75" rx="12" fill="#15352f"/>
+    <text x="68" y="376" fill="#9bf1d4" font-size="21" font-weight="700">Verified binary outcomes · zero download failures</text>
+    <text x="68" y="405" fill="#c2d9d1" font-size="18">98 markets have returned history · 2 empty histories retained · 66,622 maker/taker activity records</text>
+    <text x="48" y="465" fill="#a9bbce" font-size="18">Next: rank wallets using earlier events, freeze the deciles, and forecast later outcomes.</text>
+  </g>
+</svg>

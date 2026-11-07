@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/clx-quarterly-earnings-nongaap-eps-11-03-2025-0pt79/clx-quarterly-earnings-nongaap-eps-11-03-2025-0pt79",
+  "condition_id": "0xf7d9c0dd323675e1e0f6d1151c98e19b4dfb7856408fd2e64b512f5aaf30de69",
+  "start": 1761264000,
+  "end_exclusive": 1762214034,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

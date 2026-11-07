@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/amzn-above-on-december-5-2025/amzn-above-210-on-december-5-2025",
+  "market_id": "740696",
+  "condition_id": "0xd7e6c92945165878b23635149f25f3a9ba817b30300e78fe0c3ba39ffdb31067",
+  "event_id": "92869",
+  "slug": "amzn-above-210-on-december-5-2025",
+  "question": "Will Amazon (AMZN) finish week of December 1 above $210?",
+  "created_at": "2025-11-28T23:00:04.198981Z",
+  "start_date": "2025-11-28T23:23:32.38349Z",
+  "end_date": "2025-12-05T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the official closing price for Amazon.com, Inc. (AMZN) on the final day of trading of the specified week (normally Friday) is higher than the listed price. Otherwise, this market will resolve to \"No.\"\n\nIf the final session is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nThe resolution source for this market is Yahoo Finance, specifically the Amazon.com, Inc. (AMZN) \"Close\" prices available at https://finance.yahoo.com/quote/AMZN/history, published under \"Historical Prices.\"\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/AMZN/history",
+  "outcomes": [
+    {
+      "condition_id": "0xd7e6c92945165878b23635149f25f3a9ba817b30300e78fe0c3ba39ffdb31067",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "90971371067588808066634569363886055950364220357869636623568006124958408975578"
+    },
+    {
+      "condition_id": "0xd7e6c92945165878b23635149f25f3a9ba817b30300e78fe0c3ba39ffdb31067",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "104014596784449860574734436341025220074099254328678339573586147559146207631543"
+    }
+  ]
+}

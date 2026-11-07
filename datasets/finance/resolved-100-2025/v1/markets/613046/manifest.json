@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-613046-v1",
+  "built_at": "2026-11-07T19:05:25.310002+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/xom-quarterly-earnings-nongaap-eps-2025-10-31-1pt75/xom-quarterly-earnings-nongaap-eps-2025-10-31-1pt75",
+    "condition_id": "0x8b7ffa2267c76412d7eff4b0382e8ad411ec128ad6d09cebbe10ca02d25d67bc",
+    "start": 1758758400,
+    "end_exclusive": 1761921333,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Exxon Mobil (XOM) beat quarterly earnings?",
+  "market_opened": "2025-09-26T14:11:38.585Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 634,
+    "wallet_trade_leg_rows": 1675,
+    "price_points": 142,
+    "wallets": 403,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-09": 39,
+    "2025-10": 595
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/xom-quarterly-earnings-nongaap-eps-2025-10-31-1pt75/xom-quarterly-earnings-nongaap-eps-2025-10-31-1pt75",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 477,
+      "sha256": "f4931aa1f7c82a1824c91556d72c02c19165dc14dfbae83a873410e5a966f5a9"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 243,
+      "sha256": "959be4c6b0218fb0e1de6707d87a699dd3988b5b2d86cb2486b36033b670662c"
+    },
+    {
+      "path": "market.json",
+      "bytes": 3173,
+      "sha256": "2611c7953d83285499c3599cd4cc8a365e2ce768215bb00278ee798d3e7b6256"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "a9a7c391064d12ea7c15915e865289db5422905857afc834abc3488e53430571"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 2136,
+      "sha256": "b112f280bb3502b4a9b5053fdbade88c9a7fd3aff305235468c3368476861b54"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2605,
+      "sha256": "dd6b88f0942a1c7b1be99597489c4c47de67c29bcdfb648d1d13044ae3ad0033"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 998,
+      "sha256": "8ec1a209e6ced01c45b27a76fbb14bc5887f756169e096bd9ce24be608c7abf5"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 999,
+      "sha256": "c3fe2d4a56e1a949325c9b2977ed44e26feb44de9aeec563998741f8eaff6aac"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 133704,
+      "sha256": "f37e7fa4e8c4cdbe78705823490d4485d05cf741d6fe62adb73b88e8d8c0f787"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 195793,
+      "sha256": "0b12eafe7b7d7758a7026478f8af55ed80b052d241eb32c53f1d2e045aeaec84"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 52718,
+      "sha256": "1e58dc7ff457f267cd5000f5faf766c272aee1b638b8b0129aa274511193f506"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 70990,
+      "sha256": "8d8079bc008200cd36ffd327e91df027796c7b7590cadb9c8683dcb7b3d9b305"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 43678,
+      "sha256": "556e93488f452accf5d754c3ec82620be45a949e8c42f1af6ebd7b04bad7d96d"
+    }
+  ]
+}

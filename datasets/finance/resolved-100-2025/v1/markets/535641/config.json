@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/how-high-will-10-year-treasury-yield-go-in-2025/will-the-10-year-treasury-yield-hit-5pt0-in-2025",
+  "condition_id": "0xb51e060a04691204a9678f5a0418146c4629283b1c04a887501c173b22f0fcdd",
+  "start": 1744156800,
+  "end_exclusive": 1767222832,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

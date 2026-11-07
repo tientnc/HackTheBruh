@@ -1,0 +1,111 @@
+{
+  "dataset": "polymarket-546242-v1",
+  "built_at": "2026-11-07T19:05:25.589647+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/will-coinbase-acquire-circle-before-september/will-coinbase-acquire-circle-before-september",
+    "condition_id": "0xe7305fbdabdb9a6959c8e94bf3e8a0d63e2df854d4c56e8235b6fb715b7d8108",
+    "start": 1747699200,
+    "end_exclusive": 1756707165,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Coinbase acquire Circle before September?",
+  "market_opened": "2025-05-20T23:30:48.5Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 397,
+    "wallet_trade_leg_rows": 1010,
+    "price_points": 428,
+    "wallets": 322,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-05": 75,
+    "2025-06": 104,
+    "2025-07": 42,
+    "2025-08": 174,
+    "2025-09": 2
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/will-coinbase-acquire-circle-before-september/will-coinbase-acquire-circle-before-september",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 465,
+      "sha256": "52a585e9dd345f3c5a4b2e6164eaa2c3c1ea7c8349a20dc8a9e42cb5f2d6396c"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 245,
+      "sha256": "575c4fe029029caefee52cee31a4c5077f87ecb2787266940bfb702a5b53af6e"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1672,
+      "sha256": "6c73ee9974d6281e4348c2ab5ae2c71191af28a42a8ad3f09fa6486370ae8e35"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "b4047658df74a9c4638a78497466061412f2a739666bf7b3fb3caa286b07668e"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 6561,
+      "sha256": "370261cb12a772b50b4f7a9745266467ce7f91e06f93114c3f2407de4f4df8a7"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2133,
+      "sha256": "d4a1b63a8a48c50b680ba86e5a2b2d9c684e71a64fd68b93cf35e132e26f4af5"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1883,
+      "sha256": "decbdd48e7d152cfae2dbcbbfe7462bd70291542d0ef6ac949f11d371a6c7b20"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1887,
+      "sha256": "82c318e0f13ac8519b52005616a3e5b573cda5ec826f8247052d079ef64b842a"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 80369,
+      "sha256": "69162485fc4d8a00064eeba7aa79bdc8b08774b3b2ea47e0fd4e7bef5acc7d5e"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 112524,
+      "sha256": "e002f91ded0b9ec2b59746c2f2ebdcabdf9fe352120a4db9525a040b21a60531"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 34104,
+      "sha256": "5047a3b25de953ecd8f51d64725691d46fc9e3b9edd6275aff7522e69e2c0c57"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 44020,
+      "sha256": "d028997c688bc0da47d1eca00a8b65cc4bc454ba20b3ab8b4b855d607b99bb47"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 34322,
+      "sha256": "197471b8da8d1712607145c5b973b8135aaa0d3d622a85454ea3bc8b15cea73e"
+    }
+  ]
+}

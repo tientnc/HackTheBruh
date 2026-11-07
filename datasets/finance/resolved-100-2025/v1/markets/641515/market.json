@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/navan-ipo-day-1-closing-market-cap/will-navan-inc-ipo-closing-market-capitalization-be-between-8-billion-and-9-billion",
+  "market_id": "641515",
+  "condition_id": "0xfff0909b880107d1ba1fb783ebc4fe6489d7cdfc74613da16997a002c515b411",
+  "event_id": "62474",
+  "slug": "will-navan-inc-ipo-closing-market-capitalization-be-between-8-billion-and-9-billion",
+  "question": "Will Navan Inc IPO closing market capitalization be between 8 billion and 9 billion?",
+  "created_at": "2025-10-20T19:05:18.592292Z",
+  "start_date": "2025-10-21T00:49:59.022315Z",
+  "end_date": "2025-12-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve based on Navan, Inc.\u2019s market capitalization at the official closing price on its first day of trading.\n\nIf no IPO occurs by December 31, 2025, 11:59 PM ET, the market will resolve to \u201cNo IPO by December 31, 2025.\u201d\n\nMarket capitalization expresses the monetary value of a company\u2019s outstanding shares stated in its pricing currency. It is calculated as the number of shares outstanding multiplied by the closing share price on the first trading day.\n\nIf the relevant value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nResolution will be based on the primary exchange\u2019s official listing page. In the event that the relevant figure is not displayed, another reliable source will be used.\n\nIn the event of an interruption in the course of the normal trading session on Navan, Inc.\u2019s first day of trading, for example, a circuit breaker or half day, the market will resolve according to the official closing price of the abbreviated session. If no such official closing price is published, the market will resolve according to the next trading day on which an official closing price is published, treating that as the first day of trading for purposes of this market.\n\nAs of October 2025, Navan, Inc. has filed for an IPO, but the first trading date has not yet been officially set.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0xfff0909b880107d1ba1fb783ebc4fe6489d7cdfc74613da16997a002c515b411",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "41795306029058618171418898620034584948138961509371497489508191750000165310755"
+    },
+    {
+      "condition_id": "0xfff0909b880107d1ba1fb783ebc4fe6489d7cdfc74613da16997a002c515b411",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "44114798366415209513552392353355542067945498813864370917932181581216614532809"
+    }
+  ]
+}

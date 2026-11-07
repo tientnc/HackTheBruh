@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/will-apple-acquire-perplexity-before-september/will-apple-acquire-perplexity-before-september",
+  "condition_id": "0x0e5e2ab01564b18347fb7cb3e723b6b6b7e355672abb2acdf6455b0dae4556f8",
+  "start": 1750377600,
+  "end_exclusive": 1756708311,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

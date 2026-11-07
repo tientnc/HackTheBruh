@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-627454-v1",
+  "built_at": "2026-11-07T19:05:32.069981+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/cb-quarterly-earnings-nongaap-eps-10-21-2025-5pt78/cb-quarterly-earnings-nongaap-eps-10-21-2025-5pt78",
+    "condition_id": "0x51b35684d2937730df80e0e55c13451c85bfecbd58dcb509720b71d24001c6db",
+    "start": 1759881600,
+    "end_exclusive": 1761092122,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Chubb (CB) beat quarterly earnings?",
+  "market_opened": "2025-10-08T16:00:00.399362Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 135,
+    "wallet_trade_leg_rows": 327,
+    "price_points": 54,
+    "wallets": 120,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-10": 135
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/cb-quarterly-earnings-nongaap-eps-10-21-2025-5pt78/cb-quarterly-earnings-nongaap-eps-10-21-2025-5pt78",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 475,
+      "sha256": "cc283db9611260d665d4e1b24f91b98504f41211da77c23cbc8a74f1685a8202"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 242,
+      "sha256": "9e016847d3c53f5c4e8db103dac5b4c84f8b52bb69ef1bc9ba763c15c777065d"
+    },
+    {
+      "path": "market.json",
+      "bytes": 3376,
+      "sha256": "f6f9d875dcde44f7821768444d9c57994607f15c9da07fcf9c3bfdb87712b52f"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "62c37199ef11cb4f86fc53ed31969b025550eabd94ce1e7d1bf3a01f0f414246"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 957,
+      "sha256": "f9b5f0941fe84e65c147d11e3ee0c1cf9654548716796086408931183fc3cb11"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2672,
+      "sha256": "97f9ca501b14f70b435ee303ecc92c338fc73599d63fdc7a8058d5ee887acfe1"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 607,
+      "sha256": "f4cd55c37117b0c6791317e8f96b7f343fc243dece57090c4dc249c658009f7c"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 609,
+      "sha256": "88504270817224a13653b60b4d3121a80c7e7a4c52d201f5c23a514eccddd5f5"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 28133,
+      "sha256": "17337dbebccc39df5c2a12b67684c64848b9b09281429e2bc37caa9467b96f52"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 40556,
+      "sha256": "193252cf0573d4abecd0e4eccb12b5dd2088ff963ebc479014af288fd8a6d03f"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 11236,
+      "sha256": "f762695a58af39052d3b149a0c06c5324de711c7b6a0ee780cf6db9c28265285"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 14768,
+      "sha256": "dcde2c1bfbe15f77d0e41bb25028ced1ec694e6b1af9f642a5eb9b8031d8355b"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 12249,
+      "sha256": "14b54d7fe4dbdfc0fffdbf4cdfd08c5668b670d566aa44864957bba0e7b0b681"
+    }
+  ]
+}

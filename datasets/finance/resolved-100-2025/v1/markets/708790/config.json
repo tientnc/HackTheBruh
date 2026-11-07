@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-will-be-said-on-the-next-all-in-podcast-326/will-recession-be-said-during-the-next-episode-of-the-all-in-podcast",
+  "condition_id": "0x7a339868e9124c0d2c9861c2ed66f86fecfebbc94be074602bfb4de542c5477f",
+  "start": 1764115200,
+  "end_exclusive": 1765008252,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

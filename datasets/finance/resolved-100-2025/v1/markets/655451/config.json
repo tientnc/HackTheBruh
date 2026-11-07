@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/ato-quarterly-earnings-gaap-eps-11-05-2025-0pt97/ato-quarterly-earnings-gaap-eps-11-05-2025-0pt97",
+  "condition_id": "0x5880d5ea3d38f4fc3dd68cbda0e82bf4fdd87240be6c823df98fadbbce097852",
+  "start": 1761696000,
+  "end_exclusive": 1762451118,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

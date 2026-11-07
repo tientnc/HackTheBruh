@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/tsla-week-december-26-2025/will-tsla-close-above-505-week-december-26-2025",
+  "market_id": "974541",
+  "condition_id": "0x1cc1bb78345cd662b7678017f2673dd20f13a70b0c7c688d397f28182ab92c64",
+  "event_id": "112385",
+  "slug": "will-tsla-close-above-505-week-december-26-2025",
+  "question": "Will Tesla (TSLA) close at >$505 on the final day of trading of the week of Dec 22 \u2013 Dec 26?",
+  "created_at": "2025-12-19T23:00:06.843108Z",
+  "start_date": "2025-12-19T23:24:59.531933Z",
+  "end_date": "2025-12-26T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve according to the official closing price for Tesla (TSLA) on the final day of trading of the specified week (normally Friday).\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf the final session of the week is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Yahoo Finance after any adjustments have been applied.\n\nThe resolution source for this market is Yahoo Finance, specifically the Tesla (TSLA) \"Close\" prices available at https://finance.yahoo.com/quote/TSLA/history, published under \"Historical Prices.\"",
+  "resolution_source": "https://finance.yahoo.com/quote/TSLA/history",
+  "outcomes": [
+    {
+      "condition_id": "0x1cc1bb78345cd662b7678017f2673dd20f13a70b0c7c688d397f28182ab92c64",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "51004711182234473398040415735103017009800013945592672778395090845933686475400"
+    },
+    {
+      "condition_id": "0x1cc1bb78345cd662b7678017f2673dd20f13a70b0c7c688d397f28182ab92c64",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "78586890038990291869017066220490781652804171708309703840364063913225052060744"
+    }
+  ]
+}

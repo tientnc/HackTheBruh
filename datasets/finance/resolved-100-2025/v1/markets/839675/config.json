@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/amzn-above-on-december-12-2025/amzn-above-220-on-december-12-2025",
+  "condition_id": "0x49ae4752b12b2726a07e5272306d87bf064b4f4d7831fa16dff573308e8ce5f2",
+  "start": 1764892800,
+  "end_exclusive": 1765584417,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

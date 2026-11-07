@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/3rd-largest-company-end-of-november/will-company-a-be-the-third-largest-company-in-the-world-by-market-cap-on-november-30",
+  "market_id": "691510",
+  "condition_id": "0xd175618f8498385f88f7d4ddfcd5ef031c14c7cfe5feac9c37d78cb2890dfa67",
+  "event_id": "85446",
+  "slug": "will-company-a-be-the-third-largest-company-in-the-world-by-market-cap-on-november-30",
+  "question": "Will Company A be the third-largest company in the world by market cap on November 30?",
+  "created_at": "2025-11-19T15:25:32.773614Z",
+  "start_date": "2025-11-19T23:00:43.407743Z",
+  "end_date": "2025-11-30T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to the third-largest company in the world by market cap on November 30, 2025, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting.",
+  "resolution_source": null,
+  "outcomes": [
+    {
+      "condition_id": "0xd175618f8498385f88f7d4ddfcd5ef031c14c7cfe5feac9c37d78cb2890dfa67",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "114869090944925014562834264025429833604249521740172859652384143005743130008155"
+    },
+    {
+      "condition_id": "0xd175618f8498385f88f7d4ddfcd5ef031c14c7cfe5feac9c37d78cb2890dfa67",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "89549738984206108287694294298074581925866241133764767737684356501905146157446"
+    }
+  ]
+}

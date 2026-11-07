@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-663236-v1",
+  "built_at": "2026-11-07T19:05:25.375141+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/abnb-above-on-november-14-2025/abnb-above-100-on-november-14-2025",
+    "condition_id": "0x5641df70db2f8748ad996333bbc92ceff4e4986556659371448f00a0f201bb5e",
+    "start": 1762128000,
+    "end_exclusive": 1763170849,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Airbnb (ABNB) finish week of November 10 above $100?",
+  "market_opened": "2025-11-03T19:38:53.016479Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 60,
+    "wallet_trade_leg_rows": 174,
+    "price_points": 46,
+    "wallets": 63,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-11": 60
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/abnb-above-on-november-14-2025/abnb-above-100-on-november-14-2025",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 439,
+      "sha256": "9eb4a2c45c33b0e98b93af3bf849268ee6e9433f91ec6db1ba9e2de2438cac6f"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 241,
+      "sha256": "2c8e1cffcc77a69cb45a8cca083e4d9374461f86bcf43a2c4af4c5bcaf28244a"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2283,
+      "sha256": "e174ae96bac79ec262512b888915c0cd98c5fc342e352e38a9d8437777382ef7"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 344,
+      "sha256": "8c1a2dc7babcbb3ae5e9f8e21beee429989088ab9a22176c3c576737664e34ed"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 880,
+      "sha256": "25deb8b3dd53e47250561c5e83692dca43d3bffd06648b83157485d432c95b77"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2564,
+      "sha256": "2ff5ba19882917d4a2ae3f542f6f872e4431f40cbeb3af42443ad6a8d9baa8c5"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 603,
+      "sha256": "637e3643a1b33f0f7772bd6b0d56d3bd5cf7ec66ab348fc0108efad959df658f"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 597,
+      "sha256": "a6ba6280eb98c453f381c40ac2058a38d26da32487cb895687486f995d67071e"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 12159,
+      "sha256": "d4ed7c7f1c07600855689260634dd58d6b73a45ee660b1521eae15bafa1b3973"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 19024,
+      "sha256": "9325af971cb072d617b8754f250c7c851ba102376c9619fcdc02d203d2c9ec70"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 5245,
+      "sha256": "f778cf57e94bcfabbfa5c54b1b40ec9af6c42411d21033c9985be9601c1b8824"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 7281,
+      "sha256": "10713b1b9cc05861dc8b1ab2746e89edaf382921904a8adeaf99d58eddb6624f"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 6255,
+      "sha256": "7e0e0d59e309560afcad428f8c89fdd6c45ff6baa07605c0d547f879629a045a"
+    }
+  ]
+}

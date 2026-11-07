@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/meta-week-december-26-2025/will-meta-close-between-680-and-690-week-december-26-2025",
+  "market_id": "974514",
+  "condition_id": "0xe00e8d3833f65c61e5089e987035c56800ab5ca57c39e2ac4acd55acc50fc74b",
+  "event_id": "112383",
+  "slug": "will-meta-close-between-680-and-690-week-december-26-2025",
+  "question": "Will Meta (META) close at $680-$690 on the final day of trading of the week of Dec 22 \u2013 Dec 26?",
+  "created_at": "2025-12-19T23:00:06.042923Z",
+  "start_date": "2025-12-19T23:24:47.321788Z",
+  "end_date": "2025-12-26T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve according to the official closing price for Meta (META) on the final day of trading of the specified week (normally Friday).\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf the final session of the week is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Yahoo Finance after any adjustments have been applied.\n\nThe resolution source for this market is Yahoo Finance, specifically the Meta (META) \"Close\" prices available at https://finance.yahoo.com/quote/META/history, published under \"Historical Prices.\"",
+  "resolution_source": "https://finance.yahoo.com/quote/META/history",
+  "outcomes": [
+    {
+      "condition_id": "0xe00e8d3833f65c61e5089e987035c56800ab5ca57c39e2ac4acd55acc50fc74b",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "38679490830980142007226094093942476232424948976525462260258281477213985994125"
+    },
+    {
+      "condition_id": "0xe00e8d3833f65c61e5089e987035c56800ab5ca57c39e2ac4acd55acc50fc74b",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "98759504402956801547873973886559291257730398194455130897557521500365453002051"
+    }
+  ]
+}

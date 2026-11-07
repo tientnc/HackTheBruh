@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/who-will-acquire-warner-bros-discovery/will-placeholder-i-acquire-warner-bros-discovery",
+  "condition_id": "0xf51e2dc784e8d99575d05d42eef50c233441ec516ca2d59f55e9cd10378ee247",
+  "start": 1761177600,
+  "end_exclusive": 1764952076,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

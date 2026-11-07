@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/open-above-in-december-2025/open-above-7-on-december-31-2025",
+  "market_id": "741014",
+  "condition_id": "0xc824c62d8eca0e70ad693e864d9fd0f79f6bac753722d51f4ae27e1a2eae4fe5",
+  "event_id": "92896",
+  "slug": "open-above-7-on-december-31-2025",
+  "question": "Will Opendoor (OPEN) close above $7.00 end of December?",
+  "created_at": "2025-11-28T23:00:20.075661Z",
+  "start_date": "2025-11-28T23:24:58.380341Z",
+  "end_date": "2025-12-31T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the official closing price for Opendoor Technologies Inc. (OPEN) on the final trading day of December 2025 is higher than the listed price. Otherwise, this market will resolve to \"No\".\n\nIf the final trading day of the month is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nThe resolution source for this market is Yahoo Finance \u2014 specifically, the Opendoor Technologies Inc. (OPEN) \"Close\" prices available at https://finance.yahoo.com/quote/OPEN/history, published under \"Historical Prices.\"\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/OPEN/history",
+  "outcomes": [
+    {
+      "condition_id": "0xc824c62d8eca0e70ad693e864d9fd0f79f6bac753722d51f4ae27e1a2eae4fe5",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "70596946962656633860842581793452976366501027255556111613584236631079303881786"
+    },
+    {
+      "condition_id": "0xc824c62d8eca0e70ad693e864d9fd0f79f6bac753722d51f4ae27e1a2eae4fe5",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "12312238326309690723791162284570096248238590100278438165470766389410756158124"
+    }
+  ]
+}

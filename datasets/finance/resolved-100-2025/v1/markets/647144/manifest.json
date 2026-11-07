@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-647144-v1",
+  "built_at": "2026-11-07T19:05:20.534312+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/earnings-mentions-coinbase-2025-10-29/earnings-mentions-coinbase-2025-10-29-stablecoin-1-times",
+    "condition_id": "0x51291cd60a82b8773a302ed0cff87e48fb0f56bd80cf5ea22dd8bb52978d7853",
+    "start": 1761177600,
+    "end_exclusive": 1761867322,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Coinbase say \"Stablecoin\" during earnings call?",
+  "market_opened": "2025-10-23T22:10:17.887289Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 8,
+    "wallet_trade_leg_rows": 18,
+    "price_points": 28,
+    "wallets": 10,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-10": 8
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/earnings-mentions-coinbase-2025-10-29/earnings-mentions-coinbase-2025-10-29-stablecoin-1-times",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 468,
+      "sha256": "816267066fa785b7338c5661262c068ee783f7c35f2d88d3f3658af14b98413e"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 239,
+      "sha256": "68024bc8a814aaecd8e6c8bd43cafea67e2e0948dd34025bc9c51719004f8db1"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2393,
+      "sha256": "0b75db63b2fe412ad391d9a40428b1d06a142aa8a2e8ecf6ab6a0c6661cb6f36"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "99cbc69f75a9d3a7767bb6f17d152caa7d3e419ecf984066404adf7b0882d047"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 646,
+      "sha256": "04275ba3668eb3a79d22b9a42b3ce389c62a4a0e5df506dd8c7bf93fad35eefd"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2304,
+      "sha256": "11bf1d102805f0b691434f0e005338f630dc94b2ba8e9d37153951863041203c"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 534,
+      "sha256": "efbb88eb1d6c878946fcb5c68be8df308459fa6c4cb38b65be811e7a74e61665"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 533,
+      "sha256": "e693656c8c1584a21bb21e13db5d3e18140b7afbb8700d7c4d3793dec6e1c971"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 1930,
+      "sha256": "7d2503d88648e28cfbb5108d3abe7a5606a3a6c07d4bd5ea4f165a5d53c5460c"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 2274,
+      "sha256": "7e035aef2bdf94b6a6daf1007e9196a3c58821e043267fe836f97ec20b0d2303"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 1049,
+      "sha256": "19480c635867192391a937ca85274566aa79c2f0c3e87f245fe5dfb66128e47a"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 1269,
+      "sha256": "5cd2546716c4a5a81646d1aaabc9cb71cc9f4ce279512e2dc0b607429f160831"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 1158,
+      "sha256": "75c824d36d40a15159365fc10b9033960f9dbff3b7227f3f927424b859e83bfe"
+    }
+  ]
+}

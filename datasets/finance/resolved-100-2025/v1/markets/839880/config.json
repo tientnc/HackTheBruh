@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/open-week-december-12-2025/will-open-close-between-4-and-5-week-december-12-2025",
+  "condition_id": "0x73a57bc6a076713c6f66e1beabc405ae8f249df94e5997fb36435d5236caf453",
+  "start": 1764892800,
+  "end_exclusive": 1765587913,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}
