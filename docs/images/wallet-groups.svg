@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="650" viewBox="0 0 1120 650" role="img" aria-labelledby="title desc">
+  <title id="title">Two wallet types, two trading directions</title>
+  <desc id="desc">Skilled wallets meet a configurable baseline of at least 100 prior trades and realized trading profit greater than zero. Cross skill with positive or negative net YES-direction cash flow to create four groups. Unknown history and neutral flow are separate. Each wallet's flow is capped at 1000 USDC in either direction.</desc>
+  <rect width="1120" height="650" rx="22" fill="#0b1726"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="48" y="52" fill="#72e0bc" font-size="15" font-weight="700" letter-spacing="2">THE FOUR GROUPS</text>
+    <text x="48" y="100" fill="#f3f7fc" font-size="34" font-weight="700">Who is trading in which direction?</text>
+    <rect x="48" y="124" width="1024" height="57" rx="12" fill="#172b43"/>
+    <text x="68" y="159" fill="#e4edf8" font-size="20"><tspan font-weight="700">Skilled baseline</tspan><tspan>  =  ≥100 prior trades  +  realized trading profit &gt; 0 USDC</tspan></text>
+    <text x="68" y="211" fill="#a9bbce" font-size="17">Both measured before the flow window · thresholds are adjustable · all-market history</text>
+    <text x="255" y="258" fill="#8de8cc" font-size="20" font-weight="700">AGREE / positive net flow</text>
+    <text x="683" y="258" fill="#ffd08d" font-size="20" font-weight="700">DISAGREE / negative net flow</text>
+    <text x="48" y="323" fill="#f3f7fc" font-size="21" font-weight="700">SKILLED</text><text x="48" y="351" fill="#a9bbce" font-size="17">Meets baseline</text>
+    <text x="48" y="435" fill="#f3f7fc" font-size="21" font-weight="700">UNSKILLED*</text><text x="48" y="463" fill="#a9bbce" font-size="17">Below baseline</text>
+    <rect x="234" y="278" width="407" height="98" rx="12" fill="#14362f" stroke="#337d69"/>
+    <rect x="663" y="278" width="409" height="98" rx="12" fill="#3b2c23" stroke="#8f6847"/>
+    <rect x="234" y="392" width="407" height="98" rx="12" fill="#152c2c" stroke="#2b5252"/>
+    <rect x="663" y="392" width="409" height="98" rx="12" fill="#2c2729" stroke="#665054"/>
+    <g fill="#f3f7fc" font-size="22" font-weight="700">
+      <text x="255" y="319">Skilled + agree</text><text x="684" y="319">Skilled + disagree</text><text x="255" y="433">Unskilled + agree</text><text x="684" y="433">Unskilled + disagree</text>
+    </g>
+    <g fill="#b7c8da" font-size="17">
+      <text x="255" y="350">Net buying YES / selling NO</text><text x="684" y="350">Net buying NO / selling YES</text>
+      <text x="255" y="464">Net buying YES / selling NO</text><text x="684" y="464">Net buying NO / selling YES</text>
+    </g>
+    <rect x="48" y="513" width="1024" height="72" rx="12" fill="#172337"/>
+    <text x="68" y="543" fill="#d8e3f1" font-size="18">Missing history → unknown   ·   Zero net flow → neutral   ·   Flow capped at ±1,000 USDC / wallet</text>
+    <text x="68" y="570" fill="#a9bbce" font-size="17">Group shares are signals, not calibrated outcome probabilities.</text>
+    <text x="48" y="618" fill="#a9bbce" font-size="16">*“Unskilled” means the baseline was not met. It does not prove lack of skill.</text>
+  </g>
+</svg>

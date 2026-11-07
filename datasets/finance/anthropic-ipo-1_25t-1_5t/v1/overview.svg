@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="540" viewBox="0 0 1120 540" role="img" aria-labelledby="title desc">
+  <title id="title">Anthropic IPO bracket, first dataset</title>
+  <desc id="desc">One market: Anthropic IPO closing market cap between 1.25 and 1.5 trillion dollars. June through November 2026: 2499 taker trade records, 6619 maker and taker wallet records, 2125 price observations and 603 wallets. Four feeds exhausted pagination. Historical wallet profit enrichment is next.</desc>
+  <rect width="1120" height="540" rx="22" fill="#0b1726"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="48" y="52" fill="#72e0bc" font-size="15" font-weight="700" letter-spacing="2">FINANCE / FIRST MARKET</text>
+    <text x="48" y="104" fill="#f3f7fc" font-size="36" font-weight="700">Anthropic IPO · $1.25T–$1.5T</text>
+    <text x="48" y="143" fill="#a9bbce" font-size="21">One binary market · YES + NO · June 1–November 7, 2026</text>
+    <g fill="#12243a" stroke="#2b425b">
+      <rect x="48" y="180" width="238" height="139" rx="14"/><rect x="310" y="180" width="238" height="139" rx="14"/>
+      <rect x="572" y="180" width="238" height="139" rx="14"/><rect x="834" y="180" width="238" height="139" rx="14"/>
+    </g>
+    <g fill="#f3f7fc" font-size="42" font-weight="700">
+      <text x="68" y="240">2,499</text><text x="330" y="240">6,619</text><text x="592" y="240">2,125</text><text x="854" y="240">603</text>
+    </g>
+    <g fill="#a9bbce" font-size="18">
+      <text x="68" y="279">taker trade records</text><text x="330" y="279">maker + taker records</text><text x="592" y="279">price observations</text><text x="854" y="279">observed wallets</text>
+    </g>
+    <rect x="48" y="347" width="1024" height="76" rx="12" fill="#15352f"/>
+    <text x="68" y="379" fill="#9bf1d4" font-size="21" font-weight="700">All four feeds exhausted pagination · checksums verified</text>
+    <text x="68" y="406" fill="#c2d9d1" font-size="18">The two trade tables overlap. Keep executions and wallet activity separate.</text>
+    <path d="M48 457H1072" stroke="#2b425b"/>
+    <text x="48" y="495" fill="#a9bbce" font-size="19">Market → trades + prices → wallet activity → next: historical profit and skill labels</text>
+  </g>
+</svg>

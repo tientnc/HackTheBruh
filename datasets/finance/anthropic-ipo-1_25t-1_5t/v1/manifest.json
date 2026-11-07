@@ -1,0 +1,112 @@
+{
+  "dataset": "anthropic-ipo-1_25t-1_5t-v1",
+  "built_at": "2026-11-07T17:49:51.468006+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-higher-strikes/will-anthropics-market-cap-be-between-1pt25t-and-1pt5t-at-market-close-on-ipo-day",
+    "condition_id": "0x67644dafb1cb9f5dda7cc1b5666e93c1ca539da38cafb17b4ebca6493a04e25b",
+    "start": 1780272000,
+    "end_exclusive": 1794073750,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Anthropic's market cap be between $1.25T and $1.5T at market close on IPO day?",
+  "market_opened": "2026-06-01T21:07:09.395496Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 2499,
+    "wallet_trade_leg_rows": 6619,
+    "price_points": 2125,
+    "wallets": 603,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-06": 215,
+    "2026-07": 73,
+    "2026-08": 332,
+    "2026-09": 339,
+    "2026-10": 988,
+    "2026-11": 552
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/anthropic-ipo-closing-market-cap-higher-strikes/will-anthropics-market-cap-be-between-1pt25t-and-1pt5t-at-market-close-on-ipo-day",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 503,
+      "sha256": "ad7856cfef424e3889eb3a1310c896bf8473454fe549be5a56f5ff56e0f82d95"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 248,
+      "sha256": "46d07ca146dc64b799bc18cb91a6905ad194eb4454b4d17bc6dc0fb90cf35f07"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2492,
+      "sha256": "d72711bf80a6b9831690b787bb93b70a25c858bd88f45573899bc4279b29ebc8"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "1711962cc46b27edc9e67a3d94b385c580cf43886d95c450e6ca8ba54c4960ef"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 23573,
+      "sha256": "6eb2f1dcbc690ccf839ede1140d1f2384ebb64fac1899a742745d3fb5af7e125"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2650,
+      "sha256": "4069c38e6f370da1009e714a2f499f1d1e2090f7bd8a28f379418b8c243fbdbf"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 10798,
+      "sha256": "a67a63b8bb76765f479c71598a5a1584d8b44efef121385447a2f2d983126c7a"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 10758,
+      "sha256": "1d41691b9f408e97d8e75299d978421cbd3f67fabc26c375ab8223a856d2fef0"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 432389,
+      "sha256": "c7e8eec1979b9e0f2b45061d4ab47583eeefc75dba0ff8ef033aebf1e6191767"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 710438,
+      "sha256": "cbdd9fde17617b23f9de460333576edc2dd51d3235ee1b995262bfde82732343"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 175164,
+      "sha256": "925e70c33832690015eebac3643eddfe7af725bc9b9c5f5cba2fab4f8c064070"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 247114,
+      "sha256": "c812c4a9fda7ed5caccd4ce4e854f3ea44978dabaa91115c73c8dee953606bbf"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 64947,
+      "sha256": "a38ab8766f58725e27300ad5c5d01cfa4720bee846a9ea1f28270f2ee057ee58"
+    }
+  ]
+}

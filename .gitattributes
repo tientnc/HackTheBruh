@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.svg text eol=lf
+# Preserve published snapshot bytes so SHA-256 checks survive every checkout.
+datasets/** -text
+datasets/**/README.md text eol=lf
+datasets/**/overview.svg text eol=lf
+*.gz binary

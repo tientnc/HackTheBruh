@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-higher-strikes/will-anthropics-market-cap-be-between-1pt25t-and-1pt5t-at-market-close-on-ipo-day",
+  "market_id": "2412745",
+  "condition_id": "0x67644dafb1cb9f5dda7cc1b5666e93c1ca539da38cafb17b4ebca6493a04e25b",
+  "event_id": "548858",
+  "slug": "will-anthropics-market-cap-be-between-1pt25t-and-1pt5t-at-market-close-on-ipo-day",
+  "question": "Will Anthropic's market cap be between $1.25T and $1.5T at market close on IPO day?",
+  "created_at": "2026-06-01T18:13:59.09259Z",
+  "start_date": "2026-06-01T21:07:09.395496Z",
+  "end_date": "2028-01-01T04:59:00Z",
+  "closed_now": false,
+  "description": "This market will resolve based on Anthropic's market capitalization at the closing price on its first day of trading.\n\nIf no IPO occurs by December 31, 2027, 11:59 PM ET, the market will resolve to \"No IPO by December 31, 2027\".\n\nMarket capitalization expresses the monetary value of a company\u2019s outstanding shares, stated in its pricing currency. It is calculated as the number of shares outstanding multiplied by the closing share price on the first trading day.\n\nIf the relevant value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nResolution will be based on the primary exchange\u2019s official listing page. In the event that the relevant figure is not displayed, another reliable source will be used.\n\nIn the event of an interruption in the course of the normal trading session on Anthropic\u2019s first day of trading (e.g., a circuit breaker or half-day), the market will resolve according to the official closing price of the abbreviated session. If no such official closing price is published, the market will resolve according to the next trading day on which an official closing price is published, treating that as the first day of trading for purposes of this market.",
+  "resolution_source": null,
+  "outcomes": [
+    {
+      "condition_id": "0x67644dafb1cb9f5dda7cc1b5666e93c1ca539da38cafb17b4ebca6493a04e25b",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "56301838179579394383326309870910994868607811662960859222061983298807293606663"
+    },
+    {
+      "condition_id": "0x67644dafb1cb9f5dda7cc1b5666e93c1ca539da38cafb17b4ebca6493a04e25b",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "58554368714684779496337541114704698505747242960798409159457418202978802963408"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="470" viewBox="0 0 1120 470" role="img" aria-labelledby="title desc">
+  <title id="title">From finance markets to wallet signals</title>
+  <desc id="desc">Four implemented steps: discover finance markets, collect prices and trades, score wallets using prior history, and compare trading groups. A future forecasting stage will test whether these signals predict prices seven to thirty days later.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 6 3 0 6" fill="none" stroke="#6f879e" stroke-width="1.5"/></marker></defs>
+  <rect width="1120" height="470" rx="22" fill="#0b1726"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="48" y="52" fill="#72e0bc" font-size="15" font-weight="700" letter-spacing="2">THE IDEA</text>
+    <text x="48" y="101" fill="#f3f7fc" font-size="35" font-weight="700">Can skilled wallets lead the market?</text>
+    <text x="48" y="137" fill="#a9bbce" font-size="20">Finance markets → historical evidence → a signal we can test</text>
+    <g fill="#12243a" stroke="#2b425b">
+      <rect x="48" y="181" width="238" height="170" rx="14"/><rect x="310" y="181" width="238" height="170" rx="14"/>
+      <rect x="572" y="181" width="238" height="170" rx="14"/><rect x="834" y="181" width="238" height="170" rx="14"/>
+    </g>
+    <g fill="#72e0bc" font-size="16" font-weight="700">
+      <text x="68" y="215">01 / DISCOVER</text><text x="330" y="215">02 / COLLECT</text><text x="592" y="215">03 / SCORE</text><text x="854" y="215">04 / COMPARE</text>
+    </g>
+    <g fill="#f3f7fc" font-size="23" font-weight="700">
+      <text x="68" y="257">Finance markets</text><text x="330" y="257">Prices + trades</text><text x="592" y="257">Wallet history</text><text x="854" y="257">Four groups</text>
+    </g>
+    <g fill="#a9bbce" font-size="18">
+      <text x="68" y="291">Open + closed markets</text><text x="68" y="319">from Polymarket</text>
+      <text x="330" y="291">Dated records</text><text x="330" y="319">with coverage flags</text>
+      <text x="592" y="291">Prior trades + profit</text><text x="592" y="319">at a frozen cutoff</text>
+      <text x="854" y="291">Skill × direction</text><text x="854" y="319">of trading flow</text>
+    </g>
+    <g stroke="#6f879e" stroke-width="2" marker-end="url(#arrow)"><path d="M289 267H306"/><path d="M551 267H568"/><path d="M813 267H830"/></g>
+    <rect x="48" y="379" width="145" height="44" rx="22" fill="#153c35"/>
+    <circle cx="69" cy="401" r="5" fill="#72e0bc"/>
+    <text x="84" y="407" fill="#9bf1d4" font-size="16" font-weight="700">Built today</text>
+    <rect x="214" y="379" width="858" height="44" rx="12" fill="none" stroke="#6998d8" stroke-dasharray="6 5"/>
+    <text x="235" y="407" fill="#b5d3fb" font-size="18">NEXT → Predict odds 7–30 days ahead, then test against today's price.</text>
+  </g>
+</svg>

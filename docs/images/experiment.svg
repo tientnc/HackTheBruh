@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="490" viewBox="0 0 1120 490" role="img" aria-labelledby="title desc">
+  <title id="title">The planned backtest</title>
+  <desc id="desc">Use wallet history from before each prediction window. Develop daily signals on August through December 2025, then evaluate the frozen method on 2026 data. Compare a seven- or thirty-day future price forecast against today's price and against a model without wallet skill. A lower held-out price MAE is the success criterion.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 6 3 0 6" fill="none" stroke="#6f879e" stroke-width="1.5"/></marker></defs>
+  <rect width="1120" height="490" rx="22" fill="#0b1726"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="48" y="52" fill="#8bb9fa" font-size="15" font-weight="700" letter-spacing="2">THE EXPERIMENT / NEXT</text>
+    <text x="48" y="100" fill="#f3f7fc" font-size="34" font-weight="700">Learn from the past. Test on the future.</text>
+    <text x="48" y="135" fill="#a9bbce" font-size="20">Target: a market's price 7 or 30 days later</text>
+    <path d="M70 185H1050" stroke="#425e7b" stroke-width="2" marker-end="url(#arrow)"/>
+    <circle cx="80" cy="185" r="6" fill="#72e0bc"/><circle cx="395" cy="185" r="6" fill="#72e0bc"/><circle cx="800" cy="185" r="6" fill="#8bb9fa"/>
+    <rect x="48" y="212" width="280" height="128" rx="13" fill="#122a29" stroke="#2f675b"/>
+    <rect x="350" y="212" width="358" height="128" rx="13" fill="#12243a" stroke="#2b425b"/>
+    <rect x="730" y="212" width="342" height="128" rx="13" fill="#18283f" stroke="#6998d8" stroke-dasharray="6 5"/>
+    <g font-size="21" font-weight="700">
+      <text x="68" y="249" fill="#9bf1d4">Earlier wallet history</text><text x="370" y="249" fill="#f3f7fc">Aug–Dec 2025</text><text x="750" y="249" fill="#b5d3fb">2026 / held out</text>
+    </g>
+    <g fill="#b7c8da" font-size="18">
+      <text x="68" y="282">Score before each window</text><text x="68" y="311">Freeze the wallet labels</text>
+      <text x="370" y="282">Build + validate daily features</text><text x="370" y="311">Leave a gap between splits</text>
+      <text x="750" y="282">Freeze the model first</text><text x="750" y="311">Then measure forecast error</text>
+    </g>
+    <rect x="48" y="366" width="1024" height="78" rx="12" fill="#172337"/>
+    <text x="68" y="397" fill="#f3f7fc" font-size="20" font-weight="700">The bar to beat: future price = today's price</text>
+    <text x="68" y="426" fill="#a9bbce" font-size="18">Success = lower held-out price error (MAE), plus improvement over a model without wallet skill.</text>
+  </g>
+</svg>
