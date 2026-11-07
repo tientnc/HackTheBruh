@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/logan-paul-1st-edition-charizard-sale-price/will-the-logan-paul-1st-edition-charizard-sale-price-be-over-900k-687",
+  "market_id": "1296220",
+  "condition_id": "0xd6aa9e138ca022a6cd3cb4e93fe1719de5331d3109f61a6a9b1304e6afb6696d",
+  "event_id": "131492",
+  "slug": "will-the-logan-paul-1st-edition-charizard-sale-price-be-over-900k-687",
+  "question": "Will the Logan Paul 1st Edition Charizard sale price be over 900k?",
+  "created_at": "2026-01-29T21:22:52.862201Z",
+  "start_date": "2026-01-29T21:26:47.687015Z",
+  "end_date": "2026-02-28T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the final sale price paid for the Pokemon Base Set 1st Edition Holo #4 Charizard - Logan Paul Break is greater than the listed price. Otherwise this market will resolve to \"No\".\n\nIf no sale is completed by February 28, 2026, ET this market will resolve to \"No\".\n\nThe market will resolve according to the final listed sale price including any premiums or auction fees included in the listed figure on Goldin (see: https://goldin.co/item/1999-pokemon-base-set-1st-edition-rare-holofoil-logan-paul-break-4-chajdvc5).",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0xd6aa9e138ca022a6cd3cb4e93fe1719de5331d3109f61a6a9b1304e6afb6696d",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "31918597822733966683351891997188855970196134116105907016753345401245065968572"
+    },
+    {
+      "condition_id": "0xd6aa9e138ca022a6cd3cb4e93fe1719de5331d3109f61a6a9b1304e6afb6696d",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "61182026641539831789377371552970660481845020651428153167706026744640248290143"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-will-crude-oil-cl-settle-at-in-march/will-crude-oil-cl-settle-at-75-80-in-march-416",
+  "market_id": "1487354",
+  "condition_id": "0xe97270e364091c6e6553bc302cfd6768203855eafa731ab68c7acdaac7c02ed3",
+  "event_id": "242350",
+  "slug": "will-crude-oil-cl-settle-at-75-80-in-march-416",
+  "question": "Will Crude Oil (CL) settle at $75-$80 in March?",
+  "created_at": "2026-03-02T23:28:53.165332Z",
+  "start_date": "2026-03-04T00:45:28.924862Z",
+  "end_date": "2026-03-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve according to the official CME settlement price for the Active Month of Crude Oil futures on the final trading day of March 2026.\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf the final trading day of the month is shortened (for example, due to a market-holiday schedule), the official settlement price published for that shortened session will still be used for resolution. If no settlement price is published for that session, the market will use the most recent published settlement for the Active Month during March.\n\nFor CME Crude Oil (CL) futures contracts, the active month is the nearest of the contract months listed. The active month becomes a non-active month effective two business days prior to the spot month expiration. For example; if the spot month expires on a Friday the next listed contract will be considered the Active Month on the Wednesday prior to the spot month expiration.\n\nOnly the Active Month's official settlement price published by CME Group will be considered. Intraday trades, highs, lows, bids, offers, midpoint values, or indicative prices do not count.\n\nNote that the settlement price may differ from the last traded price. CME's methodology to determine the settlement price can vary by commodity and contract.\n\nOnly days during March on which CME publishes an official settlement price for the Active Month will be included. Days without settlement prices (weekends, holidays, or market closures) are ignored.\n\nThis market will resolve based on the settlement price as it appears on the CME settlement page at the time it is first published for the relevant trading day, regardless of any later corrections or updates.\n\nThe resolution source for this market is the CME Group website \u2014 specifically, the daily \"Settlement\" price for the Active Month of Crude Oil (CL) futures.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0xe97270e364091c6e6553bc302cfd6768203855eafa731ab68c7acdaac7c02ed3",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "88898388820717032255356342614284594257212420290981711115019996300990591873084"
+    },
+    {
+      "condition_id": "0xe97270e364091c6e6553bc302cfd6768203855eafa731ab68c7acdaac7c02ed3",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "30828099816301889829672972675500031006488057781209350003593084015286024650815"
+    }
+  ]
+}

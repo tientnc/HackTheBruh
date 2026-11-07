@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-price-will-wti-hit-in-may-2026/will-wti-crude-oil-wti-hit-high-200-in-may",
+  "market_id": "2128304",
+  "condition_id": "0x0220e320852050a884e73bfe20447cbabe17ce934107cebc48a829b4a558204f",
+  "event_id": "415443",
+  "slug": "will-wti-crude-oil-wti-hit-high-200-in-may",
+  "question": "Will WTI Crude Oil (WTI) hit (HIGH) $200 in May?",
+  "created_at": "2026-04-30T22:38:14.351531Z",
+  "start_date": "2026-04-30T22:41:19.827658Z",
+  "end_date": "2026-06-01T03:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point after market creation during May 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" price equal to or above the listed price. Otherwise, this market will resolve to \"No\". \n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time frame, this market will resolve to \"No\".\n\nOnly prices achieved during the applicable trading session for the underlying market will be considered. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours. \n\nPer CME contract specifications for WTI Crude Oil (CL) futures, a contract\u2019s last trading day is three business days prior to the 25th calendar day of the month preceding the contract's delivery month (or four business days prior if the 25th calendar day is not a business day).\n\nThe active month changes at the start of the second trading session prior to the nearest listed contract\u2019s last trading session. At that point, the next listed contract becomes the active month (i.e., for the final three trading sessions of the nearest listed contract, the contract for the next month is the active month). The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date.\n\nFor example, if the 25th of the month is a Saturday, the last trading session for the nearest listed contract is the session for Tuesday the 21st, and the next listed contract becomes the active month at the start of the trading session for Friday the 17th (6:00 PM ET on Thursday), assuming a standard trading calendar.\n\nIf the relevant Pyth data is unavailable due to a system outage, data failure, or other technical disruption that prevents verification of the required 1-minute candle data, the official daily high price published for the Active Month WTI Crude Oil (CL) futures contract by CME Group may be used to determine whether the listed price was reached during the applicable trading session.\n\nIn the event of a contract specification change, feed change, or similar structural modification affecting the underlying market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.\n\nThe resolution source for this market is Pyth \u2014 specifically, the Active Month WTI Crude Oil futures \"High\" prices available at https://pythdata.app/explore?search=WTI, with the chart settings configured for 1-minute candles. Historical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using the \"t=\" parameter.",
+  "resolution_source": "https://pythdata.app/explore?search=WTI",
+  "outcomes": [
+    {
+      "condition_id": "0x0220e320852050a884e73bfe20447cbabe17ce934107cebc48a829b4a558204f",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "67366990866886482501884520109721153720446019711413449018562041741922735798902"
+    },
+    {
+      "condition_id": "0x0220e320852050a884e73bfe20447cbabe17ce934107cebc48a829b4a558204f",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "63917419817034102591641065908300049323430099884121738227124891839128008395945"
+    }
+  ]
+}

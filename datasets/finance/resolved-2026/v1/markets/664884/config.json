@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/will-consensys-ipo-by-december-31-2025/will-consensys-ipo-by-september-30-2026",
+  "condition_id": "0x239b9eb8c8a176360c0e732e359c0086e4f7c321c53df88eba6bf9c67f41b637",
+  "start": 1762214400,
+  "end_exclusive": 1790835595,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

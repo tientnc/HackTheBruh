@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/sp-500-single-day-gains-and-losses-in-q1/will-the-sp-500-index-lose-at-least-5-on-any-day-in-q1",
+  "condition_id": "0x8af9797c16ca75078b5ab501602e8791a5d1a8b9b5ba69a30f9d14becf9c6415",
+  "start": 1768262400,
+  "end_exclusive": 1774997646,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

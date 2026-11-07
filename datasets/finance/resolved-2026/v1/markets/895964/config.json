@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/paramount-acquires-warner-bros-discovery-by-june-30/paramount-acquires-warner-bros-discovery-by-june-30",
+  "condition_id": "0x0ac3d32c765a92cffb8c9907e0591e7a000a8b8631c4fe67cbd9ae31a53c502b",
+  "start": 1765152000,
+  "end_exclusive": 1772247354,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

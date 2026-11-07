@@ -1,0 +1,86 @@
+[
+  {
+    "market_id": "677023",
+    "error": "Market 677023 validation failed: ['Duplicate price keys: 10']"
+  },
+  {
+    "market_id": "2374611",
+    "error": "Market 2374611 validation failed: ['Duplicate price keys: 4']"
+  },
+  {
+    "market_id": "2673627",
+    "error": "Market 2673627 validation failed: ['Duplicate price keys: 4']"
+  },
+  {
+    "market_id": "2299990",
+    "error": "Market 2299990 validation failed: ['Duplicate price keys: 12']"
+  },
+  {
+    "market_id": "2941258",
+    "error": "Market 2941258 validation failed: ['Duplicate price keys: 6']"
+  },
+  {
+    "market_id": "3866515",
+    "error": "Market 3866515 validation failed: ['Duplicate price keys: 4']"
+  },
+  {
+    "market_id": "3212187",
+    "error": "Market 3212187 validation failed: ['Duplicate price keys: 8']"
+  },
+  {
+    "market_id": "3231246",
+    "error": "Market 3231246 validation failed: ['Duplicate price keys: 4']"
+  },
+  {
+    "market_id": "2677832",
+    "error": "Market 2677832 validation failed: ['Duplicate price keys: 4']"
+  },
+  {
+    "market_id": "3388093",
+    "error": "Market 3388093 validation failed: ['Duplicate price keys: 10']"
+  },
+  {
+    "market_id": "896056",
+    "error": "Market 896056 validation failed: ['Duplicate price keys: 10']"
+  },
+  {
+    "market_id": "2314474",
+    "error": "Market 2314474 validation failed: ['Duplicate price keys: 2']"
+  },
+  {
+    "market_id": "664884",
+    "error": "Market 664884 validation failed: ['Duplicate price keys: 12']"
+  },
+  {
+    "market_id": "2677867",
+    "error": "Market 2677867 validation failed: ['Duplicate price keys: 4']"
+  },
+  {
+    "market_id": "3096413",
+    "error": "Market 3096413 validation failed: ['Duplicate price keys: 4']"
+  },
+  {
+    "market_id": "5180406",
+    "error": "Market 5180406 validation failed: ['Duplicate price keys: 2']"
+  },
+  {
+    "market_id": "2677813",
+    "error": "Market 2677813 validation failed: ['Duplicate price keys: 4']"
+  },
+  {
+    "market_id": "4951226",
+    "error": "Market 4951226 validation failed: ['Duplicate price keys: 4']"
+  },
+  {
+    "market_id": "2677853",
+    "error": "Market 2677853 validation failed: ['Duplicate price keys: 4']"
+  },
+  {
+    "market_id": "3081960",
+    "error": "Market 3081960 validation failed: ['Duplicate price keys: 12']"
+  },
+  {
+    "market_id": "3096360",
+    "error": "Market 3096360 validation failed: ['Duplicate price keys: 2']"
+  }
+]

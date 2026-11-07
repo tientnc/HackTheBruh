@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/sp-500-performance-in-q1/will-the-percentage-change-in-the-sp-500-in-q1-2026-be-between-6-and-8",
+  "market_id": "1176981",
+  "condition_id": "0x8adcb8dbc9ac86a8d6e30ca31641f8bd7bb10f3f187e65013d28fbab6e2e35de",
+  "event_id": "162001",
+  "slug": "will-the-percentage-change-in-the-sp-500-in-q1-2026-be-between-6-and-8",
+  "question": "Will the percentage change in the S&P 500 in Q1 2026 be between 6% and 8%?",
+  "created_at": "2026-01-13T18:50:26.677253Z",
+  "start_date": "2026-01-14T22:54:32.578285Z",
+  "end_date": "2026-03-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve according to the percentage change in the S&P 500 Index (SPX) in the first quarter of 2026 (January 1 - March 31). \n\nThe percentage change in the S&P 500 Index (SPX) in the specified quarter will be calculated by comparing the official closing price for the S&P 500 Index (SPX) for the final trading day of the quarter to the official closing price for the S&P 500 Index (SPX) for the final trading day of the previous quarter, as reported by the Wall Street Journal. The closing price for the final trading day of the previous quarter will be subtracted from the closing price for the final trading day of the specified quarter, and then that difference will be divided by the closing price for the final trading day of the previous quarter.\n\nPercentage changes will be rounded to two decimal places away from zero (e.g. a percentage change of 4.995% would be considered 5.00%, and a percentage change of 4.993% would be considered 4.99%)\n\nIf any relevant trading day is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for a relevant trading day (for example, due to a trading halt into the close, system issue, or other disruption), this market will use the most recent official price published by the specified resolution source as the effective closing price.\n\nIf the percentage change in the S&P 500 Index (SPX) in the first quarter of 2026 falls exactly between two listed brackets, this market will resolve to the higher bracket.\n\nThe resolution source for this market will be the Wall Street Journal, specifically the daily CLOSE prices for the S&P 500 Index (SPX) published on the S&P 500 Index (SPX) historical prices page (https://www.wsj.com/market-data/quotes/index/SPX/historical-prices).",
+  "resolution_source": null,
+  "outcomes": [
+    {
+      "condition_id": "0x8adcb8dbc9ac86a8d6e30ca31641f8bd7bb10f3f187e65013d28fbab6e2e35de",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "49733346878429678066995669422411093935586463017539714303830602307378490356188"
+    },
+    {
+      "condition_id": "0x8adcb8dbc9ac86a8d6e30ca31641f8bd7bb10f3f187e65013d28fbab6e2e35de",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "5977935472977799749534942860892254193148266565425982340349177923397897900718"
+    }
+  ]
+}

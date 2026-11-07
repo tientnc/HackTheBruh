@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/arko-petroleum-ipo-closing-market-cap/will-arko-petroleum-corps-market-cap-be-between-800m-and-850m-at-market-close-on-ipo-day",
+  "condition_id": "0x5e7d3d0844dc6d5cf8c060d07f93c9ffa5adf9408ab6f44cff1e09ac3d4ec0be",
+  "start": 1770249600,
+  "end_exclusive": 1770945452,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

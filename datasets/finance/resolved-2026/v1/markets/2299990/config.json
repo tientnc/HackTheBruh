@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/will-openais-valuation-hit-by-december-31/will-openais-valuation-hit-high-1pt0t-by-december-31-846-461",
+  "condition_id": "0x6f107a898291e9e227ef0835f74062c7fbf450363da765cec5372b86cf3686c7",
+  "start": 1779148800,
+  "end_exclusive": 1791228536,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

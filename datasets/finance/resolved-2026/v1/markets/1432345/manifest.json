@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-1432345-v1",
+  "built_at": "2026-11-07T22:51:06.093889+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/what-price-will-tsla-hit-in-march-2026/will-tsla-dip-to-263-in-march",
+    "condition_id": "0x6913062b0cfb83aead79b13d8f1f252418f758ee791dfa85dfe8bd860f07293a",
+    "start": 1771977600,
+    "end_exclusive": 1775003362,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Tesla dip to $263 in March?",
+  "market_opened": "2026-02-25T05:09:26.209721Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 336,
+    "wallet_trade_leg_rows": 826,
+    "price_points": 137,
+    "wallets": 280,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-02": 3,
+    "2026-03": 333
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/what-price-will-tsla-hit-in-march-2026/will-tsla-dip-to-263-in-march",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 442,
+      "sha256": "05615b26ceca99b6d7d38233a56f0ebcb562246b1778e2b73762a4c2589d5f62"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 242,
+      "sha256": "9ad01873ef25580fb3eb1042581d6a997a5899348587ea4f9b2aa8684772f1a0"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1878,
+      "sha256": "3c16019986c2921db6b97c94c6275fe4d828a3dc4e1e34c7b4fa3cbeca657ef0"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "e249971782b158a364569a02961c71ab0dc7fc936c6bdedb935ccf68162d9a11"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 2063,
+      "sha256": "39d31dbd16097a02601dcdc16fa9b6b1bfd170067ac282f7fbd3e1ad539de6b9"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2442,
+      "sha256": "2513ce9cf53e252b32149fa0d3e44a1c23be27d556d4ba020bedd79fd75918f9"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 969,
+      "sha256": "8bd132247f9593cb1e9ef7bedfe3ba88292634351d67a938b13418709b9f7543"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 932,
+      "sha256": "8fd1a5c3f109eb96abe1f2edf3ce76e6f9443bb0e0de7811de1207505b1c8d8c"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 67190,
+      "sha256": "6197f87dcb7c0e8150dcfa1102436f935ded3d0f3bf1ffe8e79920f69fc81294"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 92052,
+      "sha256": "96c1805de88b7f6a2363b2a6d9470e2455c1d7a3f020027d0d96b3d5f67bdfb2"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 27626,
+      "sha256": "1cd6d5d93c456fb658dff67bebee0ce3ee358119f18b0923279bbd107cadb309"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 35176,
+      "sha256": "147cfcb92ad232268bab47954472786bfa721056182019a16c877a685f740865"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 27799,
+      "sha256": "f5e84dbb772224575c8ddacb0c6302de1fd214adb9d33f1c0a3a4644c28a8014"
+    }
+  ]
+}

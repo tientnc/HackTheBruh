@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/in-which-month-will-spacex-ipo/will-spacexs-initial-public-offering-occur-in-march-2026-et",
+  "market_id": "1345479",
+  "condition_id": "0x8e0642bdd3ca43d22bd5c5e1516547e39d08a6d729ea60262f558cb143cf56a4",
+  "event_id": "200421",
+  "slug": "will-spacexs-initial-public-offering-occur-in-march-2026-et",
+  "question": "Will SpaceX\u2019s initial public offering occur in March 2026 (ET)?",
+  "created_at": "2026-02-06T15:16:53.748135Z",
+  "start_date": "2026-02-09T20:04:00.673194Z",
+  "end_date": "2026-12-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve based on the calendar month (ET) in 2026 in which SpaceX\u2019s initial public offering (IPO) occurs.\n\nIf no IPO occurs by December 31, 2026, 11:59 PM ET, the market will resolve to \"No IPO before 2027\".\n\nAnnouncements, filings, or scheduling of an IPO will not suffice; this market will resolve after public trading has begun.\n\nResolution will be based on information from the primary exchange.",
+  "resolution_source": null,
+  "outcomes": [
+    {
+      "condition_id": "0x8e0642bdd3ca43d22bd5c5e1516547e39d08a6d729ea60262f558cb143cf56a4",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "76925972437255692956628890128764548754665627688147145943540356627769421225210"
+    },
+    {
+      "condition_id": "0x8e0642bdd3ca43d22bd5c5e1516547e39d08a6d729ea60262f558cb143cf56a4",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "76476602799317089626251227143992091242680831276608119910858846275922228924252"
+    }
+  ]
+}

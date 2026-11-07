@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-1363685-v1",
+  "built_at": "2026-11-07T22:51:22.159957+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/nvda-quarterly-earnings-nongaap-eps-02-25-2026-1pt52/nvda-quarterly-earnings-nongaap-eps-02-25-2026-1pt52",
+    "condition_id": "0x4116364a30edf0db220553d5f4032b32f05d42b6d64e1bacaa0c065bb4146015",
+    "start": 1770681600,
+    "end_exclusive": 1772064611,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will NVIDIA (NVDA) beat quarterly earnings?",
+  "market_opened": "2026-02-10T19:23:31.628331Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 2409,
+    "wallet_trade_leg_rows": 7003,
+    "price_points": 62,
+    "wallets": 1356,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-02": 2409
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/nvda-quarterly-earnings-nongaap-eps-02-25-2026-1pt52/nvda-quarterly-earnings-nongaap-eps-02-25-2026-1pt52",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 479,
+      "sha256": "ab7756e551f9b6d69d14e7320f15f98c9feffc7c6f5a52d1ac103259e52670a2"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 244,
+      "sha256": "b35273fbaba177e817751da118aff3db92bbca927b6f3899319ef07256970f0d"
+    },
+    {
+      "path": "market.json",
+      "bytes": 3786,
+      "sha256": "77352e5844bc58563452c26f451966a824f2867568e6135fa2ba0f976c8a396a"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "0f79d6f901f8168586bc796b30882be7bdc976318cf40b9f81d52b566218302d"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 1061,
+      "sha256": "e4fdfb51c0c82249a6e334f3320c0ba565b2072969d554e373b18fc27bffe882"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 3067,
+      "sha256": "b8283b7dbb025643e0add727594ccd1d2bb48fe3d7a0e2b31423e8dd2791c962"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 669,
+      "sha256": "4efc2a2ae504e42949bb49dbcaeccd871e1b9364673be0aecf638cab6a43a57a"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 667,
+      "sha256": "7db5359b77eb0d757bb6207abd0017d77df3b833eecc31bf8795aa53fe21f1c6"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 467621,
+      "sha256": "4626f272a27456fe76d98fb5cf1b26cb5f10bf7d89bdce1fb48415768809999b"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 720792,
+      "sha256": "95498d344fc86c5e3f71eb953f82509e3aaae1806163cc2e3587b30f07193251"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 191594,
+      "sha256": "e35c793810e03a709bd581f60e43179a2d5d0d993f490b44353e28a8a34bbc64"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 269900,
+      "sha256": "8a07ff6986d1e4b540b3fbc1b4a3d61ee3cde5d75f805d453c4b82e79910af98"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 145552,
+      "sha256": "f54e01b7799c2cab44f3977ee6c39db2704603f615c41644faf39295bdd1292d"
+    }
+  ]
+}

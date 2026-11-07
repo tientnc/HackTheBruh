@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-will-gold-gc-hit-by-end-of-february/will-gold-gc-hit-low-4700-by-end-of-february-339-735-643-246-799-559-292-611-315-385",
+  "condition_id": "0xefa2054d10d6b2f452bae795c68cdb92738dd3769dc1251f3a15274648ad86c6",
+  "start": 1769385600,
+  "end_exclusive": 1770107125,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

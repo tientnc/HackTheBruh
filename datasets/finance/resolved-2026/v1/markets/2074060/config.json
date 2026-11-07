@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-nvda-hit-in-may-2026/will-nvda-reach-248-in-may-2026",
+  "condition_id": "0x76e08e9528154ddbc7397c51733462752088bbbb1cd062f4cb284f2c4a7c20c0",
+  "start": 1777075200,
+  "end_exclusive": 1780106812,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

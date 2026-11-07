@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-tsla-hit-in-march-2026/will-tsla-dip-to-263-in-march",
+  "condition_id": "0x6913062b0cfb83aead79b13d8f1f252418f758ee791dfa85dfe8bd860f07293a",
+  "start": 1771977600,
+  "end_exclusive": 1775003362,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

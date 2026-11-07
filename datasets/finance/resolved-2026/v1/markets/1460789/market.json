@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/googl-above-in-march-2026/googl-above-360-on-march-31-2026",
+  "market_id": "1460789",
+  "condition_id": "0xd947017d6bbf0f4f2e15d82ed500d1a2ac57561d257ec1a5c39ef592870990bb",
+  "event_id": "235643",
+  "slug": "googl-above-360-on-march-31-2026",
+  "question": "Will Google (GOOGL) close above $360 end of March?",
+  "created_at": "2026-02-27T23:00:12.607342Z",
+  "start_date": "2026-02-27T23:36:48.826771Z",
+  "end_date": "2026-03-31T20:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the official closing price for Alphabet Inc. (GOOGL) on the final trading day of March 2026 is higher than the listed price. Otherwise, this market will resolve to \"No\".\n\nIf the final trading day of the month is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nThe resolution source for this market is Yahoo Finance \u2014 specifically, the Alphabet Inc. (GOOGL) \"Close\" prices available at https://finance.yahoo.com/quote/GOOGL/history, published under \"Historical Prices.\"\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/GOOGL/history",
+  "outcomes": [
+    {
+      "condition_id": "0xd947017d6bbf0f4f2e15d82ed500d1a2ac57561d257ec1a5c39ef592870990bb",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "32712625859037706755759281330475137136359609126590062377711371977435676715737"
+    },
+    {
+      "condition_id": "0xd947017d6bbf0f4f2e15d82ed500d1a2ac57561d257ec1a5c39ef592870990bb",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "21733024471282958288142850343519613853417495990721565323126967088774839560640"
+    }
+  ]
+}

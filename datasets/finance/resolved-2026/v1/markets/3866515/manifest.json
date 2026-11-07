@@ -1,0 +1,109 @@
+{
+  "dataset": "polymarket-3866515-v1",
+  "built_at": "2026-11-07T22:50:05.265989+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/what-price-will-wti-hit-in-september-2026/will-wti-dip-to-80-in-september-2026",
+    "condition_id": "0xc102a040f2842be662d0544d0b68f048e805d0210fe2a3b1cb83521d29584f2d",
+    "start": 1787616000,
+    "end_exclusive": 1790839200,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will WTI Crude Oil (WTI) hit (LOW) $80 in September?",
+  "market_opened": "2026-08-25T04:02:11Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 1571,
+    "wallet_trade_leg_rows": 4084,
+    "price_points": 600,
+    "wallets": 514,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-08": 57,
+    "2026-09": 1513,
+    "2026-10": 1
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/what-price-will-wti-hit-in-september-2026/will-wti-dip-to-80-in-september-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 452,
+      "sha256": "a2108246fe32e8f04f0c33c787c2ca3d8254169c929a4dd0cd55a9a5350cec44"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 246,
+      "sha256": "d220f17c774328fd60bdb46776658c86d79713c2d2caf22a5b4ebb6185eafc6e"
+    },
+    {
+      "path": "market.json",
+      "bytes": 4098,
+      "sha256": "4befa03b03d18a36b854249a385bb6aa4bd35e911e2867f3948bbe56d07c7bb8"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "7de23cc2adda15012d88b1fc990801217a8fd4bc3d904e8e3b7afd3dd760b821"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 7169,
+      "sha256": "374490b47ebbbac9393eab0a7641121cdeca6d2ac373ad6c310d339198cb3b89"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 3347,
+      "sha256": "8e89d8ebedeb42bbadace0b6c535fdf4a1243fd884cb0645f90de054a39cdb95"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 2298,
+      "sha256": "d8b30e3bf50a81e0d7310dd8f957eb84c1c8dd03809206eebde069309dfb2780"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 2317,
+      "sha256": "32a29e60c2e517a9833b537f7d8dc2f40fd3f54331e1c255c3164bfaac116973"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 281533,
+      "sha256": "3023bc3130e41ceeb0438a18ccc88522d68401d2dc6a0dc1041d4ff636b89fce"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 449052,
+      "sha256": "41deb239c6b1d6fbec8c42e414e55dc1a897abec6fe2bcfe3f8cb215693be03f"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 115269,
+      "sha256": "1e7837922421c3859728f58109c86db36a926d37bc65594b5d9ccdeb71a95261"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 158399,
+      "sha256": "078d50b6aca8e64ed8c55ef992f6e52e9236e9d6c09027b924fc44f608599822"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 55389,
+      "sha256": "b92249d4cc71ebfda2ef9c32739e9555d38e82238b8623bf33d4ddaf242ecc42"
+    }
+  ]
+}

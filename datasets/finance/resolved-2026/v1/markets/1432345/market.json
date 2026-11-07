@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-price-will-tsla-hit-in-march-2026/will-tsla-dip-to-263-in-march",
+  "market_id": "1432345",
+  "condition_id": "0x6913062b0cfb83aead79b13d8f1f252418f758ee791dfa85dfe8bd860f07293a",
+  "event_id": "229253",
+  "slug": "will-tsla-dip-to-263-in-march",
+  "question": "Will Tesla dip to $263 in March?",
+  "created_at": "2026-02-25T05:00:33.02253Z",
+  "start_date": "2026-02-25T05:09:26.209721Z",
+  "end_date": "2026-04-01T03:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point during March 2026 (ET), any 1-minute candle for Tesla, Inc. (TSLA) has a final \"Low\" price equal to or below the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during regular trading hours (ET) will be considered.\n\nThe resolution source for this market is Yahoo Finance \u2014 specifically, the Tesla, Inc. (TSLA) \"Low\" prices available at https://finance.yahoo.com/quote/TSLA/, with the chart settings on \"1m\" for candle intervals.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/TSLA/",
+  "outcomes": [
+    {
+      "condition_id": "0x6913062b0cfb83aead79b13d8f1f252418f758ee791dfa85dfe8bd860f07293a",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "75564402113604963950544097041165327527692700821366866611864308107592559084400"
+    },
+    {
+      "condition_id": "0x6913062b0cfb83aead79b13d8f1f252418f758ee791dfa85dfe8bd860f07293a",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "83340736188589800753531706178784689124857254814690492941915162164151359051133"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/si-hit-jun-2026/will-silver-si-hit-low-65-by-end-of-june-998-897",
+  "condition_id": "0xa43ad4037543d8376fe6bc828997820cc197ceb86d8c8f51b33b95c6676078cf",
+  "start": 1766707200,
+  "end_exclusive": 1781161970,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

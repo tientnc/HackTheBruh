@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-will-sp-500-spx-hit-by-end-of-february/will-sp-500-spx-hit-6750-low-in-february-2026-864-842-833-742-762",
+  "condition_id": "0x0f9e98b52a8642faefc7908604a8ea6c85918b933ffa0131ab68022158ae3c58",
+  "start": 1769990400,
+  "end_exclusive": 1772239060,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

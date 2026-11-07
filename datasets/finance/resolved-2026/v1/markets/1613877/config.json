@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/will-rolex-prices-hit-by-april-30/will-the-rolex-index-hit-13150-high-by-april-30",
+  "condition_id": "0xc7e369e17ef9ba205928f9bc99e5918ec0b2da6237576684e6276b2f0565b509",
+  "start": 1773619200,
+  "end_exclusive": 1777863689,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

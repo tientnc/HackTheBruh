@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-ng-hit-in-may-2026/will-natural-gas-ng-hit-high-3pt20-in-may",
+  "condition_id": "0xc571f73e2935ae4f6468c7b86989dce5114c7da821b597651278d81814961040",
+  "start": 1777075200,
+  "end_exclusive": 1779986260,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

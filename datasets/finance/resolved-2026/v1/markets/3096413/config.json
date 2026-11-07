@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-wti-hit-in-august-2026/will-wti-reach-90-in-august-2026",
+  "condition_id": "0x55937e321733f53af84a7c74884fc86801b97def5b14be888250e7d5057f4be8",
+  "start": 1784937600,
+  "end_exclusive": 1788218401,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

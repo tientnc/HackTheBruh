@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-wti-hit-in-october-2026/will-wti-dip-to-85-in-october-2026",
+  "condition_id": "0xa01984a038cf05bb3fec2133890a29ab93a52e90d9dbb0de9d01a821588b9a2a",
+  "start": 1790294400,
+  "end_exclusive": 1793416294,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

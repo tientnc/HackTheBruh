@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/stripe-ipo-closing-market-cap/will-stripes-market-cap-be-less-than-80b-at-market-close-on-ipo-day",
+  "condition_id": "0x4f864dda711ee273e6eb7925aada5d984da51a5f423122a00f6ae9532a3c28b9",
+  "start": 1758499200,
+  "end_exclusive": 1782890760,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

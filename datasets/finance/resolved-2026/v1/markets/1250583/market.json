@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/spacex-ipo-by/will-spacex-ipo-by-september-30-2026-832-864-576-595",
+  "market_id": "1250583",
+  "condition_id": "0x58ae4880738f502cf9c3ca8e1f7747ead62c32308ca520efd16ee0f91af06415",
+  "event_id": "183698",
+  "slug": "will-spacex-ipo-by-september-30-2026-832-864-576-595",
+  "question": "Will SpaceX IPO by September 30, 2026?",
+  "created_at": "2026-01-23T18:08:22.780274Z",
+  "start_date": "2026-01-23T20:09:37.847Z",
+  "end_date": "2026-09-30T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if SpaceX (Space Exploration Technologies Corp.) completes an Initial Public Offering (IPO) by the listed date ET, as confirmed by official company announcements and credible news sources. Otherwise, this market will resolve to \"No.\"\n\nThe IPO refers to the first sale of stock by the listed company to the public on any recognized stock exchange.\n\nIf SpaceX is acquired by another company that is already public, this market will immediately resolve to \"No.\"\n\nThe resolution source for this market is a consensus of credible reporting.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x58ae4880738f502cf9c3ca8e1f7747ead62c32308ca520efd16ee0f91af06415",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "34640299987368275118997246377594071893261230621587486495297674933452715640067"
+    },
+    {
+      "condition_id": "0x58ae4880738f502cf9c3ca8e1f7747ead62c32308ca520efd16ee0f91af06415",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "5432096834011948598310990502011085898762751096723880309547785646893078400969"
+    }
+  ]
+}

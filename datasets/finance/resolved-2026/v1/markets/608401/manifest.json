@@ -1,0 +1,116 @@
+{
+  "dataset": "polymarket-608401-v1",
+  "built_at": "2026-11-07T22:49:36.875038+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/discord-ipo-closing-market-cap/will-discords-market-cap-be-between-25b-and-30b-at-market-close-on-ipo-day",
+    "condition_id": "0xd58512cf94a0bece389afb6a955dde2cc0ffa045b7848339f14de858e052048a",
+    "start": 1758499200,
+    "end_exclusive": 1782891242,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Discord\u2019s market cap be between $25B and $30B at market close on IPO day?",
+  "market_opened": "2025-09-23T00:22:44.066856Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 1691,
+    "wallet_trade_leg_rows": 3943,
+    "price_points": 1061,
+    "wallets": 437,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-09": 5,
+    "2025-10": 31,
+    "2025-11": 15,
+    "2025-12": 52,
+    "2026-01": 507,
+    "2026-02": 214,
+    "2026-03": 474,
+    "2026-04": 202,
+    "2026-05": 68,
+    "2026-06": 123
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/discord-ipo-closing-market-cap/will-discords-market-cap-be-between-25b-and-30b-at-market-close-on-ipo-day",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 479,
+      "sha256": "43db24d6f194cd9858dea04f2eadfcb4f45786f5ff42da8012bbdde550d4c0ec"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 246,
+      "sha256": "89f2658e44fe8c9172f96296650f278e3282eddeda4375edb239abb94267383a"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2445,
+      "sha256": "1770db8adafe46dd1a84e8a17b2d042eb35d3a38565a97549f2a166df5d7fca0"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "b7a8325a8bb795dcc58d596baf2682d44fd6a89aa374c33f3512af5786a5c536"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 15329,
+      "sha256": "e48a24a29d89a7ac989ea4333c272dd4572b1c6342c7a784754d2cf5cca39813"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2571,
+      "sha256": "3d195a07d1076949fcca2aed0e405d03940dc90e091aed709a8e8a82aeb24c1d"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 6004,
+      "sha256": "52c8bbdc77b029a0050c71289e00ee745652fa470f4df1486f165de710a29691"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 5928,
+      "sha256": "8d5a30d4bbe34c162a484faa775e41e6ed183e660f4551397b4961fee77db5f6"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 243838,
+      "sha256": "37baf4f6d9c90f2783447ac0a9da0a956fd59f93efeef53fe3535bd79457e539"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 356589,
+      "sha256": "dcaed7b08c84c8451f9defba06ff0ca6e8ddf90c1d2f67fbf4f622350d19bf4d"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 109918,
+      "sha256": "606c6b1988cf9cba8c483bb47199a72c1c03b8d27a3976cafe79b4e5d839cece"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 140101,
+      "sha256": "c7082ed30e4a1c05a475e556f5d01c1e4359806ad612edaabe602f74c2e35ffd"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 46447,
+      "sha256": "73b8252f5378841df3bc1fac4580c50bd6d02277fa85c3d377b2662ca663b7a2"
+    }
+  ]
+}

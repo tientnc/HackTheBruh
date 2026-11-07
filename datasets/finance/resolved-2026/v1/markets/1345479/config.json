@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/in-which-month-will-spacex-ipo/will-spacexs-initial-public-offering-occur-in-march-2026-et",
+  "condition_id": "0x8e0642bdd3ca43d22bd5c5e1516547e39d08a6d729ea60262f558cb143cf56a4",
+  "start": 1770336000,
+  "end_exclusive": 1775033612,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

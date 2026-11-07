@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/largest-company-end-of-february/will-apple-be-the-largest-company-in-the-world-by-market-cap-on-february-28-781",
+  "condition_id": "0xcc7191d618ab96b21b8ae7aeec1a5f7f6c40f4b2fde26ac34580f9187b90b0d2",
+  "start": 1768953600,
+  "end_exclusive": 1772255250,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

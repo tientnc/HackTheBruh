@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/discord-ipo-closing-market-cap/will-discords-market-cap-be-between-25b-and-30b-at-market-close-on-ipo-day",
+  "condition_id": "0xd58512cf94a0bece389afb6a955dde2cc0ffa045b7848339f14de858e052048a",
+  "start": 1758499200,
+  "end_exclusive": 1782891242,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

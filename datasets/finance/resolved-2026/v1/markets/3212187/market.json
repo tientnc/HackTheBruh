@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/largest-company-end-of-september-1785358369147/will-company-c-be-the-largest-company-in-the-world-by-market-cap-on-september-30",
+  "market_id": "3212187",
+  "condition_id": "0x8dbac1bf1e011f186cd62d26757ec368ea5fdcf1c0dd8d931df0c613b309718c",
+  "event_id": "770098",
+  "slug": "will-company-c-be-the-largest-company-in-the-world-by-market-cap-on-september-30",
+  "question": "Will Apple be the largest company in the world by market cap on September 30?",
+  "created_at": "2026-07-29T22:25:20.782534Z",
+  "start_date": "2026-07-29T22:44:40.054815Z",
+  "end_date": "2026-10-01T03:59:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to the largest company in the world by market cap on September 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x8dbac1bf1e011f186cd62d26757ec368ea5fdcf1c0dd8d931df0c613b309718c",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "16478316053646921296729034019554519840110001466229869274618614366503964308841"
+    },
+    {
+      "condition_id": "0x8dbac1bf1e011f186cd62d26757ec368ea5fdcf1c0dd8d931df0c613b309718c",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "86169628548038996088355737042579112413902351745743191139025173124156572670231"
+    }
+  ]
+}

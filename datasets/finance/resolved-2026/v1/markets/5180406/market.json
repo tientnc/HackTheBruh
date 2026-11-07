@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/2nd-largest-company-end-of-october-2026/will-apple-be-the-second-largest-company-in-the-world-by-market-cap-on-october-31-2026",
+  "market_id": "5180406",
+  "condition_id": "0x61a3b215365d83b31a4f95486125ad3d84b52e21df8093d759e0b99a12c33fb0",
+  "event_id": "1114518",
+  "slug": "will-apple-be-the-second-largest-company-in-the-world-by-market-cap-on-october-31-2026",
+  "question": "Will Apple be the second-largest company in the world by market cap on October 31, 2026?",
+  "created_at": "2026-10-01T16:13:38.45487Z",
+  "start_date": "2026-10-01T16:14:21Z",
+  "end_date": "2026-11-01T03:59:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to the second-largest company in the world by market cap on October 31, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x61a3b215365d83b31a4f95486125ad3d84b52e21df8093d759e0b99a12c33fb0",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "104979569478107185194630637564735844450370719969042883383599039265859444652577"
+    },
+    {
+      "condition_id": "0x61a3b215365d83b31a4f95486125ad3d84b52e21df8093d759e0b99a12c33fb0",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "8290506133508016143060334319338834243986963887998291530456486543005716911908"
+    }
+  ]
+}

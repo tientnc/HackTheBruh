@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/chirayu-rana-divorced/chirayu-rana-divorced",
+  "condition_id": "0x7db27787ed509fd8ae9b055c4d1cbc3a7860766e6346c56e4931ee37e6d7e865",
+  "start": 1777593600,
+  "end_exclusive": 1782886257,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

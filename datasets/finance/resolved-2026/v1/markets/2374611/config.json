@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/safepoint-ipo-closing-market-cap/will-safepoint-not-ipo-before-august-2026",
+  "condition_id": "0xc3ad4523a9007e6e8c67c57d681e1718abd86a601d1b516f402042064f276093",
+  "start": 1779840000,
+  "end_exclusive": 1785564471,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-1099135-v1",
+  "built_at": "2026-11-07T22:50:32.132703+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/wfc-quarterly-earnings-gaap-eps-01-14-2026-1pt68/wfc-quarterly-earnings-gaap-eps-01-14-2026-1pt68",
+    "condition_id": "0xf426dc7e61039fdb5ea61c0c552d956276051ceb7b44fce8ee5075b5bd748aa6",
+    "start": 1767398400,
+    "end_exclusive": 1768403157,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Wells Fargo & Co (WFC) beat quarterly earnings?",
+  "market_opened": "2026-01-04T04:49:08.995Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 384,
+    "wallet_trade_leg_rows": 1011,
+    "price_points": 44,
+    "wallets": 287,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-01": 384
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/wfc-quarterly-earnings-gaap-eps-01-14-2026-1pt68/wfc-quarterly-earnings-gaap-eps-01-14-2026-1pt68",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 471,
+      "sha256": "56b18791232affaa5579dff2d2a799e161854863e5f56883bd9c42a55391538e"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 243,
+      "sha256": "ac69d56db01ae0f37281c97cdd33d3265eaa2b017a7ccd79c631c3d3d90ce795"
+    },
+    {
+      "path": "market.json",
+      "bytes": 3284,
+      "sha256": "9f99d92b39e8c68f03e0e438751950f6d93c87a0a7aabc2b2795e3c04cd8034c"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "3c5333989dde122828a0848e1aee93c30d5bc87251720cb8fc12e7dbad970122"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 854,
+      "sha256": "59378196ac5c6ab96492964ac8cf4606da54439219843ebf56378a7ee3ebcde8"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2812,
+      "sha256": "c0a601458b4a1ad769acdb1e18c3caceb1e4de40b097077cc6eb3f1de276f7aa"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 604,
+      "sha256": "2b445ec5f206f651416ec0322958bfb8683864b42042292600ac07d7db5773a9"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 604,
+      "sha256": "854e22a5ca959d6f97b690f84384b4ed485a6c9ab8d5dd4833db5293d177c884"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 79753,
+      "sha256": "62138978e118714d2b7455c8aac9bfb60d33867b8ba9a7414bdda3b07f15e8be"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 118525,
+      "sha256": "d9ce36d6739daba6c29e370b816ca299cc17dbd3c22b378c944ceea63e8743de"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 31538,
+      "sha256": "7b4bb2749a77273c8c5fbf0f653177073fe5fc04de1445daf08d4154b5cce38b"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 42973,
+      "sha256": "04919a5ca7f93930207939fe53496b80433b797aca4bf1edcd9e994d941a5622"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 30101,
+      "sha256": "91f6e36fb334871e5ffa7526da54c7d3f0a53e8075f8ed194fd29855a0bb705a"
+    }
+  ]
+}

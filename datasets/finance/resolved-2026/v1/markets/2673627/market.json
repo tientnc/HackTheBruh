@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/largest-company-end-of-july-20260624192302727/will-amazon-be-the-largest-company-in-the-world-by-market-cap-on-july-31-20260624192329847",
+  "market_id": "2673627",
+  "condition_id": "0x51cdeae08e21f2ebb18c67c4fb06bd5446fcec3f32393800428a670cfbf780bc",
+  "event_id": "630845",
+  "slug": "will-amazon-be-the-largest-company-in-the-world-by-market-cap-on-july-31-20260624192329847",
+  "question": "Will Amazon be the largest company in the world by market cap on July 31?",
+  "created_at": "2026-06-24T21:14:11.651142Z",
+  "start_date": "2026-06-24T21:19:59.159613Z",
+  "end_date": "2026-07-31T23:59:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to the largest company in the world by market cap on July 31, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x51cdeae08e21f2ebb18c67c4fb06bd5446fcec3f32393800428a670cfbf780bc",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "78963030528454339216772435409768100324088386511503879377911886576556782601312"
+    },
+    {
+      "condition_id": "0x51cdeae08e21f2ebb18c67c4fb06bd5446fcec3f32393800428a670cfbf780bc",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "106858529350378657909452206443125718901262348302178643588262710394762029014306"
+    }
+  ]
+}

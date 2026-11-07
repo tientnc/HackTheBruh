@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/how-high-will-10-year-treasury-yield-go-by-march-31/will-the-10-year-treasury-yield-hit-4pt4-by-march-31",
+  "market_id": "902255",
+  "condition_id": "0x309271800d036ea2774540a46036b6375157724f492366d30baacb834cd0c236",
+  "event_id": "101009",
+  "slug": "will-the-10-year-treasury-yield-hit-4pt4-by-march-31",
+  "question": "Will the 10-year treasury yield hit 4.4% by March 31?",
+  "created_at": "2025-12-09T15:57:33.438441Z",
+  "start_date": "2025-12-09T19:18:35.22949Z",
+  "end_date": "2026-03-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the Treasury 10-year yield reaches or is higher than the listed value for any date between December 9, 2025 and March 31, 2026. Otherwise this market will resolve to \"No\".\n\nThe resolution source for this market is the Department of the Treasury, specially the data listed under \"Daily Treasury Par Yield Curve Rates\" for the column \"10 Yr\" (see: https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2025).",
+  "resolution_source": null,
+  "outcomes": [
+    {
+      "condition_id": "0x309271800d036ea2774540a46036b6375157724f492366d30baacb834cd0c236",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "39294041408649228622519512077753603170881777376666450205420345684489133182896"
+    },
+    {
+      "condition_id": "0x309271800d036ea2774540a46036b6375157724f492366d30baacb834cd0c236",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "47547112421398009569089109327032218270135351033215000982952153762539386367386"
+    }
+  ]
+}

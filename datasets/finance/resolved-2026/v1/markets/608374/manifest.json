@@ -1,0 +1,115 @@
+{
+  "dataset": "polymarket-608374-v1",
+  "built_at": "2026-11-07T22:50:14.603432+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/fannie-mae-ipo-closing-market-cap/will-fannie-maes-market-cap-be-between-300b-and-350b-at-market-close-on-ipo-day",
+    "condition_id": "0x1721f89383f83b8c744d4b88986c0a1abd484d55812239d03a852bbff052ebc6",
+    "start": 1758499200,
+    "end_exclusive": 1782891302,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Fannie Mae\u2019s market cap be between $300B and $350B at market close on IPO day?",
+  "market_opened": "2025-09-22T23:52:20.466118Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 630,
+    "wallet_trade_leg_rows": 1562,
+    "price_points": 1057,
+    "wallets": 298,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-10": 22,
+    "2025-11": 2,
+    "2025-12": 12,
+    "2026-01": 39,
+    "2026-02": 70,
+    "2026-03": 250,
+    "2026-04": 99,
+    "2026-05": 55,
+    "2026-06": 81
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/fannie-mae-ipo-closing-market-cap/will-fannie-maes-market-cap-be-between-300b-and-350b-at-market-close-on-ipo-day",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 487,
+      "sha256": "bae0733cf425bd531196410f6215b9ad0fe7d81dbe7a9b3d41aba77a961fc5c6"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 245,
+      "sha256": "d93f1a548238680e624089f4326c99ad485494e13aef058082ec71b9d54c36e6"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2468,
+      "sha256": "4ebb2c72bc21131cd3def768f587f55f3931d045f2361e0d2182152feb22b1f9"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "4eacc300786c30486534f7c4b50bf8a7c474d684a06f2f8791fb8311292b9a83"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 15379,
+      "sha256": "b1e0586ea5a3a3b81c8711365ecb072b9383e808e28b52952ccb72c2f0372eec"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2567,
+      "sha256": "d5c170784e6d4602b1b4ad312eb51b0f7438434514fc635990c1d6e320296035"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 6043,
+      "sha256": "9a0dca30d65d4e0d21b0c4a2d2ed9ef435bca423edaf2c8272891902e59425df"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 5953,
+      "sha256": "198e3c28070f442ad905c82bf6a1a9d989774c2a5402fcb5b40c9b15479ab7ff"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 102901,
+      "sha256": "b83b9b667e1f21b6420c20404042663d4208c96d3529cc350143fce552a2f5ac"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 149101,
+      "sha256": "ebab977107755631f9d330dde0f83b9e7ace5358620b18443acd0c1c360ff46d"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 46045,
+      "sha256": "9067735a9508cf921a7f9fcb74b9b86f748f85f74e25ce69b1952db8dfb75092"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 59982,
+      "sha256": "309a8f7e011237efa9e90f859ff9073ef42e606ddcbdb55113e4f76262398884"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 32065,
+      "sha256": "84551302c66f45b5c9fcff9ad43a11cbaa0458976c9f05740596afcf860e522a"
+    }
+  ]
+}

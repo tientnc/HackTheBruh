@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-1296220-v1",
+  "built_at": "2026-11-07T22:50:44.231598+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/logan-paul-1st-edition-charizard-sale-price/will-the-logan-paul-1st-edition-charizard-sale-price-be-over-900k-687",
+    "condition_id": "0xd6aa9e138ca022a6cd3cb4e93fe1719de5331d3109f61a6a9b1304e6afb6696d",
+    "start": 1769644800,
+    "end_exclusive": 1771227302,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will the Logan Paul 1st Edition Charizard sale price be over 900k?",
+  "market_opened": "2026-01-29T21:26:47.687015Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 282,
+    "wallet_trade_leg_rows": 776,
+    "price_points": 70,
+    "wallets": 198,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-01": 1,
+    "2026-02": 281
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/logan-paul-1st-edition-charizard-sale-price/will-the-logan-paul-1st-edition-charizard-sale-price-be-over-900k-687",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 487,
+      "sha256": "e711be4a4cd02af20d3823b8d93bc2508e9d567df4adf3930e68b6b20d4ef98b"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 242,
+      "sha256": "86ae5f1bcfb4faf801098a31177b3488dba7f71806da76d1ed5ce861d82abbe2"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1757,
+      "sha256": "8a85f295ed0621f541c75939d2b6d192d947485d7df93ac1cad7246d9bbbb36c"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "8ab7d7c777d04c15dcbfd9ada1c27ade8f818edf5d5c6c2886f4a9a7f75df846"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 1183,
+      "sha256": "6afb4e97dd53c8de62cd4454ffdefa69f2d36ec720e8d4d150152d370f25fc8f"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2249,
+      "sha256": "03220a659002d91565f21d0d5f800d733cbffd92611fd7c3f4eb88247c2e0b03"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 704,
+      "sha256": "d48b6d1f7d3a0f533f8572488c47fecccfc7c47ec7b89f764f6e96b73c29c5bb"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 684,
+      "sha256": "9ba24c570f53d177b01f00e76722cd7ab4146375d396a66747b466b05bf411b7"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 56750,
+      "sha256": "f26b9f479973cd8379482867f8144565d75ff2020eb54f5cb93b559ec51528bb"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 87725,
+      "sha256": "cb4061c04f752b71e4ae7e245c5c262c973f3df685986571ee80653a8f06f75d"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 22671,
+      "sha256": "334880a1557d4095904fbaacd5f69d17ebff28f6c8df38f4b515a1b1fa85239c"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 31561,
+      "sha256": "3f246b54de7e884015b634551d9668bbcefa7db76b7e81b1cf7df37099d8dd68"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 21118,
+      "sha256": "1af02296defbfc42fb1d92dcead9a7327c7af77fbc8c42b3e938fd3346b0e1ff"
+    }
+  ]
+}

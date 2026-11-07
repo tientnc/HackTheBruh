@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-will-gpu-rental-prices-h100-hit-by-april-30-967/will-the-silicon-data-h100-index-sdh100rt-hit-2pt75-high-by-april-30-2026",
+  "condition_id": "0x9d9198f6860b6781624101fb50bddb287ff25800496d2d380ec4d3d1f3222888",
+  "start": 1769990400,
+  "end_exclusive": 1777788331,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

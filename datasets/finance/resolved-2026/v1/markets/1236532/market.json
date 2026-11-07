@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/march-fed-derivative-25bps-cut-flips-pause-by-feb-28/march-fed-derivative-25bps-cut-flips-pause-by-feb-28",
+  "market_id": "1236532",
+  "condition_id": "0x622c081d57a0fd170629dcc54e583c849d989888d3a22e60d363789a305ae866",
+  "event_id": "179592",
+  "slug": "march-fed-derivative-25bps-cut-flips-pause-by-feb-28",
+  "question": "March Fed Derivative: \"25bps cut\" flips \"Pause\" by Feb 28?",
+  "created_at": "2026-01-21T20:16:13.167998Z",
+  "start_date": "2026-01-21T23:19:25.69Z",
+  "end_date": "2026-02-28T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \u201cYes\u201d if, between \"25 bps decrease\" and \"No change\", \"25 bps decrease\" becomes the favorite in the market \"Fed decision in March?\" (https://polymarket.com/event/fed-decision-in-march-885) for any four-hour period ending by February 28, 2026, 11:59 PM ET or earlier. Otherwise, this market will resolve to \u201cNo\u201d.\n\n\"25 bps decrease\" will be considered to have become the favorite for any four-hour period if it is ahead of \"No change\" in the majority of individual minutes during a qualifying time period. A tie in the number of minutes will not suffice.\n\nIf the underlying market resolves prior to this market, this market will immediately resolve in accordance with the underlying market\u2019s final outcome. If a listed option resolves \u201cYes,\u201d this market will resolve immediately in favor of the corresponding market. Accordingly, if a listed option resolves \u201cNo,\u201d this market will resolve in favor of the other option. If both options simultaneously resolve in the same direction, such as in the case of a negrisk market in which another option resolves \u201cYes\u201d, this market will resolve 50-50. \n\nThe resolution source will be the underlying minute-level price data for the \"Fed decision in March?\" market, which can be viewed using the bar chart on https://derivative.polymarket.com/will-cut-flip-pause-for-march-fed-decision-by-february-28 or through the \u201cGet Resolution\u201d tab with the time set to show the four-hour period window. Both interfaces display the same underlying data.\n\nNote: This market will resolve according to the price scoring methodology of derivative.polymarket.com.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x622c081d57a0fd170629dcc54e583c849d989888d3a22e60d363789a305ae866",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "76725268958183228496454338774420261114013754524061404399585042304227832812732"
+    },
+    {
+      "condition_id": "0x622c081d57a0fd170629dcc54e583c849d989888d3a22e60d363789a305ae866",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "39033765137537065587519651239291956690649315870606052658134202446363035452906"
+    }
+  ]
+}

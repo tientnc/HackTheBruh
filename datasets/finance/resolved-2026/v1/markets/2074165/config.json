@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-hood-hit-in-may-2026/will-hood-dip-to-70-in-may-2026",
+  "condition_id": "0x72843b20808ee4b5c1e07458b86ca15b9760344904a9c6464692bde7125a15f6",
+  "start": 1777075200,
+  "end_exclusive": 1780105606,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

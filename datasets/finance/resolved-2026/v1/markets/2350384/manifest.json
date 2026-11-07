@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-2350384-v1",
+  "built_at": "2026-11-07T22:50:55.521956+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/what-price-will-meta-hit-in-june-2026/will-meta-dip-to-500-in-june-2026",
+    "condition_id": "0x4b6a275d727e79b2bec8d5bfc8422c2ab6b30e39c480d21bb1750dca9cc3f4b9",
+    "start": 1779667200,
+    "end_exclusive": 1782851619,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Meta Platforms, Inc. (META) hit (LOW) $500 in June?",
+  "market_opened": "2026-05-25T04:08:56.516526Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 205,
+    "wallet_trade_leg_rows": 596,
+    "price_points": 150,
+    "wallets": 127,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-05": 4,
+    "2026-06": 201
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/what-price-will-meta-hit-in-june-2026/will-meta-dip-to-500-in-june-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 445,
+      "sha256": "a41717faed1a9687c576ca6cc1591257ce21dcb3f0faa7f9569adbbb4553eca2"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 242,
+      "sha256": "c8581e728db974928242203a097a945f09fdc474bd2f7c1c9d4162539e6cddf6"
+    },
+    {
+      "path": "market.json",
+      "bytes": 3047,
+      "sha256": "30f80f819e6682ddd19b903b96ca1cb62f7439b95932f8eba5dfaddad21fcf78"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "1523f7b32236ece836f20b5ed5dbf320f23aeef9527eb53b019f249b5fc01279"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 2251,
+      "sha256": "76ecba0cd2cfb14c4064c5131ca8b5d29b304e2a934dd159887452be4e000e8e"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 3057,
+      "sha256": "31f6b2b338fcacd65bb28de86dbe1ae71994243b11a6c715cf433a720f368747"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1027,
+      "sha256": "c780ca34452be0a696ec4edc438abc31e3bdcb98bb0783980993b5d60fefce82"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1030,
+      "sha256": "ea43df4665f340b61237273c9af426bcd261e91f1cc6ef8cc10e48dc0023b5d7"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 36485,
+      "sha256": "2a76055ff0b258b3dff727215fcba68aee9fe76d07d88e85eb8617dc17f7e482"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 60790,
+      "sha256": "6b9adfeecd527ae62cb624f7435159202d5de78d72cfe247db7098c70d2e42dd"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 15882,
+      "sha256": "326025d2bb0ad66f7cc36ce7933787881ebea4a80f015594de709d03a38f99b7"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 23095,
+      "sha256": "7352f22fc7575e2442dfc41f8a61dba1eb237cd39127275af5805293a13a5fa5"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 13523,
+      "sha256": "cfcfa7d4db37a466602c6b91cfbb546b4f4a01def8fe2250320bfb254e15f304"
+    }
+  ]
+}

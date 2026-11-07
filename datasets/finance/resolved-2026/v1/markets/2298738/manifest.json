@@ -1,0 +1,109 @@
+{
+  "dataset": "polymarket-2298738-v1",
+  "built_at": "2026-11-07T22:51:30.225908+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/will-anthropics-valuation-hit-by-june-30/will-anthropics-valuation-hit-high-1pt25t-by-june-30",
+    "condition_id": "0x57fa09373e78720fbe390d8bf873fd06f8fb3bb27b781bf12309f2f85ba23871",
+    "start": 1779148800,
+    "end_exclusive": 1782932652,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Anthropic\u2019s valuation hit (HIGH) $1.25T by June 30?",
+  "market_opened": "2026-05-19T04:31:23.437109Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 810,
+    "wallet_trade_leg_rows": 2387,
+    "price_points": 178,
+    "wallets": 429,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-05": 329,
+    "2026-06": 455,
+    "2026-07": 26
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/will-anthropics-valuation-hit-by-june-30/will-anthropics-valuation-hit-high-1pt25t-by-june-30",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 467,
+      "sha256": "e7ed8ce6c0ef4a91c68bb4198869243d765ed14e1022ec782dc53f9a32774602"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 243,
+      "sha256": "1d59d6937ff7ca81c18367dd2852965397e2ff1662cbf95db7a28906e1aa4489"
+    },
+    {
+      "path": "market.json",
+      "bytes": 3967,
+      "sha256": "0611c246beca143ba546ba59b4d93c4c737a500c734cafbd76b9f8b84b3fa7c3"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 344,
+      "sha256": "29689b61464742f3e3bd9ec7d1c0a6db16a346d633c856646b1de721b722daf9"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 2589,
+      "sha256": "ab1783f29cfafb0ea3e318e33a427a268f520fd8c9d1c79781ede733866bb1d0"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 3390,
+      "sha256": "e60e0d4d85b500c154c4097b1b1f8b4e715f9683fc2cd6d8048065dfa62080f4"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1101,
+      "sha256": "9c7cd26a6cf5d3aa38a12720592b41cd454534eecb09902b8b03240379ba068d"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1102,
+      "sha256": "6921288a102fe6249efdea799b15c72e49cb3650a4bb19f019bc178b5d2a0bd0"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 158503,
+      "sha256": "a9cf5c6bc16b4b54f05ebbd60ddca593f0051220866585ff23ad8ad0392458fa"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 261911,
+      "sha256": "0b2107ee6e16c5298df3dd8680108a1b2456d0809787b142803a7afb61757e55"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 64540,
+      "sha256": "1907af5e5d7c5731ffe39c7e4caca1eca8cba9cc824c4544d70bcc6704ef4656"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 92755,
+      "sha256": "88c896351990fca1cba699951186f916587d760c1d617cd17da071a6d73a6200"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 46742,
+      "sha256": "4272b8f70ff957802f2f1958cb569b159a93674fd3d99359034a39f2ac38f23d"
+    }
+  ]
+}

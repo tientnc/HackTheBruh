@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-will-sp-500-spx-hit-by-end-of-march/will-sp-500-spx-hit-6200-low-in-march-2026",
+  "condition_id": "0x80918ed667684cf0c550df587f7853cea0608bc9979a3ec96964a596e5fa9d0f",
+  "start": 1772496000,
+  "end_exclusive": 1775024786,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

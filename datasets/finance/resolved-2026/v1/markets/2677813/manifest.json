@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-2677813-v1",
+  "built_at": "2026-11-07T22:51:08.294792+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/what-price-will-spy-hit-in-july-2026/will-spy-dip-to-700-in-july-2026",
+    "condition_id": "0x7264a7a700634b753fdd00567be2ad6388eccddd2219a7a1720d941f00f8160a",
+    "start": 1782345600,
+    "end_exclusive": 1785529159,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will S&P 500 (SPY) hit (LOW) $700 in July?",
+  "market_opened": "2026-06-25T04:04:28.05701Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 320,
+    "wallet_trade_leg_rows": 872,
+    "price_points": 455,
+    "wallets": 151,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-06": 6,
+    "2026-07": 314
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/what-price-will-spy-hit-in-july-2026/will-spy-dip-to-700-in-july-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 443,
+      "sha256": "c2f8124e9b8129495907c93aae44c85c1768761f5afa889eebe533f444e8b5f7"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 244,
+      "sha256": "574af5dba3ad96ca1d6b3996db3c15cf4cc5eb7a58fbedb855e91c62819c1351"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2998,
+      "sha256": "2a1e6c2a15608582d43147629744ecb7193d61b8e6777534fb5d21fb8baeecc5"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "42716da60f3969bb59559e4e71a1fb1f65eaef5e80a7f8e6e43103584ca72e43"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 5855,
+      "sha256": "feda934bb1c150969204d20c91d8816523e9b2f73db2e7dff3d6d1cbe7c0e73f"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 3075,
+      "sha256": "b6b157b7cd1e171c2daa05d6f85328fedf01c0fe70cb5d8c57d5d43adf4b11cc"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1947,
+      "sha256": "d5838121ff3eb8288702797ad115b0e819f5d9c76a1db29b578bd51d93ef8c62"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1919,
+      "sha256": "c1c9d865d71946dbb970d31ebe03a4d22f62a26f6fe36408e66d3d904670ad03"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 56429,
+      "sha256": "dcfb02774748065866912c403e844e10044de032b5daa318f8c62ccbdb74ef3f"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 89516,
+      "sha256": "024f2c72bf9c0996c49748ec5e70a9d96a01eaffc691fc84b2173d4c2d38364a"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 24359,
+      "sha256": "8cc34e0db72b03cbe8aa7e503cd7ed952f1caddf1b34e04732f9b457039cb021"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 33800,
+      "sha256": "ca6d63b46656e10c523005528c205312df20cf81a59b56844a071d7c6759dac2"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 16306,
+      "sha256": "7d7972b31cf62950a57cb67780b6701df963b9907310e1f2a9ffbb0c865f96f8"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/2nd-largest-company-end-of-january/will-microsoft-be-the-second-largest-company-in-the-world-by-market-cap-on-january-31",
+  "condition_id": "0xc316061aef012a51ff37af697a5bef33a33ff1e0a20c2feb2eeacbb87e58744d",
+  "start": 1766016000,
+  "end_exclusive": 1769868463,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

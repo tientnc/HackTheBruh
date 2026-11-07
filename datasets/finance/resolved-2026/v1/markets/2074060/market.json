@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-price-will-nvda-hit-in-may-2026/will-nvda-reach-248-in-may-2026",
+  "market_id": "2074060",
+  "condition_id": "0x76e08e9528154ddbc7397c51733462752088bbbb1cd062f4cb284f2c4a7c20c0",
+  "event_id": "415424",
+  "slug": "will-nvda-reach-248-in-may-2026",
+  "question": "Will NVIDIA (NVDA) hit (HIGH) $248 in May?",
+  "created_at": "2026-04-25T04:00:49.229933Z",
+  "start_date": "2026-04-25T04:05:05.396655Z",
+  "end_date": "2026-06-01T03:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point during May 2026, any 1-minute candle for NVIDIA (NVDA) has a final \"High\" price equal to or above the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during the regular trading hours of the primary exchange on which the listed security trades (typically 9:30 AM \u2013 4:00 PM ET) will be considered. Prices occurring during pre-market or after-hours trading will not qualify.\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Pyth.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Pyth after any adjustments have been applied.\n\nThe resolution source for this market is Pyth \u2014 specifically, the NVIDIA (NVDA) \"High\" prices available at https://pythdata.app/explore/Equity.US.NVDA%2FUSD, with the chart settings configured for 1-minute candles.\n\nHistorical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using the \"t=\" parameter. Any timestamp within the listed market time frame may be used to view the relevant candle data (e.g., https://pythdata.app/explore/Equity.US.NVDA%2FUSD?t=1773432000)\n\nIf the relevant Pyth data is unavailable due to a system outage, data failure, or other technical disruption that prevents verification of the required 1-minute candle data, the official daily high price published by the primary exchange on which the listed security trades will be used to determine whether the listed price was reached during the applicable trading session.",
+  "resolution_source": "https://pythdata.app/explore/Equity.US.NVDA%2FUSD",
+  "outcomes": [
+    {
+      "condition_id": "0x76e08e9528154ddbc7397c51733462752088bbbb1cd062f4cb284f2c4a7c20c0",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "615442750018633400709652983653200043097691939117532297944005045727225022370"
+    },
+    {
+      "condition_id": "0x76e08e9528154ddbc7397c51733462752088bbbb1cd062f4cb284f2c4a7c20c0",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "70872912539303284830416100897551636892486807964959739642325919606899982802"
+    }
+  ]
+}

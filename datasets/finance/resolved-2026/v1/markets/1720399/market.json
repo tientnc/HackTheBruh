@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/spacex-files-ipo-by/will-spacex-file-for-an-ipo-by-april-3-2026",
+  "market_id": "1720399",
+  "condition_id": "0xa2c68eb1353353fd779edde5a44efa8a9ed66cc0e1a284ea7a00c2afe2e908e2",
+  "event_id": "307915",
+  "slug": "will-spacex-file-for-an-ipo-by-april-3-2026",
+  "question": "Will SpaceX file for an IPO by April 3, 2026?",
+  "created_at": "2026-03-25T20:53:48.132925Z",
+  "start_date": "2026-03-25T22:11:32.50524Z",
+  "end_date": "2026-04-03T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if SpaceX files a Form S-1 or F-1 registration statement with the U.S. Securities and Exchange Commission by the listed date 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nA qualifying filing includes either (a) a publicly available filing on the SEC\u2019s EDGAR database, or (b) a confidential submission that is explicitly confirmed by SpaceX or reported as completed by a consensus of credible reporting.\n\nA filing must be confirmed or announced as having been completed within the market\u2019s timeframe to qualify. Confirmations, announcements, or reporting that occur after the end date will not be considered, even if the filing itself occurred within the timeframe.\n\nThe primary resolution source will be official filings from the SEC; however, a consensus of credible reporting may also be used.",
+  "resolution_source": null,
+  "outcomes": [
+    {
+      "condition_id": "0xa2c68eb1353353fd779edde5a44efa8a9ed66cc0e1a284ea7a00c2afe2e908e2",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "76026241696646102884288888634128851119387266792043248522415617094806017375088"
+    },
+    {
+      "condition_id": "0xa2c68eb1353353fd779edde5a44efa8a9ed66cc0e1a284ea7a00c2afe2e908e2",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "78357459006095120985537635661487115063017785466903820354822874582034996840180"
+    }
+  ]
+}

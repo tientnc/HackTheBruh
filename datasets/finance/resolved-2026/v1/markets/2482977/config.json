@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/spacex-closing-market-cap-end-of-ipo-month-20260606222757973/will-spacexs-market-cap-be-between-2pt5t-and-3pt0t-at-market-close-on-last-trading-day-of-ipo-month-20260606222847122",
+  "condition_id": "0x67475aba7b15b655c8671adb1acad5452e3ff4b48ccd5c7dc90d5b1b740821ae",
+  "start": 1780963200,
+  "end_exclusive": 1782856943,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

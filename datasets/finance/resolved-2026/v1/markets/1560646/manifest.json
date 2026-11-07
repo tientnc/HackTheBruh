@@ -1,0 +1,109 @@
+{
+  "dataset": "polymarket-1560646-v1",
+  "built_at": "2026-11-07T22:49:38.737306+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-caesars-entertainment-inc-be-acquired-before-2027-448",
+    "condition_id": "0xb8e9e1c93dbc5e2af5bcf4d857ea73a204196303e2bbd9be7955c27d55d7fc56",
+    "start": 1773187200,
+    "end_exclusive": 1779982620,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Caesars Entertainment, Inc. be acquired before 2027?",
+  "market_opened": "2026-03-11T18:56:44.476Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 986,
+    "wallet_trade_leg_rows": 2707,
+    "price_points": 250,
+    "wallets": 302,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-03": 225,
+    "2026-04": 438,
+    "2026-05": 323
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-caesars-entertainment-inc-be-acquired-before-2027-448",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 477,
+      "sha256": "8f7335196f201285fca16c4c4905e2f1062717db4513c368630b4cfb3402eebc"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 245,
+      "sha256": "f062a7acfd2b73efa45447f0bdc785b26c579ee1415fc732bbe23f4f3e2d7001"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1874,
+      "sha256": "eed8c97c106dbb752700c689f11427df23a45c6ec992b2060086278466fdd641"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "38a5fa30e835e4b14ea5e749762af9862853a9f54a82a7889c62b22a77e63577"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 3524,
+      "sha256": "89c2bd8b8b44b2e0e893e2f68499506e394e6ab6ef00ac74382e264e95df6b03"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2577,
+      "sha256": "006076b32e32d2ac2251024c1f0eeab22d18966fe9e5c19d8775a184564f57f3"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1302,
+      "sha256": "2655ef3636bc3c266efcdc36ef9e122b57c3767e53280b251bcd20565351ec5d"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1442,
+      "sha256": "f1a1c4d0fe58257c1796df91b1d1b27547f60f21631fb844aecda8503110bde8"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 151424,
+      "sha256": "042111fd50ac093f0156ed182ea2dfa913b26520dd875b1409729845a81bc727"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 238226,
+      "sha256": "2df7e45a029d3a07f448646e99b22a475b064555329c4a1dd1381fd4d9da2061"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 69578,
+      "sha256": "4d66d144ae95380030fdd23c306c7871d66386c60a99993419a349a10aff9e42"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 96041,
+      "sha256": "6e52ba766596bdf58ceed7c9f8ef9618f9e5acd134b5b2a8194e28768156a69e"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 32945,
+      "sha256": "a048a1a3a9ed0cfd7e32836c5c1674a7ed931c7def97eaf0ab84f1996ff24368"
+    }
+  ]
+}

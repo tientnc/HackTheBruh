@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-wti-hit-in-june-2026/will-wti-reach-85-in-june-2026-from-june-16",
+  "condition_id": "0x6bab46c35e313206c5e7b0d68334351b4278b2297662b3c4859941e5a406e417",
+  "start": 1781568000,
+  "end_exclusive": 1782860757,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

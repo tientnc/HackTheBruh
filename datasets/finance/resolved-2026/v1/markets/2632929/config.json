@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/next-uk-chancellor-of-the-exchequer-in-2026-20260621005319178/will-shabana-mahmood-be-the-next-chancellor-of-the-exchequer-of-the-uk-in-2026-20260621005429785",
+  "condition_id": "0xb4c19d009845f3521237f58cb23307a3153cea3efa388469f639b3290314e1d2",
+  "start": 1782000000,
+  "end_exclusive": 1784576323,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/aapl-above-in-march-2026/aapl-above-330-on-march-31-2026",
+  "market_id": "1460841",
+  "condition_id": "0x18df041d01b17c8048322bc53e85722410ba4ea3387b145cc5a2e864e8c0c909",
+  "event_id": "235644",
+  "slug": "aapl-above-330-on-march-31-2026",
+  "question": "Will Apple (AAPL) close above $330 end of March?",
+  "created_at": "2026-02-27T23:00:13.399749Z",
+  "start_date": "2026-02-27T23:19:55.004925Z",
+  "end_date": "2026-03-31T20:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the official closing price for Apple (AAPL) on the final trading day of March 2026 is higher than the listed price. Otherwise, this market will resolve to \"No\".\n\nIf the final trading day of the month is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nThe resolution source for this market is Yahoo Finance \u2014 specifically, the Apple (AAPL) \"Close\" prices available at https://finance.yahoo.com/quote/AAPL/history, published under \"Historical Prices.\"\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/AAPL/history",
+  "outcomes": [
+    {
+      "condition_id": "0x18df041d01b17c8048322bc53e85722410ba4ea3387b145cc5a2e864e8c0c909",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "28094377119265960223699674318814290608673536751561417637067731970653571344881"
+    },
+    {
+      "condition_id": "0x18df041d01b17c8048322bc53e85722410ba4ea3387b145cc5a2e864e8c0c909",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "79434981075276588065613456060179382451455531735445667129313373688855393558066"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-nvda-hit-in-march-2026/will-nvda-dip-to-116-in-march",
+  "condition_id": "0x9b2a40185870a1712c77616c488f809d3d97e99c3af0837e074bbcc41e782e49",
+  "start": 1771977600,
+  "end_exclusive": 1774994928,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/situational-awareness-announces-fund-wind-down-byptptpt-20260730181230095/untitled-market-1-20260730180943686",
+  "market_id": "3231246",
+  "condition_id": "0xff72846a865fdf42636065e1e1074cd96f5120286a4f239f5daa907fa333b4c6",
+  "event_id": "774085",
+  "slug": "untitled-market-1-20260730180943686",
+  "question": "Situational Awareness announces fund wind-down by August 31, 2026?",
+  "created_at": "2026-07-30T20:00:23.192389Z",
+  "start_date": "2026-07-30T20:03:33.917754Z",
+  "end_date": "2026-09-01T03:59:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if Situational Awareness announces that it will cease operations, that Situational Awareness LP will be wound down, or that all outside investor capital in Situational Awareness LP will be returned, by December 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nA conversion to a family office or proprietary vehicle, or a distribution of assets in kind to investors, will qualify if all outside investor capital is returned or announced to be returned. A transition of all assets to a liquidating trust or special purpose vehicle will qualify if that vehicle is announced to accept no new outside capital.\n\nA consensus of credible reporting that Situational Awareness has ceased operations, that Situational Awareness LP has been wound down, or that all outside investor capital in Situational Awareness LP has been returned, will also qualify to resolve this market to \"Yes\".\n\nThe following will not qualify: closing the fund to new investors; redemption gates or suspensions; redemptions made under existing lockup terms; the liquidation of positions, a strategy, or a portfolio without a wind-down of the fund; partial redemptions; or a renamed, successor, continuation, or rollover vehicle that continues to accept outside capital.\n\nOnce a qualifying announcement occurs, a subsequent decision to continue operations will not change the resolution of this market.\n\nThe resolution source for this market will be official information from Situational Awareness, including any withdrawal of investment adviser registration filed with the SEC; however, a consensus of credible reporting may also be used.\n",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0xff72846a865fdf42636065e1e1074cd96f5120286a4f239f5daa907fa333b4c6",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "102053937011717581583002551108482936182782505316115245967969602657637609323699"
+    },
+    {
+      "condition_id": "0xff72846a865fdf42636065e1e1074cd96f5120286a4f239f5daa907fa333b4c6",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "53824015269256658134840707324974812576418716928749345266383034179398646148812"
+    }
+  ]
+}
