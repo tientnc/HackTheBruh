@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-1340808-v1",
+  "built_at": "2026-11-07T22:51:15.836825+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/solv-energy-ipo-closing-market-cap/will-solv-energy-incs-market-cap-be-greater-than-5pt4b-at-market-close-on-ipo-day",
+    "condition_id": "0xbd103048aef1d720383b2080f86b25ecf95106169e5cbe42ca442cb901c96bc4",
+    "start": 1770249600,
+    "end_exclusive": 1771232002,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will SOLV Energy, Inc.'s market cap be greater than $5.4B at market close on IPO day?",
+  "market_opened": "2026-02-05T19:16:08.813592Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 3271,
+    "wallet_trade_leg_rows": 8490,
+    "price_points": 37,
+    "wallets": 862,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-02": 3271
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/solv-energy-ipo-closing-market-cap/will-solv-energy-incs-market-cap-be-greater-than-5pt4b-at-market-close-on-ipo-day",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 490,
+      "sha256": "5a9af9b6838d7c6c255a81781b04a4ea5d9754bae366f647152018de29bb4564"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 244,
+      "sha256": "fbebeb106577e73c39ba8e620aa50ab23a1b76614226a57520710dfd52c5dde9"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2577,
+      "sha256": "d1897ed757aa424f7238c9943a540e26edc758f224a0ba35e76c905968149366"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "80147fb76355aa5e97dec5dead2f6a669320c99611a52401311d0ca5687fe043"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 768,
+      "sha256": "39da36a542f24ea910e65fd00257e7f42b58b27eae2f952b41545d32b30abe03"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2604,
+      "sha256": "54e02aad03e513261e73fa552cc3b23092c8dd1c8bed235902b099c642047b1b"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 564,
+      "sha256": "d7114a6881ba6aebf4b69190b106f91eea676cbe80cbbf46d8d1351f74addb79"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 570,
+      "sha256": "f01fd718b0a9c04a3cf85ec0ce51d1846a26bd70b26bb8da1db0e935437e138c"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 570811,
+      "sha256": "862d23a276314101746d5973284a662ab095201c8825d1d5c6ce686791f344d5"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 925951,
+      "sha256": "0432884948cf00f5f2e4ab5ca52cca35ef8b72b000151157cf6db096027d8cec"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 229831,
+      "sha256": "0358c5a2ffa80e0b3bcac29f0ee3440c67006860d77d73411eb0ebfec7e68db4"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 320081,
+      "sha256": "8daae28fb3d1f58b9e3addf37f3556623ffe29cfcc5af20b3d999f41c577bb74"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 92706,
+      "sha256": "d77fbbc3df921910fc6ef9d5229f479d8b16a78eefbd3cbf5dd50707a1d2b5b4"
+    }
+  ]
+}

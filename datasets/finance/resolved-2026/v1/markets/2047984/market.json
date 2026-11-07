@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/will-spacex-acquire-cursor/will-spacex-acquire-cursor-by-december-31-2026-675",
+  "market_id": "2047984",
+  "condition_id": "0xc2dd20bc42378191ba1e6068f2afa8b2a6c13881a42ee03e211441f0a2f3aeac",
+  "event_id": "404632",
+  "slug": "will-spacex-acquire-cursor-by-december-31-2026-675",
+  "question": "Will SpaceX acquire Cursor by December 31, 2026?",
+  "created_at": "2026-04-21T23:58:56.689142Z",
+  "start_date": "2026-04-22T00:02:00.095Z",
+  "end_date": "2026-12-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if it is officially announced that Cursor will be, has been, or is being acquired by or merged with SpaceX, by December 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nMergers or acquisitions involving Cursor or its parent company (if applicable), and SpaceX or its parent company, Space Exploration Technologies Corp., will qualify.\n\nAn announcement by Cursor or SpaceX within this market's timeframe will qualify for a \"Yes\" resolution, regardless of whether or when the announced acquisition/merger actually occurs.\n\nAnnouncements of partial sales may count, as long as the acquiring company acquires a controlling interest in the other company. A \u201ccontrolling interest\u201d refers to a change in ownership sufficient to control the company\u2019s strategic decisions (typically more than 50% of equity, or equivalent control via voting and governance rights). Transactions or investments that do not result in a transfer of controlling interest will not count.\n\nThe primary resolution source for this market will be official information from Cursor and SpaceX; however, a consensus of credible reporting may also be used.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0xc2dd20bc42378191ba1e6068f2afa8b2a6c13881a42ee03e211441f0a2f3aeac",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "86491867302178601744430591671205540177115110519210520247140716861452435492610"
+    },
+    {
+      "condition_id": "0xc2dd20bc42378191ba1e6068f2afa8b2a6c13881a42ee03e211441f0a2f3aeac",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "19561538496128590323880994228377575312704215274713040201581074932857663048903"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/will-spacexs-valuation-hit-by-june-30/will-spacexs-valuation-hit-low-1pt45t-by-june-30",
+  "condition_id": "0xbfe9afdc8ee63ae05390f983745281caf67242cd7a69b6a6950335067a99a871",
+  "start": 1780963200,
+  "end_exclusive": 1782861116,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

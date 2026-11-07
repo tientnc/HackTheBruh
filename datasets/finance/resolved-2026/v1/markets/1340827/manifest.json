@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-1340827-v1",
+  "built_at": "2026-11-07T22:51:27.159053+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/arko-petroleum-ipo-closing-market-cap/will-arko-petroleum-corps-market-cap-be-between-800m-and-850m-at-market-close-on-ipo-day",
+    "condition_id": "0x5e7d3d0844dc6d5cf8c060d07f93c9ffa5adf9408ab6f44cff1e09ac3d4ec0be",
+    "start": 1770249600,
+    "end_exclusive": 1770945452,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will ARKO Petroleum Corp.'s market cap be between $800M and $850M at market close on IPO day?",
+  "market_opened": "2026-02-05T19:16:37.171692Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 121,
+    "wallet_trade_leg_rows": 342,
+    "price_points": 30,
+    "wallets": 95,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-02": 121
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/arko-petroleum-ipo-closing-market-cap/will-arko-petroleum-corps-market-cap-be-between-800m-and-850m-at-market-close-on-ipo-day",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 500,
+      "sha256": "3416d0106812493b6ced8381f1f1548a93890e24559126d03ff04f3204dec9f0"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 242,
+      "sha256": "ba27b4e8e6d219ae831f100ec609b483be6f65e13fbfc02b8256156b4eae36d1"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2607,
+      "sha256": "6072d420aabf49ef024822cfce271b31a17ce06ca32d4e9494e4401ee8a51865"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "8090ad187cb50014d06d98c16c6672fcf9841b42bf6db6fcf68d05528e1af1a2"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 668,
+      "sha256": "ab34168a72705fea5246143f40c2a1c1b15a674c7c3ee2dc5effb2038fc31f34"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2591,
+      "sha256": "341901c51949e173c0f543eda50be1969bd10c1b8e54db00db1fee813026cc63"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 542,
+      "sha256": "d13589f1711074a59f0a263b5316970eb1ba593a05cd34fa2f3728aff7378155"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 543,
+      "sha256": "5a46666baedbb619d98ed8b3b0e8f49279fb01c72398fae284da5daead888bcd"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 21029,
+      "sha256": "6c7e4f1f8246336682b85b38a746c455bb7bd624a3810a08c749934cbebed82a"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 35305,
+      "sha256": "1d20a852fea80ac24c4de191d5244ebd77d32cf936f8d368fb50e5a70dd62826"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 9007,
+      "sha256": "cfb459b36716c14f5f8e9e293e3884bf90ce267c0732df492259e8d8176f589d"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 12729,
+      "sha256": "e1fd4dc96111c6cee48d11df4c91867518134697afd8361eb10714e2c23e54fc"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 9277,
+      "sha256": "0214bcb95e91f8718e61351526073f11b74938ad7798fb40a0fdb1b9d4f31426"
+    }
+  ]
+}

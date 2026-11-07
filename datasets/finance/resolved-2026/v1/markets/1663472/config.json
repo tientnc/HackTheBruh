@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/3rd-largest-company-end-of-april/will-alphabet-be-the-third-largest-company-in-the-world-by-market-cap-on-april-30",
+  "condition_id": "0x7a560cf5d3d273a07824e57f12afc4d44d82487faed750081f2aad59934bd2ce",
+  "start": 1773964800,
+  "end_exclusive": 1777588515,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

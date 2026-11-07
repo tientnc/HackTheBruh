@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/nvda-quarterly-earnings-nongaap-eps-02-25-2026-1pt52/nvda-quarterly-earnings-nongaap-eps-02-25-2026-1pt52",
+  "market_id": "1363685",
+  "condition_id": "0x4116364a30edf0db220553d5f4032b32f05d42b6d64e1bacaa0c065bb4146015",
+  "event_id": "204455",
+  "slug": "nvda-quarterly-earnings-nongaap-eps-02-25-2026-1pt52",
+  "question": "Will NVIDIA (NVDA) beat quarterly earnings?",
+  "created_at": "2026-02-10T19:18:13.558985Z",
+  "start_date": "2026-02-10T19:23:31.628331Z",
+  "end_date": "2026-02-25T22:00:00Z",
+  "closed_now": true,
+  "description": "As of market creation, NVIDIA is estimated to release earnings on February 25, 2026. The Street consensus estimate for NVIDIA\u2019s non-GAAP EPS for the relevant quarter is $1.52 as of market creation. This market will resolve to \"Yes\" if NVIDIA reports non-GAAP EPS greater than $1.52 for the relevant quarter in its next quarterly earnings release. Otherwise, it will resolve to \"No.\" The resolution source will be the non-GAAP EPS listed in the company\u2019s official earnings documents. \n\nIf NVIDIA releases earnings without non-GAAP EPS, then the market will resolve according to the non-GAAP EPS figure reported by SeekingAlpha. If no such figure is published within 96h of market close (4:00:00pm ET) on the day earnings are announced, the market will resolve according to the GAAP EPS listed in the company\u2019s official earnings documents; or, if not published there, according to the GAAP EPS provided by SeekingAlpha. If no GAAP EPS number is available from either source at that time, the market will resolve to \u201cNo.\u201d (For the purposes of this market, GAAP EPS refers to diluted GAAP EPS, unless it is not published, in which case it refers to basic GAAP EPS.)\n\nIf the company does not release earnings within 45 calendar days of the estimated earnings date, this market will resolve to \u201cNo.\u201d \n\nNote: Subsequent restatements, corrections, or revisions made to the initially announced non-GAAP EPS figure will not qualify for resolution, except in the case of obvious and immediate mistakes (e.g., fat finger errors, as with Lyft's (LYFT) earnings release in February 2024).\nNote: The strike prices used in these markets are derived from SeekingAlpha estimates, and reflect the consensus of sell-side analyst estimates for non-GAAP EPS.\nNote: All figures will be rounded to the nearest cent using standard rounding.\nNote: For the purposes of this market, IFRS EPS will be treated as GAAP EPS.\nNote: If multiple versions of non-GAAP EPS are published, the market will resolve according to the primary headline non-GAAP EPS number, which is typically presented on a diluted basis. If diluted is not published, then basic non-GAAP EPS will qualify.\nNote: All figures are expressed in USD, unless otherwise indicated.\nNote: For primarily internationally listed companies, this market refers specifically to the shares traded in the United States on U.S. stock exchanges such as the NYSE or Nasdaq. In cases where the company trades in the U.S. through an American Depositary Receipt (ADR) or American Depositary Share (ADS), this market will refer to the ADR/ADS.\n",
+  "resolution_source": "https://seekingalpha.com/",
+  "outcomes": [
+    {
+      "condition_id": "0x4116364a30edf0db220553d5f4032b32f05d42b6d64e1bacaa0c065bb4146015",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "89574082517578274954002983111098093121150932378524836711515364028749819685136"
+    },
+    {
+      "condition_id": "0x4116364a30edf0db220553d5f4032b32f05d42b6d64e1bacaa0c065bb4146015",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "17589249831243597793039391769969221188999279281190323145961992301263449312253"
+    }
+  ]
+}

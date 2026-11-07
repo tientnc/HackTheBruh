@@ -1,0 +1,40 @@
+{
+  "validated_at": "2026-11-07T22:51:45.387399+00:00",
+  "passed": false,
+  "issues": [
+    "Invalid market snapshot 2677813: ['Duplicate price keys: 4']",
+    "Invalid market snapshot 2673627: ['Duplicate price keys: 4']",
+    "Invalid market snapshot 2677832: ['Duplicate price keys: 4']",
+    "Invalid market snapshot 2677867: ['Duplicate price keys: 4']",
+    "Invalid market snapshot 2677853: ['Duplicate price keys: 4']",
+    "Invalid market snapshot 2374611: ['Duplicate price keys: 4']",
+    "Invalid market snapshot 2314474: ['Duplicate price keys: 2']",
+    "Invalid market snapshot 3096360: ['Duplicate price keys: 2']",
+    "Invalid market snapshot 2941258: ['Duplicate price keys: 6']",
+    "Invalid market snapshot 3096413: ['Duplicate price keys: 4']",
+    "Invalid market snapshot 3231246: ['Duplicate price keys: 4']",
+    "Invalid market snapshot 677023: ['Duplicate price keys: 10']",
+    "Invalid market snapshot 3212187: ['Duplicate price keys: 8']",
+    "Invalid market snapshot 664884: ['Duplicate price keys: 12']",
+    "Invalid market snapshot 3866515: ['Duplicate price keys: 4']",
+    "Invalid market snapshot 2299990: ['Duplicate price keys: 12']",
+    "Invalid market snapshot 896056: ['Duplicate price keys: 10']",
+    "Invalid market snapshot 3081960: ['Duplicate price keys: 12']",
+    "Invalid market snapshot 4951226: ['Duplicate price keys: 4']",
+    "Invalid market snapshot 5180406: ['Duplicate price keys: 2']",
+    "Invalid market snapshot 3388093: ['Duplicate price keys: 10']",
+    "At least one market download failed"
+  ],
+  "payload_checksums_verified": 1507,
+  "per_market_validations": 79,
+  "checks": [
+    "payload SHA-256",
+    "100 selected markets",
+    "distinct parent event IDs",
+    "distinct heuristic economic families",
+    "binary settled labels",
+    "actual label timestamp window",
+    "all downloads succeeded",
+    "per-market trade, price and wallet validation during collection"
+  ]
+}

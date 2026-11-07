@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/will-silver-si-hit-by-end-of-march/will-silver-si-hit-high-200-by-end-of-march",
+  "market_id": "1486028",
+  "condition_id": "0x9a6fd107df38155f5a733e2a20ebdbd80f637a535986adcc729385a558a7d452",
+  "event_id": "242027",
+  "slug": "will-silver-si-hit-high-200-by-end-of-march",
+  "question": "Will Silver (SI) hit (HIGH) $200 by end of March?",
+  "created_at": "2026-03-02T19:46:46.336772Z",
+  "start_date": "2026-03-02T23:19:31.146555Z",
+  "end_date": "2026-03-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, on any trading day, the official CME settlement price for the Active Month (front month) of Silver (SI) futures is equal to or above the listed price by the final trading day of March 2026. Otherwise, the market will resolve to \"No\".\n\nFor CME Silver (SI) futures contracts, the Active Month is the nearest of CME's designated delivery-cycle months (March, May, July, September, December) that is not the spot month. The Active Month becomes a non-active month effective on its First Position Date, at which point the next eligible contract month becomes the Active Month.\n\nOnly the Active Month's official settlement price published by CME Group will be considered. Intraday trades, highs, lows, bids, offers, midpoint values, or indicative prices do not count.\n\nNote that the settlement price may differ from the last traded price. CME's methodology to determine the settlement price can vary by commodity and contract.\n\nOnly days on which CME publishes an official settlement price for the Active Month will be included. Days without settlement prices (weekends, holidays, or market closures) are ignored.\n\nThis market will resolve based on the settlement price as it appears on the CME settlement page at the time it is first published for that trading day, regardless of any later corrections or updates.\n\nThe resolution source for this market is the CME Group website \u2014 specifically, the daily \"Settlement\" price for the Active Month of Silver (SI) futures.",
+  "resolution_source": null,
+  "outcomes": [
+    {
+      "condition_id": "0x9a6fd107df38155f5a733e2a20ebdbd80f637a535986adcc729385a558a7d452",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "113658277924293055960830198735497209201878729928181545616814022332927429021985"
+    },
+    {
+      "condition_id": "0x9a6fd107df38155f5a733e2a20ebdbd80f637a535986adcc729385a558a7d452",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "3160347566065722273218854782598963989069360573077133354152441816678132109225"
+    }
+  ]
+}

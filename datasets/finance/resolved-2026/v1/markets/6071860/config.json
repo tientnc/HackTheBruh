@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/how-low-will-5-year-treasury-yield-get-before-2027/will-the-5-year-treasury-yield-dip-below-4pt65-before-2027",
+  "condition_id": "0x8aedef3c37c54bc3a5883e2e96ca33024e6fd03190af64e22de0144466970260",
+  "start": 1792713600,
+  "end_exclusive": 1793919007,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

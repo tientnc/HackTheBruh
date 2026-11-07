@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/largest-company-end-of-july-20260624192302727/will-amazon-be-the-largest-company-in-the-world-by-market-cap-on-july-31-20260624192329847",
+  "condition_id": "0x51cdeae08e21f2ebb18c67c4fb06bd5446fcec3f32393800428a670cfbf780bc",
+  "start": 1782259200,
+  "end_exclusive": 1785535323,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

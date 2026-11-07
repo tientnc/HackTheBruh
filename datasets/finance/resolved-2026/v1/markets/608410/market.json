@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap/will-anthropic-not-ipo-by-june-30-2026",
+  "market_id": "608410",
+  "condition_id": "0xaf4c3ba4d1b1568d4309bba0874cb7eec1e5b40a648f4a26b12efa2e9b5ee8a4",
+  "event_id": "48300",
+  "slug": "will-anthropic-not-ipo-by-june-30-2026",
+  "question": "Will Anthropic not IPO by June 30, 2026?",
+  "created_at": "2025-09-22T19:44:05.925059Z",
+  "start_date": "2025-09-23T00:22:52.793Z",
+  "end_date": "2026-06-30T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve based on Anthropic's market capitalization at the closing price on its first day of trading.\n\nIf no IPO occurs by June 30, 2026, 11:59 PM ET, the market will resolve to \"No IPO by June 30, 2026\".\n\nMarket capitalization expresses the monetary value of a company\u2019s outstanding shares, stated in its pricing currency. It is calculated as the number of shares outstanding multiplied by the closing share price on the first trading day.\n\nIf the relevant value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nResolution will be based on the primary exchange\u2019s official listing page. In the event that the relevant figure is not displayed, another reliable source will be used.\n\nIn the event of an interruption in the course of the normal trading session on Anthropic\u2019s first day of trading (e.g., a circuit breaker or half-day), the market will resolve according to the official closing price of the abbreviated session. If no such official closing price is published, the market will resolve according to the next trading day on which an official closing price is published, treating that as the first day of trading for purposes of this market.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0xaf4c3ba4d1b1568d4309bba0874cb7eec1e5b40a648f4a26b12efa2e9b5ee8a4",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "14495888673864948586083280727326896461319586754303430637766841544809472748499"
+    },
+    {
+      "condition_id": "0xaf4c3ba4d1b1568d4309bba0874cb7eec1e5b40a648f4a26b12efa2e9b5ee8a4",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "115325941598173083223514202069551504506839832374902801149030045097943446509453"
+    }
+  ]
+}

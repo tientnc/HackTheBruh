@@ -1,0 +1,112 @@
+{
+  "dataset": "polymarket-1250583-v1",
+  "built_at": "2026-11-07T22:49:33.735628+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/spacex-ipo-by/will-spacex-ipo-by-september-30-2026-832-864-576-595",
+    "condition_id": "0x58ae4880738f502cf9c3ca8e1f7747ead62c32308ca520efd16ee0f91af06415",
+    "start": 1769126400,
+    "end_exclusive": 1781287039,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will SpaceX IPO by September 30, 2026?",
+  "market_opened": "2026-01-23T20:09:37.847Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 1652,
+    "wallet_trade_leg_rows": 4437,
+    "price_points": 453,
+    "wallets": 952,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-01": 6,
+    "2026-02": 8,
+    "2026-03": 196,
+    "2026-04": 437,
+    "2026-05": 659,
+    "2026-06": 346
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/spacex-ipo-by/will-spacex-ipo-by-september-30-2026-832-864-576-595",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 440,
+      "sha256": "7e1d17a83c5a644623cab026c3a8a2c4e66287921e6a8a43ff37c28d05dcbec9"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 246,
+      "sha256": "ddb1b933578c81e5910be82f236b04d5dc70f8ee1cc43e29292edb6c89ed2481"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1682,
+      "sha256": "320b98bed5cec0410431cf0f8cbf09a66fb751ef9ab75164b2b49deab3a650ca"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 344,
+      "sha256": "761c8210dbabc5524dc74c452cbd0c884027c4f2643aa600c8d5b90ec23b9dd6"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 7074,
+      "sha256": "ad9bd14f0a34624f3c2c12ebe222ab70e0d8074ed57ed19ecba34dea36fd991e"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2236,
+      "sha256": "acae671f026b84c112b6b30f99c24762ff043c4be5d83330c28deb81f37e12fe"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 2016,
+      "sha256": "839bc8a2267fc287bd25610cfcf043fcd8e6ab2bb944754b5382f6013e5817f4"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 2102,
+      "sha256": "5988f87e1788fb64a934597a31fab3d6cc04163a55b082eaeff703771837aa41"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 318621,
+      "sha256": "b73393fec1eaf43a0636133a0ec3b1c83cdc6d004d071c5f5591cc4a6eb56b50"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 463975,
+      "sha256": "0f382fd9fed3537f18cb0b71bd19c92da128b47d3aa2fa5696f3cc6a84de034e"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 133314,
+      "sha256": "21bc70ede9b8a800f3e99ffe155213b068d6cf4ea9de04770c6ea10104fe6311"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 180288,
+      "sha256": "2a2b4f2b6a07c1860b3cfd842a0fd4409be76fe751187f676b1f270a7e38afcc"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 103089,
+      "sha256": "77300811780e065283417732de0b292ad07db105ca2611c8f2ae274f257e0439"
+    }
+  ]
+}

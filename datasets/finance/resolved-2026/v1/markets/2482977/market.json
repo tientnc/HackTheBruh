@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/spacex-closing-market-cap-end-of-ipo-month-20260606222757973/will-spacexs-market-cap-be-between-2pt5t-and-3pt0t-at-market-close-on-last-trading-day-of-ipo-month-20260606222847122",
+  "market_id": "2482977",
+  "condition_id": "0x67475aba7b15b655c8671adb1acad5452e3ff4b48ccd5c7dc90d5b1b740821ae",
+  "event_id": "577704",
+  "slug": "will-spacexs-market-cap-be-between-2pt5t-and-3pt0t-at-market-close-on-last-trading-day-of-ipo-month-20260606222847122",
+  "question": "Will SpaceX's market cap be between $2.5T and $3.0T at market close on last trading day of IPO month?",
+  "created_at": "2026-06-09T21:57:16.585546Z",
+  "start_date": "2026-06-09T22:03:56.410986Z",
+  "end_date": "2026-07-01T03:59:00Z",
+  "closed_now": true,
+  "description": "This market will resolve based on SpaceX's market capitalization at the closing price on the last trading day of the calendar month in which SpaceX completes its Initial Public Offering (IPO).\n\nThe IPO refers to the first sale of stock by SpaceX to the public on any recognized stock exchange. If no SpaceX IPO occurs by December 31, 2027, 11:59 PM ET, the market will resolve to \"No IPO before 2028\".\n\nMarket capitalization expresses the monetary value of a company\u2019s outstanding shares, stated in its pricing currency. It is calculated as the number of shares outstanding multiplied by the closing share price on the last trading day of the calendar month in which SpaceX completes its IPO.\n\nIf the relevant value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nResolution will be based on the primary exchange\u2019s official listing page. In the event that the relevant figure is not displayed, another reliable source will be used.\n\nIn the event of an interruption in the course of the normal trading session on SpaceX\u2019s last trading day of the calendar month in which SpaceX completes its IPO (e.g., a circuit breaker or half-day), the market will resolve according to the official closing price of the abbreviated session. If no such official closing price is published, the market will resolve according to the next trading day on which an official closing price is published, treating that as the last trading day of the calendar month in which SpaceX completes its IPO.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x67475aba7b15b655c8671adb1acad5452e3ff4b48ccd5c7dc90d5b1b740821ae",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "67276775803303404683249280219188327036354965553634343215375376745212724476915"
+    },
+    {
+      "condition_id": "0x67475aba7b15b655c8671adb1acad5452e3ff4b48ccd5c7dc90d5b1b740821ae",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "114997772035993297400081982789874218758010151098845549477881320450346417615756"
+    }
+  ]
+}

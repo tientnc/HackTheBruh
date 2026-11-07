@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/next-uk-chancellor-of-the-exchequer-in-2026-20260621005319178/will-shabana-mahmood-be-the-next-chancellor-of-the-exchequer-of-the-uk-in-2026-20260621005429785",
+  "market_id": "2632929",
+  "condition_id": "0xb4c19d009845f3521237f58cb23307a3153cea3efa388469f639b3290314e1d2",
+  "event_id": "619832",
+  "slug": "will-shabana-mahmood-be-the-next-chancellor-of-the-exchequer-of-the-uk-in-2026-20260621005429785",
+  "question": "Will Shabana Mahmood be the next Chancellor of the Exchequer of the UK in 2026?",
+  "created_at": "2026-06-21T20:19:41.469205Z",
+  "start_date": "2026-06-21T20:23:34.402698Z",
+  "end_date": "2026-12-31T23:59:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to the next individual who is officially appointed as the next Chancellor of the Exchequer of the United Kingdom by December 31, 2026, 11:59 PM ET.\n\nTo count for resolution, the individual must be officially appointed by the United Kingdom Monarch. Any interim or caretaker Chancellor of the Exchequer will not count toward the resolution of this market.\n\nIf no such Chancellor of the Exchequer is appointed, or Rachel Reeves is re-appointed as Chancellor of the Exchequer, by December 31, 2026, 11:59 PM ET, this market will resolve to \u201cNo next Chancellor in 2026\u201d.\n\nThe primary resolution source for this market will be official information from the Government of the United Kingdom; however, a consensus of credible reporting may also be used.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0xb4c19d009845f3521237f58cb23307a3153cea3efa388469f639b3290314e1d2",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "41039209524908235059067881747199487988441458706454813068417034107660233287689"
+    },
+    {
+      "condition_id": "0xb4c19d009845f3521237f58cb23307a3153cea3efa388469f639b3290314e1d2",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "17136150466949726136056605904651353539883091360531846815804043008163563483173"
+    }
+  ]
+}

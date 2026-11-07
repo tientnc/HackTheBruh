@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-xauusd-hit-in-july-2026/will-xauusd-reach-4500-in-july-2026",
+  "condition_id": "0xd594a2ffc64cd6e69b18325e04427d2548c1b6e864f419fe0ad1d0d2e4dd4095",
+  "start": 1782345600,
+  "end_exclusive": 1785538924,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

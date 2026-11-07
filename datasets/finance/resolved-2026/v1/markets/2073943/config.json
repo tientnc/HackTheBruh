@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-amzn-hit-in-may-2026/will-amzn-reach-280-in-may-2026",
+  "condition_id": "0x552a1017b5c8f574da1b269d0eb265701ce80becdb07bd0285b7370cc9f209c3",
+  "start": 1777075200,
+  "end_exclusive": 1780109297,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "dataset": "polymarket-608392-v1",
+  "built_at": "2026-11-07T22:49:56.569861+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/stripe-ipo-closing-market-cap/will-stripes-market-cap-be-less-than-80b-at-market-close-on-ipo-day",
+    "condition_id": "0x4f864dda711ee273e6eb7925aada5d984da51a5f423122a00f6ae9532a3c28b9",
+    "start": 1758499200,
+    "end_exclusive": 1782890760,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Stripe\u2019s market cap be less than $80B at market close on IPO day?",
+  "market_opened": "2025-09-23T00:22:34.164937Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 782,
+    "wallet_trade_leg_rows": 1793,
+    "price_points": 1095,
+    "wallets": 274,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-09": 13,
+    "2025-10": 65,
+    "2025-11": 34,
+    "2025-12": 155,
+    "2026-01": 20,
+    "2026-02": 74,
+    "2026-03": 97,
+    "2026-04": 112,
+    "2026-05": 131,
+    "2026-06": 81
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/stripe-ipo-closing-market-cap/will-stripes-market-cap-be-less-than-80b-at-market-close-on-ipo-day",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 471,
+      "sha256": "7e7889c7b53a29d9bd502ff9c06eaa68453d68c944fb231d0168d5f4d8967b26"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 245,
+      "sha256": "b3228e2578b74c610e671fc6c3cee83c06f4420469c47a97d0cf6aa06f0aded5"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2420,
+      "sha256": "1f39980e6d5fbbd0cf114de4358c47911f43e49251bd6250d8cb34dc06a1b176"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "888752aef0387403146aab5b645452563c711574a2faa1db7cfd900158c47539"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 16013,
+      "sha256": "aea54d27c913ed3838b841dd8652c28b8085cf32f5b59ca52fb95b4d9fde58b3"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2570,
+      "sha256": "24865327464deea2eb17bdbaea4afdca93860ed55b6aaf8bd494e5f4b0b23f1f"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 5939,
+      "sha256": "c97de66e2bb650a23bfbefd95b77684eeef15416bc4e66d83c58d06a7df4f8f0"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 6523,
+      "sha256": "53db455f2634331ee596baf722516e464fa27a2fd9982ac0e5decdf88ad7642b"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 115952,
+      "sha256": "1415429e18c0e5cbb157e0b5995f3f2bbbeadb0d75ec54d01b906628b4562283"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 161133,
+      "sha256": "9c217065fe8ad5acd50774213adb00d40d8176934cf971c3d831ed0ac193a96e"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 53565,
+      "sha256": "592d0509b28b8f639d621ddbf3800f55aeacbcab829f9a8a4a2ec2209e9e9bbd"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 67054,
+      "sha256": "38a40dd026d4b472ad41843cf762b8f175e060b7e3da844f594e6599e5288866"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 29505,
+      "sha256": "3f813340981cce8300cbeabc8d81096b45807933f595bf09d53bba0412cc11fc"
+    }
+  ]
+}

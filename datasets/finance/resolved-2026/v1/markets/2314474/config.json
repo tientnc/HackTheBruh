@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/openai-ipo-by/will-openai-ipo-by-july-31-2026",
+  "condition_id": "0x1146a9020af0b4dafcba97375ac13f4dcc591b80c50efa7084973df14cc85833",
+  "start": 1779235200,
+  "end_exclusive": 1785564612,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

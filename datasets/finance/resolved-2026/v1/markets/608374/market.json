@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/fannie-mae-ipo-closing-market-cap/will-fannie-maes-market-cap-be-between-300b-and-350b-at-market-close-on-ipo-day",
+  "market_id": "608374",
+  "condition_id": "0x1721f89383f83b8c744d4b88986c0a1abd484d55812239d03a852bbff052ebc6",
+  "event_id": "48295",
+  "slug": "will-fannie-maes-market-cap-be-between-300b-and-350b-at-market-close-on-ipo-day",
+  "question": "Will Fannie Mae\u2019s market cap be between $300B and $350B at market close on IPO day?",
+  "created_at": "2025-09-22T19:32:18.79001Z",
+  "start_date": "2025-09-22T23:52:20.466118Z",
+  "end_date": "2026-06-30T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve based on Fannie Mae's market capitalization at the closing price on its first day of trading.\n\nIf no IPO occurs by June 30, 2026, 11:59 PM ET, the market will resolve to \"No IPO by June 30, 2026\".\n\nMarket capitalization expresses the monetary value of a company\u2019s outstanding shares, stated in its pricing currency. It is calculated as the number of shares outstanding multiplied by the closing share price on the first trading day.\n\nIf the relevant value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nResolution will be based on the primary exchange\u2019s official listing page. In the event that the relevant figure is not displayed, another reliable source will be used.\n\nIn the event of an interruption in the course of the normal trading session on Fannie Mae\u2019s first day of trading (e.g., a circuit breaker or half-day), the market will resolve according to the official closing price of the abbreviated session. If no such official closing price is published, the market will resolve according to the next trading day on which an official closing price is published, treating that as the first day of trading for purposes of this market.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x1721f89383f83b8c744d4b88986c0a1abd484d55812239d03a852bbff052ebc6",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "17185346769392430087411001697160002372492299898973953876586000392061018203636"
+    },
+    {
+      "condition_id": "0x1721f89383f83b8c744d4b88986c0a1abd484d55812239d03a852bbff052ebc6",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "19156564533545049375533768210798095652666995816018296346528098359350030832241"
+    }
+  ]
+}

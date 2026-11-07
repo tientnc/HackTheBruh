@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-price-will-amzn-hit-in-may-2026/will-amzn-reach-280-in-may-2026",
+  "market_id": "2073943",
+  "condition_id": "0x552a1017b5c8f574da1b269d0eb265701ce80becdb07bd0285b7370cc9f209c3",
+  "event_id": "415411",
+  "slug": "will-amzn-reach-280-in-may-2026",
+  "question": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $280 in May?",
+  "created_at": "2026-04-25T04:00:17.287755Z",
+  "start_date": "2026-04-25T05:02:25.984115Z",
+  "end_date": "2026-06-01T03:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point during May 2026, any 1-minute candle for Amazon.com, Inc. (AMZN) has a final \"High\" price equal to or above the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during the regular trading hours of the primary exchange on which the listed security trades (typically 9:30 AM \u2013 4:00 PM ET) will be considered. Prices occurring during pre-market or after-hours trading will not qualify.\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Pyth.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Pyth after any adjustments have been applied.\n\nThe resolution source for this market is Pyth \u2014 specifically, the Amazon.com, Inc. (AMZN) \"High\" prices available at https://pythdata.app/explore/Equity.US.AMZN%2FUSD, with the chart settings configured for 1-minute candles.\n\nHistorical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using the \"t=\" parameter. Any timestamp within the listed market time frame may be used to view the relevant candle data (e.g., https://pythdata.app/explore/Equity.US.AMZN%2FUSD?t=1773432000)\n\nIf the relevant Pyth data is unavailable due to a system outage, data failure, or other technical disruption that prevents verification of the required 1-minute candle data, the official daily high price published by the primary exchange on which the listed security trades will be used to determine whether the listed price was reached during the applicable trading session.",
+  "resolution_source": "https://pythdata.app/explore/Equity.US.AMZN%2FUSD",
+  "outcomes": [
+    {
+      "condition_id": "0x552a1017b5c8f574da1b269d0eb265701ce80becdb07bd0285b7370cc9f209c3",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "105996739509211746281733214076576451596177572973874031101232112315987027467600"
+    },
+    {
+      "condition_id": "0x552a1017b5c8f574da1b269d0eb265701ce80becdb07bd0285b7370cc9f209c3",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "75960755342857342279878506241546631851804803364378524491791980738049380288627"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/freddie-mac-ipo-closing-market-cap/will-freddie-macs-market-cap-be-less-than-150b-at-market-close-on-ipo-day",
+  "condition_id": "0xc43545c0aef9333342a6e6d1191e1d1102f810d1c3f2eafc59454b6056c8c1ec",
+  "start": 1758499200,
+  "end_exclusive": 1782890636,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

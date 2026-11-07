@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-will-crude-oil-cl-settle-at-in-march/will-crude-oil-cl-settle-at-75-80-in-march-416",
+  "condition_id": "0xe97270e364091c6e6553bc302cfd6768203855eafa731ab68c7acdaac7c02ed3",
+  "start": 1772409600,
+  "end_exclusive": 1775027824,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

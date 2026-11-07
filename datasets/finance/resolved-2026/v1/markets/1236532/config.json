@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/march-fed-derivative-25bps-cut-flips-pause-by-feb-28/march-fed-derivative-25bps-cut-flips-pause-by-feb-28",
+  "condition_id": "0x622c081d57a0fd170629dcc54e583c849d989888d3a22e60d363789a305ae866",
+  "start": 1768953600,
+  "end_exclusive": 1772374730,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

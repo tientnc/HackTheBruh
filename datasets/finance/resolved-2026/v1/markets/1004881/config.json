@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/3rd-largest-company-end-of-march/will-microsoft-be-the-third-largest-company-in-the-world-by-market-cap-on-march-31",
+  "condition_id": "0x78871d70b13de8a22a7361aa8e2ad5620e29e3cd9c18260febed039d44c8901b",
+  "start": 1766448000,
+  "end_exclusive": 1775007846,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

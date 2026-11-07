@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/wfc-quarterly-earnings-gaap-eps-01-14-2026-1pt68/wfc-quarterly-earnings-gaap-eps-01-14-2026-1pt68",
+  "condition_id": "0xf426dc7e61039fdb5ea61c0c552d956276051ceb7b44fce8ee5075b5bd748aa6",
+  "start": 1767398400,
+  "end_exclusive": 1768403157,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

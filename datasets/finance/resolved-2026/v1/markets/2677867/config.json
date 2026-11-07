@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-wti-hit-in-july-2026/will-wti-dip-to-50-in-july-2026-844-913",
+  "condition_id": "0x93aa490883377e5caa323bfb25ed8032bf20c715119104045775ee6037799dad",
+  "start": 1782345600,
+  "end_exclusive": 1785538939,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

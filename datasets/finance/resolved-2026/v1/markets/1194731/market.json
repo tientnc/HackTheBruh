@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/bank-of-korea-decision-in-april-586/will-the-bank-of-korea-make-no-change-to-the-base-rate-after-the-april-meeting",
+  "market_id": "1194731",
+  "condition_id": "0x8aea8ab87adc39452c82a6cff39967a9406a6e901e8b170ec7db7e3468764a66",
+  "event_id": "166807",
+  "slug": "will-the-bank-of-korea-make-no-change-to-the-base-rate-after-the-april-meeting",
+  "question": "Will the Bank of Korea make no change to the base rate after the April Meeting?",
+  "created_at": "2026-01-15T22:02:01.761829Z",
+  "start_date": "2026-01-15T22:48:30.238761Z",
+  "end_date": "2026-04-10T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve according to the change in the base rate resulting from the Bank of Korea\u2019s April monetary policy meeting, relative to the level it was prior to this meeting.\n\nThe resolution source for this market is information released by the Bank of Korea after its April 10, 2026 policy-setting meeting, as listed on the official Bank of Korea meeting schedule: https://www.bok.or.kr/eng/bbs/E0000627/view.do?nttId=10094301&searchCnd=1&searchKwd=&depth2=400417&depth3=400022&depth=400022&pageUnit=10&pageIndex=1&programType=newsDataEng&menuNo=400022&oldMenuNo=400022\n\nThis market may resolve as soon as the Bank of Korea's policy statement for their April 10, 2026 meeting with relevant data is issued. If no decision on the base rate is issued by the end date of the next scheduled meeting, this market will resolve to the \"No change\" bracket.",
+  "resolution_source": null,
+  "outcomes": [
+    {
+      "condition_id": "0x8aea8ab87adc39452c82a6cff39967a9406a6e901e8b170ec7db7e3468764a66",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "101955757983197490057863561865026206008660005907663759139407531855557802793305"
+    },
+    {
+      "condition_id": "0x8aea8ab87adc39452c82a6cff39967a9406a6e901e8b170ec7db7e3468764a66",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "45389262063540121961359329898054122261113165462210495897452000268828984422592"
+    }
+  ]
+}

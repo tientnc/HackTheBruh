@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-1032312-v1",
+  "built_at": "2026-11-07T22:49:49.993761+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/si-hit-jan-2026/si-hit-40-low-jan-2026-159-697-786",
+    "condition_id": "0x50ce812e5952c126fa029283c6b23e497c4ea035f73133ae925e3055ca16315a",
+    "start": 1766707200,
+    "end_exclusive": 1769869443,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Silver (SI) hit (LOW) $40 by end of January?",
+  "market_opened": "2025-12-26T23:33:41.784Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 694,
+    "wallet_trade_leg_rows": 1887,
+    "price_points": 148,
+    "wallets": 460,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-12": 43,
+    "2026-01": 651
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/si-hit-jan-2026/si-hit-40-low-jan-2026-159-697-786",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 424,
+      "sha256": "4d79988a4a1b444d3c928cc60d215808eea069649dfd039de446545a200b7ede"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 243,
+      "sha256": "892ce8e9ade1660e135b1b9ab33808007585606f05dd556f9e2894d180928e51"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2675,
+      "sha256": "443d8b20b0c00504444b9960b5b231b1c7016cdaa73c8ba2a9787323de264dc7"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 344,
+      "sha256": "05006a568cab592420b2036a4e060ab44a077597e9f44d7099bf0d45c3500f4f"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 2158,
+      "sha256": "6746e370742b3640bbd1d15b35b10acbd6cf59cc8d47f3c61c3428b2f1a81ff9"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2729,
+      "sha256": "28849e768bad270483527329dd80841c355c365fb56ead301d3cde6ec8785cb7"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 971,
+      "sha256": "c773847b4d3e805893cee679cd0fad4c600371409777b98559b19ba3c48223f8"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 974,
+      "sha256": "fca5aadba0a3a72aa76983dc97d5437f2b0a660128dc46f98c2bf373331701c7"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 140686,
+      "sha256": "4bbe4bf133cea54a80b097d60ac656f349789dbc412895032b9ca6daaf83ae56"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 199302,
+      "sha256": "a1a68e41bb6b6b810e894df185588beebfe7e74f3dd63c15ccce98493f7f3388"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 57330,
+      "sha256": "b8474a3bf22c4a42547556a347639e0837fb79e1c40aa3d46279d3c49584df87"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 76269,
+      "sha256": "bafc916dfb8a96c4545f674a2ec2d2b6020c12968050abc7d16d81a11d64b387"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 49377,
+      "sha256": "e381976ffd6945563b18a36f92f34c74d5e552e2ddb958e378193c786f52295a"
+    }
+  ]
+}

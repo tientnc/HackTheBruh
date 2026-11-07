@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/nflx-week-april-17-2026/will-nflx-close-between-140-and-150-week-april-17-2026",
+  "condition_id": "0x9c25bd270436fe91c51b6b61f7789b670d83f764bcd8830e0fc00029163e5bb7",
+  "start": 1775779200,
+  "end_exclusive": 1776470787,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

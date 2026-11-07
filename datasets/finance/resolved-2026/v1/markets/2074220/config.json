@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-will-silver-xagusd-hit-in-may-2026/will-silver-xagusd-hit-low-72-in-may-536-179-557-938-755",
+  "condition_id": "0xb3bad95956d5159f02b1f4f111a5599d0640aa3922519a163463d92ed957e294",
+  "start": 1777075200,
+  "end_exclusive": 1779984240,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

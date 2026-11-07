@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/who-will-acquire-tiktok-559/will-elon-musk-x-twitter-acquire-tiktok-257-246-564",
+  "condition_id": "0x626d23dfc73f5e83707de16ebbbedb9c5de8998fabe26b15f724ea5e5d4b3dd0",
+  "start": 1757980800,
+  "end_exclusive": 1782909746,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

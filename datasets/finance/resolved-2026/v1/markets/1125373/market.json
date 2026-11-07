@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/spx-hit-jun-2026/spx-hit-8000-high-jun-2026",
+  "market_id": "1125373",
+  "condition_id": "0x3c71361d4ba3647619c72661c30f9942d1fd1e9885dd982c280177a6884a773e",
+  "event_id": "148013",
+  "slug": "spx-hit-8000-high-jun-2026",
+  "question": "Will S&P 500 (SPX) hit $8,000 (HIGH) in June?",
+  "created_at": "2026-01-06T22:32:34.700939Z",
+  "start_date": "2026-01-07T02:33:24.133634Z",
+  "end_date": "2026-06-30T20:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point between market creation and market close on the final day of trading for June 2026, any 1-minute candle for S&P 500 (SPX) shows a final \"High\" price equal to or above the listed price. Otherwise, this market will resolve to \"No.\"\n\nAll prices recorded during regular trading hours of the primary exchange for the instrument, as reflected in Yahoo Finance's 1-minute interval (\"1m\") data, will be considered.\n\nPeriods when the market is officially closed (e.g., holidays or maintenance breaks) will not be considered.\n\nAll times referenced are local to the primary exchange on which the index trades.\n\nThe resolution source for this market is Yahoo Finance \u2014 specifically, the 1-minute interval (\"1m\") chart data for S&P 500 (SPX) available at https://finance.yahoo.com/quote/%5EGSPC/.",
+  "resolution_source": "https://finance.yahoo.com/quote/%5EGSPC/",
+  "outcomes": [
+    {
+      "condition_id": "0x3c71361d4ba3647619c72661c30f9942d1fd1e9885dd982c280177a6884a773e",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "66782983377875541581922324583179093507726801029702229798354410000241823417691"
+    },
+    {
+      "condition_id": "0x3c71361d4ba3647619c72661c30f9942d1fd1e9885dd982c280177a6884a773e",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "27816647960503683598192093691644832449583634736083554885359948851535525968944"
+    }
+  ]
+}

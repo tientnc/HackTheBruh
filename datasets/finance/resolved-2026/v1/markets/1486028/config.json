@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/will-silver-si-hit-by-end-of-march/will-silver-si-hit-high-200-by-end-of-march",
+  "condition_id": "0x9a6fd107df38155f5a733e2a20ebdbd80f637a535986adcc729385a558a7d452",
+  "start": 1772409600,
+  "end_exclusive": 1775027850,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "dataset": "polymarket-954195-v1",
+  "built_at": "2026-11-07T22:50:54.939547+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/which-companies-added-to-sp-500-in-q1-2026/will-pure-storage-pstg-be-added-to-the-sp-500-by-march-31-2026",
+    "condition_id": "0xb87dc3ff36911fe24d9d92281811bc43e29a91fb33b784b6bbad1d9f11fdb126",
+    "start": 1765929600,
+    "end_exclusive": 1775031430,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Pure Storage (PSTG) be added to the S&P 500 by March 31, 2026?",
+  "market_opened": "2025-12-17T22:30:46.019275Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 518,
+    "wallet_trade_leg_rows": 1491,
+    "price_points": 433,
+    "wallets": 293,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-12": 20,
+    "2026-01": 58,
+    "2026-02": 113,
+    "2026-03": 326,
+    "2026-04": 1
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/which-companies-added-to-sp-500-in-q1-2026/will-pure-storage-pstg-be-added-to-the-sp-500-by-march-31-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 479,
+      "sha256": "53b84e6a74530b821b4b0cdafc7f3b9775b72ff523c377a36faf8bbf01208292"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 245,
+      "sha256": "477c91c5758c4a6ccd3c681e43eeb6af348b26c801de99e80f7908f8081e2c9c"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1958,
+      "sha256": "8c32d92d01b188d3f05b411b9245ac87d424f95456bc4b4d0f68f05303afae4d"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "9e30dec77cada4543a5bd2af2fde19016c0e6eefb0c6c0bcf2efafc975a86a15"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 6675,
+      "sha256": "642013b2d556dadb8df2ed437a01eac7c510f35c9f5e470f4c747ed4a26b3ce6"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2413,
+      "sha256": "e758c4f1d9dee47d1d073871a0b262d1bb23c4b9cfb87236f766aebc5bec933e"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1936,
+      "sha256": "4f16558671ff4ae7fcf29eb3699dde159bcb8a3d6337d3d467cace7a41720469"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1937,
+      "sha256": "3e0cb5ee51e6d94858dc8ec62477593c2dbf7f3ef2109bbc3baba6287b061530"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 92398,
+      "sha256": "40890f943dfb89bf2f564e83f96eae53219ce6de8a4711a574caaade1f04e800"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 149945,
+      "sha256": "69fb4029cdd75f0a68b781802c170c429216521ecf0e41ef77281452dd6bbe97"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 39591,
+      "sha256": "8a1ef453bef30ab5b750d4c3f8a0c258c9bd4f13a6131cd3e12c0fe3f5f30703"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 56126,
+      "sha256": "abf1230844cf106271d2bff70d73dab3c6adc5e8ba00604b496ca8209f71cba4"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 31324,
+      "sha256": "a52c938fbe91a362bb582acb3264a67fe6c003dd498f3882273a80bb07eb89f7"
+    }
+  ]
+}

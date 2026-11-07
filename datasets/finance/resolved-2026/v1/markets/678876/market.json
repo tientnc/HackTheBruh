@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/kraken-ipo-in-2025/kraken-ipo-by-march-31-2026",
+  "market_id": "678876",
+  "condition_id": "0x9b3c3177fe473124c756b01e123b4b03e3a99880844ed8dea21b0a7879ca04aa",
+  "event_id": "16183",
+  "slug": "kraken-ipo-by-march-31-2026",
+  "question": "Kraken IPO by March 31, 2026?",
+  "created_at": "2025-11-12T19:15:58.849459Z",
+  "start_date": "2025-11-12T19:19:58.313791Z",
+  "end_date": "2026-04-01T04:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if Kraken completes an Initial Public Offering (IPO) by the listed date ET, as confirmed by official company announcements and credible news sources. Otherwise, this market will resolve to \"No.\"\n\nThe IPO refers to the first sale of stock by the listed company to the public on any recognized stock exchange.\n\nIf Kraken is acquired by another company that is already public, this market will immediately resolve to \"No.\"\n\nThe resolution source for this market is a consensus of credible reporting.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x9b3c3177fe473124c756b01e123b4b03e3a99880844ed8dea21b0a7879ca04aa",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "33799186820745984796925628555218896548353763534512103584425851114581900224385"
+    },
+    {
+      "condition_id": "0x9b3c3177fe473124c756b01e123b4b03e3a99880844ed8dea21b0a7879ca04aa",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "103693433518125527001416636574099415821922498558487623412396163292963814003978"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-ng-hit-in-april-2026/will-ng-reach-3-20-in-april-2026",
+  "condition_id": "0x1863375c4a60071ed75f617ca1e097a5e7b26a1cf1d37ff7fa6cca0c04620308",
+  "start": 1774396800,
+  "end_exclusive": 1777606367,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

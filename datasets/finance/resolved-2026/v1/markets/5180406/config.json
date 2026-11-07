@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/2nd-largest-company-end-of-october-2026/will-apple-be-the-second-largest-company-in-the-world-by-market-cap-on-october-31-2026",
+  "condition_id": "0x61a3b215365d83b31a4f95486125ad3d84b52e21df8093d759e0b99a12c33fb0",
+  "start": 1790812800,
+  "end_exclusive": 1793444489,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

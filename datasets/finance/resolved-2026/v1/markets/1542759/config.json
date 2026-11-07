@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-nflx-hit-in-april-2026/will-nflx-dip-to-0-in-april",
+  "condition_id": "0xe74884dd088e60a4b18aef54df82c25971a0a4227dc4abb666dd1a1b6680344e",
+  "start": 1773014400,
+  "end_exclusive": 1777589623,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

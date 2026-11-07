@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-wti-hit-in-september-2026/will-wti-dip-to-80-in-september-2026",
+  "condition_id": "0xc102a040f2842be662d0544d0b68f048e805d0210fe2a3b1cb83521d29584f2d",
+  "start": 1787616000,
+  "end_exclusive": 1790839200,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

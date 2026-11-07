@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-1487354-v1",
+  "built_at": "2026-11-07T22:49:44.779825+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/what-will-crude-oil-cl-settle-at-in-march/will-crude-oil-cl-settle-at-75-80-in-march-416",
+    "condition_id": "0xe97270e364091c6e6553bc302cfd6768203855eafa731ab68c7acdaac7c02ed3",
+    "start": 1772409600,
+    "end_exclusive": 1775027824,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Crude Oil (CL) settle at $75-$80 in March?",
+  "market_opened": "2026-03-04T00:45:28.924862Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 1856,
+    "wallet_trade_leg_rows": 4638,
+    "price_points": 94,
+    "wallets": 542,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-03": 1855,
+    "2026-04": 1
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/what-will-crude-oil-cl-settle-at-in-march/will-crude-oil-cl-settle-at-75-80-in-march-416",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 462,
+      "sha256": "2693210f63e1112b7e54dc083c5cc4e98587a9fb5fa185e3061aa25e2c87ec8c"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 244,
+      "sha256": "a102d691b1e943efe44ae342586febe5f3feb8ff67b28e2b19bfd1ed5f93083c"
+    },
+    {
+      "path": "market.json",
+      "bytes": 3067,
+      "sha256": "66b28b5329c291bd853ed0d886c1cbf1a0bc0d96ebf98395458639f2d4d092c0"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "16c4c29712a69b0706be0575928374b9bea24d6beb145ba77b328efb5af3f706"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 1598,
+      "sha256": "a68799ec57405a02657c50bccd03c55ebd98e8ba7e5af2782ed22ca962c8136a"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2779,
+      "sha256": "083a2456c7157c31062d213aa09dc63c6ce04cecb783c690258d815ce7c8001d"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 917,
+      "sha256": "0467a8df21cbe3c0a762f69e716cccfce5eb178d47f9761c04b467da29ec774a"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 755,
+      "sha256": "4a2cff9a99173e8fc452218cbf65dce535f5f34277bed663fb648b720627805b"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 291021,
+      "sha256": "c59cbd7223b8c861ded28af902eedccf198a8414f6de3e7a2083f6617a9138e9"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 438775,
+      "sha256": "3f323fdae2ff2e423f39a2d3b74865eb9703b272eb0f3c5be768da6eafb2a459"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 127024,
+      "sha256": "0820ec79034cd8af5a21d0a1089bea2e3da7db6e83213640595f2eedcb9a9cda"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 171296,
+      "sha256": "93ef7ba75b1e416d708a5149c1d470331bedc2c49e20b0f6fe6316c70890820b"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 59019,
+      "sha256": "b29239ebf87ac60b68813e77f59f66236f5a266a3e7f21848d4a6e56cae7143f"
+    }
+  ]
+}

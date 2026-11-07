@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-xagusd-hit-in-july-2026/will-xagusd-dip-to-54-in-july-2026",
+  "condition_id": "0x35380c09fef1d77965ef5df4e7c48ce823884f310f0d8418bb2bc8b6e6a86298",
+  "start": 1782345600,
+  "end_exclusive": 1785538948,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

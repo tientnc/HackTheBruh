@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-spy-hit-in-july-2026/will-spy-dip-to-700-in-july-2026",
+  "condition_id": "0x7264a7a700634b753fdd00567be2ad6388eccddd2219a7a1720d941f00f8160a",
+  "start": 1782345600,
+  "end_exclusive": 1785529159,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

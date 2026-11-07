@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-price-will-nflx-hit-in-april-2026/will-nflx-dip-to-0-in-april",
+  "market_id": "1542759",
+  "condition_id": "0xe74884dd088e60a4b18aef54df82c25971a0a4227dc4abb666dd1a1b6680344e",
+  "event_id": "257201",
+  "slug": "will-nflx-dip-to-0-in-april",
+  "question": "Will Netflix dip to $0 in April?",
+  "created_at": "2026-03-09T20:45:56.228395Z",
+  "start_date": "2026-03-09T21:18:18.898303Z",
+  "end_date": "2026-05-01T03:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point during April 2026 (ET), any 1-minute candle for Netflix, Inc. (NFLX) has a final \"Low\" price equal to or below the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during regular trading hours (ET) will be considered.\n\nThe resolution source for this market is Yahoo Finance \u2014 specifically, the Netflix, Inc. (NFLX) \"Low\" prices available at https://finance.yahoo.com/quote/NFLX/, with the chart settings on \"1m\" for candle intervals.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/NFLX/",
+  "outcomes": [
+    {
+      "condition_id": "0xe74884dd088e60a4b18aef54df82c25971a0a4227dc4abb666dd1a1b6680344e",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "63651596185788796778858148645132240719225366817345592644462509516088006777301"
+    },
+    {
+      "condition_id": "0xe74884dd088e60a4b18aef54df82c25971a0a4227dc4abb666dd1a1b6680344e",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "16352426743587811642152083662930090424188868243192201836806975535636276628878"
+    }
+  ]
+}

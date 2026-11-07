@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/how-high-will-10-year-treasury-yield-go-before-2027/will-the-10-year-treasury-yield-hit-4pt8-before-2027-692-434",
+  "condition_id": "0x06666ece9c22b1b22e19462794328d3846de26e7ca9d9f824eedb1fc9cb6b1a5",
+  "start": 1762819200,
+  "end_exclusive": 1788906095,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

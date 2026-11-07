@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/solv-energy-ipo-closing-market-cap/will-solv-energy-incs-market-cap-be-greater-than-5pt4b-at-market-close-on-ipo-day",
+  "market_id": "1340808",
+  "condition_id": "0xbd103048aef1d720383b2080f86b25ecf95106169e5cbe42ca442cb901c96bc4",
+  "event_id": "199542",
+  "slug": "will-solv-energy-incs-market-cap-be-greater-than-5pt4b-at-market-close-on-ipo-day",
+  "question": "Will SOLV Energy, Inc.'s market cap be greater than $5.4B at market close on IPO day?",
+  "created_at": "2026-02-05T17:43:37.358919Z",
+  "start_date": "2026-02-05T19:16:08.813592Z",
+  "end_date": "2026-02-11T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve based on SOLV Energy\u2019s market capitalization at the closing price on its first day of trading.\n\nAs of market creation, the IPO is scheduled to price on February 11, 2026 (ET). If no such IPO occurs by March 31, 2026, 11:59 PM ET, the market will resolve to \"No IPO before April 2026\".\n\nMarket capitalization expresses the monetary value of a company\u2019s outstanding shares, stated in its pricing currency. It is calculated as the number of shares outstanding multiplied by the closing share price on the first trading day.\n\nIf the relevant value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nResolution will be based on the primary exchange\u2019s official listing page. In the event that the relevant figure is not displayed, another reliable source will be used.\n\nIn the event of an interruption in the course of the normal trading session on the specified company\u2019s first day of trading (e.g., a circuit breaker or half-day), the market will resolve according to the official closing price of the abbreviated session. If no such official closing price is published, the market will resolve according to the next trading day on which an official closing price is published, treating that as the first day of trading for purposes of this market.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0xbd103048aef1d720383b2080f86b25ecf95106169e5cbe42ca442cb901c96bc4",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "90336172296941541975902989354519466006874640462386768562301005458330079131016"
+    },
+    {
+      "condition_id": "0xbd103048aef1d720383b2080f86b25ecf95106169e5cbe42ca442cb901c96bc4",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "12076462287959836618420385790592185776384147955323014266489396204953306617696"
+    }
+  ]
+}

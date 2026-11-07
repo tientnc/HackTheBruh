@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/sp-500-single-day-gains-and-losses-in-q1/will-the-sp-500-index-lose-at-least-5-on-any-day-in-q1",
+  "market_id": "1176605",
+  "condition_id": "0x8af9797c16ca75078b5ab501602e8791a5d1a8b9b5ba69a30f9d14becf9c6415",
+  "event_id": "161958",
+  "slug": "will-the-sp-500-index-lose-at-least-5-on-any-day-in-q1",
+  "question": "Will the S&P 500 Index lose at least 5% on any day in Q1?",
+  "created_at": "2026-01-13T18:16:13.592505Z",
+  "start_date": "2026-01-14T22:54:53.056712Z",
+  "end_date": "2026-03-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \u201cYes\u201d if the price of the S&P 500 Index (SPX) decreases by at least the listed percentage on any single trading day between January 14 and March 31, 2026. Otherwise, this market will resolve to \u201cNo\u201d.\n\nThe percentage change in the S&P 500 Index (SPX) on a given trading day will be calculated by comparing the official closing price for the S&P 500 Index (SPX) on that day to the official closing price for the S&P 500 Index (SPX) on the previous trading day, as reported by the Wall Street Journal. The previous day\u2019s closing price will be subtracted from the current day\u2019s closing price, and then that difference will be divided by the previous day\u2019s closing price. If the daily percentage change is negative, it will be considered a loss of that percentage in absolute terms.\n\nDaily percentage changes will be rounded to two decimal places away from zero (e.g. a daily percentage loss of 1.995% would be considered 2.00%, and a daily percentage loss of 1.993% would be considered 1.99%)\n\nIf any relevant trading day is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for a relevant trading day (for example, due to a trading halt into the close, system issue, or other disruption), this market will use the most recent official price published by the specified resolution source as the effective closing price.\n\nThe resolution source for this market will be the Wall Street Journal, specifically the daily CLOSE prices for the S&P 500 Index (SPX) published on the S&P 500 Index (SPX) historical prices page (https://www.wsj.com/market-data/quotes/index/SPX/historical-prices).",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x8af9797c16ca75078b5ab501602e8791a5d1a8b9b5ba69a30f9d14becf9c6415",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "22593534509901562239981319640352275371956197747687901660103563355797925725733"
+    },
+    {
+      "condition_id": "0x8af9797c16ca75078b5ab501602e8791a5d1a8b9b5ba69a30f9d14becf9c6415",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "39207426181513444508255238549488765318625388882935848113117679412960221527039"
+    }
+  ]
+}

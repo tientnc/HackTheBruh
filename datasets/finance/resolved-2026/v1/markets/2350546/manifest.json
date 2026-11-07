@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-2350546-v1",
+  "built_at": "2026-11-07T22:50:53.058452+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/what-price-will-xauusd-hit-in-june-2026/will-xauusd-reach-4600-in-june-2026",
+    "condition_id": "0xbd8fee7c09a57fa5010ef017f0198f1abf74b43a673948f5ebb38e1c4d8eaa32",
+    "start": 1779667200,
+    "end_exclusive": 1782861521,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Gold (XAUUSD) hit (HIGH) $4,600 in June?",
+  "market_opened": "2026-05-25T04:16:38.343Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 764,
+    "wallet_trade_leg_rows": 2327,
+    "price_points": 150,
+    "wallets": 362,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-05": 2,
+    "2026-06": 762
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/what-price-will-xauusd-hit-in-june-2026/will-xauusd-reach-4600-in-june-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 449,
+      "sha256": "09a120cfa253bce117186f0dc217435a36f463a914ec905e02cdc899e6d577b7"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 243,
+      "sha256": "f56351d7d36ac98ee383a082f2789dfd7ec86716b96958454f210d7ca07a2639"
+    },
+    {
+      "path": "market.json",
+      "bytes": 3130,
+      "sha256": "3d4c8201ca599f47bb398fa0052731c3c47b659072cd26a2adce70b05c765fee"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 344,
+      "sha256": "1eacc637336b5292de8a32c58e6315be1c3341a09e3a0140ab17756ace775b7c"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 2218,
+      "sha256": "c3475d2fe06145f6ba35626d6c853b109981dc71eb33ff80526a1333e520961f"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 3001,
+      "sha256": "c999ec249bd14962b5a91ad463e95d60c2b9a1ac63b600ec47694363917f56b4"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 996,
+      "sha256": "b5b87594343874b3bdcc83899e7f0abc828617cb74a525193d867f7ab47ebc37"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1005,
+      "sha256": "af9eea953b3de556e24faba041abbf6d740045d893c33336fc0c0e34d9c954d3"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 146979,
+      "sha256": "61c3f85d07e3f7f79ac46d3530485aa0dc2e91eb8cc36704231a4d870b08fef4"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 248387,
+      "sha256": "d0119e80107a34f1910a883870e9fd4c466a60cb8f0a929652474234aabfab10"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 59458,
+      "sha256": "77868f2dc4163c5b97c258e737c9dcf987e235414c9048afe6fbe43ee4c88667"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 85828,
+      "sha256": "e7e67de46244589e3dfa4d9e99130e9ce65bd78bb0cdfca762f7f4c00b29567f"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 39332,
+      "sha256": "ab7c71e28d243d08fe2f92ae380479bf1e2b21c9d71892851fbf2c100594ab89"
+    }
+  ]
+}

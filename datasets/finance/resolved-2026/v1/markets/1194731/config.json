@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/bank-of-korea-decision-in-april-586/will-the-bank-of-korea-make-no-change-to-the-base-rate-after-the-april-meeting",
+  "condition_id": "0x8aea8ab87adc39452c82a6cff39967a9406a6e901e8b170ec7db7e3468764a66",
+  "start": 1768435200,
+  "end_exclusive": 1775800070,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

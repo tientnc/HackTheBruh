@@ -1,0 +1,110 @@
+{
+  "dataset": "polymarket-1322972-v1",
+  "built_at": "2026-11-07T22:51:23.903194+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/what-will-gpu-rental-prices-h100-hit-by-april-30-967/will-the-silicon-data-h100-index-sdh100rt-hit-2pt75-high-by-april-30-2026",
+    "condition_id": "0x9d9198f6860b6781624101fb50bddb287ff25800496d2d380ec4d3d1f3222888",
+    "start": 1769990400,
+    "end_exclusive": 1777788331,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will the Silicon Data H100 Index (SDH100RT) hit $2.75 (HIGH) by April 30, 2026?",
+  "market_opened": "2026-02-03T15:33:42.544968Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 514,
+    "wallet_trade_leg_rows": 1194,
+    "price_points": 281,
+    "wallets": 340,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-02": 220,
+    "2026-03": 101,
+    "2026-04": 188,
+    "2026-05": 5
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/what-will-gpu-rental-prices-h100-hit-by-april-30-967/will-the-silicon-data-h100-index-sdh100rt-hit-2pt75-high-by-april-30-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 500,
+      "sha256": "ec9800b5f5693fe3cf7cb2552b719c4deb762960d743cb3529a45e2b6c2ddc5e"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 245,
+      "sha256": "5c2aaa4ffc1871b2e38b9b8b04761d9203d23adeb21d84149bb0b9cbcdd3e303"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2475,
+      "sha256": "ab9ab29d2190cf0848a51a472002c9815ec7fbf399d19e57ffbcd5978b0d79fe"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "a80ae6f9c0e06455308300594ec9007287d71ce213a319aa2e68d22f305d96ef"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 4464,
+      "sha256": "3f77d2d10cda1630d2637e87aafeb5eed9cbd6dcdf15920cbde394d7e4a48bc7"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2765,
+      "sha256": "25452839c176fa3a363afdb3dfc4cf0d6b0c8280a82ba46385b2ed6fa86adb56"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1437,
+      "sha256": "eebf58b4a483dba0e6fc052c5a0e81a25d83c53fab31b3ae5dc106d1afd9d512"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1430,
+      "sha256": "18859ef0a41604a1a5f0e64f2da1597cb89d6b4c63a5957f676a9da93b622eb6"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 91848,
+      "sha256": "63d26ee892497e60d91c6491037ecce0f5a8093026d52fba080faa2838d9cd10"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 139393,
+      "sha256": "20535a8e621a3bcc7373cbfccd1097dc4bc2d0e588d356eb08fc67e2a841c145"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 39766,
+      "sha256": "5af37a221fd96203bbc5c03e95c3474328db51e10f1eef6abcf3544984d30e5c"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 53106,
+      "sha256": "33c7b0d2d80fe4bf67933648c538a2ffeb2d857e9fbb028345045ce73fe8506d"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 36095,
+      "sha256": "e70e2f9455057b29fa1277ec24ee34a69ae9da35a99859ea1d807111900ac26e"
+    }
+  ]
+}

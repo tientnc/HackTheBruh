@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/2nd-largest-company-end-of-june-849/will-alphabet-be-the-second-largest-company-in-the-world-by-market-cap-on-june-30-883",
+  "condition_id": "0x3616e2f2cd616de0614c3c7a0fe1e791c93de320fef017a496b723fcbceefce8",
+  "start": 1778803200,
+  "end_exclusive": 1782858696,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

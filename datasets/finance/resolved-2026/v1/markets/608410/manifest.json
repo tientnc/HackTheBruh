@@ -1,0 +1,116 @@
+{
+  "dataset": "polymarket-608410-v1",
+  "built_at": "2026-11-07T22:50:11.085195+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap/will-anthropic-not-ipo-by-june-30-2026",
+    "condition_id": "0xaf4c3ba4d1b1568d4309bba0874cb7eec1e5b40a648f4a26b12efa2e9b5ee8a4",
+    "start": 1758499200,
+    "end_exclusive": 1782891069,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Anthropic not IPO by June 30, 2026?",
+  "market_opened": "2025-09-23T00:22:52.793Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 4381,
+    "wallet_trade_leg_rows": 10926,
+    "price_points": 1068,
+    "wallets": 1086,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-09": 38,
+    "2025-10": 73,
+    "2025-11": 27,
+    "2025-12": 272,
+    "2026-01": 357,
+    "2026-02": 251,
+    "2026-03": 628,
+    "2026-04": 556,
+    "2026-05": 670,
+    "2026-06": 1509
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/anthropic-ipo-closing-market-cap/will-anthropic-not-ipo-by-june-30-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 445,
+      "sha256": "f322480f5b50013632bae050a30994410946a549853cf114486f6846340f067b"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 247,
+      "sha256": "6f103d3e2107ee56918518a2c2b98f2dcd32e2abb5dcd2c27dafda0ed3d77318"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2334,
+      "sha256": "78f82577783205b524eacfa354b54874a4cbd7bb24cb59234c0c0409de7bc186"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "01fd918fc43d7bbad5739d78201d2a825ceb91b541056e83fea7f633fbdd544a"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 15862,
+      "sha256": "b55494fae82cf53b0dcc8a0aee3622451df3b9249974d1e64cd6872e50b6b5f7"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2803,
+      "sha256": "4afab1b42570223b41913a691a3414587835b2f8f171ee29858b7b7b6d53840f"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 6838,
+      "sha256": "fe9d1a5999307fbb782f10970a86a88a0c926f83bd4444fab7a819e3f21a211a"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 6051,
+      "sha256": "d55589164d17b12ebffa74da9fbeb5792d0cebf3aa6449dcefe471b811e0f3d6"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 691813,
+      "sha256": "4bf1387e87d3d4b3dd953154a4449704fc75a22eb8ecaefb60aad32f2a80eb60"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 1018950,
+      "sha256": "f0082f6eeddde06567dec4fbdb5287da2bf28c0f53b11f0ae9a166d0344354bf"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 308529,
+      "sha256": "8707d4327249f8ca956ae14df14654392add5c25813e1b6495ff5c06fd86de9b"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 404285,
+      "sha256": "9754d5958bb0faa173bf2a755d6e9fdd87cebddad53e51061bee59a0fc537fbb"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 119711,
+      "sha256": "f02481bee4d6e61feb165ace7740644cd3fa41ed29fcac03c84a743ced644fbe"
+    }
+  ]
+}

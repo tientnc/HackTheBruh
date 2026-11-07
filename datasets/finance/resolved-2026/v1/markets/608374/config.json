@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/fannie-mae-ipo-closing-market-cap/will-fannie-maes-market-cap-be-between-300b-and-350b-at-market-close-on-ipo-day",
+  "condition_id": "0x1721f89383f83b8c744d4b88986c0a1abd484d55812239d03a852bbff052ebc6",
+  "start": 1758499200,
+  "end_exclusive": 1782891302,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

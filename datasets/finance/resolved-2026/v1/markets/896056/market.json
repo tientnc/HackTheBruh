@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/will-paramount-close-warner-bros-acquisition-by-end-of-2026/will-paramount-close-warner-bros-acquisition-by-end-of-2026",
+  "market_id": "896056",
+  "condition_id": "0x745bad0ff4724aab8a5e52ce4fe1558a493fb248a679b51f54bbe21923979f02",
+  "event_id": "100079",
+  "slug": "will-paramount-close-warner-bros-acquisition-by-end-of-2026",
+  "question": "Will Paramount close Warner Bros. acquisition by end of 2026?",
+  "created_at": "2025-12-08T16:22:30.619351Z",
+  "start_date": "2025-12-08T16:39:06.049147Z",
+  "end_date": "2027-01-01T04:59:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \u201cYes\u201d if, Paramount (directly or through a subsidiary) acquires control of Warner Bros. Discovery's studios and streaming businesses by December 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \u201cNo\u201d.\n\nResolution will be based on official company communications and regulatory filings from Paramount and Warner Bros. Discovery (or any successor entities), supplemented as needed by a consensus of reporting from major reputable news outlets.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x745bad0ff4724aab8a5e52ce4fe1558a493fb248a679b51f54bbe21923979f02",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "89566598418366581813277215279543727759920481939148932603553987458437131667828"
+    },
+    {
+      "condition_id": "0x745bad0ff4724aab8a5e52ce4fe1558a493fb248a679b51f54bbe21923979f02",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "46470632352366621547295225922510898360914410924108755129921762137818023348745"
+    }
+  ]
+}

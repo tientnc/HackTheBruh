@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/how-low-will-5-year-treasury-yield-get-before-2027/will-the-5-year-treasury-yield-dip-below-4pt65-before-2027",
+  "market_id": "6071860",
+  "condition_id": "0x8aedef3c37c54bc3a5883e2e96ca33024e6fd03190af64e22de0144466970260",
+  "event_id": "956932",
+  "slug": "will-the-5-year-treasury-yield-dip-below-4pt65-before-2027",
+  "question": "Will the 5-year Treasury yield dip below 4.65% before 2027?",
+  "created_at": "2026-10-23T01:56:11.611699Z",
+  "start_date": "2026-10-23T01:56:22Z",
+  "end_date": "2027-01-01T04:59:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the Treasury 5-year yield is lower than the listed value for any date between market creation and December 31, 2026. Otherwise this market will resolve to \"No\".\n\nThis market will resolve as soon as the Treasury 5-year yield is lower than the listed value, or once data is available for December 31, 2026. If no qualifying value is published and data is not available for December 31, 2026 by January 14, 2027, 11:59 PM ET, this market will resolve to \"No\".\n\nThe resolution source for this market is the Department of the treasury, specifically the data listed under \"Daily Treasury Par Yield Curve Rates\" for the column \"5 Yr\" (see: https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026).",
+  "resolution_source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+  "outcomes": [
+    {
+      "condition_id": "0x8aedef3c37c54bc3a5883e2e96ca33024e6fd03190af64e22de0144466970260",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "70885892771268269580796070893156791488178719812338616104316330973804437780224"
+    },
+    {
+      "condition_id": "0x8aedef3c37c54bc3a5883e2e96ca33024e6fd03190af64e22de0144466970260",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "82646715056221139317378521371066856839581477791688919012716127403498302944256"
+    }
+  ]
+}

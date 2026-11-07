@@ -1,0 +1,23 @@
+{
+  "validated_at": "2026-11-07T22:49:34.634832+00:00",
+  "passed": true,
+  "issue_count": 0,
+  "issues": [],
+  "payload_checksums_verified": 13,
+  "identical_taker_rows_retained": 0,
+  "duplicate_price_keys": 0,
+  "checks": [
+    "SHA-256 checksums",
+    "exact market/token/outcome",
+    "frozen UTC window",
+    "valid prices",
+    "valid wallets and sides",
+    "notional arithmetic",
+    "price availability",
+    "row counts",
+    "taker rows included in all-wallet feed",
+    "wallet rollups",
+    "unique price timestamps",
+    "pagination exhausted"
+  ]
+}

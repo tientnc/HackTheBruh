@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/will-gold-gc-hit-by-end-of-march/will-gold-gc-hit-high-7000-by-end-of-march",
+  "condition_id": "0x8ffe5ff5b9007a7b6cb1f367e6d4962bdb20d3dae8abf52ae4674e3258a0f785",
+  "start": 1772409600,
+  "end_exclusive": 1775027734,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

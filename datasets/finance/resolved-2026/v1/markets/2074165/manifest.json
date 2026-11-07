@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-2074165-v1",
+  "built_at": "2026-11-07T22:51:10.234858+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/what-price-will-hood-hit-in-may-2026/will-hood-dip-to-70-in-may-2026",
+    "condition_id": "0x72843b20808ee4b5c1e07458b86ca15b9760344904a9c6464692bde7125a15f6",
+    "start": 1777075200,
+    "end_exclusive": 1780105606,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Robinhood Markets, Inc. (HOOD) hit (LOW) $70 in May?",
+  "market_opened": "2026-04-25T04:36:15.80147Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 530,
+    "wallet_trade_leg_rows": 1350,
+    "price_points": 142,
+    "wallets": 213,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-05": 530
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/what-price-will-hood-hit-in-may-2026/will-hood-dip-to-70-in-may-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 442,
+      "sha256": "db07927eca9ca8d5f6bc423440cacdabf50cf46d82e0a1a8c8b82b80abd04677"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 243,
+      "sha256": "6c182ba0adb98891479912a6544bae806ce2dadd1b85b4db6288a57c444a30bb"
+    },
+    {
+      "path": "market.json",
+      "bytes": 3047,
+      "sha256": "dc49f2f1b504383e11e8c763faf8e0b4739d4338d2df414bd69f86626f86583a"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "8fb745af0f819fd93309db590a0d5b2c13ba3242ba8628995140fa83262a2dd5"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 2112,
+      "sha256": "5c8b595306ce94691a2bc91fc45739bf4d05179ee7ee85f13ba89b01f17a3aac"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2960,
+      "sha256": "dab4d3498d31c5ca3f422563d522668e5e7e01ea6cdea142c3ba5cdf9e224cde"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 977,
+      "sha256": "8487a7deb19bb846530cc70e4560ecff6ed4cb41374db28079e8ad1468cb209e"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 977,
+      "sha256": "5a27540ce002b93314accb6ac97bd657edb91d1a60931316c56ae0424c379dfb"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 86194,
+      "sha256": "fa2c2f4eba788fcb8523e8ed1206e705d0b29246dce6e3addc2b70302e0fb6e5"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 131886,
+      "sha256": "2c9164e5bf94e2043216465b9f807d91fab895eb647063591493b1f7a60d5696"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 38209,
+      "sha256": "834b76ce387cc305e048e4691b07f9890fa804da3ecca9c7269f0e25f7178836"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 50365,
+      "sha256": "4a1a976fb215f6d53fc42ef2caaf9ce92020e7cb5b7343fbb027dc5ae7641575"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 21942,
+      "sha256": "25c5d41b5d645f48db36e79b5e57a38d95fc331a4939bce00fee84c2420a8cb9"
+    }
+  ]
+}

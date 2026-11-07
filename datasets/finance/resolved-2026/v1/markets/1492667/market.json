@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-will-sp-500-spx-hit-by-end-of-march/will-sp-500-spx-hit-6200-low-in-march-2026",
+  "market_id": "1492667",
+  "condition_id": "0x80918ed667684cf0c550df587f7853cea0608bc9979a3ec96964a596e5fa9d0f",
+  "event_id": "243792",
+  "slug": "will-sp-500-spx-hit-6200-low-in-march-2026",
+  "question": "Will S&P 500 (SPX) hit $6,200 (LOW) in March 2026?",
+  "created_at": "2026-03-03T16:01:44.903331Z",
+  "start_date": "2026-03-03T20:02:24.178664Z",
+  "end_date": "2026-03-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point between market creation and market close on the final day of trading for March 2026, any 1-minute candle for S&P 500 (SPX) shows a final \"Low\" price equal to or below the listed price. Otherwise, this market will resolve to \"No.\"\n\nAll prices recorded during regular trading hours of the primary exchange for the instrument, as reflected in Yahoo Finance's 1-minute interval (\"1m\") data, will be considered.\n\nPeriods when the market is officially closed (e.g., holidays or maintenance breaks) will not be considered.\n\nAll times referenced are local to the primary exchange on which the index trades.\n\nThe resolution source for this market is Yahoo Finance \u2014 specifically, the 1-minute interval (\"1m\") chart data for S&P 500 (SPX) available at https://finance.yahoo.com/quote/%5EGSPC/.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x80918ed667684cf0c550df587f7853cea0608bc9979a3ec96964a596e5fa9d0f",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "17065451699728918052297043848586890026075386008881973990035436206408961543902"
+    },
+    {
+      "condition_id": "0x80918ed667684cf0c550df587f7853cea0608bc9979a3ec96964a596e5fa9d0f",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "13206340080686755764793617081272847621580495399381160876440752088132403444830"
+    }
+  ]
+}

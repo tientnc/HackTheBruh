@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/safepoint-ipo-closing-market-cap/will-safepoint-not-ipo-before-august-2026",
+  "market_id": "2374611",
+  "condition_id": "0xc3ad4523a9007e6e8c67c57d681e1718abd86a601d1b516f402042064f276093",
+  "event_id": "532481",
+  "slug": "will-safepoint-not-ipo-before-august-2026",
+  "question": "Will Safepoint not IPO before August 2026?",
+  "created_at": "2026-05-27T23:19:46.30899Z",
+  "start_date": "2026-05-28T02:36:16.346141Z",
+  "end_date": "2026-06-04T16:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve based on Safepoint's market capitalization at the closing price on its first day of trading.\n\nAs of market creation, the IPO is scheduled for June 4 (ET). If no such IPO occurs by July 31, 2026, 11:59 PM ET, the market will resolve to \"No IPO before August 2026\".\n\nMarket capitalization expresses the monetary value of a company's outstanding shares, stated in its pricing currency.\n\nIt is calculated as the total number of outstanding shares, multiplied by the official closing share price of the publicly traded class on the first trading day.\n\nIf necessary, to accurately capture the company's total market capitalization, rather than a stock-class-specific market capitalization, the calculation will include all outstanding share classes and apply any stated conversion ratios to the publicly traded class. Where no conversion right exists, such shares will be counted at their stated outstanding amount without discount, unless official filings explicitly specify differently.\n\nThe number of outstanding shares will be determined from official company filings or disclosures (e.g., SEC filings). The closing share price on the first trading day will be determined from the primary exchange's official listing page.\n\nIf the relevant value falls exactly between two brackets, this market will resolve to the higher range bracket.\n\nThe primary resolution source for this market will be official company filings and the primary exchange's official listing page. The market capitalization will be determined through appropriate calculation using the total outstanding shares and the closing price from the first day of trading.\n\nIn the event of an interruption in the normal trading session on the specified company's first day of trading (e.g., a circuit breaker or half-day), the market will resolve according to the official closing price of the abbreviated session. If no such official closing price is published, the market will resolve according to the next trading day on which an official closing price is published, treating that day as the first day of trading for the purposes of this market.",
+  "resolution_source": null,
+  "outcomes": [
+    {
+      "condition_id": "0xc3ad4523a9007e6e8c67c57d681e1718abd86a601d1b516f402042064f276093",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "6545771042884897582935316687308794357253746108443578473945171494232044402501"
+    },
+    {
+      "condition_id": "0xc3ad4523a9007e6e8c67c57d681e1718abd86a601d1b516f402042064f276093",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "45488048575256280862589175641691405947497700918389043247169338066669497307119"
+    }
+  ]
+}

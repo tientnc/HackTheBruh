@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-1301882-v1",
+  "built_at": "2026-11-07T22:50:36.338497+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/nvda-above-in-february-2026/nvda-above-190-on-february-27-2026",
+    "condition_id": "0x783dc01ba92d3ff32d16d322ac644a922e7e80afe7f6aa857432439dcba231a0",
+    "start": 1769731200,
+    "end_exclusive": 1772234814,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will NVIDIA (NVDA) close above $190 end of February?",
+  "market_opened": "2026-01-30T23:13:46.103974Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 873,
+    "wallet_trade_leg_rows": 2351,
+    "price_points": 116,
+    "wallets": 414,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-02": 873
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/nvda-above-in-february-2026/nvda-above-190-on-february-27-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 436,
+      "sha256": "2254491679a4eeab5cab0d20396b0a145283a46836da180c03822b19b2020e07"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 243,
+      "sha256": "6601449a92dca7239293a70feedcb61801e81116768d3dd611533c3f817f55f1"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2253,
+      "sha256": "4934a1cb51dff7e0728ec3d3e8f21fbfe616c14f2c55b3daf8ae9282fa880915"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "7b050de0e3404fe3773c2674953f565e7fffc2f5b463897a127733d982c04103"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 1765,
+      "sha256": "b274203521f273925310e771d11570007fbfb60fe3471df76ae0ee33d739596f"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2672,
+      "sha256": "e1795c9d8a2c2716024f41a7b8a21146ceba1643ff2a27e7ea911c4fb9f029a8"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 859,
+      "sha256": "76f62da502e9718c82f924c64aa631b0b475e4ac837faa7b5d5d5890caa0869a"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 865,
+      "sha256": "c6512c4a4e0bd2860f837b05bd03076dbe1ddb217f90e0dc517a1e9af58d4375"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 153789,
+      "sha256": "d73c91210573f11727d445a73f0e5027ae8e275f7e6730d19f11e1dc02408882"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 239623,
+      "sha256": "ca5d6dbe7378824ee6d26d4ae037269cc718e4f37535a4e81886dff48decaafd"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 65803,
+      "sha256": "27f713656d3fc13afa6cee80ba9846e0023b0fbb1d71e2379967469e22b42e17"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 90781,
+      "sha256": "5f206e77ec720678b0b9c38c25ad92841554b520f3787e4111f3aa9e3f83e1cf"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 44149,
+      "sha256": "475baf3b82733d6fa66daf817f40fd1edfa97ca3f114b06203c83bf49822875e"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-price-will-hood-hit-in-may-2026/will-hood-dip-to-70-in-may-2026",
+  "market_id": "2074165",
+  "condition_id": "0x72843b20808ee4b5c1e07458b86ca15b9760344904a9c6464692bde7125a15f6",
+  "event_id": "415431",
+  "slug": "will-hood-dip-to-70-in-may-2026",
+  "question": "Will Robinhood Markets, Inc. (HOOD) hit (LOW) $70 in May?",
+  "created_at": "2026-04-25T04:01:33.118051Z",
+  "start_date": "2026-04-25T04:36:15.80147Z",
+  "end_date": "2026-06-01T03:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point during May 2026, any 1-minute candle for Robinhood Markets, Inc. (HOOD) has a final \"Low\" price equal to or below the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during the regular trading hours of the primary exchange on which the listed security trades (typically 9:30 AM \u2013 4:00 PM ET) will be considered. Prices occurring during pre-market or after-hours trading will not qualify.\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Pyth.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Pyth after any adjustments have been applied.\n\nThe resolution source for this market is Pyth \u2014 specifically, the Robinhood Markets, Inc. (HOOD) \"Low\" prices available at https://pythdata.app/explore/Equity.US.HOOD%2FUSD, with the chart settings configured for 1-minute candles.\n\nHistorical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using the \"t=\" parameter. Any timestamp within the listed market time frame may be used to view the relevant candle data (e.g., https://pythdata.app/explore/Equity.US.HOOD%2FUSD?t=1773432000)\n\nIf the relevant Pyth data is unavailable due to a system outage, data failure, or other technical disruption that prevents verification of the required 1-minute candle data, the official daily low price published by the primary exchange on which the listed security trades will be used to determine whether the listed price was reached during the applicable trading session.",
+  "resolution_source": "https://pythdata.app/explore/Equity.US.HOOD%2FUSD",
+  "outcomes": [
+    {
+      "condition_id": "0x72843b20808ee4b5c1e07458b86ca15b9760344904a9c6464692bde7125a15f6",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "14843083683600513073624995828688902884722290292619395824058141616412941403781"
+    },
+    {
+      "condition_id": "0x72843b20808ee4b5c1e07458b86ca15b9760344904a9c6464692bde7125a15f6",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "56164109747408949554098388026348486882965247884912502507106006431094996877777"
+    }
+  ]
+}

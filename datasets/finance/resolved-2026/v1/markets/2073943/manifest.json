@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-2073943-v1",
+  "built_at": "2026-11-07T22:51:11.093044+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/what-price-will-amzn-hit-in-may-2026/will-amzn-reach-280-in-may-2026",
+    "condition_id": "0x552a1017b5c8f574da1b269d0eb265701ce80becdb07bd0285b7370cc9f209c3",
+    "start": 1777075200,
+    "end_exclusive": 1780109297,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Amazon.com, Inc. (AMZN) hit (HIGH) $280 in May?",
+  "market_opened": "2026-04-25T05:02:25.984115Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 474,
+    "wallet_trade_leg_rows": 1110,
+    "price_points": 142,
+    "wallets": 201,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-05": 474
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/what-price-will-amzn-hit-in-may-2026/will-amzn-reach-280-in-may-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 442,
+      "sha256": "eeedd4ff334c0dbc6f0f5315a469bbd1ea0ba8fde19438210d158fe90fca9dd6"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 243,
+      "sha256": "089717039e6dc973f3bd31dfdc22a19743ed3731a45a9a3ee8739b8a36e79380"
+    },
+    {
+      "path": "market.json",
+      "bytes": 3033,
+      "sha256": "dcf3640507f35c9cb4f1a023e51198ad6815509a6b1791761db1f1eaee097b39"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "06b24da73c9b8d01c9b4c2563238695f1850c06b2c35bca81a209ec6068435f9"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 2094,
+      "sha256": "dff2ecd03d071ec2e7a9336197969441143cf94bd620bcdcd3e575df5f14b9c9"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 3104,
+      "sha256": "c350ce6e2b8a14fdb3138b749b9ef4323b89760114f3d50594a1df6197baf980"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 964,
+      "sha256": "68646c52cf45ae82eb2355ed93eb0d7047bc413291fd40cc87b20fdbaf03ad68"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 968,
+      "sha256": "86e304f3c765338709cb98000b5618997aec52bd7b93e1f5c4ea438a4ee063cf"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 80449,
+      "sha256": "72e6030ea961e519d10e62353b6a98e6d4b4b6d85a81a2fdadaeae58bb1cdcb6"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 117580,
+      "sha256": "2ebfd46ced159e478857315133ee698aaf4a84ce4474865a60aca22745788d94"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 34579,
+      "sha256": "7a9ca57ca506483243d620301034e53418c52db0e60446c9b097a7e0a7466c45"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 44838,
+      "sha256": "d4d7ced2efc4683cc80c921ed88a4f699366a9ba4f5fb356207a13bb88a92f7a"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 20326,
+      "sha256": "f200900d3906e92c456ec7f2bf35c79e3aec6060e87374179ede03f9f0cb3f7c"
+    }
+  ]
+}

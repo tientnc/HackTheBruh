@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/meta-quarterly-earnings-gaap-eps-04-29-2026-6pt62/meta-quarterly-earnings-gaap-eps-04-29-2026-6pt62",
+  "condition_id": "0x9073d232735a32de5f1805b3e1205fafc67fe0551cdbf0a46894585a6af5bd39",
+  "start": 1776384000,
+  "end_exclusive": 1777506593,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}
