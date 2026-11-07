@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-caesars-entertainment-inc-be-acquired-before-2027-448",
+  "condition_id": "0xb8e9e1c93dbc5e2af5bcf4d857ea73a204196303e2bbd9be7955c27d55d7fc56",
+  "start": 1773187200,
+  "end_exclusive": 1779982620,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

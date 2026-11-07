@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-price-will-nvda-hit-in-march-2026/will-nvda-dip-to-116-in-march",
+  "market_id": "1432342",
+  "condition_id": "0x9b2a40185870a1712c77616c488f809d3d97e99c3af0837e074bbcc41e782e49",
+  "event_id": "229249",
+  "slug": "will-nvda-dip-to-116-in-march",
+  "question": "Will NVIDIA dip to $116 in March?",
+  "created_at": "2026-02-25T05:00:25.643588Z",
+  "start_date": "2026-02-25T05:03:45.721705Z",
+  "end_date": "2026-04-01T03:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point during March 2026 (ET), any 1-minute candle for NVIDIA (NVDA) has a final \"Low\" price equal to or below the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during regular trading hours (ET) will be considered.\n\nThe resolution source for this market is Yahoo Finance \u2014 specifically, the NVIDIA (NVDA) \"Low\" prices available at https://finance.yahoo.com/quote/NVDA/, with the chart settings on \"1m\" for candle intervals.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/NVDA/",
+  "outcomes": [
+    {
+      "condition_id": "0x9b2a40185870a1712c77616c488f809d3d97e99c3af0837e074bbcc41e782e49",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "47737225321303566064723303188264656066253396085109905247593390310305600901118"
+    },
+    {
+      "condition_id": "0x9b2a40185870a1712c77616c488f809d3d97e99c3af0837e074bbcc41e782e49",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "102388609768023892548152423655652262152000723671677900536657378551498338343589"
+    }
+  ]
+}

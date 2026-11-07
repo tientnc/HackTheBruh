@@ -1,0 +1,110 @@
+{
+  "dataset": "polymarket-3081960-v1",
+  "built_at": "2026-11-07T22:51:29.981210+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/bank-of-russia-decision-in-october-20260724021538830/will-the-bank-of-russia-increase-the-key-rate-after-the-october-meeting-20260724021538833",
+    "condition_id": "0x50f869ebec56fb3225a51b5e58cc809d17261a49816c3f945382056bd72b770f",
+    "start": 1784851200,
+    "end_exclusive": 1792758705,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will the Bank of Russia increase the key rate after the October Meeting?",
+  "market_opened": "2026-07-24T16:01:47.171866Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 1371,
+    "wallet_trade_leg_rows": 3649,
+    "price_points": 1460,
+    "wallets": 292,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-07": 34,
+    "2026-08": 40,
+    "2026-09": 337,
+    "2026-10": 960
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/bank-of-russia-decision-in-october-20260724021538830/will-the-bank-of-russia-increase-the-key-rate-after-the-october-meeting-20260724021538833",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 516,
+      "sha256": "6bea37b25379e60ec54fb5ddeaa65db389cf379b19929deafed01270836559b8"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 246,
+      "sha256": "2b16ec7d29634c30606b24a19e1561f183e716cb0338d63eb63f51156a24e290"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1959,
+      "sha256": "65faeb29c70d2bea838a643aa701ffe8922244642c5199c0e0e98d27f28cab7a"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "8744c94dfda39eaaabd3239c1f751eee221c12c23f669849fe04d4b01f65ceca"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 15929,
+      "sha256": "57b6907ae9d1d7bff5f9dc24baa028450b4fccc4041792becd8e3635fbcd4557"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2543,
+      "sha256": "515d0e97e974691da486ecdc8fd10259bfe553cf66abee744e1560051621ffa4"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 7671,
+      "sha256": "f36cf8ddb719ccb10c006ddc319e4c28b64e6c6933ace9dcd8fa9d063e351747"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 7694,
+      "sha256": "51c13cd5962a7459ac840e474ca532e801a9404acb50119a55306926e2605449"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 221816,
+      "sha256": "db964bf0eca3da47b70c0f20b9aa2e9be089ed8d99838217ea3396cbd1b11272"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 345569,
+      "sha256": "1140b5db58d8810a4f15c55b3874509e1d2ae95c075d6e02420f493b6d84d06f"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 90721,
+      "sha256": "5ceb3bca419e2c9cc6aeea5d9933b0478e12ead86f40bcd7822a3fd0485fb28b"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 124524,
+      "sha256": "33f6688bcb831eec42ae16397fe823ddf69e7fca0c0e655d4fa79abf19555d89"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 31029,
+      "sha256": "4ab962d988d5a30367d0a428cbf29de5037f403052f91d782c5568d6c9da5886"
+    }
+  ]
+}

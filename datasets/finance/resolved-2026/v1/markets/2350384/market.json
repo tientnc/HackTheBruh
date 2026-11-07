@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-price-will-meta-hit-in-june-2026/will-meta-dip-to-500-in-june-2026",
+  "market_id": "2350384",
+  "condition_id": "0x4b6a275d727e79b2bec8d5bfc8422c2ab6b30e39c480d21bb1750dca9cc3f4b9",
+  "event_id": "522280",
+  "slug": "will-meta-dip-to-500-in-june-2026",
+  "question": "Will Meta Platforms, Inc. (META) hit (LOW) $500 in June?",
+  "created_at": "2026-05-25T04:00:27.090688Z",
+  "start_date": "2026-05-25T04:08:56.516526Z",
+  "end_date": "2026-07-01T03:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point during June 2026, any 1-minute candle for Meta Platforms, Inc. (META) has a final \"Low\" price equal to or below the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during the regular trading hours of the primary exchange on which the listed security trades (typically 9:30 AM \u2013 4:00 PM ET) will be considered. Prices occurring during pre-market or after-hours trading will not qualify.\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Pyth.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Pyth after any adjustments have been applied.\n\nThe resolution source for this market is Pyth \u2014 specifically, the Meta Platforms, Inc. (META) \"Low\" prices available at https://pythdata.app/explore/Equity.US.META%2FUSD, with the chart settings configured for 1-minute candles.\n\nHistorical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using the \"t=\" parameter. Any timestamp within the listed market time frame may be used to view the relevant candle data (e.g., https://pythdata.app/explore/Equity.US.META%2FUSD?t=1773432000)\n\nIf the relevant Pyth data is unavailable due to a system outage, data failure, or other technical disruption that prevents verification of the required 1-minute candle data, the official daily low price published by the primary exchange on which the listed security trades will be used to determine whether the listed price was reached during the applicable trading session.",
+  "resolution_source": "https://pythdata.app/explore/Equity.US.META%2FUSD",
+  "outcomes": [
+    {
+      "condition_id": "0x4b6a275d727e79b2bec8d5bfc8422c2ab6b30e39c480d21bb1750dca9cc3f4b9",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "59386543181184716947260685600200985365411958188535376277202244906129298757799"
+    },
+    {
+      "condition_id": "0x4b6a275d727e79b2bec8d5bfc8422c2ab6b30e39c480d21bb1750dca9cc3f4b9",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "50331482499928188908059826606785185942542882006622871537742249535858860505001"
+    }
+  ]
+}

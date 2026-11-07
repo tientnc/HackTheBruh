@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/which-companies-added-to-sp-500-in-q1-2026/will-pure-storage-pstg-be-added-to-the-sp-500-by-march-31-2026",
+  "market_id": "954195",
+  "condition_id": "0xb87dc3ff36911fe24d9d92281811bc43e29a91fb33b784b6bbad1d9f11fdb126",
+  "event_id": "107358",
+  "slug": "will-pure-storage-pstg-be-added-to-the-sp-500-by-march-31-2026",
+  "question": "Will Pure Storage (PSTG) be added to the S&P 500 by March 31, 2026?",
+  "created_at": "2025-12-17T12:01:47.078063Z",
+  "start_date": "2025-12-17T22:30:46.019275Z",
+  "end_date": "2026-03-31T00:00:00Z",
+  "closed_now": true,
+  "description": "The S&P 500 undergoes quarterly reconstitution on the third Friday of March, June, September, and December. The next rebalance is currently scheduled for March 20, 2026.\n\nThis market will resolve to \"Yes\" if S&P Global Inc. announces that the listed company will be added to the S&P 500 index by March 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No.\"\n\nTo qualify, the listed ticker must match the announced ticker added to the index.\n\nAn announcement from S&P will qualify for a \"Yes\" resolution, regardless of whether the listed company has actually been added to the S&P 500 index by the resolution date. \n\nThe primary resolution source will be official announcements from S&P Global Inc. (https://www.spglobal.com/en/press/press-release).",
+  "resolution_source": null,
+  "outcomes": [
+    {
+      "condition_id": "0xb87dc3ff36911fe24d9d92281811bc43e29a91fb33b784b6bbad1d9f11fdb126",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "78528333903137002854998815803045821784412126369676173514471658903796959166155"
+    },
+    {
+      "condition_id": "0xb87dc3ff36911fe24d9d92281811bc43e29a91fb33b784b6bbad1d9f11fdb126",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "41786299702680659763815608448345844544955058644606729384896281297992084742730"
+    }
+  ]
+}

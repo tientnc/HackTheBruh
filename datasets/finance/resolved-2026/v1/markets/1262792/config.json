@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-googl-hit-in-february-2026/will-googl-dip-to-300-in-february",
+  "condition_id": "0x080aaa995b6d5f8dc67b3d1a0aca125f044d6305d49c19bbafe62f30315fd971",
+  "start": 1769299200,
+  "end_exclusive": 1771351714,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

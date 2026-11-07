@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/gc-hit-jun-2026/will-gold-gc-hit-high-4900-by-end-of-june",
+  "condition_id": "0x1f478289d98ce38307785bfc98b1f05aaf31680ad52b498ec0a668098281eece",
+  "start": 1776297600,
+  "end_exclusive": 1782889991,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

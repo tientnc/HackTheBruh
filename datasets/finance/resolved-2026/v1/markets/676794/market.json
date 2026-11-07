@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/ipos-before-2027/xai-ipo-before-2027",
+  "market_id": "676794",
+  "condition_id": "0x570b4ad4562404728eefc2876a930f5a1aa79ec796298aa3ed043a84691057a2",
+  "event_id": "79048",
+  "slug": "xai-ipo-before-2027",
+  "question": "xAI IPO before 2027?",
+  "created_at": "2025-11-11T17:52:05.718702Z",
+  "start_date": "2025-11-12T21:28:44.790746Z",
+  "end_date": "2026-12-31T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the listed company completes an Initial Public Offering (IPO) by December 31, 2026, 11:59 PM ET, as confirmed by official company announcements or credible news sources. The IPO refers to the first sale of stock by the listed company to the public on any recognized stock exchange.\n\nIf the listed company merges with another entity, is acquired, or ceases to exist before the market resolves, the market will also resolve to \"No\".\n\nThis market will resolve early if the listed company completes an IPO by December 31, 2026, 11:59 PM ET.\n\nThe resolution source for this market is a consensus of credible reporting.",
+  "resolution_source": null,
+  "outcomes": [
+    {
+      "condition_id": "0x570b4ad4562404728eefc2876a930f5a1aa79ec796298aa3ed043a84691057a2",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "17333726941730014825030568503478265306035364239877037625635559620205086938354"
+    },
+    {
+      "condition_id": "0x570b4ad4562404728eefc2876a930f5a1aa79ec796298aa3ed043a84691057a2",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "109176275821654123695852667727085800476461368485803184824012889200432610414969"
+    }
+  ]
+}

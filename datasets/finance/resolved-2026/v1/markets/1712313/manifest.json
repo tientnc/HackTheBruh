@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-1712313-v1",
+  "built_at": "2026-11-07T22:51:06.733043+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/what-price-will-ng-hit-in-april-2026/will-ng-reach-3-20-in-april-2026",
+    "condition_id": "0x1863375c4a60071ed75f617ca1e097a5e7b26a1cf1d37ff7fa6cca0c04620308",
+    "start": 1774396800,
+    "end_exclusive": 1777606367,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Natural Gas (NG) hit (HIGH) $3.20 in April?",
+  "market_opened": "2026-03-25T04:12:32.482Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 402,
+    "wallet_trade_leg_rows": 1107,
+    "price_points": 69,
+    "wallets": 240,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-04": 400,
+    "2026-05": 2
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/what-price-will-ng-hit-in-april-2026/will-ng-reach-3-20-in-april-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 443,
+      "sha256": "09e1ff82a3cdb87ede9e3f88a26e01a76ac0c66c5346226a8168fa40293f42ae"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 243,
+      "sha256": "9b993018341df9f16445255d246b98130b79873964a1747b1b054bd8fb0a9323"
+    },
+    {
+      "path": "market.json",
+      "bytes": 3374,
+      "sha256": "424205858d9d2f9db86342be96611cada16f2884d06f69e72be5a0a1bc24b39f"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "bf9655d26329a9a00f495cf796da15cad28402b9343fbd4eb61c15a8ce623a07"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 1185,
+      "sha256": "b71d3f6afb4a28d90cac79d5058c46aa18d1a0bfffdbe70df42810941a9eedfa"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2924,
+      "sha256": "ff6548c231f14e08f3f4aa3ac90e30b868e264910b653740f1f5dc07f3407785"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 715,
+      "sha256": "d2fa1e02952d76ab974a247f5259f439617785f5e1b8c1796cb94fc6e0187676"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 724,
+      "sha256": "3b41b5f46e6a06331c2b454ad420e52f700961ccba1da84540fea940ddd0b142"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 76189,
+      "sha256": "b6ee6420606f5578a237b4ba9cf3ffdb914c095d795014a81e3fcb93cc410995"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 115500,
+      "sha256": "e12ec816b282c4c2f1c821a031861a5aafb517349d630b8ffb5de9935e0bb356"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 32034,
+      "sha256": "9c432f41ab418f8326f05694689f91af9bc1e34629f5181b154a1592ce26a6c4"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 43175,
+      "sha256": "c3c49cc09ecd0f90aba1627c7850ad74f5ae28276453565a9ce7290ae047bb4c"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 25864,
+      "sha256": "1d49f99bad1e814240312bc814b91d02f0dd6b2d6bb8241830bf503ec721f5eb"
+    }
+  ]
+}

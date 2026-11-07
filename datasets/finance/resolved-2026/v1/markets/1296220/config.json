@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/logan-paul-1st-edition-charizard-sale-price/will-the-logan-paul-1st-edition-charizard-sale-price-be-over-900k-687",
+  "condition_id": "0xd6aa9e138ca022a6cd3cb4e93fe1719de5331d3109f61a6a9b1304e6afb6696d",
+  "start": 1769644800,
+  "end_exclusive": 1771227302,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

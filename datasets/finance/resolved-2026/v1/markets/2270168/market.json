@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/2nd-largest-company-end-of-june-849/will-alphabet-be-the-second-largest-company-in-the-world-by-market-cap-on-june-30-883",
+  "market_id": "2270168",
+  "condition_id": "0x3616e2f2cd616de0614c3c7a0fe1e791c93de320fef017a496b723fcbceefce8",
+  "event_id": "488818",
+  "slug": "will-alphabet-be-the-second-largest-company-in-the-world-by-market-cap-on-june-30-883",
+  "question": "Will Alphabet be the second-largest company in the world by market cap on June 30?",
+  "created_at": "2026-05-15T18:30:37.008276Z",
+  "start_date": "2026-05-16T00:20:44.297136Z",
+  "end_date": "2026-06-30T16:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to the second-largest company in the world by market cap on June 30, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting.",
+  "resolution_source": null,
+  "outcomes": [
+    {
+      "condition_id": "0x3616e2f2cd616de0614c3c7a0fe1e791c93de320fef017a496b723fcbceefce8",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "80344144267856331385688243239427106158307938690577078321887987426050580773896"
+    },
+    {
+      "condition_id": "0x3616e2f2cd616de0614c3c7a0fe1e791c93de320fef017a496b723fcbceefce8",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "100258293514827933554799520146194905211153865675614589404928437667202521342141"
+    }
+  ]
+}

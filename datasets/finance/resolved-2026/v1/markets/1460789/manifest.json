@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-1460789-v1",
+  "built_at": "2026-11-07T22:49:41.707599+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/googl-above-in-march-2026/googl-above-360-on-march-31-2026",
+    "condition_id": "0xd947017d6bbf0f4f2e15d82ed500d1a2ac57561d257ec1a5c39ef592870990bb",
+    "start": 1772150400,
+    "end_exclusive": 1775003126,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Google (GOOGL) close above $360 end of March?",
+  "market_opened": "2026-02-27T23:36:48.826771Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 185,
+    "wallet_trade_leg_rows": 443,
+    "price_points": 123,
+    "wallets": 193,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-03": 185
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/googl-above-in-march-2026/googl-above-360-on-march-31-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 432,
+      "sha256": "526346d8adac13d094f5cd8a126f2af853ae99e0e9fec9f2ba236ff51edfe7c0"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 242,
+      "sha256": "785d25d1ba7a68532d38b97ca88a719680534855ae32029a64eda183862bc926"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2260,
+      "sha256": "bfd2af17e6386316a24dd3d1c37dbcaf959e8ee3bed6ef7d043f8f81c16e3c81"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "d66489583646593cd58c7c2f9b8e16c42c37d52c39a97a296a8876c56afe32f8"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 1886,
+      "sha256": "a13851cc42f1eb4b540f1da081e873d4f3a6eb43e4f3bd79f2606b5b5b2661b1"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2549,
+      "sha256": "027ab51be5008d027d68a0d13f85957f21df14148b728d1c48ffef8406817044"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 927,
+      "sha256": "750bdcd4b1a703f41771dfbf4d22780dae6db69cefcf60d7db4e39023afaf537"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 893,
+      "sha256": "55a4dddc692e7c6eb8b06ac8b4153b881801ae82d2dfa8b34400c1b817f1a812"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 38932,
+      "sha256": "93ea3adb5abc50e37ad9faea66567be6c41dc20868b8e7524010a984b2dcc1f0"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 52453,
+      "sha256": "eeb6e86b54cbaf7c271cb2e776742701a52379aed23d0b25dd90cbfe85907887"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 16257,
+      "sha256": "df4d4dfae8253ad34ebc87605cd05ec99eb32d228c99e42b2273fea37df6b7c8"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 20814,
+      "sha256": "c975bca3003786a6da988c90dd9b8abedd6ddca99e6c9388bdd732c0ef37a8ef"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 19513,
+      "sha256": "f67596108370cfb669c3fedac00b6d770a33fe8cc7de28bb389a669fc2af27c6"
+    }
+  ]
+}

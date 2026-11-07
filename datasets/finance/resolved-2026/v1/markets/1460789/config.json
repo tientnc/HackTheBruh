@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/googl-above-in-march-2026/googl-above-360-on-march-31-2026",
+  "condition_id": "0xd947017d6bbf0f4f2e15d82ed500d1a2ac57561d257ec1a5c39ef592870990bb",
+  "start": 1772150400,
+  "end_exclusive": 1775003126,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

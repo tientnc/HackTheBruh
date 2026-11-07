@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-price-will-xauusd-hit-in-august-2026/will-xauusd-reach-4400-in-august-2026",
+  "market_id": "3096360",
+  "condition_id": "0xbf906ccdf6ea99ecdc9b763aeeb362b8861a21577d4acb58797489ab25870387",
+  "event_id": "746375",
+  "slug": "will-xauusd-reach-4400-in-august-2026",
+  "question": "Will Gold (XAUUSD) hit (HIGH) $4,400 in August?",
+  "created_at": "2026-07-25T04:02:17.947503Z",
+  "start_date": "2026-07-25T04:02:29Z",
+  "end_date": "2026-09-01T03:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of August 2026, any 1-minute candle for Gold (XAUUSD) has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during an applicable trading session of the specified timeframe's business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf Gold (XAUUSD) does not trade at all during the listed time frame, this market will resolve to \"No\".\n\nIn the event of a contract specification change, feed change, or similar structural modification affecting the market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.\n\nThe resolution source for this market is Pyth \u2014 specifically, the Gold (XAUUSD) \"High\" and \"Low\" prices available at https://pythdata.app/explore/Metal.XAU%2FUSD, with the chart settings configured for 1-minute candles.\n\nHistorical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using the \"t=\" parameter.\n\nIf the relevant Pyth data is unavailable due to a system outage, data failure, or other technical disruption that prevents verification of the required 1-minute candle data, the official daily high/low price published for the relevant CME COMEX futures contract for the underlying metal\u2014COMEX Gold Futures (GC)\u2014may be used to determine whether the listed price was reached during the applicable trading session.",
+  "resolution_source": "https://pythdata.app/explore/Metal.XAU%2FUSD",
+  "outcomes": [
+    {
+      "condition_id": "0xbf906ccdf6ea99ecdc9b763aeeb362b8861a21577d4acb58797489ab25870387",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "30692850101421898203353184695489842087443688815475606329188066452700558490328"
+    },
+    {
+      "condition_id": "0xbf906ccdf6ea99ecdc9b763aeeb362b8861a21577d4acb58797489ab25870387",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "60820936846008216663445738131772667014289428231494428740836081836607134180461"
+    }
+  ]
+}

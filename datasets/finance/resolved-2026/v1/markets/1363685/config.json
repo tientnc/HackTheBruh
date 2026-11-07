@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/nvda-quarterly-earnings-nongaap-eps-02-25-2026-1pt52/nvda-quarterly-earnings-nongaap-eps-02-25-2026-1pt52",
+  "condition_id": "0x4116364a30edf0db220553d5f4032b32f05d42b6d64e1bacaa0c065bb4146015",
+  "start": 1770681600,
+  "end_exclusive": 1772064611,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

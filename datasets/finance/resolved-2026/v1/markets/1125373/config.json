@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/spx-hit-jun-2026/spx-hit-8000-high-jun-2026",
+  "condition_id": "0x3c71361d4ba3647619c72661c30f9942d1fd1e9885dd982c280177a6884a773e",
+  "start": 1767657600,
+  "end_exclusive": 1782859866,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "dataset": "polymarket-2129196-v1",
+  "built_at": "2026-11-07T22:51:28.647448+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/chirayu-rana-divorced/chirayu-rana-divorced",
+    "condition_id": "0x7db27787ed509fd8ae9b055c4d1cbc3a7860766e6346c56e4931ee37e6d7e865",
+    "start": 1777593600,
+    "end_exclusive": 1782886257,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Chirayu Rana divorced?",
+  "market_opened": "2026-05-01T02:49:20.873621Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 2098,
+    "wallet_trade_leg_rows": 4447,
+    "price_points": 252,
+    "wallets": 1898,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-05": 404,
+    "2026-06": 106,
+    "2026-07": 1588
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/chirayu-rana-divorced/chirayu-rana-divorced",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 417,
+      "sha256": "d763effad6e22b5798083eccab629590578bcc4cad89d8000d9c7a39af13c84e"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 246,
+      "sha256": "2d12962db0dd5190dcc7bc38106da7fd336dd6581c203051182c795e1460e610"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1677,
+      "sha256": "6ef2a01d394a4d3828f0559509c162b03f47ae35bcf5751d3e517ba05d98d94e"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "c8a749abf17931608b89c7698663f00a6ec17cd1651508d3b84f6634d08a580b"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 3358,
+      "sha256": "3a3534b39084ab2fcb853b4824e25017ce1cbfa87117b5fd1331ac1ade45c546"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 1982,
+      "sha256": "e0c459ff1630033f22df71b30689f9a3fc2e6e8c691a14a60f9bc820c7240b58"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1250,
+      "sha256": "4ebae59a6739b7755b265ed324581f48ddec00bc2cfcb5e33b99a08e2802d70f"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1256,
+      "sha256": "b11b0bc39ac9227ee4c2ed73cef74dba95fecf308056c60e3a6c8d43d4f606fe"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 398661,
+      "sha256": "006a77052ac79c79de7cdbefc366a36a5ada6b412801b13c9b504b9fdc3bf4d2"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 470277,
+      "sha256": "6d83c802a317b2bd9a620e50df0444b21af84db97fc179f13dc97cb0a5c88c6b"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 146488,
+      "sha256": "3c02c4ad9521401fa65bc83dd9a7c1bca3fc240d8dc46e5d7549a36f39d6a0b9"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 167324,
+      "sha256": "766cc66e989ec7629c2dd860a9354fc976d52692f106609ca37fa1c59913be11"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 168373,
+      "sha256": "dbe48c53dd34d98d8e0d72943323d4fcdddaf103ec522b50d434d1fd2810a40c"
+    }
+  ]
+}

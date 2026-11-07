@@ -5,7 +5,14 @@ __pycache__/
 build/
 dist/
 .env
+.env.*
+!.env.example
+node_modules/
+.vercel/
+web/dist/
 data/
+!web/public/data/
+!web/public/data/snapshot.json
 .pytest_cache/
 
 !frontend/src/data/

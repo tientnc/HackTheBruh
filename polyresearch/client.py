@@ -22,7 +22,7 @@ class Client:
     def get(self, base, path, **params):
         query = {k: str(v).lower() if isinstance(v, bool) else v
                  for k, v in params.items() if v is not None}
-        url = f"{base}{path}?{urlencode(query)}"
+        url = f"{base}{path}?{urlencode(query, doseq=True)}"  # lists -> repeated params
         request = Request(url, headers={
             "User-Agent": "HackTheBruh/0.1 (public-data research)",
             "Accept": "application/json",

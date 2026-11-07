@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/si-hit-jan-2026/si-hit-40-low-jan-2026-159-697-786",
+  "condition_id": "0x50ce812e5952c126fa029283c6b23e497c4ea035f73133ae925e3055ca16315a",
+  "start": 1766707200,
+  "end_exclusive": 1769869443,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

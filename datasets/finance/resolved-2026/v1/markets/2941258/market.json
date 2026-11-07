@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/3rd-largest-company-end-of-august-20260715203029875/will-microsoft-be-the-third-largest-company-in-the-world-by-market-cap-on-august-31-20260715203029877",
+  "market_id": "2941258",
+  "condition_id": "0x24b027278ac28a7b1049178b8673af46db7491480ff9c030e1cdf72c556374fe",
+  "event_id": "708344",
+  "slug": "will-microsoft-be-the-third-largest-company-in-the-world-by-market-cap-on-august-31-20260715203029877",
+  "question": "Will Microsoft be the third-largest company in the world by market cap on August 31?",
+  "created_at": "2026-07-16T00:57:54.964999Z",
+  "start_date": "2026-07-16T01:01:39.896098Z",
+  "end_date": "2026-08-31T23:59:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to the third-largest company in the world by market cap on August 31, 2026, as of market close.\n\nThe resolution source for this market will be a consensus of credible reporting.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x24b027278ac28a7b1049178b8673af46db7491480ff9c030e1cdf72c556374fe",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "86153684421253045841026634173780053732858134081585356454716135535905962818488"
+    },
+    {
+      "condition_id": "0x24b027278ac28a7b1049178b8673af46db7491480ff9c030e1cdf72c556374fe",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "16200548120678688975259501449816775307317746499524544673028545913035676355439"
+    }
+  ]
+}

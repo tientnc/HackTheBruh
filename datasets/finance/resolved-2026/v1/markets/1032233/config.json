@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/gc-hit-jan-2026/gc-hit-5000-high-jan-2026-374-153-895-849",
+  "condition_id": "0x8665b3478441a515c7e5432b7e72f1e9466b6a9fad14e5922c8297faf3397622",
+  "start": 1766707200,
+  "end_exclusive": 1769503522,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

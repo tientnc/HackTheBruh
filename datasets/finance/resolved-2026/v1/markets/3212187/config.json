@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/largest-company-end-of-september-1785358369147/will-company-c-be-the-largest-company-in-the-world-by-market-cap-on-september-30",
+  "condition_id": "0x8dbac1bf1e011f186cd62d26757ec368ea5fdcf1c0dd8d931df0c613b309718c",
+  "start": 1785283200,
+  "end_exclusive": 1790805945,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

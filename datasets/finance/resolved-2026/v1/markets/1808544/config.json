@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/fed-rate-hike-by/fed-rate-hike-by-april-2026-meeting",
+  "condition_id": "0x365ea48d7238e8f8dd137665e562997d29db9d949d5dc48beac9a34ec97c17d9",
+  "start": 1774915200,
+  "end_exclusive": 1777499147,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

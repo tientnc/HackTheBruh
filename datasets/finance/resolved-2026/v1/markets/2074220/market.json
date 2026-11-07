@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-will-silver-xagusd-hit-in-may-2026/will-silver-xagusd-hit-low-72-in-may-536-179-557-938-755",
+  "market_id": "2074220",
+  "condition_id": "0xb3bad95956d5159f02b1f4f111a5599d0640aa3922519a163463d92ed957e294",
+  "event_id": "415435",
+  "slug": "will-silver-xagusd-hit-low-72-in-may-536-179-557-938-755",
+  "question": "Will Silver (XAGUSD) hit (LOW) $72 in May?",
+  "created_at": "2026-04-25T04:01:54.836445Z",
+  "start_date": "2026-04-25T05:02:27.563Z",
+  "end_date": "2026-06-01T03:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point during May 2026, any 1-minute candle for Silver (XAGUSD) has a final \"Low\" price equal to or below the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during the applicable trading session as listed on Pyth will be considered. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours as listed on Pyth.\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf Silver (XAGUSD) does not trade at all during the listed time frame, this market will resolve to \"No\".\n\nIn the event of a contract specification change, feed change, or similar structural modification affecting the market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.\n\nThe resolution source for this market is Pyth \u2014 specifically, the Silver (XAGUSD) \"Low\" prices available at https://pythdata.app/explore/Metal.XAG%2FUSD, with the chart settings configured for 1-minute candles.\n\nHistorical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using the \"t=\" parameter.\n\nIf the relevant Pyth data is unavailable due to a system outage, data failure, or other technical disruption that prevents verification of the required 1-minute candle data, the official daily low price published for the relevant CME COMEX futures contract for the underlying metal\u2014COMEX Silver Futures (SI)\u2014may be used to determine whether the listed price was reached during the applicable trading session.",
+  "resolution_source": "https://pythdata.app/explore/Metal.XAG%2FUSD",
+  "outcomes": [
+    {
+      "condition_id": "0xb3bad95956d5159f02b1f4f111a5599d0640aa3922519a163463d92ed957e294",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "90842586408306922554602307083187111955646519962775227722819781608969707681900"
+    },
+    {
+      "condition_id": "0xb3bad95956d5159f02b1f4f111a5599d0640aa3922519a163463d92ed957e294",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "49725482234208583643426529598624320554335996211467056307830743002099597091736"
+    }
+  ]
+}

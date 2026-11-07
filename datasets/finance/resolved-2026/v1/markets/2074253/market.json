@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-price-will-ng-hit-in-may-2026/will-natural-gas-ng-hit-high-3pt20-in-may",
+  "market_id": "2074253",
+  "condition_id": "0xc571f73e2935ae4f6468c7b86989dce5114c7da821b597651278d81814961040",
+  "event_id": "415444",
+  "slug": "will-natural-gas-ng-hit-high-3pt20-in-may",
+  "question": "Will Natural Gas (NG) hit (HIGH) $3.20 in May?",
+  "created_at": "2026-04-25T04:02:05.12707Z",
+  "start_date": "2026-04-25T04:10:02.617Z",
+  "end_date": "2026-06-01T03:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point during May 2026, any 1-minute candle for the Active Month of Natural Gas futures has a final \"High\" price equal to or above the listed price. Otherwise, this market will resolve to \"No\".\n\nFor Natural Gas futures, the active month refers to the nearest listed contract month. The active month changes at 6:00:00 PM ET at the start of the trading session two business days prior to that contract's last trading day, at which point the next listed contract becomes the active month.\n\nFor Natural Gas (NG) futures, the last trading day is defined as the third last business day of the month prior to the contract month, consistent with CME contract specifications.\n\nOnly prices achieved during the applicable trading session for the underlying market will be considered. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours as listed on Pyth.\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time frame, this market will resolve to \"No\".\n\nIn the event of a contract specification change, feed change, or similar structural modification affecting the underlying market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.\n\nThe resolution source for this market is Pyth \u2014 specifically, the Active Month Natural Gas futures \"High\" prices available at https://pythdata.app/explore?search=NGD, with the chart settings configured for 1-minute candles.\n\nHistorical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using the \"t=\" parameter.\n\nIf the relevant Pyth data is unavailable due to a system outage, data failure, or other technical disruption that prevents verification of the required 1-minute candle data, the official daily high price published for the Active Month Natural Gas (NG) futures contract by CME Group may be used to determine whether the listed price was reached during the applicable trading session.",
+  "resolution_source": "https://pythdata.app/explore?search=NGD",
+  "outcomes": [
+    {
+      "condition_id": "0xc571f73e2935ae4f6468c7b86989dce5114c7da821b597651278d81814961040",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "103664996940415720678246581959598481488949312947291518154086687064650596518137"
+    },
+    {
+      "condition_id": "0xc571f73e2935ae4f6468c7b86989dce5114c7da821b597651278d81814961040",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "69506322716679666260270272081251126706986997274484492329579847817835312616663"
+    }
+  ]
+}

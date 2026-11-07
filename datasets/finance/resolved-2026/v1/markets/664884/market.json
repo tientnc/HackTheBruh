@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/will-consensys-ipo-by-december-31-2025/will-consensys-ipo-by-september-30-2026",
+  "market_id": "664884",
+  "condition_id": "0x239b9eb8c8a176360c0e732e359c0086e4f7c321c53df88eba6bf9c67f41b637",
+  "event_id": "69171",
+  "slug": "will-consensys-ipo-by-september-30-2026",
+  "question": "Will Consensys IPO by September 30 2026?",
+  "created_at": "2025-11-04T15:12:21.548736Z",
+  "start_date": "2025-11-04T15:13:26.832563Z",
+  "end_date": "2026-10-01T04:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if ConsenSys (the parent company of MetaMask) completes an Initial Public Offering (IPO) by the listed date ET, as confirmed by official company announcements and credible news sources. Otherwise, this market will resolve to \"No.\"\n\nThe IPO refers to the first sale of stock by the listed company to the public on any recognized stock exchange.\n\nIf ConsenSys is acquired by another company that is already public, this market will immediately resolve to \"No.\"\n\nThe resolution source for this market is a consensus of credible reporting.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x239b9eb8c8a176360c0e732e359c0086e4f7c321c53df88eba6bf9c67f41b637",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "44287323850020972283935211352775826540687209058466814665073875307486513170314"
+    },
+    {
+      "condition_id": "0x239b9eb8c8a176360c0e732e359c0086e4f7c321c53df88eba6bf9c67f41b637",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "37883654715006963242132896450609198459500623242319081575718912327432284149793"
+    }
+  ]
+}

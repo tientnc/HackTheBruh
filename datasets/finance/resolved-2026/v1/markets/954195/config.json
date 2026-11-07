@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/which-companies-added-to-sp-500-in-q1-2026/will-pure-storage-pstg-be-added-to-the-sp-500-by-march-31-2026",
+  "condition_id": "0xb87dc3ff36911fe24d9d92281811bc43e29a91fb33b784b6bbad1d9f11fdb126",
+  "start": 1765929600,
+  "end_exclusive": 1775031430,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

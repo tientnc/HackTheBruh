@@ -36,6 +36,9 @@ This snapshot contains **only this bracket's YES and NO outcomes**. The market o
 
 **The two trade tables overlap. Do not add their row counts or notionals together.** The all-wallet table includes maker and taker records, and those records are not unique executions. Individual row roles are not exposed by the API.
 
+<details>
+<summary>Dates, column guide and reproducibility</summary>
+
 ## Dates and coverage
 
 **Window:** June 1, 2026, 00:00 UTC ≤ observation time &lt; **November 7, 2026, 17:49:10 UTC**.
@@ -95,3 +98,5 @@ Historical wallet profit and skill labels are **not assigned yet**. They require
 [Validation results](validation.json) · [Manifest + SHA-256 checksums](manifest.json) · [Collection settings](config.json)
 
 Sources: [Polymarket market](https://polymarket.com/event/anthropic-ipo-closing-market-cap-higher-strikes/will-anthropics-market-cap-be-between-1pt25t-and-1pt5t-at-market-close-on-ipo-day), [Gamma](https://docs.polymarket.com/market-data/discover-markets), [Data API v2 schema](https://data-api.polymarket.com/v2/openapi.json). Source data belongs to its respective providers; this repository grants no additional rights to that data.
+
+</details>

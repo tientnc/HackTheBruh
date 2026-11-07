@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/wfc-quarterly-earnings-gaap-eps-01-14-2026-1pt68/wfc-quarterly-earnings-gaap-eps-01-14-2026-1pt68",
+  "market_id": "1099135",
+  "condition_id": "0xf426dc7e61039fdb5ea61c0c552d956276051ceb7b44fce8ee5075b5bd748aa6",
+  "event_id": "141364",
+  "slug": "wfc-quarterly-earnings-gaap-eps-01-14-2026-1pt68",
+  "question": "Will Wells Fargo & Co (WFC) beat quarterly earnings?",
+  "created_at": "2026-01-03T19:39:20.620316Z",
+  "start_date": "2026-01-04T04:49:08.995Z",
+  "end_date": "2026-01-14T14:00:00Z",
+  "closed_now": true,
+  "description": "As of market creation, Wells Fargo & Co is estimated to release earnings on January 14, 2026. The Street consensus estimate for Wells Fargo & Co's GAAP EPS for the relevant quarter is $1.68 as of market creation. This market will resolve to \"Yes\" if Wells Fargo & Co reports GAAP EPS greater than $1.68 for the relevant quarter in its next quarterly earnings release. Otherwise, it will resolve to \"No.\" The resolution source will be the GAAP EPS listed in the company\u2019s official earnings documents. \n\nIf Wells Fargo & Co releases earnings without GAAP EPS, then the market will resolve according to the GAAP EPS figure reported by SeekingAlpha. If no such figure is published within 96h of market close (4:00:00pm ET) on the day earnings are announced, the market will resolve to \u201cNo\u201d.\n\nIf the company does not release earnings within 45 calendar days of the estimated earnings date, this market will resolve to \u201cNo.\u201d \n\nNote: Subsequent restatements, corrections, or revisions made to the initially announced GAAP EPS figure will not qualify for resolution, except in the case of obvious and immediate mistakes (e.g., fat finger errors, as with Lyft's (LYFT) earnings release in February 2024).\nNote: The strike prices used in these markets are derived from SeekingAlpha estimates, and reflect the consensus of sell-side analyst estimates for GAAP EPS. \nNote: All figures will be rounded to the nearest cent using standard rounding.\nNote: For the purposes of this market, IFRS EPS will be treated as GAAP EPS.\nNote: For the purposes of this market, GAAP EPS refers to diluted GAAP EPS, unless this is not published, in which case it refers to basic GAAP EPS.\nNote: All figures are expressed in USD, unless otherwise indicated.\nNote: For primarily internationally listed companies, this market refers specifically to the shares traded in the United States on U.S. stock exchanges such as the NYSE or Nasdaq. In cases where the company trades in the U.S. through an American Depositary Receipt (ADR) or American Depositary Share (ADS), this market will refer to the ADR/ADS.\n",
+  "resolution_source": "https://seekingalpha.com/",
+  "outcomes": [
+    {
+      "condition_id": "0xf426dc7e61039fdb5ea61c0c552d956276051ceb7b44fce8ee5075b5bd748aa6",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "43350168208665757099399908355208392473711054268476433424887190194629036672781"
+    },
+    {
+      "condition_id": "0xf426dc7e61039fdb5ea61c0c552d956276051ceb7b44fce8ee5075b5bd748aa6",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "75734295607103037278251221134224447899749253177163087285433838528061758838915"
+    }
+  ]
+}

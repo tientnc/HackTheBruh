@@ -1,5 +1,7 @@
 # Later evaluation: 20 resolved Finance markets
 
+![Earlier versus later participation test](../../../../analysis/participation/2026-01/v1/results.svg)
+
 **January 2026 test sample**, separate from the 100 earlier markets. Used to observe actual later buyer/seller counts for the [seven-day participation test](../../../../analysis/participation/2026-01/v1/README.md).
 
 | Evidence | Count |
@@ -15,6 +17,9 @@
 
 [Market index](markets.csv) · [Wallet index](wallets.csv) · [Coverage](coverage.csv) · [Validation](validation.json) · [Manifest](manifest.json)
 
+<details>
+<summary>Tables, definitions and reproducibility</summary>
+
 Selection follows the earlier snapshot's fixed hash seed, category rotation, one market per Gamma event and conservative economic-family grouping. Require verified final binary labels in `[2026-01-01, 2026-02-01)` UTC and at least seven days of reported trading lifetime. Neither observed future profits nor model errors determine selection. The participation program also rejects economic-group overlap with the earlier dataset. No tuning of selected markets occurred after reading prediction errors.
 
 Discovery is retrospective and resolved-only; this does not represent all live Finance markets or independent economic shocks. Historical schedules, metadata and public outcome-announcement times are not fully archived. For this task, the held-out labels are later **trade participation counts**, not these markets' final YES/NO outcomes.
@@ -29,3 +34,5 @@ python -m polyresearch.resolved_dataset --out data/january-2026-fresh --source-c
 ```
 
 The manifest includes exact raw discovery/selection pages, per-market raw trades/prices and normalized tables. Keep compressed data files compressed; they preserve the audit trail without loading large JSON pages into a notebook at once.
+
+</details>

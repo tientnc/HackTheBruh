@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/will-anthropics-valuation-hit-by-june-30/will-anthropics-valuation-hit-high-1pt25t-by-june-30",
+  "condition_id": "0x57fa09373e78720fbe390d8bf873fd06f8fb3bb27b781bf12309f2f85ba23871",
+  "start": 1779148800,
+  "end_exclusive": 1782932652,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

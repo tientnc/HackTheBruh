@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/meta-above-in-january-2026/meta-above-600-on-january-30-2026",
+  "condition_id": "0x7a1d49664545460db0ba5e5e8b93cceb612fbc41bb771d2a301604e70b0961c5",
+  "start": 1766707200,
+  "end_exclusive": 1769818889,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

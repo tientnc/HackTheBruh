@@ -1,0 +1,110 @@
+{
+  "dataset": "polymarket-1194731-v1",
+  "built_at": "2026-11-07T22:50:20.587879+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/bank-of-korea-decision-in-april-586/will-the-bank-of-korea-make-no-change-to-the-base-rate-after-the-april-meeting",
+    "condition_id": "0x8aea8ab87adc39452c82a6cff39967a9406a6e901e8b170ec7db7e3468764a66",
+    "start": 1768435200,
+    "end_exclusive": 1775800070,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will the Bank of Korea make no change to the base rate after the April Meeting?",
+  "market_opened": "2026-01-15T22:48:30.238761Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 780,
+    "wallet_trade_leg_rows": 2094,
+    "price_points": 304,
+    "wallets": 367,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-01": 39,
+    "2026-02": 37,
+    "2026-03": 324,
+    "2026-04": 380
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/bank-of-korea-decision-in-april-586/will-the-bank-of-korea-make-no-change-to-the-base-rate-after-the-april-meeting",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 488,
+      "sha256": "0263c78b4c7e61ea05308c94e7d2ee6fcefd2b7948d58d38aa7503c1501b7ac0"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 245,
+      "sha256": "0f43061258e408c45fb60d0f94add7c586684f3354904ac7ac4674e3897022d9"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2091,
+      "sha256": "99c4d93ae4a0eec74a0ed3351b629a550ea4d2d3b29599d467d86bf842b175e7"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "1c88b6e957699a4d1d43298df8a7ceeee41a7c977b0b79c3a3a6675a09801741"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 4666,
+      "sha256": "2df77bdcfc0ce41f7b2109ac0772ca3b1f7e577f00befc19768162999e1f653d"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2568,
+      "sha256": "322f9f7d72ba18a4404567b545ca67add7e6b7884e4fb4d4cb1fd2c686c32fb4"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1436,
+      "sha256": "1e32d3811ce9b9bd05dff91cd966e4ba5e9ebcee3c4eef2c57c53d49cf8c23b5"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1416,
+      "sha256": "12c72d1a080adc41f99ff9d3d1fef59350bc3a593c4e3d0f7b71f75d224ecded"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 129990,
+      "sha256": "a12365c310c4c333177a0511b71cef57d2022c7aa6d8d63e098b89a35eaa69ab"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 206345,
+      "sha256": "51210a99ab4f372120d755e563af7f2e8f0174b4eba08012a8357287f525e7da"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 56264,
+      "sha256": "5e3bbdd62fecefc4eb5fb1db6d9ee50b739aa89652e22b10d85041d257dddee8"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 76474,
+      "sha256": "24b7b6c978933c1abec9e7dafef3088696e6f5e02b221507c26ce66aeddb7f30"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 38291,
+      "sha256": "fb8b2859ed37a4e6431835d9db91549c1c4f8be59e15c2cb217e21d3d58dc8f8"
+    }
+  ]
+}

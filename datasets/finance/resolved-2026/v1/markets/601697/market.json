@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/fed-decision-in-january/fed-decreases-interest-rates-by-50-bps-after-january-2026-meeting",
+  "market_id": "601697",
+  "condition_id": "0x17815081230e3b9c78b098162c33b1ffa68c4ec29c123d3d14989599e0c2e113",
+  "event_id": "45883",
+  "slug": "fed-decreases-interest-rates-by-50-bps-after-january-2026-meeting",
+  "question": "Fed decreases interest rates by 50+ bps after January 2026 meeting?",
+  "created_at": "2025-09-17T16:22:35.837625Z",
+  "start_date": "2025-09-17T19:03:50.012988Z",
+  "end_date": "2026-01-28T00:00:00Z",
+  "closed_now": true,
+  "description": "The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal fund range are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve to the amount of basis points the upper bound of the target federal funds rate is changed by versus the level it was prior to the Federal Reserve's January 2026 meeting.\n\nIf the target federal funds rate is changed to a level not expressed in the displayed options, the change will be rounded up to the nearest 25 and will resolve to the relevant bracket. (e.g. if there's a cut/increase of 12.5 bps it will be considered to be 25 bps)\n\nThe resolution source for this market is the FOMC\u2019s statement after its meeting scheduled for January 27 - 28, 2026 according to the official calendar: https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm.\n\nThe level and change of the target federal funds rate is also published at the official website of the Federal Reserve at https://www.federalreserve.gov/monetarypolicy/openmarket.htm.\n\nThis market may resolve as soon as the FOMC\u2019s statement for their January meeting with relevant data is issued. If no statement is released by the end date of the next scheduled meeting, this market will resolve to the \"No change\" bracket.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x17815081230e3b9c78b098162c33b1ffa68c4ec29c123d3d14989599e0c2e113",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "11862165566757345985240476164489718219056735011698825377388402888080786399275"
+    },
+    {
+      "condition_id": "0x17815081230e3b9c78b098162c33b1ffa68c4ec29c123d3d14989599e0c2e113",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "71478852790279095447182996049071040792010759617668969799049179229104800573786"
+    }
+  ]
+}

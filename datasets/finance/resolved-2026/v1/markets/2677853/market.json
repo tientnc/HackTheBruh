@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-price-will-xagusd-hit-in-july-2026/will-xagusd-dip-to-54-in-july-2026",
+  "market_id": "2677853",
+  "condition_id": "0x35380c09fef1d77965ef5df4e7c48ce823884f310f0d8418bb2bc8b6e6a86298",
+  "event_id": "631913",
+  "slug": "will-xagusd-dip-to-54-in-july-2026",
+  "question": "Will Silver (XAGUSD) hit (LOW) $54 in July?",
+  "created_at": "2026-06-25T04:01:29.46134Z",
+  "start_date": "2026-06-25T04:07:45.48886Z",
+  "end_date": "2026-08-01T03:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of July 2026, any 1-minute candle for Silver (XAGUSD) has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during an applicable trading session of the specified timeframe's business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf Silver (XAGUSD) does not trade at all during the listed time frame, this market will resolve to \"No\".\n\nIn the event of a contract specification change, feed change, or similar structural modification affecting the market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.\n\nThe resolution source for this market is Pyth \u2014 specifically, the Silver (XAGUSD) \"High\" and \"Low\" prices available at https://pythdata.app/explore/Metal.XAG%2FUSD, with the chart settings configured for 1-minute candles.\n\nHistorical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using the \"t=\" parameter.\n\nIf the relevant Pyth data is unavailable due to a system outage, data failure, or other technical disruption that prevents verification of the required 1-minute candle data, the official daily high/low price published for the relevant CME COMEX futures contract for the underlying metal\u2014COMEX Silver Futures (SI)\u2014may be used to determine whether the listed price was reached during the applicable trading session.",
+  "resolution_source": "https://pythdata.app/explore/Metal.XAG%2FUSD",
+  "outcomes": [
+    {
+      "condition_id": "0x35380c09fef1d77965ef5df4e7c48ce823884f310f0d8418bb2bc8b6e6a86298",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "18260136177955820308022372543485395856691180550279079790263731499720005185770"
+    },
+    {
+      "condition_id": "0x35380c09fef1d77965ef5df4e7c48ce823884f310f0d8418bb2bc8b6e6a86298",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "80010914770191858901607719251878987684930714397381111336418958189583180901379"
+    }
+  ]
+}

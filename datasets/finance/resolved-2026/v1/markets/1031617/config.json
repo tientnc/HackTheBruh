@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/amzn-above-in-january-2026/amzn-above-240-on-january-30-2026",
+  "condition_id": "0xdc0a4914424b82c1490169f3bf3f0494a9f113d768558daa0dc3d847d8fb2bf3",
+  "start": 1766707200,
+  "end_exclusive": 1769820665,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

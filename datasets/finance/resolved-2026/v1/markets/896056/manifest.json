@@ -1,0 +1,117 @@
+{
+  "dataset": "polymarket-896056-v1",
+  "built_at": "2026-11-07T22:50:33.690517+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/will-paramount-close-warner-bros-acquisition-by-end-of-2026/will-paramount-close-warner-bros-acquisition-by-end-of-2026",
+    "condition_id": "0x745bad0ff4724aab8a5e52ce4fe1558a493fb248a679b51f54bbe21923979f02",
+    "start": 1765152000,
+    "end_exclusive": 1791300616,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Paramount close Warner Bros. acquisition by end of 2026?",
+  "market_opened": "2025-12-08T16:39:06.049147Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 2226,
+    "wallet_trade_leg_rows": 6342,
+    "price_points": 2228,
+    "wallets": 1148,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-12": 359,
+    "2026-01": 106,
+    "2026-02": 316,
+    "2026-03": 657,
+    "2026-04": 144,
+    "2026-05": 113,
+    "2026-06": 92,
+    "2026-07": 131,
+    "2026-08": 109,
+    "2026-09": 184,
+    "2026-10": 15
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/will-paramount-close-warner-bros-acquisition-by-end-of-2026/will-paramount-close-warner-bros-acquisition-by-end-of-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 493,
+      "sha256": "772754a764e7653d5dccd5334a45eb5cb889b75ca1691133c2513a890675f094"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 248,
+      "sha256": "c065d4aeaef8207f7517574f691bdf0dde0b30c16c67f8ac97eeb6d8eac02849"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1690,
+      "sha256": "cc9b2bd76110c0dc34b91614995a84edf0198b7f1871211a4366f90d09b77bdb"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "f7a13fecb579294169cd1d059a5394186ff4b9e820a1457f8169f02d798ae49a"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 28689,
+      "sha256": "8c0f1cf7366022c1ae802f50ee550f28e1738e110e5de4c0e9c90c8358207a0f"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2140,
+      "sha256": "40e26174a5430f0f0ce6cadeec79a5b21a8d44f9c84d75c988167d90db72699f"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 13199,
+      "sha256": "9d43968ba08a39549cf9c3fa1a63f755e13a3d0bffca65a533146a227923794d"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 12860,
+      "sha256": "a3eecb8f915c675d00284ea34eb928e09f282ea9653a0dc25c39ec0c21fddd2a"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 419911,
+      "sha256": "6f5dd9e5ab1afe5fb202cfd82c0c1be016aad32f21505466f14a77299d0a9540"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 702681,
+      "sha256": "38bfe5bd715061f78067cd2e5245910786cbdd95f103ed3c1ba2386e65059f0a"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 178938,
+      "sha256": "a2bb7ad2afffc9e4943fe27abc1fa7812e37c45715ab0f37689b9a05d432d179"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 257538,
+      "sha256": "cb8c41570b763db9ae40896fda50a617a68dc8e1ec0025c097242162e218bf22"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 126297,
+      "sha256": "3303507ccb60a92993cb8851e7db5dbab1da4a004e265ab3522144b6f25ba803"
+    }
+  ]
+}

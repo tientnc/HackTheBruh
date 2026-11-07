@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/bank-of-mexico-decision-in-november/no-change-in-bank-of-mexicos-interest-rates-after-november-2026-meeting-1786030375140",
+  "condition_id": "0x7fe296a37e27b7b46d038e2877e0d8ec33f86c1c42574a90cb1e94396a5906d0",
+  "start": 1785974400,
+  "end_exclusive": 1793912526,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

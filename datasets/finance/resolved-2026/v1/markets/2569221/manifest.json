@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-2569221-v1",
+  "built_at": "2026-11-07T22:50:09.884644+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/what-price-will-wti-hit-in-june-2026/will-wti-reach-85-in-june-2026-from-june-16",
+    "condition_id": "0x6bab46c35e313206c5e7b0d68334351b4278b2297662b3c4859941e5a406e417",
+    "start": 1781568000,
+    "end_exclusive": 1782860757,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will WTI Crude Oil (WTI) hit (HIGH) $85 in June?",
+  "market_opened": "2026-06-16T17:36:47.047565Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 694,
+    "wallet_trade_leg_rows": 2206,
+    "price_points": 58,
+    "wallets": 300,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-06": 694
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/what-price-will-wti-hit-in-june-2026/will-wti-reach-85-in-june-2026-from-june-16",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 454,
+      "sha256": "6dff4307b41eb34ef16d7ab699698930eb904c2aa909b2132eff69b661927425"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 243,
+      "sha256": "437dd9b1a2c5dcb4235a0189840aadb1d142d72db1ec0fdfff642a4ff77f3738"
+    },
+    {
+      "path": "market.json",
+      "bytes": 4111,
+      "sha256": "1ed8ddcb1327abe64bfcd507426ed5b96ad966582feece2945e91b0913712c37"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "6b8f6507029221874f9e7fbb7443ee99cd8fa48a40b67a11427299c45a311fc9"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 1047,
+      "sha256": "a65944c985b5116e36024267c98b43de87a4ec14c7809baa00cdb53eee686311"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 3427,
+      "sha256": "7088cb24697bc26bcbe1270cb6354ced3adce77618d3aa21cee93c167a7b590f"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 660,
+      "sha256": "034250dcd40180db4d3b604e2b3c6ec5f24ed31306f27fbbd5a8093f2ad746a8"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 663,
+      "sha256": "81db2c53f731e9fcdd3d1d73d8b9f34077d2f89c1d992f39740faca89bcd1a9e"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 132797,
+      "sha256": "f70a415a0d48fc632252466ae767031060161c6d23e3fef4190a4af4b2114c33"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 210795,
+      "sha256": "d34af7b1ce684df4bac54f1d16702e806bca4a21a05ce09f9b7c77309d9a849f"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 54139,
+      "sha256": "ee595799a9f8688ad7f3ba68e6285e4862cccab95fc11b92558e461e15c72b76"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 76605,
+      "sha256": "89a960f71891f8da73a145f258b079cad0c58128ff8959cdd17b93b8e210b7c2"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 32644,
+      "sha256": "577b5b7af937d38d936b0b8660256f4a7df20b58d9985847361399ce67859211"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/nflx-week-april-17-2026/will-nflx-close-between-140-and-150-week-april-17-2026",
+  "market_id": "1941101",
+  "condition_id": "0x9c25bd270436fe91c51b6b61f7789b670d83f764bcd8830e0fc00029163e5bb7",
+  "event_id": "365634",
+  "slug": "will-nflx-close-between-140-and-150-week-april-17-2026",
+  "question": "Will Netflix (NFLX) close at $140-$150 on the final day of trading of the week of Apr 13 \u2013 Apr 17?",
+  "created_at": "2026-04-10T22:00:39.047864Z",
+  "start_date": "2026-04-10T22:20:32.257762Z",
+  "end_date": "2026-04-17T20:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve according to the official closing price for Netflix (NFLX) on the final day of trading of the specified week (normally Friday).\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf the final session of the week is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Yahoo Finance after any adjustments have been applied.\n\nThe resolution source for this market is Yahoo Finance, specifically the Netflix (NFLX) \"Close\" prices available at https://finance.yahoo.com/quote/NFLX/history, published under \"Historical Prices.\"",
+  "resolution_source": "https://finance.yahoo.com/quote/NFLX/history",
+  "outcomes": [
+    {
+      "condition_id": "0x9c25bd270436fe91c51b6b61f7789b670d83f764bcd8830e0fc00029163e5bb7",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "110866583353997586035348721223408522670960471529907921534167046069166459880875"
+    },
+    {
+      "condition_id": "0x9c25bd270436fe91c51b6b61f7789b670d83f764bcd8830e0fc00029163e5bb7",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "110719068608090084690325552164643473845663573601058748569388871799669287199455"
+    }
+  ]
+}

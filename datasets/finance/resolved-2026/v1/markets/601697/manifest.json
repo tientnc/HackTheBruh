@@ -1,0 +1,111 @@
+{
+  "dataset": "polymarket-601697-v1",
+  "built_at": "2026-11-07T22:51:00.478589+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/fed-decision-in-january/fed-decreases-interest-rates-by-50-bps-after-january-2026-meeting",
+    "condition_id": "0x17815081230e3b9c78b098162c33b1ffa68c4ec29c123d3d14989599e0c2e113",
+    "start": 1758067200,
+    "end_exclusive": 1769640785,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Fed decreases interest rates by 50+ bps after January 2026 meeting?",
+  "market_opened": "2025-09-17T19:03:50.012988Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 82298,
+    "wallet_trade_leg_rows": 197069,
+    "price_points": 548,
+    "wallets": 29272,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-09": 59,
+    "2025-10": 325,
+    "2025-11": 1430,
+    "2025-12": 22886,
+    "2026-01": 57598
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/fed-decision-in-january/fed-decreases-interest-rates-by-50-bps-after-january-2026-meeting",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 463,
+      "sha256": "c508913c727eb0308836e9855fe7ff114b34b0c9eb59e824ea3373dca5be1f92"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 249,
+      "sha256": "a774a4e24d3b1d5e1e44e2e703955c4f1eea46dcd9d9d9979f992bc1e719ba8d"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2509,
+      "sha256": "edc791bd378cd9bac47a5c51f70e20ee52a729fe4ec973366575d41797b9d473"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "32c471866895d555c9cad3877d4f63acdf84cdc0c9a65bad0d0206715f0d9e1b"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 8297,
+      "sha256": "4eced67456dce2ae5ba3ebbd8436a842a946a4c876ab4bd16a4910c80d542975"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2890,
+      "sha256": "049d806dc8f0a02bb239fb7ffa7871b3cd23ab9bafd56c59c2e1e37975af201d"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 2289,
+      "sha256": "0b7fe18c9bddfc16e1bfe25c6ae55aa21ef0c595c5e887a6950b2eb4ed87ee29"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 2290,
+      "sha256": "a604cd2b64fab82bfffcaada14f7e36a24f4e12a6907bdfcdc497e80e4e21564"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 14320972,
+      "sha256": "ff29bba31a67ac88472aac5e1a61c4c3ceeec08bc78001dad1d884d7c24273a3"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 20213051,
+      "sha256": "973ebd43d883c067261deb3befafc9eb8fbfd41a12796d8d883538126a779b1d"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 5970738,
+      "sha256": "fcfead30e917653dc647d4081e1f9d73f8a643236562ff082238af699dc36b23"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 7873565,
+      "sha256": "5c792366c14d208282f243c72720eb5969d5df612f3b6481e19dc3bfa47c3bb6"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 3104336,
+      "sha256": "fee6dbbec15b023232e6f7ef6ff1a687046e51dbe87b49a6efdc69baff4ca7b3"
+    }
+  ]
+}

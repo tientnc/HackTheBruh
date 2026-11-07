@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/nvda-above-in-february-2026/nvda-above-190-on-february-27-2026",
+  "condition_id": "0x783dc01ba92d3ff32d16d322ac644a922e7e80afe7f6aa857432439dcba231a0",
+  "start": 1769731200,
+  "end_exclusive": 1772234814,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

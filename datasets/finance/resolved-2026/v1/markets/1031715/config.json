@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/tsla-above-in-january-2026/tsla-above-450-on-january-30-2026",
+  "condition_id": "0x5a357e51a56ea0befbdec2faa2b93110c9336ff8b1ca5830b17e564ee43d2e26",
+  "start": 1766707200,
+  "end_exclusive": 1769816897,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

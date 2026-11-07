@@ -1,0 +1,117 @@
+{
+  "dataset": "polymarket-599836-v1",
+  "built_at": "2026-11-07T22:50:19.010413+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/who-will-acquire-tiktok-559/will-elon-musk-x-twitter-acquire-tiktok-257-246-564",
+    "condition_id": "0x626d23dfc73f5e83707de16ebbbedb9c5de8998fabe26b15f724ea5e5d4b3dd0",
+    "start": 1757980800,
+    "end_exclusive": 1782909746,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Elon Musk / X (Twitter) acquire TikTok?",
+  "market_opened": "2025-09-16T03:52:07.364569Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 940,
+    "wallet_trade_leg_rows": 2750,
+    "price_points": 1114,
+    "wallets": 527,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-09": 99,
+    "2025-10": 48,
+    "2025-11": 39,
+    "2025-12": 111,
+    "2026-01": 167,
+    "2026-02": 23,
+    "2026-03": 127,
+    "2026-04": 79,
+    "2026-05": 128,
+    "2026-06": 107,
+    "2026-07": 12
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/who-will-acquire-tiktok-559/will-elon-musk-x-twitter-acquire-tiktok-257-246-564",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 453,
+      "sha256": "5dd886a0f2de24a073f1be4394c9d8135205bc3c6ca381c8487429f86729e3e9"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 245,
+      "sha256": "dab791e4dade17b58de06f67911743688ebcb25b1474648501b09ebe97f498bf"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1909,
+      "sha256": "a06d1f3200bd21c8535a5d760d0382002f828411a36a0dd32eac3b64298669cf"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "e0f6b6d6dd710f3400007997b3ec09efd635d359bb12bc3b569d65af61fdb48b"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 16697,
+      "sha256": "66d092577ddeabf4179ac621e2cb2edb89df4ec29b8040ef054d898a5039496b"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2416,
+      "sha256": "579291278fc76ecc9f317e8c84477cf193db4ade0cb48259d393fcab0759f065"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 6659,
+      "sha256": "ea05386f66f0fde9d563e0e066468c9a358fac8f979e9be6029fb5b5cfaa0c82"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 6734,
+      "sha256": "e926264c1e9e302ae52354bb9d240a55608505185e42f6ddb2916de6705b37d2"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 175227,
+      "sha256": "d4b373ea009e755cb884b58bd309038a11c4884345e2d3bb8c6eee1de8274d9d"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 275314,
+      "sha256": "29138046056b6fda7f97aa18ee659cf134491cea0346313d55c7b9964e84e048"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 75156,
+      "sha256": "62529150f30dabe43b83961c21f667b56562d5a7fe417c2583e3e25841d39ba9"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 105241,
+      "sha256": "32a37e18a786b19a7d513e3d34445a789ccd9620e00f69d26fc8cfc61af8fd8f"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 57615,
+      "sha256": "515cf9cb93526e7fef8e3f6aa556e9f4107d377bd14c5ba328d1de09c5408c2f"
+    }
+  ]
+}

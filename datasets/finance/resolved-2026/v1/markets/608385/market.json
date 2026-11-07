@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/databricks-ipo-closing-market-cap/will-databricks-market-cap-be-between-100b-and-125b-at-market-close-on-ipo-day",
+  "market_id": "608385",
+  "condition_id": "0x2d2678a04ab2d0aa57dc9ec11bdbfd1d43d681b2ee9869d8351db84e342400fa",
+  "event_id": "48297",
+  "slug": "will-databricks-market-cap-be-between-100b-and-125b-at-market-close-on-ipo-day",
+  "question": "Will Databricks\u2019 market cap be between $100B and $125B at market close on IPO day?",
+  "created_at": "2025-09-22T19:36:58.239949Z",
+  "start_date": "2025-09-23T00:18:11.05815Z",
+  "end_date": "2026-06-30T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve based on Databricks' market capitalization at the closing price on its first day of trading.\n\nIf no IPO occurs by June 30, 2026, 11:59 PM ET, the market will resolve to \"No IPO by June 30, 2026\".\n\nMarket capitalization expresses the monetary value of a company\u2019s outstanding shares, stated in its pricing currency. It is calculated as the number of shares outstanding multiplied by the closing share price on the first trading day.\n\nIf the relevant value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nResolution will be based on the primary exchange\u2019s official listing page. In the event that the relevant figure is not displayed, another reliable source will be used.\n\nIn the event of an interruption in the course of the normal trading session on Databricks\u2019 first day of trading (e.g., a circuit breaker or half-day), the market will resolve according to the official closing price of the abbreviated session. If no such official closing price is published, the market will resolve according to the next trading day on which an official closing price is published, treating that as the first day of trading for purposes of this market.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x2d2678a04ab2d0aa57dc9ec11bdbfd1d43d681b2ee9869d8351db84e342400fa",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "86901640170488441461039486375209273801637244131459161912800989458184462290377"
+    },
+    {
+      "condition_id": "0x2d2678a04ab2d0aa57dc9ec11bdbfd1d43d681b2ee9869d8351db84e342400fa",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "14094013348979601436291334540102877105210326586952348557584020637903743574642"
+    }
+  ]
+}

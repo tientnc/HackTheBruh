@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/will-spacex-acquire-cursor/will-spacex-acquire-cursor-by-december-31-2026-675",
+  "condition_id": "0xc2dd20bc42378191ba1e6068f2afa8b2a6c13881a42ee03e211441f0a2f3aeac",
+  "start": 1776729600,
+  "end_exclusive": 1781635433,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

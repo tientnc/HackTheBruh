@@ -1,0 +1,5 @@
+feed,pagination_exhausted,raw_window_rows,first_observation,last_observation
+prices-0,True,41,1774051200,1777561200
+prices-1,True,45,1774051200,1777561200
+trades,True,1148,1774070343,1777587006
+wallet_trade_legs,True,3447,1774070343,1777587006

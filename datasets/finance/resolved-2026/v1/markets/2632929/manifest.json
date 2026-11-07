@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-2632929-v1",
+  "built_at": "2026-11-07T22:50:25.787280+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/next-uk-chancellor-of-the-exchequer-in-2026-20260621005319178/will-shabana-mahmood-be-the-next-chancellor-of-the-exchequer-of-the-uk-in-2026-20260621005429785",
+    "condition_id": "0xb4c19d009845f3521237f58cb23307a3153cea3efa388469f639b3290314e1d2",
+    "start": 1782000000,
+    "end_exclusive": 1784576323,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Shabana Mahmood be the next Chancellor of the Exchequer of the UK in 2026?",
+  "market_opened": "2026-06-21T20:23:34.402698Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 2672,
+    "wallet_trade_leg_rows": 8088,
+    "price_points": 296,
+    "wallets": 749,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-06": 1051,
+    "2026-07": 1621
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/next-uk-chancellor-of-the-exchequer-in-2026-20260621005319178/will-shabana-mahmood-be-the-next-chancellor-of-the-exchequer-of-the-uk-in-2026-20260621005429785",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 532,
+      "sha256": "d8c111cc5c0f1abeece548aca99097a12ad96b0cfcfdb7cca20471d014572207"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 246,
+      "sha256": "cc29c0a54f87d82a0875dd2e07ee1f18d198052f0d3cbd5987fa64dd2e52bb15"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2069,
+      "sha256": "e57966035ecb02f895f509207a53db74be95a32ab18de5bffec4e17b109072c6"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "15869c193628697468c8a26a289aa4a1902e987f5f4b755d6fc8c70d331fcd1b"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 4141,
+      "sha256": "289500dd102d59b38d8c5ce03837ef6d82607c9bc6df01289cd072241bdc64be"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2512,
+      "sha256": "3259c9fd40386209a2905a4f60abd5f9063a882e6f47e12c0af5ca273acf081a"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1472,
+      "sha256": "9098d7eb4472cb53a342abbb7da05ef38ce7a939b8f744a2a1b517cca41f2816"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1475,
+      "sha256": "99a5abb5d53a3bb28cfc780d5c718b41123d8a9ce7b2ac3a678e969270496a2c"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 486739,
+      "sha256": "cf3afc8f58dd2243b4cc0a134c79b2e157ca2d9e9e56ee7fc3d0929cf98bae10"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 898493,
+      "sha256": "cdd3f7f90f22ec8e431c61e62f50a08595973a53c05aaf23d47132bc3de6debd"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 198124,
+      "sha256": "4277e33e39b0dbfd59f31aedd026a825fe59dfd2e805f77b28e8ee6e5fcc6340"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 302910,
+      "sha256": "e1cba707a36df5d2397b748d4e1600fb03da134dd5083a222b8bc4f1a40a12a5"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 83745,
+      "sha256": "44fb86c47630a6af9b25b26812722ea4cdcfec35fd4f87cf30b30e531b33a7bd"
+    }
+  ]
+}

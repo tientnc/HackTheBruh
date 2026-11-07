@@ -12,6 +12,9 @@
 
 [Per-market forecasts](forecasts.csv) · [Fitted model](model.json) · [Summary](summary.json) · [Exclusions](excluded_markets.csv) · [Earlier wallet evidence](../../../finance-wallets/2025-12-01/v1/README.md)
 
+<details>
+<summary>Tables, definitions and reproducibility</summary>
+
 ## Frozen timeline
 
 | Step | Rule | Usable evidence |
@@ -43,3 +46,5 @@ python -c "from pathlib import Path; from polyresearch.artifacts import verify; 
 ```
 
 Run from the repository root. Settings and source hashes are published alongside results; use a new `--out` when changing the experiment.
+
+</details>

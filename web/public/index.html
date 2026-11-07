@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore a real historical test of next-week wallet participation: 100 earlier Finance markets and 20 later checks.">
+  <meta name="theme-color" content="#101719"><title>HackTheBruh · Who trades next?</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+<a class="skip" href="#explorer">Skip to market explorer</a>
+<header class="topbar"><a class="wordmark" href="#"><span class="mark">↗</span> HACKTHEBRUH<span class="wordmark-sub">RESEARCH / 001</span></a>
+  <nav aria-label="Main navigation"><a href="#explorer">The experiment</a><a href="#data">Data room</a><a href="https://github.com/tientnc/HackTheBruh" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
+  <span id="connection" class="status"><i></i> Loading data</span>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy"><div class="eyebrow"><span class="tiny-square"></span> PREDICTION MARKETS / FINANCE</div>
+    <h1>Who<br>trades <em>next?</em></h1>
+    <p class="lead">Past wallet performance.<br>Future buyers and sellers.<br><span>One week to check the prediction.</span></p>
+    <a class="primary" href="#explorer">Explore the actual results <span>↓</span></a>
+    <div class="hero-note"><span>2025 → JAN 2026</span><span>Historical test · provisional labels</span></div>
+  </div>
+  <div class="hero-visual"><div class="chart-top"><div><span class="eyebrow">THE REALITY CHECK</span><h2>Predicted vs. observed</h2></div><span class="chart-badge">NEXT 7 DAYS</span></div>
+    <div id="scatter" class="scatter" aria-label="Predicted versus actual wallet count chart"></div>
+    <div class="chart-key"><span><i class="dot stronger"></i>Stronger proxy</span><span><i class="dot other"></i>Other proxy</span><span class="diagonal-key">╱ Perfect agreement</span></div>
+    <p class="chart-caption">Each point is one group / action in a later market.<br>Select a point to inspect that prediction.</p>
+  </div>
+</section>
+<section class="stat-strip" aria-label="Experiment summary">
+  <div><strong>100</strong><span>earlier markets</span></div><span class="stat-arrow">→</span><div><strong>20</strong><span>later markets</span></div><span class="stat-arrow">→</span><div><strong>7<span class="unit">days</span></strong><span>prediction window</span></div><div class="stat-highlight"><strong id="headline-mae">—</strong><span>average count error</span></div>
+</section>
+<section id="explorer" class="section explorer">
+  <div class="section-heading"><div><span class="eyebrow">01 / EXPLORE THE TEST</span><h2>Pick a market.<br>See what actually happened.</h2></div><p>Predictions are compared with later trades.<br>These are recorded results, not a live forecast.</p></div>
+  <div class="explorer-toolbar"><label class="market-label" for="market-picker">JANUARY 2026 TEST MARKET<select id="market-picker" aria-label="Choose a later market"></select></label><button id="next-market" class="outline" type="button">Next market →</button></div>
+  <div class="market-panel"><div class="market-panel-heading"><div><span id="market-category" class="category">FINANCE</span><h3 id="market-question">Loading the experiment…</h3><p id="window-caption" class="subtle"></p></div><a id="market-link" class="text-link" target="_blank" rel="noreferrer">Original market ↗</a></div>
+    <div class="prediction-layout"><div><div class="legend-inline"><span><i class="pred-key"></i>Predicted</span><span><i class="actual-key"></i>Observed</span></div><div id="prediction-bars"></div></div>
+      <aside class="market-aside"><span class="eyebrow">WHAT TO LOOK FOR</span><strong id="market-error">—</strong><span>mean absolute count error</span><div class="aside-divider"></div><p>“Buyer” and “seller” count unique wallets, not transactions. One wallet can do both.</p><p>BUY includes YES and NO tokens. It does not necessarily mean agreeing with YES.</p><button id="toggle-unknown" class="text-button" type="button" aria-pressed="false">Show unknown group +</button></aside></div>
+    <details><summary>Open the exact numbers</summary><div class="table-scroll"><table><thead><tr><th>Earlier group</th><th>Action</th><th>Predicted</th><th>Observed</th><th>Historical baseline</th><th>Group size</th></tr></thead><tbody id="prediction-table"></tbody></table></div></details>
+  </div>
+  <div class="result-ribbon"><div><span class="eyebrow">SAME 80 GROUP / ACTION COUNTS</span><p><strong id="result-improvement">—</strong> less average error than historical rates.</p></div><div class="ribbon-metrics"><span><b id="model-mae">—</b> model</span><span class="versus">vs.</span><span><b id="baseline-mae">—</b> baseline</span></div></div>
+</section>
+<section class="section evidence">
+  <div class="section-heading"><div><span class="eyebrow">02 / KNOW THE LIMITS</span><h2>Activity is visible.<br>Skill is still a hypothesis.</h2></div><p>We keep missing evidence visible.<br>The labels describe earlier return proxies.</p></div>
+  <div class="evidence-layout"><div class="cohort-panel"><div class="cohort-total"><strong>100</strong><span>earlier candidate wallets</span></div><div class="cohort-grid" id="cohort-grid" aria-label="100 candidate wallets by provisional performance group"></div><div id="cohort-legend" class="cohort-legend"></div></div>
+    <div class="limits-copy"><div class="limit-line"><span>01</span><div><h3>One stronger-performance candidate.</h3><p>This group is too small to establish persistent skill. Its count predictions did not beat the historical-rate baseline.</p></div></div><div class="limit-line"><span>02</span><div><h3>About 5% of observed participation.</h3><p>The frozen 100-wallet set covers only a small part of these markets. Outside wallets are not silently labeled unskilled.</p></div></div><div class="limit-line"><span>03</span><div><h3>Return proxy, not audited ROI.</h3><p>Groups use earlier reported profits and an estimated acquisition basis. Full after-cost capital accounting remains incomplete.</p></div></div><a class="text-link" href="https://github.com/tientnc/HackTheBruh/blob/main/analysis/participation/2026-01/v1/README.md" target="_blank" rel="noreferrer">Read the measured results and definitions ↗</a></div>
+  </div>
+</section>
+<section id="data" class="section data-room">
+  <div class="section-heading"><div><span class="eyebrow">03 / DATA ROOM</span><h2>Open a market.<br>Leave the big files in the cloud.</h2></div><p id="data-description">Search the published snapshot here.<br>Supabase mode adds paginated trade queries.</p></div>
+  <div class="filters"><label class="search"><span>⌕</span><input id="market-search" type="search" placeholder="Search companies, questions, market IDs…" aria-label="Search markets"></label><label><span class="sr-only">Dataset</span><select id="dataset-filter"><option value="all">All 120 markets</option><option value="earlier">100 earlier · 2025</option><option value="later">20 later · Jan 2026</option></select></label><label><span class="sr-only">Category</span><select id="category-filter"><option value="all">All categories</option></select></label></div>
+  <div class="table-scroll market-table-wrap"><table><thead><tr><th>Market</th><th>Sample</th><th>Category</th><th>Final label available (UTC)</th><th></th></tr></thead><tbody id="market-table"></tbody></table></div>
+  <div class="pagination"><span id="market-count"></span><div><button id="previous-page" class="outline" type="button">← Previous</button><button id="next-page" class="outline" type="button">Next →</button></div></div>
+  <div id="trade-panel" class="trade-panel" hidden><div class="trade-heading"><div><span class="eyebrow">PAGED SOURCE RECORDS</span><h3 id="trade-title"></h3></div><button id="close-trades" class="outline" type="button">Close ×</button></div><p id="trade-notice" class="subtle"></p><div class="table-scroll"><table><thead><tr><th>Observed (UTC)</th><th>Wallet</th><th>Side</th><th>Token</th><th>Shares</th><th>Price</th><th>Taker</th></tr></thead><tbody id="trade-table"></tbody></table></div><div class="pagination"><span id="trade-page-caption"></span><div><button id="trades-prev" class="outline" type="button">← Previous 50</button><button id="trades-next" class="outline" type="button">Next 50 →</button></div></div></div>
+</section>
+<section class="pipeline-section"><span class="eyebrow">THE DATA PATH</span><div class="pipeline"><div><strong>Polymarket</strong><span>Public source records</span></div><b>→</b><div><strong>Supabase</strong><span>Queryable rows + raw snapshots</span></div><b>→</b><div><strong>Vercel</strong><span>This read-only explorer</span></div></div><p id="pipeline-status">Preview mode uses a small bundled snapshot. A live cloud connection is not claimed.</p></section>
+<div id="notice" class="notice" role="status" hidden></div>
+</main>
+<footer><a class="wordmark" href="#">↗ HACKTHEBRUH</a><span>Historical research. Provisional groups. No trading recommendations.</span><a href="https://github.com/tientnc/HackTheBruh/tree/main/docs" target="_blank" rel="noreferrer">Methods & reproducibility ↗</a></footer>
+<noscript>This interactive data explorer requires JavaScript. The source data and reports are also available in the GitHub repository.</noscript>
+</body></html>

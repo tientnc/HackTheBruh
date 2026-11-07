@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/3rd-largest-company-end-of-august-20260715203029875/will-microsoft-be-the-third-largest-company-in-the-world-by-market-cap-on-august-31-20260715203029877",
+  "condition_id": "0x24b027278ac28a7b1049178b8673af46db7491480ff9c030e1cdf72c556374fe",
+  "start": 1784160000,
+  "end_exclusive": 1788213694,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

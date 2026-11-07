@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/what-price-will-wti-hit-in-may-2026/will-wti-crude-oil-wti-hit-high-200-in-may",
+  "condition_id": "0x0220e320852050a884e73bfe20447cbabe17ce934107cebc48a829b4a558204f",
+  "start": 1777507200,
+  "end_exclusive": 1780098524,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/solv-energy-ipo-closing-market-cap/will-solv-energy-incs-market-cap-be-greater-than-5pt4b-at-market-close-on-ipo-day",
+  "condition_id": "0xbd103048aef1d720383b2080f86b25ecf95106169e5cbe42ca442cb901c96bc4",
+  "start": 1770249600,
+  "end_exclusive": 1771232002,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

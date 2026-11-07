@@ -1,0 +1,109 @@
+{
+  "dataset": "polymarket-1613877-v1",
+  "built_at": "2026-11-07T22:51:05.208949+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/will-rolex-prices-hit-by-april-30/will-the-rolex-index-hit-13150-high-by-april-30",
+    "condition_id": "0xc7e369e17ef9ba205928f9bc99e5918ec0b2da6237576684e6276b2f0565b509",
+    "start": 1773619200,
+    "end_exclusive": 1777863689,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will the Rolex Index hit $13,150 (HIGH) by April 30?",
+  "market_opened": "2026-03-17T01:33:26.010345Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 221,
+    "wallet_trade_leg_rows": 695,
+    "price_points": 145,
+    "wallets": 200,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-03": 32,
+    "2026-04": 185,
+    "2026-05": 4
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/will-rolex-prices-hit-by-april-30/will-the-rolex-index-hit-13150-high-by-april-30",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 455,
+      "sha256": "ad435ad934bdcfac9ad518b34c6c537bbbbc0410558e56d86b8e10ebea35ec49"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 242,
+      "sha256": "aebdb14091ebfe20fc3817a5a021c4bffe68e653662fa5cc5ec388b97ae86cba"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2518,
+      "sha256": "6506fc974e13c30efd31f43d35b14b5ca926f3b85fb63f259da4611ef10cb791"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "0e2f88f4b18d2d611418697f219006f73adf6f5d0816356b596b8d19416bf2c2"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 2213,
+      "sha256": "052780fdce3e3156cbfe67c69c94e6e3de37d7452012c198c2fc14d6f88de7c8"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2569,
+      "sha256": "2f7158772b117b7457542d3b907af7c7f77526421863a2ae35e783929a1416d4"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 948,
+      "sha256": "381ed50fb10733afa2f1e9dcfa93c7cb643ff967f6d3e4caf14d81ea321c1334"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1036,
+      "sha256": "a0510c027ae82754566bd46a5c56a91613e3e7732f9e8f1d1fd9e37faae7ae11"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 46597,
+      "sha256": "375f7c5ed0f87c379d28ed3efb23a3864da2a487b009c7742c263a2d5283c269"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 72099,
+      "sha256": "cbd0808a562882a6bfb0c0793c97f0bf8a7a5fe6d86ac3a02688a99c01c0e63a"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 18792,
+      "sha256": "80453c89c29938b130b7478a2b5d59de88660b68656568f7e55fac64667663f2"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 26712,
+      "sha256": "44c4ec5163a840f9d0b104f597a0bb46ea36db80322ab198ee3797b936f2d48a"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 21440,
+      "sha256": "229784ccef1efb297c3fc00d2b0b7c1a4d6c2f3333072b251ac3794ceefdf65f"
+    }
+  ]
+}

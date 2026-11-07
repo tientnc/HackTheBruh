@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/spacex-ipo-by/will-spacex-ipo-by-september-30-2026-832-864-576-595",
+  "condition_id": "0x58ae4880738f502cf9c3ca8e1f7747ead62c32308ca520efd16ee0f91af06415",
+  "start": 1769126400,
+  "end_exclusive": 1781287039,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

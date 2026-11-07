@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/nvda-above-in-february-2026/nvda-above-190-on-february-27-2026",
+  "market_id": "1301882",
+  "condition_id": "0x783dc01ba92d3ff32d16d322ac644a922e7e80afe7f6aa857432439dcba231a0",
+  "event_id": "193977",
+  "slug": "nvda-above-190-on-february-27-2026",
+  "question": "Will NVIDIA (NVDA) close above $190 end of February?",
+  "created_at": "2026-01-30T23:00:41.199629Z",
+  "start_date": "2026-01-30T23:13:46.103974Z",
+  "end_date": "2026-02-27T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the official closing price for NVIDIA (NVDA) on the final trading day of February 2026 is higher than the listed price. Otherwise, this market will resolve to \"No\".\n\nIf the final trading day of the month is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nThe resolution source for this market is Yahoo Finance \u2014 specifically, the NVIDIA (NVDA) \"Close\" prices available at https://finance.yahoo.com/quote/NVDA/history, published under \"Historical Prices.\"\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/NVDA/history",
+  "outcomes": [
+    {
+      "condition_id": "0x783dc01ba92d3ff32d16d322ac644a922e7e80afe7f6aa857432439dcba231a0",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "15367807798077076201448406882204162863301645997645803192714480913629402968112"
+    },
+    {
+      "condition_id": "0x783dc01ba92d3ff32d16d322ac644a922e7e80afe7f6aa857432439dcba231a0",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "82130828095680673599682414550593516675908646356431193437015622282529320512974"
+    }
+  ]
+}

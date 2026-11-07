@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-964988-v1",
+  "built_at": "2026-11-07T22:49:48.677252+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/2nd-largest-company-end-of-january/will-microsoft-be-the-second-largest-company-in-the-world-by-market-cap-on-january-31",
+    "condition_id": "0xc316061aef012a51ff37af697a5bef33a33ff1e0a20c2feb2eeacbb87e58744d",
+    "start": 1766016000,
+    "end_exclusive": 1769868463,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Microsoft be the second-largest company in the world by market cap on January 31?",
+  "market_opened": "2025-12-18T21:03:33.406453Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 4009,
+    "wallet_trade_leg_rows": 8975,
+    "price_points": 180,
+    "wallets": 906,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-12": 187,
+    "2026-01": 3822
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/2nd-largest-company-end-of-january/will-microsoft-be-the-second-largest-company-in-the-world-by-market-cap-on-january-31",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 494,
+      "sha256": "69470429696181e483cc53f54344c8b6e094734b44766bef945b7229088dd30e"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 244,
+      "sha256": "240fed7c7757b05399398d194f5c91d289aa49add42f07aeab4c4495c954490f"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1447,
+      "sha256": "a8d7dbf7a91b1f9096bfe26898d1ae9179456816bcd99caadca425fcb43fa337"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "eb927bbf5c21c34a747bd888855619a5e917ce728f5e6a6395be550f9c50b6b3"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 2544,
+      "sha256": "01a317178f0e1cf78432bd5368de24306076f1553e6c81e2db6fe159011f08f1"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2256,
+      "sha256": "b35c239ea22c87429e27891a1ea586bbbc87a5bcb526ee4d92e2ead1ba9c1a5d"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1047,
+      "sha256": "90e80456997325552f8b4fed0a79fb192ca06460e0c37d436298f0a1311b05b6"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1050,
+      "sha256": "4441d92e10c853889a56791ba478656a39322e88e5fc7f25703322ece68c6c10"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 580974,
+      "sha256": "d70bf68baeae1e5a5a7e8537de801c84d9e45d17927b3b4cbd4baf68a617ccc0"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 800268,
+      "sha256": "ad5116282491ea5461a98a21ecc79c64aa9bda858853dc129dec3bdaa4f49f69"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 255343,
+      "sha256": "515f921c17d223e401f3b6c53c829fd47957a74a3a6ff78bdd06157a4a90f6ed"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 322422,
+      "sha256": "34509258b3f8592459a6f772b331214d77ecf65ef2bc47fc031433f2138024b2"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 92150,
+      "sha256": "47aa51031d45b4ff733ca3725be31f085fbdf123e79e0bb08c94fa3af8c7c20d"
+    }
+  ]
+}

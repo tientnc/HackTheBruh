@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/will-silver-si-hit-by-end-of-february/will-silver-si-hit-high-170-by-end-of-february-258-575-377",
+  "condition_id": "0xeb4c7c43f9ae7be575cf0fe4d7fd83569d9de5a5505fcefa9c0be4d081632a18",
+  "start": 1769472000,
+  "end_exclusive": 1772267686,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

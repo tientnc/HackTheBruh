@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-price-will-wti-hit-in-june-2026/will-wti-reach-85-in-june-2026-from-june-16",
+  "market_id": "2569221",
+  "condition_id": "0x6bab46c35e313206c5e7b0d68334351b4278b2297662b3c4859941e5a406e417",
+  "event_id": "522294",
+  "slug": "will-wti-reach-85-in-june-2026-from-june-16",
+  "question": "Will WTI Crude Oil (WTI) hit (HIGH) $85 in June?",
+  "created_at": "2026-06-16T17:17:50.960933Z",
+  "start_date": "2026-06-16T17:36:47.047565Z",
+  "end_date": "2026-07-01T03:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point after market creation and during a trading session of June 2026, any 1-minute candle for the Active Month of WTI Crude Oil futures has a final \"High\" or \"Low\" price equal to or beyond (above for \u2191 High Prices, below for \u2193 Low Prices) the listed price. Otherwise, this market will resolve to \"No\".\n\nPrices will be used exactly as published by Pyth, without rounding.\n\nIf the Active Month contract does not trade at all during the listed time frame, this market will resolve to \"No\".\n\nOnly prices achieved during an applicable trading session of the specified timeframe\u2019s business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.\n\nThe active month changes at the start of the second trading session prior to the nearest listed contract's last trading session. At that point, the next listed contract becomes the active month (i.e., for the final three trading sessions of the nearest listed contract, the contract for the next month is the active month). \n\nPer CME contract specifications for WTI Crude Oil (CL) futures, a contract's last trading day is three business days prior to the 25th calendar day of the month preceding the contract's delivery month (or four business days prior if the 25th calendar day is not a business day).\n\nFor example, if the 25th of the month is a Saturday, the last trading session for the nearest listed contract is the session for Tuesday the 21st, and the next listed contract becomes the active month at the start of the trading session for Friday the 17th (6:00 PM ET on Thursday), assuming a standard trading calendar.\n\nIf the relevant Pyth data is unavailable due to a system outage, data failure, or other technical disruption that prevents verification of the required 1-minute candle data, the official daily high/low price published for the Active Month WTI Crude Oil (CL) futures contract by CME Group may be used to determine whether the listed price was reached during the applicable trading session.\n\nIn the event of a contract specification change, feed change, or similar structural modification affecting the underlying market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.\n\nThe resolution source for this market is Pyth \u2014 specifically, the Active Month WTI Crude Oil futures \"High\" and \"Low\" prices available at https://pythdata.app/explore?search=WTI, with the chart settings configured for 1-minute candles. Historical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using the \"t=\" parameter.",
+  "resolution_source": "https://pythdata.app/explore?search=WTI",
+  "outcomes": [
+    {
+      "condition_id": "0x6bab46c35e313206c5e7b0d68334351b4278b2297662b3c4859941e5a406e417",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "31403240124283684131507038046211135775280569935977135756518582512508216430477"
+    },
+    {
+      "condition_id": "0x6bab46c35e313206c5e7b0d68334351b4278b2297662b3c4859941e5a406e417",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "112919718658159102212981409747084048410711304222381155832110903502205047737098"
+    }
+  ]
+}

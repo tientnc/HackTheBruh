@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/sp-500-all-time-high-by/sp-500-all-time-high-by-march-31-2026",
+  "condition_id": "0x849b2a8c0881ef606feb8fb39e325ae388385db62ec1bcf32f6b65e79ebcbf47",
+  "start": 1770854400,
+  "end_exclusive": 1775032204,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

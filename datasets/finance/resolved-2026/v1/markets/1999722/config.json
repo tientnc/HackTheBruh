@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/largest-company-end-of-may-167/will-amazon-be-the-largest-company-in-the-world-by-market-cap-on-may-31-498",
+  "condition_id": "0x3447ef42f1795107933976bb33ee030cd83d7eac5fc1173a24fb8d47c37dd8cc",
+  "start": 1776297600,
+  "end_exclusive": 1780124629,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

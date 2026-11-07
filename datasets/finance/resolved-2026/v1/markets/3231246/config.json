@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/situational-awareness-announces-fund-wind-down-byptptpt-20260730181230095/untitled-market-1-20260730180943686",
+  "condition_id": "0xff72846a865fdf42636065e1e1074cd96f5120286a4f239f5daa907fa333b4c6",
+  "start": 1785369600,
+  "end_exclusive": 1788246194,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

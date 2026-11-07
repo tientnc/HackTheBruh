@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/ipos-before-2027/xai-ipo-before-2027",
+  "condition_id": "0x570b4ad4562404728eefc2876a930f5a1aa79ec796298aa3ed043a84691057a2",
+  "start": 1762819200,
+  "end_exclusive": 1770134201,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

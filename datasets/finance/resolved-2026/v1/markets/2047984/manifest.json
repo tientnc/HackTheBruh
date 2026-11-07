@@ -1,0 +1,109 @@
+{
+  "dataset": "polymarket-2047984-v1",
+  "built_at": "2026-11-07T22:51:26.006080+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/will-spacex-acquire-cursor/will-spacex-acquire-cursor-by-december-31-2026-675",
+    "condition_id": "0xc2dd20bc42378191ba1e6068f2afa8b2a6c13881a42ee03e211441f0a2f3aeac",
+    "start": 1776729600,
+    "end_exclusive": 1781635433,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will SpaceX acquire Cursor by December 31, 2026?",
+  "market_opened": "2026-04-22T00:02:00.095Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 983,
+    "wallet_trade_leg_rows": 2487,
+    "price_points": 228,
+    "wallets": 464,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-04": 275,
+    "2026-05": 495,
+    "2026-06": 213
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/will-spacex-acquire-cursor/will-spacex-acquire-cursor-by-december-31-2026-675",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 451,
+      "sha256": "2050ed8d489151328cc1df13af7282013b923cdc8b916901d1d28a4a2a590c2f"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 245,
+      "sha256": "8c24e22eb2fa660df990bed4a2939b1dd8662f98fe4e168aee6d3d8635501ea7"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2321,
+      "sha256": "c55edac56ef74ba4e0da4a4f040c129f85684c1ad38f3b95a7a2a5b38df10a5d"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "a0bf42b53009b9a4a2c2613efc494c098c5ec80753a66589b0c3dd831c88b9a5"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 3124,
+      "sha256": "a9fe46489ab6929ebe32fc2aec43d2091c90c885967d549c8d540dd71b58554f"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2588,
+      "sha256": "656473e2ce75858c84c54c6aee7b05a1d4f04c029f9e634e44f5babf528fdf21"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1214,
+      "sha256": "971288d342d3d00e04812dc0ab7f022533eb42e866146cc37bdb2c1fa1fd9475"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1215,
+      "sha256": "a4b3b2488576eb0ba701a18a96a9ecf23d8e3f495f062a8fd5318a3ad940c0fb"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 192155,
+      "sha256": "5f789044cdcca32013f0416b51a6edd184d1d0bab3aa330df2b1089ccc1994c2"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 281769,
+      "sha256": "2fa52cf7a60c67852d910c23fcadf60c72f1c3a0574aac5364ac1814a4321380"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 76758,
+      "sha256": "5c268e75ed787d8d59335387d2c06d63713c87a9bba62b0840369d46ac1f1a98"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 102316,
+      "sha256": "8c373d7aabe5676f51864e98281889bd5d160094a8196dd8b5dd3c55ab19e0d6"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 50548,
+      "sha256": "90f75e7bc9fbcbcd338910014c8c492bc33f9299667a3ee7856a1fc62cb18c9a"
+    }
+  ]
+}

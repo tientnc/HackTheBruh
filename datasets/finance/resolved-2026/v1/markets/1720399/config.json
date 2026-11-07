@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/spacex-files-ipo-by/will-spacex-file-for-an-ipo-by-april-3-2026",
+  "condition_id": "0xa2c68eb1353353fd779edde5a44efa8a9ed66cc0e1a284ea7a00c2afe2e908e2",
+  "start": 1774396800,
+  "end_exclusive": 1775277806,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 250,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

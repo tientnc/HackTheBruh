@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-3231246-v1",
+  "built_at": "2026-11-07T22:50:13.924062+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/situational-awareness-announces-fund-wind-down-byptptpt-20260730181230095/untitled-market-1-20260730180943686",
+    "condition_id": "0xff72846a865fdf42636065e1e1074cd96f5120286a4f239f5daa907fa333b4c6",
+    "start": 1785369600,
+    "end_exclusive": 1788246194,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 250,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Situational Awareness announces fund wind-down by August 31, 2026?",
+  "market_opened": "2026-07-30T20:03:33.917754Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 379,
+    "wallet_trade_leg_rows": 1040,
+    "price_points": 522,
+    "wallets": 227,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-07": 141,
+    "2026-08": 238
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/situational-awareness-announces-fund-wind-down-byptptpt-20260730181230095/untitled-market-1-20260730180943686",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 483,
+      "sha256": "e354f5c2e41b9f4d32c24dc801b3edcfa92895dc368e3bbcd9797ddfd19783da"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 245,
+      "sha256": "bed0de9f13a95565f84134b3facbca6769d38cb3a660b1cf93c6447bd4580bda"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2835,
+      "sha256": "357daf0898c26cc1649ecbb087b580a1d84018c05e28cd719dbc51bee5a9a76c"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "34bfe38971d89122802c156849f657a3c961d717b438d27269aee33ed5268fc4"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 5658,
+      "sha256": "cf5a0d93e452398fbefd559136d1490099f40aa44e5eceb05ab8f3e1bc3fb0dd"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2732,
+      "sha256": "e51a085cf31728f49545e344cca6609f06cdd7f2c2301ef6c3eacd4690d7cb28"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1800,
+      "sha256": "5bcbe8b5a5eafdbb0efd608ee863b26d268aa98c45f7f7fa818804b7537de93c"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1798,
+      "sha256": "fad4ce534d933bd54912efb9f496135a73dca605672f2b8c9361e077b4d34474"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 68512,
+      "sha256": "dd659bf36e65c2d972a40b924c980be19a03d687346032adc3fc34ebb86e66d9"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 105411,
+      "sha256": "29390fb8689af815614b72fde1a637f1e9bca55ea94d180b373355914113e853"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 29314,
+      "sha256": "f68bd9957c764bbcb461243546f0b2a0dac09e40d941e17744ec5ad9db28feca"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 39866,
+      "sha256": "c395d06d8bf8fb4461448e36bfb0aa4a16cc0b4560971b083059649e8d3e370a"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 24257,
+      "sha256": "ccc98e766c88389b82d0889f8d214347d2e98856e51f4652f09d20d7ec3b4d52"
+    }
+  ]
+}

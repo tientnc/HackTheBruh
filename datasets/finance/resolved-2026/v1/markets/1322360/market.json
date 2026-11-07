@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-will-sp-500-spx-hit-by-end-of-february/will-sp-500-spx-hit-6750-low-in-february-2026-864-842-833-742-762",
+  "market_id": "1322360",
+  "condition_id": "0x0f9e98b52a8642faefc7908604a8ea6c85918b933ffa0131ab68022158ae3c58",
+  "event_id": "196998",
+  "slug": "will-sp-500-spx-hit-6750-low-in-february-2026-864-842-833-742-762",
+  "question": "Will S&P 500 (SPX) hit $6,750 (LOW) in February 2026?",
+  "created_at": "2026-02-02T22:09:36.35344Z",
+  "start_date": "2026-02-04T18:20:50.873Z",
+  "end_date": "2026-02-28T00:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point between market creation and market close on the final day of trading for February 2026, any 1-minute candle for S&P 500 (SPX) shows a final \"Low\" price equal to or below the listed price. Otherwise, this market will resolve to \"No.\"\n\nAll prices recorded during regular trading hours of the primary exchange for the instrument, as reflected in Yahoo Finance's 1-minute interval (\"1m\") data, will be considered.\n\nPeriods when the market is officially closed (e.g., holidays or maintenance breaks) will not be considered.\n\nAll times referenced are local to the primary exchange on which the index trades.\n\nThe resolution source for this market is Yahoo Finance \u2014 specifically, the 1-minute interval (\"1m\") chart data for S&P 500 (SPX) available at https://finance.yahoo.com/quote/%5EGSPC/.",
+  "resolution_source": "",
+  "outcomes": [
+    {
+      "condition_id": "0x0f9e98b52a8642faefc7908604a8ea6c85918b933ffa0131ab68022158ae3c58",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "53818971143774128222691757262457681075203354187742671159801890174115011522663"
+    },
+    {
+      "condition_id": "0x0f9e98b52a8642faefc7908604a8ea6c85918b933ffa0131ab68022158ae3c58",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "102273957954615694415303663647112323243844472255879017610553523982893390698433"
+    }
+  ]
+}
