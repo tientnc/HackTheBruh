@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/nvda-week-january-16-2026/will-nvda-close-between-190-and-195-week-january-16-2026",
+  "condition_id": "0x9eae32f5fcde8cf33a6eae7ef75141da29046fea597d5c9c605c163482507647",
+  "start": 1767916800,
+  "end_exclusive": 1768611855,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 1000,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

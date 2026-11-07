@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/gc-settle-jan-2026/gc-settle-4725-4850-jan-2026",
+  "market_id": "1032227",
+  "condition_id": "0xa0d0dcf5dec4750b65e9513de6ddf926903c499d1d4552f00a28f63fbbaabf4c",
+  "event_id": "125857",
+  "slug": "gc-settle-4725-4850-jan-2026",
+  "question": "Will Gold (GC) settle at $4,725-$4,850 in January?",
+  "created_at": "2025-12-26T23:26:21.412801Z",
+  "start_date": "2025-12-26T23:31:29.499Z",
+  "end_date": "2026-01-31T18:30:00Z",
+  "closed_now": true,
+  "description": "This market will resolve according to the official CME settlement price for the Active Month of Gold futures on the final trading day of January 2026.\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf the final trading day of the month is shortened (for example, due to a market-holiday schedule), the official settlement price published for that shortened session will still be used for resolution. If no settlement price is published for that session, the market will use the most recent published settlement for the Active Month during January.\n\nFor CME Gold (GC) futures contracts, the Active Month is the nearest of CME's designated delivery-cycle months (February, April, June, August, October, December) that is not the spot month. The Active Month changes automatically on the contract's First Position Date, at which point the next eligible contract month becomes the Active Month.\n\nOnly the Active Month's official settlement price published by CME Group will be considered. Intraday trades, highs, lows, bids, offers, midpoint values, or indicative prices do not count.\n\nNote that the settlement price may differ from the last traded price. CME's methodology to determine the settlement price can vary by commodity and contract.\n\nOnly days during January on which CME publishes an official settlement price for the Active Month will be included. Days without settlement prices (weekends, holidays, or market closures) are ignored.\n\nThis market will resolve based on the settlement price as it appears on the CME settlement page at the time it is first published for the relevant trading day, regardless of any later corrections or updates.\n\nThe resolution source for this market is the CME Group website \u2014 specifically, the daily \"Settlement\" price for the Active Month of Gold (GC) futures.",
+  "resolution_source": "https://www.cmegroup.com/markets/metals/precious/gold.settlements.html",
+  "outcomes": [
+    {
+      "condition_id": "0xa0d0dcf5dec4750b65e9513de6ddf926903c499d1d4552f00a28f63fbbaabf4c",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "26479806373867302378683108389147467941287864325298759397952725442728951826675"
+    },
+    {
+      "condition_id": "0xa0d0dcf5dec4750b65e9513de6ddf926903c499d1d4552f00a28f63fbbaabf4c",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "104850180383908917912450840024103824490184202545197657526579503183601010315559"
+    }
+  ]
+}

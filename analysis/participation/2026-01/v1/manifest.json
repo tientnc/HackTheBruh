@@ -1,0 +1,25 @@
+{
+  "algorithm": "sha256",
+  "sources": {
+    "datasets/finance/resolved-100-2025/v1/manifest.json": "8f37e7a0dc7ac5b4025a1e4b843c7967fa03ff4b7722dbf03d5afb60af93cfc2",
+    "datasets/finance/resolved-20-2026-01/v1/manifest.json": "fafbe5843012e76bccfdea92b8193d5c7e6ea7949aad84cc0f9852fdcb6c8cfa",
+    "datasets/finance/position-evidence-100-2025/v1/manifest.json": "8795dd42e040c4245aa11ac1a5098f221d2e16d43763bdb646d9588f4b084435",
+    "polyresearch/participation.py": "dcc7236b2a386a3224179b9279c1f2e0c742296be4cb12bbc5a4fbb618bd0803",
+    "polyresearch/active_wallets.py": "d50ba03bc4dff4ffddb79824aa9fd3748076e638683f79c0ce4505d73efa7429",
+    "polyresearch/backtest.py": "182add40f4b49e4ffdea649da870a1bb624f64981b51de9358db78a8431d5c34",
+    "polyresearch/artifacts.py": "621e2401b92396113e53ba103ff0db004efcdd0bf74a8af929951c0497c41b1c"
+  },
+  "files": {
+    "candidate_wallets.csv": "e03b66df24150e8827c9a30f2d0cb8b38bd4df2c038478740ea51a574faaa5cf",
+    "config.json": "282a9cb011d07736741862528d9fbe4e9a8cb073874a22244763736218bbae8f",
+    "coverage.csv": "bf17f5882d1b2c4ffaba5597e2ce0aefbceecce22d0b86ac6c6c65a47325fe9a",
+    "excluded_markets.csv": "e4c5aaa8aa3958e209f664fad123cd5a1900eac504880b6106edc07c33a5b3d1",
+    "model.json": "fc2920f953aba0ca79c32a1fb789837c91b86bac0baa7148039691cdda65f735",
+    "observed_token_counts.csv": "a75fd2b627012a24ed298316ee9c9757b6e9d803a7ed54f364fe2cc046a1c029",
+    "per_market_errors.csv": "01ca6d664ec8149340d48b4edcd51428643ec235a9d209c9aedd4ba105a3bbd4",
+    "per_week_errors.csv": "f92771c94ed1a3010504c0141c290be2bd7c18f94cb6cb7a611f56d6b1d92b87",
+    "predictions.csv": "d018bd191515e03088b848877220a6947470a4cf74d2334341b474c7b97c8f43",
+    "summary.json": "86f3d80e6ec126448a0e33b0fda8d99c5114aa46aed82522ad791d6b37d5ad8a",
+    "training_counts.csv.gz": "3b958f23c24265010e8b4e885af4952529a76b12af900623c2fd5f3f06c87a0a"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-1201225-v1",
+  "built_at": "2026-11-07T21:25:04.657756+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/msft-week-january-23-2026/will-msft-close-between-490-and-500-week-january-23-2026",
+    "condition_id": "0x2c16752e5cb4cd1edf865f9314694206b85b09ffb4227632e2f4b9d3c5e22c3a",
+    "start": 1768521600,
+    "end_exclusive": 1769218291,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 1000,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Microsoft (MSFT) close at $490-$500 on the final day of trading of the week of Jan 19 \u2013 Jan 23?",
+  "market_opened": "2026-01-16T23:25:40.837593Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 28,
+    "wallet_trade_leg_rows": 75,
+    "price_points": 28,
+    "wallets": 36,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-01": 28
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/msft-week-january-23-2026/will-msft-close-between-490-and-500-week-january-23-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 457,
+      "sha256": "c7ac3cba935c2cbd051414e20e6b030a9ed7a66c0e4610a9f621bdb83c7f922e"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 240,
+      "sha256": "bd23ff3214c75bf9ac740e5690afa0fe3a34f56773aac614628d220dd5a2688e"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2621,
+      "sha256": "10112fba0007819c7372a32360303b4615174d41cfcd2d9326ad142c15146cdf"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "c78bc72adacb54b3b62f993f46cab7721f90a1a9feef4d7ee8bbbb2a504a6536"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 654,
+      "sha256": "85750e0a979631ea7e304a51592180d98962272844e5b4a422eb5c887cba3d33"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2713,
+      "sha256": "0084595cf6a75c9fa86ed03da4a5435f61785b12a41b4a1b95e8b61028bc371d"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 540,
+      "sha256": "570b2208207ef95ec8c093e00eba090a6abc53b31b68290cb2652ab1762186d4"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 530,
+      "sha256": "22a8d1caaab24fe7aa860756a0d9d2d61e04e62c58ae56d9e48291d4159611a2"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 3586,
+      "sha256": "25b8d64eaaa4a781c89a31def52ce9a6e4207bec2d63a9aafdfaa6acdf33e104"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 8289,
+      "sha256": "7d4f6567e0cbcd0d7aa6c43ac08f70f4f6f8576cb0adba794913d624d6cc07f1"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 2443,
+      "sha256": "f947c6c22ac483db18b80840d1ee0ab852ffe84d91a997a8ad3c66d670c75260"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 3394,
+      "sha256": "4c0128618031e4fa53bc3fdde88fc8d81f9ccf85f15e87bcfa481fea12057d12"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 3389,
+      "sha256": "71b756a5dadb8e21acf52dd7da089060913cbd9e8c2503208a9b97291f056f53"
+    }
+  ]
+}

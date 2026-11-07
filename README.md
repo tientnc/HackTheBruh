@@ -6,6 +6,10 @@
 
 [Participation target and proposed profit-based groups →](docs/research/wallet-participation-target.md)
 
+**[First participation results: 100 earlier markets → 20 later markets →](analysis/participation/2026-01/v1/README.md)**
+
+![Next-week participation test: count MAE 1.57 versus baseline 1.80. Wallet groups and coverage remain provisional.](analysis/participation/2026-01/v1/results.svg)
+
 ```mermaid
 flowchart LR
     A[Past resolved markets] --> B[Earlier wallet performance]
@@ -18,13 +22,9 @@ flowchart LR
 
 ![100 resolved finance markets: 12,282 observed wallets, 25,473 taker trade records and 10,638 price observations.](datasets/finance/resolved-100-2025/v1/overview.svg)
 
-![Wallet evidence: 43 eligible wallets, four per decile, with missing inputs explicitly separated.](analysis/finance-wallets/2025-12-01/v1/overview.svg)
+The first participation model trains on **100 markets from 2025** and predicts next-seven-day buyer/seller counts on **20 later markets from January 2026**. Average error is **1.57 wallets versus 1.80** for historical rates. Groups use a provisional reported-return measure; one candidate qualifies for the stronger proxy, 26 for the other proxy and 73 remain unknown. This is a 100-wallet pilot with limited coverage, not validated wallet skill.
 
-![First test: cohort forecasts do not improve on market prices across 20 later markets.](analysis/finance-backtest/2025-12/v1/results.svg)
-
-The resolved sample has final labels from **September–December 2025**. Participation prediction is the current specification; its horizon and profit-based group aggregation remain open. The existing pilot below evaluates a **separate final-outcome forecasting task**: it ranks 43 wallets and shows no improvement over market prices on 20 later markets. It does not evaluate buyer/seller counts.
-
-[Wallet metrics and definitions →](analysis/finance-wallets/2025-12-01/v1/README.md) · [Forecast results and limitations →](analysis/finance-backtest/2025-12/v1/README.md)
+[Earlier edge-based wallet metrics →](analysis/finance-wallets/2025-12-01/v1/README.md) · [Separate YES/NO-outcome experiment →](analysis/finance-backtest/2025-12/v1/README.md)
 
 [Top 100 active wallet IDs and training targets →](analysis/active-finance-wallets/README.md)
 
@@ -48,14 +48,14 @@ If PowerShell blocks activation, use `.\.venv\Scripts\python.exe` in place of `p
 python -m polyresearch.resolved_dataset --verify-only
 ```
 
-**3 · Reproduce wallet rankings and the forecast pilot**
+**3 · Reproduce the participation pilot**
 
 ```powershell
-python -m polyresearch.wallet_metrics --enrich-pnl
-python -m polyresearch.backtest
+python -m polyresearch.position_evidence
+python -m polyresearch.participation
 ```
 
-Cached PnL responses are reused. After-cost ROI and individual wallet Brier skill stay missing until suitable evidence is supplied.
+Cached position responses are reused. [Predictions, actual counts, group definitions and limitations →](analysis/participation/2026-01/v1/README.md)
 
 **4 · Collect a fresh snapshot**
 

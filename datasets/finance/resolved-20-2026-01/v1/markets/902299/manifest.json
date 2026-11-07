@@ -1,0 +1,108 @@
+{
+  "dataset": "polymarket-902299-v1",
+  "built_at": "2026-11-07T21:25:04.166150+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/how-high-will-10-year-treasury-yield-go-before-2027/will-the-10-year-treasury-yield-hit-4pt3-before-2027-562",
+    "condition_id": "0xd3999a7fc56c699a4b67f54e724ab1e50751e3fe13eded12c0aa788a796ea1fa",
+    "start": 1765238400,
+    "end_exclusive": 1769025285,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 1000,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will the 10-year Treasury yield hit 4.3% before 2027?",
+  "market_opened": "2025-12-09T19:18:44.279082Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 34,
+    "wallet_trade_leg_rows": 111,
+    "price_points": 178,
+    "wallets": 43,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-12": 4,
+    "2026-01": 30
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/how-high-will-10-year-treasury-yield-go-before-2027/will-the-10-year-treasury-yield-hit-4pt3-before-2027-562",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 483,
+      "sha256": "dfbebc7e42df70d07c2a3fa99dfca0f3a5eccec8db9246ceabd8edb27850697a"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 241,
+      "sha256": "88b56824aa3ce29fdc397085de84952a64aa4ee0f75a9d92adf817d3ca13f67d"
+    },
+    {
+      "path": "market.json",
+      "bytes": 2052,
+      "sha256": "3c4a6a0d3943d8f03e45b8bc37b860dae2a4fb62d024f865831e13d13c3ed681"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "a67a127cab4fc73a88e50c7b4e54cda0b31a93542b1cde8849963690652a9990"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 2481,
+      "sha256": "54312c1e7be183199e33d3c7b0d7a0462576a7a2c9d1257062bf1274c2036a74"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2774,
+      "sha256": "55fee707a7ac72078df94fa5140128bd278a0c367be55ade6bfc668e788d30c9"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1047,
+      "sha256": "fc9544a40d2976936565c5697bbb1a7711c3cfbfd087d6eb0d6dc518c2b9e27f"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1046,
+      "sha256": "2b7176a014b837d844ac24aefac256afbfd86158635f8423f71800f6786cb3b4"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 4549,
+      "sha256": "d56d2ba78563140a33790b0f436c4889f7168ec97e9b0ec41529b71de82d5f37"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 11798,
+      "sha256": "84fdd4153b613b73f08ac94e0cafd56c42d1e89c24e1af65819b93ae4dd7492d"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 3027,
+      "sha256": "e4cd70e912cbf4599b044b2d4a0707c0bf1f4d85639efe4351f9502943198589"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 4490,
+      "sha256": "c56527a49198d47a2bc582607f0e03284450877ab26a298d1c5dba9f2e54c432"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 4497,
+      "sha256": "a2db1e0f225325ae9d8434b5d45834cc08ef44011eec6b595046cf5de6deecf2"
+    }
+  ]
+}

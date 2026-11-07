@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/gc-settle-jan-2026/gc-settle-4725-4850-jan-2026",
+  "condition_id": "0xa0d0dcf5dec4750b65e9513de6ddf926903c499d1d4552f00a28f63fbbaabf4c",
+  "start": 1766707200,
+  "end_exclusive": 1769854211,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 1000,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

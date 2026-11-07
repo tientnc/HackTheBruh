@@ -1,0 +1,1571 @@
+{
+  "dataset": "finance-resolved-20-2026-01-01-2026-02-01-v1",
+  "built_at": "2026-11-07T21:25:38.565078+00:00",
+  "settings": {
+    "count": 20,
+    "resolution_start": 1767225600,
+    "resolution_end_exclusive": 1769904000,
+    "minimum_trading_lifetime_days": 7,
+    "selection_seed": "hackthebruh-finance-resolved-v1",
+    "max_pages_per_feed": 1000,
+    "one_market_per_gamma_event": true,
+    "economic_grouping_version": 1
+  },
+  "counts": {
+    "markets_selected": 20,
+    "markets_downloaded": 20,
+    "distinct_parent_events": 20,
+    "distinct_economic_groups": 20,
+    "wallets": 40165,
+    "taker_trade_rows": 121842,
+    "wallet_activity_rows": 310061,
+    "price_points": 3801,
+    "errors": 0
+  },
+  "subfields": {
+    "commodities": 4,
+    "equities_and_corporate": 9,
+    "ipos_and_deals": 4,
+    "rates_and_macro": 3
+  },
+  "selection": "Seeded hash order and round-robin title-based subfields, one market per parent event. Only verified binary outcomes; label timestamps in [2026-01-01T00:00:00+00:00, 2026-02-01T00:00:00+00:00); at least 7 days of reported trading lifetime before closure. No selection on winner, volume or P&L.",
+  "independence": "One per Gamma event and heuristic economic group. Asset-week price ladders, IPO/acquisition families and same-day Fed decisions are grouped across IDs. These rules do not establish statistical independence; common news and aliases remain.",
+  "wallet_scope": "All wallet addresses returned in maker+taker feeds for selected markets. Not all platform wallets, lifetime histories, or skilled/unskilled labels.",
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 289,
+      "sha256": "a52a3e45fe130ad632313355584eb00943c4ca54bcd212b60f43d4105e900fe1"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 836,
+      "sha256": "fe34463d14b1693ac42d7626134592949a612f18c769a5603aa776ec6fb0b9c7"
+    },
+    {
+      "path": "errors.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "markets/1031704/config.json",
+      "bytes": 455,
+      "sha256": "1da4545423865e0d6904d31d0c682abc75e068ae0ad11e0805c8b2af9f89170e"
+    },
+    {
+      "path": "markets/1031704/coverage.csv",
+      "bytes": 240,
+      "sha256": "c7e43c50fd9bb83622948dcde3edd61dfda46531002fdbf18b8a37df70f6fdd1"
+    },
+    {
+      "path": "markets/1031704/manifest.json",
+      "bytes": 3702,
+      "sha256": "86ba67af075cb1e210e795f540ee9eb57ba1c32d62825e4b74e9845c1d23bfcc"
+    },
+    {
+      "path": "markets/1031704/market.json",
+      "bytes": 2606,
+      "sha256": "e11f063efb546b42826c407afb4336a66dad678055161db07c6a43ee698e6e88"
+    },
+    {
+      "path": "markets/1031704/outcomes.csv",
+      "bytes": 346,
+      "sha256": "9f29110be5b15c287a294b7e1867b034f346df1a01071eb9e99d5ca1ddaa209c"
+    },
+    {
+      "path": "markets/1031704/prices.csv.gz",
+      "bytes": 678,
+      "sha256": "ae9cf65b880124219cd1ff5ea678885cc901bfac6dfbb25b269226bc25f89acc"
+    },
+    {
+      "path": "markets/1031704/raw/market.json.gz",
+      "bytes": 2847,
+      "sha256": "69faf7bb434f179675e42413298c6587b4b0987dc9f96cff4a99e79fe68354c4"
+    },
+    {
+      "path": "markets/1031704/raw/prices-0.json.gz",
+      "bytes": 549,
+      "sha256": "ee51189a8e3ee1c590e987e2ee55912f17f6dde15d411c15e58808f19fdb2f09"
+    },
+    {
+      "path": "markets/1031704/raw/prices-1.json.gz",
+      "bytes": 551,
+      "sha256": "06aad149ff57e6591ddfd67285365dd55079ee45453e653f32d4aa54cc311511"
+    },
+    {
+      "path": "markets/1031704/raw/trades.json.gz",
+      "bytes": 4248,
+      "sha256": "dd41be5d2ed6b9c2f030e92c51916a92a5f16ab9d873a54739096e3967ac4eb5"
+    },
+    {
+      "path": "markets/1031704/raw/wallet_trade_legs.json.gz",
+      "bytes": 10638,
+      "sha256": "9cf3ad92d3aee3fd7f14306ba4e184c8c2ebcd71fe1976d182088c4ea35cfe07"
+    },
+    {
+      "path": "markets/1031704/trades.csv.gz",
+      "bytes": 2982,
+      "sha256": "df1694795c5d92e86b26419da87c69bf9a1dbb5139d86cc0c0238a1e141389c7"
+    },
+    {
+      "path": "markets/1031704/validation.json",
+      "bytes": 565,
+      "sha256": "4e6e7058806e6fd62fd8b0683ebb5901881275bda7c676a11d56e20e5ede90f4"
+    },
+    {
+      "path": "markets/1031704/wallet_trade_legs.csv.gz",
+      "bytes": 4307,
+      "sha256": "b2637728906ace1b95c309daa39c2dd6d4d8fa080e978edb350cfe8b18429b8f"
+    },
+    {
+      "path": "markets/1031704/wallets.csv",
+      "bytes": 4159,
+      "sha256": "77b76871278d69b54a50859c04315ae19d77b435232e98155fea6dd0f35c1d6c"
+    },
+    {
+      "path": "markets/1032227/config.json",
+      "bytes": 422,
+      "sha256": "8b490620db250a1c400978efa731c25e4d769583e2a76bc62ecab8490f456ff3"
+    },
+    {
+      "path": "markets/1032227/coverage.csv",
+      "bytes": 244,
+      "sha256": "f741d08e70ed59dfeaef8bd82fa37dfe2aac2f38931a22ba3c4191cbcd67977e"
+    },
+    {
+      "path": "markets/1032227/manifest.json",
+      "bytes": 3584,
+      "sha256": "07a3253daf4c27f8d7ce7ac70e194eee644887248064383107f10f269259ab4f"
+    },
+    {
+      "path": "markets/1032227/market.json",
+      "bytes": 3039,
+      "sha256": "1130137226606019f4ebb3b7f72eb416a6180a014daf0d839df1ae5d3bd83b8c"
+    },
+    {
+      "path": "markets/1032227/outcomes.csv",
+      "bytes": 346,
+      "sha256": "cf9e6dd8f8de45c222dca3f0ef241b34d19bde2347394e4358a457af549bb73c"
+    },
+    {
+      "path": "markets/1032227/prices.csv.gz",
+      "bytes": 2223,
+      "sha256": "22a56094e004ac5725487d76a4da5c3702ae9933327a691c4383c4608f75c684"
+    },
+    {
+      "path": "markets/1032227/raw/market.json.gz",
+      "bytes": 2933,
+      "sha256": "a93e43bbfbd1d7592b26a82e7464e99b1391c2adbbf6b77924da492b9aca6389"
+    },
+    {
+      "path": "markets/1032227/raw/prices-0.json.gz",
+      "bytes": 1041,
+      "sha256": "c0ae2b30a4e80fa2eb594aa896c61e1b78a6877f4583f025bd196efa3e4c7bb3"
+    },
+    {
+      "path": "markets/1032227/raw/prices-1.json.gz",
+      "bytes": 1017,
+      "sha256": "9edf932dc5577449ed52d8d1daceb2dccbf48b58d034542440e1dda8bb192169"
+    },
+    {
+      "path": "markets/1032227/raw/trades.json.gz",
+      "bytes": 484798,
+      "sha256": "eb503c47ce78ff79ca6a9f8efcfdc69f0826024dd664b190101bbbdf6a1cf854"
+    },
+    {
+      "path": "markets/1032227/raw/wallet_trade_legs.json.gz",
+      "bytes": 792141,
+      "sha256": "b0e9cce48045d5cbc02079b243a5292109c727c9d8128a698debd3d16e887e30"
+    },
+    {
+      "path": "markets/1032227/trades.csv.gz",
+      "bytes": 213195,
+      "sha256": "92c350b8886e886475136607673f87d361ffdcd6b6e73e8b12bd76458dc65a00"
+    },
+    {
+      "path": "markets/1032227/validation.json",
+      "bytes": 565,
+      "sha256": "82c32c20a0fd46f4e0e08bd4f18e44d6a3ad7d142393e9ba25095720d79fac1b"
+    },
+    {
+      "path": "markets/1032227/wallet_trade_legs.csv.gz",
+      "bytes": 301761,
+      "sha256": "89a0368a1eafade8938cd61871c1e93f67e24a22d535a893e7b059a4c9c45f1e"
+    },
+    {
+      "path": "markets/1032227/wallets.csv",
+      "bytes": 62769,
+      "sha256": "e218337fb25e41b632a320577f8347b8d3efb6260c635f512bf07a1a5cd14911"
+    },
+    {
+      "path": "markets/1032235/config.json",
+      "bytes": 432,
+      "sha256": "5ae3fe1c634a9ee95dae67f945d09b8ca6400e57b8d42820061f11e40169f256"
+    },
+    {
+      "path": "markets/1032235/coverage.csv",
+      "bytes": 243,
+      "sha256": "a592a04c8975f0b28b269e818c7ee4a97eb5d440c8b1b615674878c793df78ce"
+    },
+    {
+      "path": "markets/1032235/manifest.json",
+      "bytes": 3599,
+      "sha256": "e57e324f51123a86b425d6bba88f7d6aae61b9f0b491c3a0a13e3a66d57ef7c3"
+    },
+    {
+      "path": "markets/1032235/market.json",
+      "bytes": 2690,
+      "sha256": "dd0e0a1bb1baae5a44a0676b8ec12bf3aeb59cb8644ac15072f8d293cb4704aa"
+    },
+    {
+      "path": "markets/1032235/outcomes.csv",
+      "bytes": 344,
+      "sha256": "f1be3fb7ad3e01d744ee467e9fd1115ae16fa33dad9302751e047298659d3b41"
+    },
+    {
+      "path": "markets/1032235/prices.csv.gz",
+      "bytes": 1632,
+      "sha256": "c7bcc3dde5e6bb5fc71c39f992691c5eb3d46770adaca29bec59f41666573087"
+    },
+    {
+      "path": "markets/1032235/raw/market.json.gz",
+      "bytes": 2800,
+      "sha256": "c87fe6cc18b1c0180f1874676ee93ce50a5fdc61d53a42aab6bfb1efb3ff89f9"
+    },
+    {
+      "path": "markets/1032235/raw/prices-0.json.gz",
+      "bytes": 826,
+      "sha256": "6e273ad963b77172d3c17421627fff92f7c03304a5a95ba6eb040e003c5d2b0f"
+    },
+    {
+      "path": "markets/1032235/raw/prices-1.json.gz",
+      "bytes": 827,
+      "sha256": "999fb21b7b9aeb16342a6e47bde419a7309e548c30dc4ba4bc6146bed81288b3"
+    },
+    {
+      "path": "markets/1032235/raw/trades.json.gz",
+      "bytes": 141731,
+      "sha256": "d58fd52f897cd07707c9c8b3811740d767233fe075f2af324f3478d80c6184d5"
+    },
+    {
+      "path": "markets/1032235/raw/wallet_trade_legs.json.gz",
+      "bytes": 223501,
+      "sha256": "3caf5d404210dff8b48e412e9c0d91ca48724a753db1349d916974ec935efba7"
+    },
+    {
+      "path": "markets/1032235/trades.csv.gz",
+      "bytes": 58317,
+      "sha256": "d22fe40ba215a486e06e0a4e397b9ca3e8883a5bffa8bea0dc49f403b14a155b"
+    },
+    {
+      "path": "markets/1032235/validation.json",
+      "bytes": 565,
+      "sha256": "ca1f484a01f1227e25b824742274fa94befd947f8ea9c6efd4299661608dc9fc"
+    },
+    {
+      "path": "markets/1032235/wallet_trade_legs.csv.gz",
+      "bytes": 82553,
+      "sha256": "94f843efb38fa6d8636a4ef0184abdda5762a9d2ada0528723cf7abef6dc2c86"
+    },
+    {
+      "path": "markets/1032235/wallets.csv",
+      "bytes": 40420,
+      "sha256": "b8883e4f1cce6c7b5ec64b5c5f8deab637ca2d346bbe2c66bdb2a9ffee3b9a7c"
+    },
+    {
+      "path": "markets/1032307/config.json",
+      "bytes": 426,
+      "sha256": "9e7945ed614bc17793a989eaacb59a956cb46b572ef416f2a4b491e559942005"
+    },
+    {
+      "path": "markets/1032307/coverage.csv",
+      "bytes": 244,
+      "sha256": "ac9513462e980da2a966c45632452af85c0250a194016284acfcd66c0c3225fa"
+    },
+    {
+      "path": "markets/1032307/manifest.json",
+      "bytes": 3606,
+      "sha256": "a3d4a9e2776cd61dc1e36baf176458553de8da10f9c8da512f8804202b1d1e09"
+    },
+    {
+      "path": "markets/1032307/market.json",
+      "bytes": 2680,
+      "sha256": "92e114784f588b88ba6621dbac712fedae010a296ddc8e2f5eb48c458dec52eb"
+    },
+    {
+      "path": "markets/1032307/outcomes.csv",
+      "bytes": 347,
+      "sha256": "26d1ef60fcfe64b1e25622847ef90dbfdc3c187a5bdffd162671b93f03d9e8f3"
+    },
+    {
+      "path": "markets/1032307/prices.csv.gz",
+      "bytes": 930,
+      "sha256": "80c7da6d1b5a4eb44005a3ee36bf1922025324e0af8e2bf6626bb2b1a9bd6dc6"
+    },
+    {
+      "path": "markets/1032307/raw/market.json.gz",
+      "bytes": 2797,
+      "sha256": "4b396a68bc241a74bf16348e7e534a0df9f9f81025900d4ff8a215b252b81150"
+    },
+    {
+      "path": "markets/1032307/raw/prices-0.json.gz",
+      "bytes": 631,
+      "sha256": "44125d7e4e70f3c4e37214169d3dd6a493ca6d18a96a95651c7bae8212a75eb6"
+    },
+    {
+      "path": "markets/1032307/raw/prices-1.json.gz",
+      "bytes": 629,
+      "sha256": "940e95838124bc971fc59abbb945311df7c1719d49860e45d2d6e12da2fea2ee"
+    },
+    {
+      "path": "markets/1032307/raw/trades.json.gz",
+      "bytes": 207920,
+      "sha256": "eee5274e99a6c31fc856f205e794c9ad75f135ab0d1a756d9e680cda4252a380"
+    },
+    {
+      "path": "markets/1032307/raw/wallet_trade_legs.json.gz",
+      "bytes": 328918,
+      "sha256": "686f7ae5da0f12ec2a03cb344967c8e4040eb7bb37d556f3d8aa249c980646c6"
+    },
+    {
+      "path": "markets/1032307/trades.csv.gz",
+      "bytes": 87258,
+      "sha256": "d010fccf32d17626ca0c392dd9265a0366e766ed710d5b7a54e4a470c77a40c5"
+    },
+    {
+      "path": "markets/1032307/validation.json",
+      "bytes": 565,
+      "sha256": "1531449f4cddbf4fdcc1c936cb857a6d6ece4286626aaca5c8c6fd35109b0351"
+    },
+    {
+      "path": "markets/1032307/wallet_trade_legs.csv.gz",
+      "bytes": 124979,
+      "sha256": "e1ee4371e138bfd7991437e635fc86a7aafbcef9f116a7d8775b1a5b00922c04"
+    },
+    {
+      "path": "markets/1032307/wallets.csv",
+      "bytes": 57535,
+      "sha256": "a5108f0aa007e6fe57959df302e1c670f3873dcacaf186974b34efa1dd0752a4"
+    },
+    {
+      "path": "markets/1032323/config.json",
+      "bytes": 418,
+      "sha256": "3df42324581952f0736543206c735fdaaeebc4dacf4ef1655a39c21f19557b51"
+    },
+    {
+      "path": "markets/1032323/coverage.csv",
+      "bytes": 242,
+      "sha256": "6fcda8f7d36991f1c1d1a062106b0bb785254d13b8f498dfafcdb9040803e931"
+    },
+    {
+      "path": "markets/1032323/manifest.json",
+      "bytes": 3610,
+      "sha256": "ccf3c20e406513c398e6b6901a3dc83457b1135d016e1c594d14733fd260e0cf"
+    },
+    {
+      "path": "markets/1032323/market.json",
+      "bytes": 2649,
+      "sha256": "8b555cc50d2df27dfa9bdeba95152950a90b3b88d4eb58bbad534ecdaabcca83"
+    },
+    {
+      "path": "markets/1032323/outcomes.csv",
+      "bytes": 345,
+      "sha256": "369ea7a83ca40da13263053f150d071fa4ffd713facd31b321908961e49fc2f0"
+    },
+    {
+      "path": "markets/1032323/prices.csv.gz",
+      "bytes": 2151,
+      "sha256": "e3ac85903f56d3c011acc6e0a8c814586f479bc8626822bc91cf8ad87dc0c600"
+    },
+    {
+      "path": "markets/1032323/raw/market.json.gz",
+      "bytes": 2741,
+      "sha256": "30d21bea99264d8fbb5b396d98019af3fa0959a37bb7ac727f11602d4e22336b"
+    },
+    {
+      "path": "markets/1032323/raw/prices-0.json.gz",
+      "bytes": 977,
+      "sha256": "1e095b6c16b21828fffb4dbae75a64cd90db0aca4b3e163cebe774e23470d1ef"
+    },
+    {
+      "path": "markets/1032323/raw/prices-1.json.gz",
+      "bytes": 998,
+      "sha256": "82cfe6d7979c8ea1f784ac10908c8aca8c639e98f3186415005dc48e3db33bbc"
+    },
+    {
+      "path": "markets/1032323/raw/trades.json.gz",
+      "bytes": 34075,
+      "sha256": "98bdfafacf012a4827be31ebc63349cbab550b42fcbdae6b09b294acf4758b3c"
+    },
+    {
+      "path": "markets/1032323/raw/wallet_trade_legs.json.gz",
+      "bytes": 48907,
+      "sha256": "b1efa9931e2b27c37079dc7bc4debf487ff68be5481ab6b353b583fe9303f9e1"
+    },
+    {
+      "path": "markets/1032323/trades.csv.gz",
+      "bytes": 14148,
+      "sha256": "f11546abfb2b02c841cc9389666d681c00891ee625bea77b10305e644300f755"
+    },
+    {
+      "path": "markets/1032323/validation.json",
+      "bytes": 565,
+      "sha256": "ab89b276d25404d882b506d992ab16ef2dd2706bd64909da9b6841b6adf9831a"
+    },
+    {
+      "path": "markets/1032323/wallet_trade_legs.csv.gz",
+      "bytes": 18652,
+      "sha256": "eb7d0330e34f9426100b413c39afe7e0809ea5a398430571ff5e2049b0d4f39c"
+    },
+    {
+      "path": "markets/1032323/wallets.csv",
+      "bytes": 14970,
+      "sha256": "616257b530f290b7eef5b182394b8d484eddd96fcbe05d82bd3361b7b0115c3c"
+    },
+    {
+      "path": "markets/1090953/config.json",
+      "bytes": 436,
+      "sha256": "4b4544f6a44fb29c01a0661646ab97c4b77c56f2ada3b71fc023855998539a08"
+    },
+    {
+      "path": "markets/1090953/coverage.csv",
+      "bytes": 240,
+      "sha256": "e447d76d0efe7437d5221087254b9e3bcaeac278500314c16f13aad56d0067d0"
+    },
+    {
+      "path": "markets/1090953/manifest.json",
+      "bytes": 3598,
+      "sha256": "2a34b64dc9cbed3d165851a5a2e500f806cb4d281e6a685d87863381f7b1a397"
+    },
+    {
+      "path": "markets/1090953/market.json",
+      "bytes": 2292,
+      "sha256": "e436624ad3259e24c127b0cc04f56824e31f31d1980ac63e856532f5208157c6"
+    },
+    {
+      "path": "markets/1090953/outcomes.csv",
+      "bytes": 345,
+      "sha256": "3d164bd5e97d265f4ba73fd450bb8084481b42a1d6469ecdbff07a85e6541dbe"
+    },
+    {
+      "path": "markets/1090953/prices.csv.gz",
+      "bytes": 657,
+      "sha256": "601e5b44b185de04898572af63c761543506c8eb3dd2bcccc481e8aa73ee58c3"
+    },
+    {
+      "path": "markets/1090953/raw/market.json.gz",
+      "bytes": 2495,
+      "sha256": "f739bd38b5347d631e9fea6394640ff332df457f6c12b5e22a5f17a03bd676a6"
+    },
+    {
+      "path": "markets/1090953/raw/prices-0.json.gz",
+      "bytes": 544,
+      "sha256": "2ecd2713473f503ca5fd1ed5228a629f9e16fc0a2cd8769f96709f23b4c02d15"
+    },
+    {
+      "path": "markets/1090953/raw/prices-1.json.gz",
+      "bytes": 543,
+      "sha256": "3acea119ad60e31664e5fd732974b10bdc45c3951c3eb8fc87733958f631f6be"
+    },
+    {
+      "path": "markets/1090953/raw/trades.json.gz",
+      "bytes": 3262,
+      "sha256": "2011539fe9416d200f4a0a16f10396e54fbb2eafb7078e50e700e62f5ce0788c"
+    },
+    {
+      "path": "markets/1090953/raw/wallet_trade_legs.json.gz",
+      "bytes": 7876,
+      "sha256": "ce946c54d3fea1035c720e1322cfe1c4972480ef607d3435d6f59aecbce717f5"
+    },
+    {
+      "path": "markets/1090953/trades.csv.gz",
+      "bytes": 2030,
+      "sha256": "b904dc11100f83bf6b0a6deb855502bbc171ac5c5841c00ae5ca9408acde8434"
+    },
+    {
+      "path": "markets/1090953/validation.json",
+      "bytes": 565,
+      "sha256": "726b80fb9d686b64196d8347144d008d1a0e00efcda94a79e7955ed004096184"
+    },
+    {
+      "path": "markets/1090953/wallet_trade_legs.csv.gz",
+      "bytes": 3012,
+      "sha256": "f6e833bc0799a2588997e5391b7548a446a5f486c730656124cf81ee92fab184"
+    },
+    {
+      "path": "markets/1090953/wallets.csv",
+      "bytes": 3717,
+      "sha256": "860f2728f88876dc5be741f7bbe50d451ec1ada57b49862a946650293915c12f"
+    },
+    {
+      "path": "markets/1090981/config.json",
+      "bytes": 455,
+      "sha256": "b18c988086809554a5aa16dab190dad1acf7dc3c879b7da2b95bdf5b6c65921d"
+    },
+    {
+      "path": "markets/1090981/coverage.csv",
+      "bytes": 242,
+      "sha256": "aa5e593821a0b5a8bef3a6c78d1dbd5577a27fe615e3507628305de698dd5674"
+    },
+    {
+      "path": "markets/1090981/manifest.json",
+      "bytes": 3689,
+      "sha256": "70964eeaefb30bc7cfbd3699490317477c9d575a1e8962d5a1cfdccb8b9968d8"
+    },
+    {
+      "path": "markets/1090981/market.json",
+      "bytes": 2605,
+      "sha256": "30a4c00bed528c5f0a221c45251a0ac1ce7ee55d90d00f2d3c40f4af2af1ede1"
+    },
+    {
+      "path": "markets/1090981/outcomes.csv",
+      "bytes": 345,
+      "sha256": "1fbfb7bf9033bd9fd108a71e0085d9236672d91fd654b7f9edd314516441bb49"
+    },
+    {
+      "path": "markets/1090981/prices.csv.gz",
+      "bytes": 670,
+      "sha256": "4c8bc3fc55fd3bd4dbf350e63c233205e09908f188d3082b1a88a2c501c8f57b"
+    },
+    {
+      "path": "markets/1090981/raw/market.json.gz",
+      "bytes": 2870,
+      "sha256": "ba8e99e74be84b353c275786b1206169d3f7f21b2b3637b76c82ac4b2d686a69"
+    },
+    {
+      "path": "markets/1090981/raw/prices-0.json.gz",
+      "bytes": 549,
+      "sha256": "77e370606272290a6fed8d9bcf2ec485d29728854ff0b1c3db1470fe5d8724f1"
+    },
+    {
+      "path": "markets/1090981/raw/prices-1.json.gz",
+      "bytes": 546,
+      "sha256": "13e02c4b26018b963b30d52c0774e9e85e21898000fa2bdc21c6da6dc2f595b7"
+    },
+    {
+      "path": "markets/1090981/raw/trades.json.gz",
+      "bytes": 20564,
+      "sha256": "875d9dc1fee85f961cf689d247d71f94f50ae418e47396f948753a84613afe89"
+    },
+    {
+      "path": "markets/1090981/raw/wallet_trade_legs.json.gz",
+      "bytes": 29916,
+      "sha256": "a8bf67137e2ca2f78da2e4d6b0edf1b5891b1e2f871e11cf47c64d0091cd7d49"
+    },
+    {
+      "path": "markets/1090981/trades.csv.gz",
+      "bytes": 8941,
+      "sha256": "52ed09ccf7915681c484ff5283e397385a05a53998637d9aab0d4d7906022efc"
+    },
+    {
+      "path": "markets/1090981/validation.json",
+      "bytes": 565,
+      "sha256": "3d48741ca27a236728f9b71d29ea7bad265b66adf873c565fa72137fb2694338"
+    },
+    {
+      "path": "markets/1090981/wallet_trade_legs.csv.gz",
+      "bytes": 11647,
+      "sha256": "2dcf6224155b6d4d0e6f6ccf855681c9eb01040c8d394f127a0ee7dcc1f1f492"
+    },
+    {
+      "path": "markets/1090981/wallets.csv",
+      "bytes": 7819,
+      "sha256": "e98e4831775a7d104d538a277a19a30fbce24bc40b9d8382435fbd761046ee58"
+    },
+    {
+      "path": "markets/1146465/config.json",
+      "bytes": 438,
+      "sha256": "273837ac99aff22d398c1f5f0fdc599a4f1ff0108b3474aa6583ee88e326d889"
+    },
+    {
+      "path": "markets/1146465/coverage.csv",
+      "bytes": 240,
+      "sha256": "c232d4ded4b4c56752801118a0034020ab2b7dcd45d38616c2be2bfa26e4e1d7"
+    },
+    {
+      "path": "markets/1146465/manifest.json",
+      "bytes": 3604,
+      "sha256": "bb88a5578986c7c6da06c011274d47884841801c35968edca2e3f3c7295d6378"
+    },
+    {
+      "path": "markets/1146465/market.json",
+      "bytes": 2267,
+      "sha256": "b39a1eb58d2108764fe3ac8eb8c7110371450d3c40061327ebf9cacd9fc95ca9"
+    },
+    {
+      "path": "markets/1146465/outcomes.csv",
+      "bytes": 345,
+      "sha256": "20e5f4e7c5f0f8bf6723ec14b742425405874b3ee4f025a24a2c30d39e952cd4"
+    },
+    {
+      "path": "markets/1146465/prices.csv.gz",
+      "bytes": 666,
+      "sha256": "3ac67f35baccc77e416b793a1d0b1aee9971c0733fa7f02de950ab9f3a1c6ad4"
+    },
+    {
+      "path": "markets/1146465/raw/market.json.gz",
+      "bytes": 2494,
+      "sha256": "b0e782e23482887009adc4abcc1bb11de94ca6a11497406143237527038a5d1b"
+    },
+    {
+      "path": "markets/1146465/raw/prices-0.json.gz",
+      "bytes": 540,
+      "sha256": "e7244ed3d616830449c81997fd13568eeb83701551d8f819c316e5a801cbc56e"
+    },
+    {
+      "path": "markets/1146465/raw/prices-1.json.gz",
+      "bytes": 542,
+      "sha256": "83b2f73d2fcf7a81b455bbf396a66fff732a483f25b43feb33705c19addba35a"
+    },
+    {
+      "path": "markets/1146465/raw/trades.json.gz",
+      "bytes": 2337,
+      "sha256": "90c988df8bb88be5bd0a1d156d2715c0d831c9d6da08b8be28af6337ee3a36af"
+    },
+    {
+      "path": "markets/1146465/raw/wallet_trade_legs.json.gz",
+      "bytes": 3736,
+      "sha256": "11f2d6f3ac88680793a594867717d4e5bb47a2c4b81baf8c3fd9a5ca19747b78"
+    },
+    {
+      "path": "markets/1146465/trades.csv.gz",
+      "bytes": 1378,
+      "sha256": "e122b375ae1b2b0da779775cfdd47ad9ca393ee58fb1516ed1afc1eeadbeea04"
+    },
+    {
+      "path": "markets/1146465/validation.json",
+      "bytes": 565,
+      "sha256": "1cf390a1f0bee39add2f45124b02a432ce522a2ebdc5e5c5c4316667c0b77d16"
+    },
+    {
+      "path": "markets/1146465/wallet_trade_legs.csv.gz",
+      "bytes": 2208,
+      "sha256": "249b8ea64aff0f3d19ff0476f8e8d22e227dc673981b95e5f17fa199b394ce8a"
+    },
+    {
+      "path": "markets/1146465/wallets.csv",
+      "bytes": 3139,
+      "sha256": "563526d19b80e29812d8b2722ca10a86713ffbef6f4c9e464e2c272980e4eaf4"
+    },
+    {
+      "path": "markets/1146490/config.json",
+      "bytes": 457,
+      "sha256": "e094409b0b0f2ea2b2d37700b6c548fc884267d351097261b44bd0e85ef7e7bd"
+    },
+    {
+      "path": "markets/1146490/coverage.csv",
+      "bytes": 240,
+      "sha256": "1a18c7e04d328da2612b2d206481d0e0aab545e39fec0b8027147db97356bab8"
+    },
+    {
+      "path": "markets/1146490/manifest.json",
+      "bytes": 3693,
+      "sha256": "f7d902988ff769746afcedae1f1b44ac2f848b8800e59e4220afe9a432e876a8"
+    },
+    {
+      "path": "markets/1146490/market.json",
+      "bytes": 2622,
+      "sha256": "6fafca23b76bfc2ab9e02ffe8f1f97786d9430860d7544e517e6ff4aef837906"
+    },
+    {
+      "path": "markets/1146490/outcomes.csv",
+      "bytes": 346,
+      "sha256": "1b96a502de6d96fc7759fb3ded89db70014877808be10ddda70116738b35582f"
+    },
+    {
+      "path": "markets/1146490/prices.csv.gz",
+      "bytes": 667,
+      "sha256": "afa07fdd14e215a6a76fcba81e37d5837cac205be17a55a4fa499344c25c4646"
+    },
+    {
+      "path": "markets/1146490/raw/market.json.gz",
+      "bytes": 2714,
+      "sha256": "c9bc88d21d90f5ebbd9f2df191b16af8f522bacbbc01bdaa05ea0a8978c10ef6"
+    },
+    {
+      "path": "markets/1146490/raw/prices-0.json.gz",
+      "bytes": 548,
+      "sha256": "40ca441d30ba31a42dd4d09afdfbc93887aa4a9b0ec3b741a11e8177150b8486"
+    },
+    {
+      "path": "markets/1146490/raw/prices-1.json.gz",
+      "bytes": 549,
+      "sha256": "8a29849ec533be309df9f84b3591b6a2ae918554b087208d1237cc955d5cdba9"
+    },
+    {
+      "path": "markets/1146490/raw/trades.json.gz",
+      "bytes": 4389,
+      "sha256": "70a3856672a77444531e71daeef2cf048786349963b144e4ea21b423474fb0a7"
+    },
+    {
+      "path": "markets/1146490/raw/wallet_trade_legs.json.gz",
+      "bytes": 10514,
+      "sha256": "39d1fcbcac4c8650c713afdc662cf3b17c3850031fb6f9dc8ecf75de458cf08a"
+    },
+    {
+      "path": "markets/1146490/trades.csv.gz",
+      "bytes": 2901,
+      "sha256": "936df0802204e0856fb33c206c5e440ecd0d98aacc0f17145b91eede2d21d60c"
+    },
+    {
+      "path": "markets/1146490/validation.json",
+      "bytes": 565,
+      "sha256": "64ca6bc1d310b7f8c81166b75319cd0c8975c6bff775d0f255a613a848aeddeb"
+    },
+    {
+      "path": "markets/1146490/wallet_trade_legs.csv.gz",
+      "bytes": 4022,
+      "sha256": "48e403208ed4c2902b8470f339617159d0735fc2aaa9764df699589077e4e541"
+    },
+    {
+      "path": "markets/1146490/wallets.csv",
+      "bytes": 3849,
+      "sha256": "f07951e61bca34d44c6bb3ddf6187b8e4676279c9882b2e29623310e9cb3702e"
+    },
+    {
+      "path": "markets/1146544/config.json",
+      "bytes": 459,
+      "sha256": "316721661fa2e6c7de24fa17193df2b4061c041384ada84177289d6bbd0979aa"
+    },
+    {
+      "path": "markets/1146544/coverage.csv",
+      "bytes": 240,
+      "sha256": "54abe4faffac95024505eeb3dd739996c7d63ec882e5acd3b6ff9fe9f4595349"
+    },
+    {
+      "path": "markets/1146544/manifest.json",
+      "bytes": 3694,
+      "sha256": "ceb97688645852cee237c9754f08a460c507c298f376c1fd95200b46ca8ae6db"
+    },
+    {
+      "path": "markets/1146544/market.json",
+      "bytes": 2620,
+      "sha256": "55bfb04ff5601339d9cd0caac97e19e7d47782446047fabc390dff31b889ae6a"
+    },
+    {
+      "path": "markets/1146544/outcomes.csv",
+      "bytes": 345,
+      "sha256": "da7fbc91d8aac840172853d0b5f11457462e7623de7eb7936fee384352f66452"
+    },
+    {
+      "path": "markets/1146544/prices.csv.gz",
+      "bytes": 670,
+      "sha256": "771c03c4c30a2943796f02e98a4d76f51888df9aa51ef62e9e49f7d91d36d80d"
+    },
+    {
+      "path": "markets/1146544/raw/market.json.gz",
+      "bytes": 2713,
+      "sha256": "464e31cbfd18ea95f74fd858a839dabce5f737e6429a0db0393677d4b9ed4454"
+    },
+    {
+      "path": "markets/1146544/raw/prices-0.json.gz",
+      "bytes": 549,
+      "sha256": "f781446f7fdf0881e087f0de00adf6d1178d1e3bc4cce06f82971f59b0d1e218"
+    },
+    {
+      "path": "markets/1146544/raw/prices-1.json.gz",
+      "bytes": 548,
+      "sha256": "b8a6e04c5243fdbd981b86c13515ecf3da41dce2c5db0ac3372fb108c1c972c2"
+    },
+    {
+      "path": "markets/1146544/raw/trades.json.gz",
+      "bytes": 4204,
+      "sha256": "28b4cfff5f2eebeddbc9340c08623e0925d9bcc2a95161a11e4ab958d730cd9f"
+    },
+    {
+      "path": "markets/1146544/raw/wallet_trade_legs.json.gz",
+      "bytes": 9969,
+      "sha256": "c4d220f701ff25bbf0a8536b3163b8720a226c18078297a2bb8b9381cc7bc0f0"
+    },
+    {
+      "path": "markets/1146544/trades.csv.gz",
+      "bytes": 2684,
+      "sha256": "1757d413561cb31a28c6e66b1108d452483779142854a437b301d98cc6b43505"
+    },
+    {
+      "path": "markets/1146544/validation.json",
+      "bytes": 565,
+      "sha256": "c4dc79ca84c74fb006d96cedb91f213385290bde325affc2f0a3f4d0b5f8ddfb"
+    },
+    {
+      "path": "markets/1146544/wallet_trade_legs.csv.gz",
+      "bytes": 3638,
+      "sha256": "3e33e84d98837b2332a6b264eab05fc85e547ad40fd92988f16908c803a44ca1"
+    },
+    {
+      "path": "markets/1146544/wallets.csv",
+      "bytes": 3492,
+      "sha256": "ad878636d64c3e23f8e30d658e03ac7d155575fdca97f4c011c3a9f79293db55"
+    },
+    {
+      "path": "markets/1146606/config.json",
+      "bytes": 457,
+      "sha256": "9c37cc35f8d2d284c6f0a108bd0c39dfee76532f99cbc13b98b9ba36e22b10ca"
+    },
+    {
+      "path": "markets/1146606/coverage.csv",
+      "bytes": 241,
+      "sha256": "1f9b20b0e4da122dc9abd11b7f17dd1a11458c77da1ae8fd1eeceee2bbe190ca"
+    },
+    {
+      "path": "markets/1146606/manifest.json",
+      "bytes": 3692,
+      "sha256": "d3bf26e8ac0f1d711595e9923620b15da044f305d8c38560781ab60de7ef7b75"
+    },
+    {
+      "path": "markets/1146606/market.json",
+      "bytes": 2612,
+      "sha256": "87f841565570c9bfd5703ccf7294c9d69c6cf0109e24543536f4e16210eba9e9"
+    },
+    {
+      "path": "markets/1146606/outcomes.csv",
+      "bytes": 345,
+      "sha256": "0c3605bca5ff2bed7f428ac7a06f2616436a27fb7e183437084e11670f95f4bc"
+    },
+    {
+      "path": "markets/1146606/prices.csv.gz",
+      "bytes": 668,
+      "sha256": "b69b37cd7370e281e3223716903bc636f615102630cb672226dfcede235ace4a"
+    },
+    {
+      "path": "markets/1146606/raw/market.json.gz",
+      "bytes": 2777,
+      "sha256": "f4715978b62cad2c4f0e72c64816d76ebe9eafa075d1621dfa3b87277d4ff4c4"
+    },
+    {
+      "path": "markets/1146606/raw/prices-0.json.gz",
+      "bytes": 548,
+      "sha256": "e6c0aae0e83b202ca72bb835e2a52bb224d7e9f3f7a110987fe2b02f58062e1a"
+    },
+    {
+      "path": "markets/1146606/raw/prices-1.json.gz",
+      "bytes": 547,
+      "sha256": "7a099e08242c6a2713746b4b0d85eed6e741edb4f1e42aa2ff5ddd5bc70c0c45"
+    },
+    {
+      "path": "markets/1146606/raw/trades.json.gz",
+      "bytes": 12959,
+      "sha256": "bc3008ef1cd61bc98745d99d99f8fa67d2f5cedffcc5ac0f44bb0b4ca5fb016d"
+    },
+    {
+      "path": "markets/1146606/raw/wallet_trade_legs.json.gz",
+      "bytes": 21114,
+      "sha256": "1dd7884a7ad10ace55d53e204c0bec6cc92177d0f73846fe76f5d7a870a6d7b3"
+    },
+    {
+      "path": "markets/1146606/trades.csv.gz",
+      "bytes": 5692,
+      "sha256": "6ddf940f7e741376ac313cb31c9e0abf6201ddecea619051a7fc849f8ca49284"
+    },
+    {
+      "path": "markets/1146606/validation.json",
+      "bytes": 565,
+      "sha256": "5868907f81a2fac6c90715cc44311fa856a2b96cd53d8385ea5dfec65512443a"
+    },
+    {
+      "path": "markets/1146606/wallet_trade_legs.csv.gz",
+      "bytes": 8027,
+      "sha256": "0635ab55801650cfd1248318b87c683d9aac5953e59183b7339746b19fa7f374"
+    },
+    {
+      "path": "markets/1146606/wallets.csv",
+      "bytes": 6856,
+      "sha256": "08d017c49bceee0e2fe41b373de8544c8b742b5599899f21c1eb40c4dc7afd33"
+    },
+    {
+      "path": "markets/1168264/config.json",
+      "bytes": 468,
+      "sha256": "aba3828c7958246860ca0d1627d03431be746757cc4546b693cd770ad5d855bc"
+    },
+    {
+      "path": "markets/1168264/coverage.csv",
+      "bytes": 241,
+      "sha256": "f48f91498a5ae3556d72dea5f35f066720515ca150bdd4188c8007274e518170"
+    },
+    {
+      "path": "markets/1168264/manifest.json",
+      "bytes": 3663,
+      "sha256": "068c44f6ca85d4b797757155e681aab3a85adafcc2ca9ccd423a0e55014065fb"
+    },
+    {
+      "path": "markets/1168264/market.json",
+      "bytes": 2385,
+      "sha256": "faba4061085da566fcff57cf30beeb39f33afb93e3969192d152830b06b2349f"
+    },
+    {
+      "path": "markets/1168264/outcomes.csv",
+      "bytes": 345,
+      "sha256": "c3b3dd8aee669e9845d2aadf857bfee6a8412d448aee83675a3e24fc053b66ba"
+    },
+    {
+      "path": "markets/1168264/prices.csv.gz",
+      "bytes": 711,
+      "sha256": "c553ddb620f15b283b3bd58baef7ba35397e0bb6795e7d2745746ac0d846da2d"
+    },
+    {
+      "path": "markets/1168264/raw/market.json.gz",
+      "bytes": 2340,
+      "sha256": "9eab3af6fb8bc41d7a7ac1e0d7bb69e3117a214f3132c252b269552076443b09"
+    },
+    {
+      "path": "markets/1168264/raw/prices-0.json.gz",
+      "bytes": 553,
+      "sha256": "cc45c68975c87e1dd1eeeeeee29dc25b0d7557a623d53e34337e76a71d3237cb"
+    },
+    {
+      "path": "markets/1168264/raw/prices-1.json.gz",
+      "bytes": 550,
+      "sha256": "41d5b27f5afdf4d6f7eba62b777709784faef0869a344aaea66938f14887ad99"
+    },
+    {
+      "path": "markets/1168264/raw/trades.json.gz",
+      "bytes": 13015,
+      "sha256": "eeb2b8d7e3fee4919c20ee2660124887109a22c86b6bfed2c900573ad27cbbde"
+    },
+    {
+      "path": "markets/1168264/raw/wallet_trade_legs.json.gz",
+      "bytes": 19810,
+      "sha256": "98226ff970889266fc84582250cb6ebd5395458fea5634fa6c9f97615227962f"
+    },
+    {
+      "path": "markets/1168264/trades.csv.gz",
+      "bytes": 5507,
+      "sha256": "001fe9d122e58e7147d530a6efffc31def401da30dbe00342dec19aaf6d678a5"
+    },
+    {
+      "path": "markets/1168264/validation.json",
+      "bytes": 565,
+      "sha256": "6d119bc08599043d37861f8f8dd61bacf807b57e193381a49b655754a6f5fdb9"
+    },
+    {
+      "path": "markets/1168264/wallet_trade_legs.csv.gz",
+      "bytes": 7394,
+      "sha256": "7bc2504b1da6b3fd6fd0ac83a32a12deac1cb7aab26e54395aaa76bef2988b6d"
+    },
+    {
+      "path": "markets/1168264/wallets.csv",
+      "bytes": 6680,
+      "sha256": "45e2cc5bfa284927865d93471a9b2019917574a0df93e0acf8a4511406f667f6"
+    },
+    {
+      "path": "markets/1201225/config.json",
+      "bytes": 457,
+      "sha256": "c7ac3cba935c2cbd051414e20e6b030a9ed7a66c0e4610a9f621bdb83c7f922e"
+    },
+    {
+      "path": "markets/1201225/coverage.csv",
+      "bytes": 240,
+      "sha256": "bd23ff3214c75bf9ac740e5690afa0fe3a34f56773aac614628d220dd5a2688e"
+    },
+    {
+      "path": "markets/1201225/manifest.json",
+      "bytes": 3692,
+      "sha256": "300b523e4c1998b7ba81a909e3f9695e0b7f1f7f3d97c89fe76c256f60d866c8"
+    },
+    {
+      "path": "markets/1201225/market.json",
+      "bytes": 2621,
+      "sha256": "10112fba0007819c7372a32360303b4615174d41cfcd2d9326ad142c15146cdf"
+    },
+    {
+      "path": "markets/1201225/outcomes.csv",
+      "bytes": 345,
+      "sha256": "c78bc72adacb54b3b62f993f46cab7721f90a1a9feef4d7ee8bbbb2a504a6536"
+    },
+    {
+      "path": "markets/1201225/prices.csv.gz",
+      "bytes": 654,
+      "sha256": "85750e0a979631ea7e304a51592180d98962272844e5b4a422eb5c887cba3d33"
+    },
+    {
+      "path": "markets/1201225/raw/market.json.gz",
+      "bytes": 2713,
+      "sha256": "0084595cf6a75c9fa86ed03da4a5435f61785b12a41b4a1b95e8b61028bc371d"
+    },
+    {
+      "path": "markets/1201225/raw/prices-0.json.gz",
+      "bytes": 540,
+      "sha256": "570b2208207ef95ec8c093e00eba090a6abc53b31b68290cb2652ab1762186d4"
+    },
+    {
+      "path": "markets/1201225/raw/prices-1.json.gz",
+      "bytes": 530,
+      "sha256": "22a8d1caaab24fe7aa860756a0d9d2d61e04e62c58ae56d9e48291d4159611a2"
+    },
+    {
+      "path": "markets/1201225/raw/trades.json.gz",
+      "bytes": 3586,
+      "sha256": "25b8d64eaaa4a781c89a31def52ce9a6e4207bec2d63a9aafdfaa6acdf33e104"
+    },
+    {
+      "path": "markets/1201225/raw/wallet_trade_legs.json.gz",
+      "bytes": 8289,
+      "sha256": "7d4f6567e0cbcd0d7aa6c43ac08f70f4f6f8576cb0adba794913d624d6cc07f1"
+    },
+    {
+      "path": "markets/1201225/trades.csv.gz",
+      "bytes": 2443,
+      "sha256": "f947c6c22ac483db18b80840d1ee0ab852ffe84d91a997a8ad3c66d670c75260"
+    },
+    {
+      "path": "markets/1201225/validation.json",
+      "bytes": 565,
+      "sha256": "cdcb56465ac049478d7a5dfcfefafef4b69269ac4ecf5461ba65a527d3990497"
+    },
+    {
+      "path": "markets/1201225/wallet_trade_legs.csv.gz",
+      "bytes": 3394,
+      "sha256": "4c0128618031e4fa53bc3fdde88fc8d81f9ccf85f15e87bcfa481fea12057d12"
+    },
+    {
+      "path": "markets/1201225/wallets.csv",
+      "bytes": 3389,
+      "sha256": "71b756a5dadb8e21acf52dd7da089060913cbd9e8c2503208a9b97291f056f53"
+    },
+    {
+      "path": "markets/516950/config.json",
+      "bytes": 412,
+      "sha256": "f1216f3c426d28eb394b803c89e9eb79352e184113bd12c20ee70a923688a82c"
+    },
+    {
+      "path": "markets/516950/coverage.csv",
+      "bytes": 246,
+      "sha256": "c459f50bd60588239ecfbd80db422d43f6cff23264dd1274eeb99c0c725e286c"
+    },
+    {
+      "path": "markets/516950/manifest.json",
+      "bytes": 3772,
+      "sha256": "774510c219367c97be9468c3062f98db5249ab58f13026e60c132178a6985e52"
+    },
+    {
+      "path": "markets/516950/market.json",
+      "bytes": 1665,
+      "sha256": "9faff156257c304c4e1ed6a1e1d6ac771df44dc15dfad3e2f410890d11925d30"
+    },
+    {
+      "path": "markets/516950/outcomes.csv",
+      "bytes": 346,
+      "sha256": "aaf70fecd3119e600978870ca66ef084476e0658515adb526807fb7d9e88ca03"
+    },
+    {
+      "path": "markets/516950/prices.csv.gz",
+      "bytes": 22156,
+      "sha256": "d60034e57d5dca1371af96df2c22c421ff79364764d44e0d9bedbb2665bceebb"
+    },
+    {
+      "path": "markets/516950/raw/market.json.gz",
+      "bytes": 2473,
+      "sha256": "ae316572f721ccae131e5fbf081beadbf9962e967bbcd847391d59b32f5d6cb2"
+    },
+    {
+      "path": "markets/516950/raw/prices-0.json.gz",
+      "bytes": 8649,
+      "sha256": "eb515da466959402d16ed6e128e7f01db0446a04a645737d249fe887227ac56c"
+    },
+    {
+      "path": "markets/516950/raw/prices-1.json.gz",
+      "bytes": 8640,
+      "sha256": "b7c48ec458a6349e57cc3935125d7eb3c94180ab151348a497a6915748648350"
+    },
+    {
+      "path": "markets/516950/raw/trades.json.gz",
+      "bytes": 629953,
+      "sha256": "2f4de92918168e095d7f2a6fb94e44038e16675be0a015597635098eb1bd56a4"
+    },
+    {
+      "path": "markets/516950/raw/wallet_trade_legs.json.gz",
+      "bytes": 908763,
+      "sha256": "09e43930fdd710acf7771bd948e43deefc55065c381e10f99dee185c3a9a9d18"
+    },
+    {
+      "path": "markets/516950/trades.csv.gz",
+      "bytes": 263768,
+      "sha256": "8809a298b1898f0a28783e8d89a625f8aeaddef5f47b20887dd7dea62353aa21"
+    },
+    {
+      "path": "markets/516950/validation.json",
+      "bytes": 565,
+      "sha256": "52020236271edb815ddada94a46cb3df075f0af05bfc2bc89f03f70a46d8a570"
+    },
+    {
+      "path": "markets/516950/wallet_trade_legs.csv.gz",
+      "bytes": 352013,
+      "sha256": "8a768bba8dd34a1be2564478375fb98db742e81a1bd9935447711df22d329eb3"
+    },
+    {
+      "path": "markets/516950/wallets.csv",
+      "bytes": 205310,
+      "sha256": "23bf26447e73f75088d6104fa085671ca6579c20b32157aafa5b56f493a4c879"
+    },
+    {
+      "path": "markets/601699/config.json",
+      "bytes": 457,
+      "sha256": "45b081596e4dfc4b5202b0b59857bde7dc5905a98d34cf182c20827f8897b564"
+    },
+    {
+      "path": "markets/601699/coverage.csv",
+      "bytes": 250,
+      "sha256": "4b1eb0333c4d082f1589bd05bad1d6a94409e1c2a5d34787c978c5aaa75b8f56"
+    },
+    {
+      "path": "markets/601699/manifest.json",
+      "bytes": 3763,
+      "sha256": "b838f8135f6021a0e5820f372022d2355d285ff71c7e5559aad7ff54e36c9003"
+    },
+    {
+      "path": "markets/601699/market.json",
+      "bytes": 2487,
+      "sha256": "b67f4b80f58ea14e5ad466d4f4ba3aaf25104f260dc6a573dc78b73af30b482b"
+    },
+    {
+      "path": "markets/601699/outcomes.csv",
+      "bytes": 345,
+      "sha256": "16b2ba4b21c14205b1d55bca1c1b7e32398527e8f77d2b2ae6deac0b67e6cd5a"
+    },
+    {
+      "path": "markets/601699/prices.csv.gz",
+      "bytes": 8452,
+      "sha256": "c955dad62ab8d0786609b601600dfa0ab9bd7428de2d4d2c424eb02348a59918"
+    },
+    {
+      "path": "markets/601699/raw/market.json.gz",
+      "bytes": 2899,
+      "sha256": "5468f236513b1352517c49ea9be18e72cc424e5dd0811a9cd3dfb98b7ab09645"
+    },
+    {
+      "path": "markets/601699/raw/prices-0.json.gz",
+      "bytes": 2337,
+      "sha256": "783015735e41ead69e804d3585ef160ce5b1c3e1f25b9efb63a6527d68abf2c8"
+    },
+    {
+      "path": "markets/601699/raw/prices-1.json.gz",
+      "bytes": 2336,
+      "sha256": "587cd8853bd2c531488ffc34d8d485d9280aecb153f33bde50879f4c6610c10d"
+    },
+    {
+      "path": "markets/601699/raw/trades.json.gz",
+      "bytes": 19066203,
+      "sha256": "b45abaef9991e2e0709e9a81c4def0f0b1463037efd6e1a54a84e12f1b3a5093"
+    },
+    {
+      "path": "markets/601699/raw/wallet_trade_legs.json.gz",
+      "bytes": 27498612,
+      "sha256": "39543b23d4e064698d0040b852a888b3dd63bca364ee10ddf7046c376f6d108f"
+    },
+    {
+      "path": "markets/601699/trades.csv.gz",
+      "bytes": 7892280,
+      "sha256": "22541a65867d9f1caf7bb96ad4ef2fca19f858b4954511028bc8b2e79748a56f"
+    },
+    {
+      "path": "markets/601699/validation.json",
+      "bytes": 565,
+      "sha256": "3c22473d1b13c07b4883b813d0095bfee11a79ca219aeaf775d2ea822639e0e9"
+    },
+    {
+      "path": "markets/601699/wallet_trade_legs.csv.gz",
+      "bytes": 10409270,
+      "sha256": "fb3f6f2057738b5cfbb65ad74cda1c021faf0b0bf2c8d5f0e4aed9d689c59b4b"
+    },
+    {
+      "path": "markets/601699/wallets.csv",
+      "bytes": 3760552,
+      "sha256": "93dd9f887224bdfda2c2477350a914c6548305319bf38b29b16d6578acf056bc"
+    },
+    {
+      "path": "markets/656310/config.json",
+      "bytes": 424,
+      "sha256": "d36b66f8ffc522c622fc306b573b834c8273f32136d900de3326a1c2916326a8"
+    },
+    {
+      "path": "markets/656310/coverage.csv",
+      "bytes": 246,
+      "sha256": "1d1c13af6824bce5e7e0992ba3daf81afe6ecbbe372542381730436bc7d4a811"
+    },
+    {
+      "path": "markets/656310/manifest.json",
+      "bytes": 3618,
+      "sha256": "da24a3d206e7c025560c31dde1a81e6078f7fd45ca4639739e6e8e37e8af2976"
+    },
+    {
+      "path": "markets/656310/market.json",
+      "bytes": 1593,
+      "sha256": "d41a8ee9972ff24e91f37124956b2e9cd7dc5f456cffe923bb220d6bb67c22d7"
+    },
+    {
+      "path": "markets/656310/outcomes.csv",
+      "bytes": 345,
+      "sha256": "2950036580f99cd59550e55c7811547411e6f5a050d82e206e421ccb7592ca83"
+    },
+    {
+      "path": "markets/656310/prices.csv.gz",
+      "bytes": 3536,
+      "sha256": "a1978a1589f57b141617448a8c43732c06ea3f569b9575ea8b9da2fc6d03deec"
+    },
+    {
+      "path": "markets/656310/raw/market.json.gz",
+      "bytes": 2421,
+      "sha256": "5a96d1dd321a47eea8d5d9c136636c68251774f9ef1ec8b8386cf23b91d8baf3"
+    },
+    {
+      "path": "markets/656310/raw/prices-0.json.gz",
+      "bytes": 1315,
+      "sha256": "b5a1a0bb05ac745293f4b4d2577515fb46d8440e26f8354a418b889a740627e3"
+    },
+    {
+      "path": "markets/656310/raw/prices-1.json.gz",
+      "bytes": 1321,
+      "sha256": "98bf1c1bffa2f3b1d8897756f4009b38fdebbafaba35445703c7162c0474d531"
+    },
+    {
+      "path": "markets/656310/raw/trades.json.gz",
+      "bytes": 449982,
+      "sha256": "fddd7b9a27283f1923117cd0848309b90c34654a78def5c9e1e3597debff886b"
+    },
+    {
+      "path": "markets/656310/raw/wallet_trade_legs.json.gz",
+      "bytes": 567780,
+      "sha256": "09dcc371372182a79dcd24292e6d1ce7878d0e4cdf4da0cb02ed06dbbd960268"
+    },
+    {
+      "path": "markets/656310/trades.csv.gz",
+      "bytes": 185788,
+      "sha256": "ddd013c6870399fc8df5ac13f36299841cdc05beffa3810cb8fc98195d74d734"
+    },
+    {
+      "path": "markets/656310/validation.json",
+      "bytes": 565,
+      "sha256": "982f66d89995685528909e3c57d33c3d8e2f15182d84dc72655515a3e8963708"
+    },
+    {
+      "path": "markets/656310/wallet_trade_legs.csv.gz",
+      "bytes": 224757,
+      "sha256": "2549d2c26a913fa90d74c653d9d12d79fca8e3a6d3c879fabdc34cc698ed73ce"
+    },
+    {
+      "path": "markets/656310/wallets.csv",
+      "bytes": 175565,
+      "sha256": "0b356132dafe7a60e9f0fac30c0b6d8a2dc18b1f29f58272e6395b1ff40f9136"
+    },
+    {
+      "path": "markets/657353/config.json",
+      "bytes": 452,
+      "sha256": "55abf53735f415972d9a2b10d49d61bc6e03ba6402301e5778e3cc26b08a3cb0"
+    },
+    {
+      "path": "markets/657353/coverage.csv",
+      "bytes": 245,
+      "sha256": "32885c67afe434b04475fac00bf39ae3cb8be02644da84bd33e5633670e8c40b"
+    },
+    {
+      "path": "markets/657353/manifest.json",
+      "bytes": 3667,
+      "sha256": "06b967078c1b6db7b630951fb8a67cfc6bd061967d16682a96e80a4065918bc5"
+    },
+    {
+      "path": "markets/657353/market.json",
+      "bytes": 1679,
+      "sha256": "e0b6b76a22ef59d6c35608fc9d7cc8e883600e3f945808d79c30179348d85a3f"
+    },
+    {
+      "path": "markets/657353/outcomes.csv",
+      "bytes": 345,
+      "sha256": "9ed18b3277d8fb1a18f2ba89f9d572828dfb380dd9ea2050e0daeb3e0e946d1d"
+    },
+    {
+      "path": "markets/657353/prices.csv.gz",
+      "bytes": 3531,
+      "sha256": "738594d16b2bf2934bdc9ca0b9eed486632d34a45a9614606eff0448889799f8"
+    },
+    {
+      "path": "markets/657353/raw/market.json.gz",
+      "bytes": 2315,
+      "sha256": "1df73c757560df5a5648ac1fca8b3bfd67e196fd435c1de9a9600b7927d5cf48"
+    },
+    {
+      "path": "markets/657353/raw/prices-0.json.gz",
+      "bytes": 1343,
+      "sha256": "17d2dc7060c27bff1b8d18145de1f8a0f5a241ae6e110990c9e5e95a65c1dcba"
+    },
+    {
+      "path": "markets/657353/raw/prices-1.json.gz",
+      "bytes": 1332,
+      "sha256": "b2d406f7710c3849752815fdea4d1774ce1a81670503ae75edad51d6070be239"
+    },
+    {
+      "path": "markets/657353/raw/trades.json.gz",
+      "bytes": 115649,
+      "sha256": "0bd0013493be94b8bfb3237f03e4ec5ba4ef91428ac29e82af43a8049de87a4d"
+    },
+    {
+      "path": "markets/657353/raw/wallet_trade_legs.json.gz",
+      "bytes": 159442,
+      "sha256": "481a759a49fcaf75863a40e2def36a8115e581bac8e5742a51bc723de6f39649"
+    },
+    {
+      "path": "markets/657353/trades.csv.gz",
+      "bytes": 53174,
+      "sha256": "cba33b488bc743c61e251a6fe6b3e3ebf75a13300aa0bd895591c0bdda6d7484"
+    },
+    {
+      "path": "markets/657353/validation.json",
+      "bytes": 565,
+      "sha256": "8d3f22fed4c076dc16ab38c43daf98570cfe90d4a95cf202e6ea8c7ed28f6730"
+    },
+    {
+      "path": "markets/657353/wallet_trade_legs.csv.gz",
+      "bytes": 67386,
+      "sha256": "1d673a3e2f76bebc4165b2ea93dc5148c9ff2a95381d3ec748f021809e4b384f"
+    },
+    {
+      "path": "markets/657353/wallets.csv",
+      "bytes": 43251,
+      "sha256": "330b12d495f78add83c758d7f2c61ed895725bf5a1e1ef4a7a4e43e9df877bb8"
+    },
+    {
+      "path": "markets/702433/config.json",
+      "bytes": 448,
+      "sha256": "3799814a4ed2c06a0ac0d81e97416ec16d63e20091a0e1a7e61383cfcaf85a35"
+    },
+    {
+      "path": "markets/702433/coverage.csv",
+      "bytes": 240,
+      "sha256": "010f88a9e067aba488c4a659633da5b0913196a39f29173bcd9f8354493ea292"
+    },
+    {
+      "path": "markets/702433/manifest.json",
+      "bytes": 3624,
+      "sha256": "7dd8dba43744fc8c45bc7742f82deff668e863ec466a3eb8d2fdc90e011d5ffd"
+    },
+    {
+      "path": "markets/702433/market.json",
+      "bytes": 1895,
+      "sha256": "edec40c001479d050392e8ed5348d7fd049e0f11617b67408d47e112f980b945"
+    },
+    {
+      "path": "markets/702433/outcomes.csv",
+      "bytes": 345,
+      "sha256": "25d31e6f82295e5c42b6ae841d30ba5e23145d4c76e8d80524ca7b0efa970104"
+    },
+    {
+      "path": "markets/702433/prices.csv.gz",
+      "bytes": 2278,
+      "sha256": "877e4fc1c32a1b7f040209b3954df3bfe340b9931a6e0f3b3ea98e92f875eb08"
+    },
+    {
+      "path": "markets/702433/raw/market.json.gz",
+      "bytes": 2469,
+      "sha256": "b585ad649c21741b6da0596477ff2d60f0ceac38afa3849719bd0be158dbea6e"
+    },
+    {
+      "path": "markets/702433/raw/prices-0.json.gz",
+      "bytes": 997,
+      "sha256": "04d06e651e986ffe7ba14ec0d8f0d1041d5547eb8d50c092d2f973e948107775"
+    },
+    {
+      "path": "markets/702433/raw/prices-1.json.gz",
+      "bytes": 997,
+      "sha256": "e0b73227179b9781fd94bf9c7c6aaa588717a1a1db72e51ea27a1ef78036cab5"
+    },
+    {
+      "path": "markets/702433/raw/trades.json.gz",
+      "bytes": 2321,
+      "sha256": "9f7c9d2f723049a55ecb1eb9b00a6f8d48ec3999a32d74befb84149853b53783"
+    },
+    {
+      "path": "markets/702433/raw/wallet_trade_legs.json.gz",
+      "bytes": 7090,
+      "sha256": "851ec446f08ee5c5a2f793023906332808caa48b539f54d99d0ee81c78c1dff6"
+    },
+    {
+      "path": "markets/702433/trades.csv.gz",
+      "bytes": 1428,
+      "sha256": "56ed738173094864db60258b480cbab463fa23b115ec4b212f7b7e80c2d6fcef"
+    },
+    {
+      "path": "markets/702433/validation.json",
+      "bytes": 565,
+      "sha256": "f021de172ba7af26cc5600e7c46759ce8e6f1a0d08aafee0aac572dd1ce65c64"
+    },
+    {
+      "path": "markets/702433/wallet_trade_legs.csv.gz",
+      "bytes": 2515,
+      "sha256": "9ce91137c0487457adb8656c0d23e5f27d97bfa11b4524eddce3b7db3a3f8a28"
+    },
+    {
+      "path": "markets/702433/wallets.csv",
+      "bytes": 3624,
+      "sha256": "13dec096ded3c099aa6218759a8d103367094cf3ca5f9607b9d40f26b70159d5"
+    },
+    {
+      "path": "markets/902299/config.json",
+      "bytes": 483,
+      "sha256": "dfbebc7e42df70d07c2a3fa99dfca0f3a5eccec8db9246ceabd8edb27850697a"
+    },
+    {
+      "path": "markets/902299/coverage.csv",
+      "bytes": 241,
+      "sha256": "88b56824aa3ce29fdc397085de84952a64aa4ee0f75a9d92adf817d3ca13f67d"
+    },
+    {
+      "path": "markets/902299/manifest.json",
+      "bytes": 3715,
+      "sha256": "78445de8d1c4897a141e4dae1e58bd8ea2c8b7dcdcac7f1063f34c45ece10105"
+    },
+    {
+      "path": "markets/902299/market.json",
+      "bytes": 2052,
+      "sha256": "3c4a6a0d3943d8f03e45b8bc37b860dae2a4fb62d024f865831e13d13c3ed681"
+    },
+    {
+      "path": "markets/902299/outcomes.csv",
+      "bytes": 346,
+      "sha256": "a67a127cab4fc73a88e50c7b4e54cda0b31a93542b1cde8849963690652a9990"
+    },
+    {
+      "path": "markets/902299/prices.csv.gz",
+      "bytes": 2481,
+      "sha256": "54312c1e7be183199e33d3c7b0d7a0462576a7a2c9d1257062bf1274c2036a74"
+    },
+    {
+      "path": "markets/902299/raw/market.json.gz",
+      "bytes": 2774,
+      "sha256": "55fee707a7ac72078df94fa5140128bd278a0c367be55ade6bfc668e788d30c9"
+    },
+    {
+      "path": "markets/902299/raw/prices-0.json.gz",
+      "bytes": 1047,
+      "sha256": "fc9544a40d2976936565c5697bbb1a7711c3cfbfd087d6eb0d6dc518c2b9e27f"
+    },
+    {
+      "path": "markets/902299/raw/prices-1.json.gz",
+      "bytes": 1046,
+      "sha256": "2b7176a014b837d844ac24aefac256afbfd86158635f8423f71800f6786cb3b4"
+    },
+    {
+      "path": "markets/902299/raw/trades.json.gz",
+      "bytes": 4549,
+      "sha256": "d56d2ba78563140a33790b0f436c4889f7168ec97e9b0ec41529b71de82d5f37"
+    },
+    {
+      "path": "markets/902299/raw/wallet_trade_legs.json.gz",
+      "bytes": 11798,
+      "sha256": "84fdd4153b613b73f08ac94e0cafd56c42d1e89c24e1af65819b93ae4dd7492d"
+    },
+    {
+      "path": "markets/902299/trades.csv.gz",
+      "bytes": 3027,
+      "sha256": "e4cd70e912cbf4599b044b2d4a0707c0bf1f4d85639efe4351f9502943198589"
+    },
+    {
+      "path": "markets/902299/validation.json",
+      "bytes": 565,
+      "sha256": "028edd4e175f7bf814e36baf348abb10c5e9fa3590ea6e9898f178e9a0e27bdb"
+    },
+    {
+      "path": "markets/902299/wallet_trade_legs.csv.gz",
+      "bytes": 4490,
+      "sha256": "c56527a49198d47a2bc582607f0e03284450877ab26a298d1c5dba9f2e54c432"
+    },
+    {
+      "path": "markets/902299/wallets.csv",
+      "bytes": 4497,
+      "sha256": "a2db1e0f225325ae9d8434b5d45834cc08ef44011eec6b595046cf5de6deecf2"
+    },
+    {
+      "path": "markets/949492/config.json",
+      "bytes": 435,
+      "sha256": "f49ffc20d9133fc422ec101ac5750e875d5908d860ebf69e6666a8b5f7d5489b"
+    },
+    {
+      "path": "markets/949492/coverage.csv",
+      "bytes": 244,
+      "sha256": "fbd9e4706f74c3422f744691f3b4f6491aa6a17392b7683c9db1e2739a433d0a"
+    },
+    {
+      "path": "markets/949492/manifest.json",
+      "bytes": 3619,
+      "sha256": "e69570246ad7c7e619c406e8a809eb352a4aae9916610aaac859a7777e3c9cc6"
+    },
+    {
+      "path": "markets/949492/market.json",
+      "bytes": 1831,
+      "sha256": "0d03736dae3d1cbe7bd7ed7ea159fc895e8f8f031867fb6baa7e17fdb6fd2317"
+    },
+    {
+      "path": "markets/949492/outcomes.csv",
+      "bytes": 345,
+      "sha256": "0cd853e2eabdda6c62f0f3807238f7ac86444bd013c9b6f6d25e5e7a8587e538"
+    },
+    {
+      "path": "markets/949492/prices.csv.gz",
+      "bytes": 2602,
+      "sha256": "86b13491c6a376df506f40f9d2e26fbf9fba0851e25c533d747abf6a8f1b4a7b"
+    },
+    {
+      "path": "markets/949492/raw/market.json.gz",
+      "bytes": 2453,
+      "sha256": "d2a0bd4a9b5cfda3bd4a5f1dd4075e0b05948380124085dc807f75b05996f721"
+    },
+    {
+      "path": "markets/949492/raw/prices-0.json.gz",
+      "bytes": 1094,
+      "sha256": "96ce9fef9d5488839d4139a9fb420a6bd2b9379e34113f8389862814bae841f3"
+    },
+    {
+      "path": "markets/949492/raw/prices-1.json.gz",
+      "bytes": 1118,
+      "sha256": "78f75d2da55d491ab867b63938860a3870a165bb1642fbec7bf70b0fe2f780d2"
+    },
+    {
+      "path": "markets/949492/raw/trades.json.gz",
+      "bytes": 335856,
+      "sha256": "b86ec82bcc0a71bc671c4f6d320403056e6248122d712590388eec18a4412474"
+    },
+    {
+      "path": "markets/949492/raw/wallet_trade_legs.json.gz",
+      "bytes": 548096,
+      "sha256": "3386b68c31d48cbfce86f3a6508cd84de3423ec1e58a21791d9de39f59f7805d"
+    },
+    {
+      "path": "markets/949492/trades.csv.gz",
+      "bytes": 143767,
+      "sha256": "73f4e31e0416ee30a77bd8c815b8cfd59f7e13c156f5e42340ac0d6d38a3a81f"
+    },
+    {
+      "path": "markets/949492/validation.json",
+      "bytes": 565,
+      "sha256": "63039e01127698b8bc50fa33cfa27ab1423a807409bed50eda95a37e56adcb62"
+    },
+    {
+      "path": "markets/949492/wallet_trade_legs.csv.gz",
+      "bytes": 204519,
+      "sha256": "783d72c1850498b54907d18e3d7e578bb9bd6ec256b6b99c29929c4aa5171811"
+    },
+    {
+      "path": "markets/949492/wallets.csv",
+      "bytes": 97725,
+      "sha256": "579b0f29de4100fc6ea1b942f3cb3dde7044fd1418fc4eaeecf7568e1ab748b9"
+    },
+    {
+      "path": "markets.csv",
+      "bytes": 8386,
+      "sha256": "696dc8124149ea4ab0d75a4552572d09fd85bf75de7fa3ebe8bebaf6fb6c991d"
+    },
+    {
+      "path": "raw/discovery.json.gz",
+      "bytes": 2040469,
+      "sha256": "9fbba65ce1f65cceb4e2f91bbf4a8abc4e72021cbebe0d731640569ae0f666b4"
+    },
+    {
+      "path": "raw/selection.json.gz",
+      "bytes": 33338,
+      "sha256": "4f8a2ab26b3ee52c910b8ad23616f98777bb1c142f8ba5101d626802535d417c"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 2856313,
+      "sha256": "625d988e92fc75f7de94e074ea32102cd527b4213ee944709d9080f87dd382e5"
+    }
+  ]
+}

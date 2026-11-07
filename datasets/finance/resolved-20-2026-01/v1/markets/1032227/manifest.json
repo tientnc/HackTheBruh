@@ -1,0 +1,107 @@
+{
+  "dataset": "polymarket-1032227-v1",
+  "built_at": "2026-11-07T21:24:59.426367+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/gc-settle-jan-2026/gc-settle-4725-4850-jan-2026",
+    "condition_id": "0xa0d0dcf5dec4750b65e9513de6ddf926903c499d1d4552f00a28f63fbbaabf4c",
+    "start": 1766707200,
+    "end_exclusive": 1769854211,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 1000,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Gold (GC) settle at $4,725-$4,850 in January?",
+  "market_opened": "2025-12-26T23:31:29.499Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 3052,
+    "wallet_trade_leg_rows": 8500,
+    "price_points": 145,
+    "wallets": 567,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2026-01": 3052
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/gc-settle-jan-2026/gc-settle-4725-4850-jan-2026",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 422,
+      "sha256": "8b490620db250a1c400978efa731c25e4d769583e2a76bc62ecab8490f456ff3"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 244,
+      "sha256": "f741d08e70ed59dfeaef8bd82fa37dfe2aac2f38931a22ba3c4191cbcd67977e"
+    },
+    {
+      "path": "market.json",
+      "bytes": 3039,
+      "sha256": "1130137226606019f4ebb3b7f72eb416a6180a014daf0d839df1ae5d3bd83b8c"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 346,
+      "sha256": "cf9e6dd8f8de45c222dca3f0ef241b34d19bde2347394e4358a457af549bb73c"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 2223,
+      "sha256": "22a56094e004ac5725487d76a4da5c3702ae9933327a691c4383c4608f75c684"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2933,
+      "sha256": "a93e43bbfbd1d7592b26a82e7464e99b1391c2adbbf6b77924da492b9aca6389"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1041,
+      "sha256": "c0ae2b30a4e80fa2eb594aa896c61e1b78a6877f4583f025bd196efa3e4c7bb3"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1017,
+      "sha256": "9edf932dc5577449ed52d8d1daceb2dccbf48b58d034542440e1dda8bb192169"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 484798,
+      "sha256": "eb503c47ce78ff79ca6a9f8efcfdc69f0826024dd664b190101bbbdf6a1cf854"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 792141,
+      "sha256": "b0e9cce48045d5cbc02079b243a5292109c727c9d8128a698debd3d16e887e30"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 213195,
+      "sha256": "92c350b8886e886475136607673f87d361ffdcd6b6e73e8b12bd76458dc65a00"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 301761,
+      "sha256": "89a0368a1eafade8938cd61871c1e93f67e24a22d535a893e7b059a4c9c45f1e"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 62769,
+      "sha256": "e218337fb25e41b632a320577f8347b8d3efb6260c635f512bf07a1a5cd14911"
+    }
+  ]
+}

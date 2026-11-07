@@ -1,0 +1,173 @@
+{
+  "status": "exploratory participation test with provisional return-based labels; not validated wallet skill",
+  "fit_at": "2026-01-01T00:00:00+00:00",
+  "horizon_days": 7,
+  "earlier_source_markets": 100,
+  "training_markets_with_windows": 100,
+  "training_windows": 280,
+  "training_count_rows": 1680,
+  "candidate_wallets": 100,
+  "groups_at_fit": {
+    "unskilled_proxy": 26,
+    "skilled_proxy": 1,
+    "unknown": 73
+  },
+  "test_source_markets": 20,
+  "test_windows": 20,
+  "test_prediction_calendar_weeks": 3,
+  "markets_model_lower_mae_than_historical_rate": 14,
+  "prediction_weeks_model_lower_mae_than_historical_rate": 3,
+  "four_requested_counts": {
+    "model_predicted_wallets": {
+      "count_rows": 80,
+      "mae_wallets": 1.5706698897383335,
+      "rmse_wallets": 2.739632293012597,
+      "bias_wallets": -0.23614534697970346,
+      "actual_sum": 162,
+      "predicted_sum": 143.10837224162373
+    },
+    "historical_rate_predicted_wallets": {
+      "count_rows": 80,
+      "mae_wallets": 1.7961167800453512,
+      "rmse_wallets": 2.874134713531806,
+      "bias_wallets": -0.2992346938775511,
+      "actual_sum": 162,
+      "predicted_sum": 138.0612244897959
+    },
+    "recent_count_predicted_wallets": {
+      "count_rows": 80,
+      "mae_wallets": 2.075,
+      "rmse_wallets": 4.230839160261236,
+      "bias_wallets": -1.3,
+      "actual_sum": 162,
+      "predicted_sum": 58
+    },
+    "zero_predicted_wallets": {
+      "count_rows": 80,
+      "mae_wallets": 2.025,
+      "rmse_wallets": 4.260281680828158,
+      "bias_wallets": -2.025,
+      "actual_sum": 162,
+      "predicted_sum": 0.0
+    }
+  },
+  "by_group": {
+    "skilled_proxy": {
+      "model_predicted_wallets": {
+        "count_rows": 40,
+        "mae_wallets": 0.37445837212664596,
+        "rmse_wallets": 0.4974348068611804,
+        "bias_wallets": 0.003771519440767055,
+        "actual_sum": 10,
+        "predicted_sum": 10.150860777630681
+      },
+      "historical_rate_predicted_wallets": {
+        "count_rows": 40,
+        "mae_wallets": 0.3678571428571428,
+        "rmse_wallets": 0.4221430082184888,
+        "bias_wallets": 0.01785714285714285,
+        "actual_sum": 10,
+        "predicted_sum": 10.714285714285714
+      },
+      "recent_count_predicted_wallets": {
+        "count_rows": 40,
+        "mae_wallets": 0.25,
+        "rmse_wallets": 0.5,
+        "bias_wallets": -0.15,
+        "actual_sum": 10,
+        "predicted_sum": 4
+      },
+      "zero_predicted_wallets": {
+        "count_rows": 40,
+        "mae_wallets": 0.25,
+        "rmse_wallets": 0.5,
+        "bias_wallets": -0.25,
+        "actual_sum": 10,
+        "predicted_sum": 0.0
+      }
+    },
+    "unskilled_proxy": {
+      "model_predicted_wallets": {
+        "count_rows": 40,
+        "mae_wallets": 2.766881407350021,
+        "rmse_wallets": 3.8423597976709445,
+        "bias_wallets": -0.476062213400174,
+        "actual_sum": 152,
+        "predicted_sum": 132.95751146399303
+      },
+      "historical_rate_predicted_wallets": {
+        "count_rows": 40,
+        "mae_wallets": 3.22437641723356,
+        "rmse_wallets": 4.04265951864232,
+        "bias_wallets": -0.616326530612245,
+        "actual_sum": 152,
+        "predicted_sum": 127.3469387755102
+      },
+      "recent_count_predicted_wallets": {
+        "count_rows": 40,
+        "mae_wallets": 3.9,
+        "rmse_wallets": 5.962382074305537,
+        "bias_wallets": -2.45,
+        "actual_sum": 152,
+        "predicted_sum": 54
+      },
+      "zero_predicted_wallets": {
+        "count_rows": 40,
+        "mae_wallets": 3.8,
+        "rmse_wallets": 6.00416522091123,
+        "bias_wallets": -3.8,
+        "actual_sum": 152,
+        "predicted_sum": 0.0
+      }
+    },
+    "unknown": {
+      "model_predicted_wallets": {
+        "count_rows": 40,
+        "mae_wallets": 2.6260838313084927,
+        "rmse_wallets": 3.323811759642346,
+        "bias_wallets": -0.19816524076078404,
+        "actual_sum": 146,
+        "predicted_sum": 138.07339036956864
+      },
+      "historical_rate_predicted_wallets": {
+        "count_rows": 40,
+        "mae_wallets": 3.146463692608271,
+        "rmse_wallets": 3.694907175639469,
+        "bias_wallets": 1.035216541843048,
+        "actual_sum": 146,
+        "predicted_sum": 187.40866167372192
+      },
+      "recent_count_predicted_wallets": {
+        "count_rows": 40,
+        "mae_wallets": 3.15,
+        "rmse_wallets": 4.663689526544408,
+        "bias_wallets": -2.5,
+        "actual_sum": 146,
+        "predicted_sum": 46
+      },
+      "zero_predicted_wallets": {
+        "count_rows": 40,
+        "mae_wallets": 3.65,
+        "rmse_wallets": 5.338539126015656,
+        "bias_wallets": -3.65,
+        "actual_sum": 146,
+        "predicted_sum": 0.0
+      }
+    }
+  },
+  "coverage_participant_market_pairs": {
+    "all_wallets": 4987,
+    "candidate_wallets": 248,
+    "outside_candidates": 4739
+  },
+  "confidence_interval": null,
+  "limitations": [
+    "Skill labels use a provider return proxy, not reconciled ROI or statistical proof",
+    "Only the frozen candidate universe is predicted; outside/new wallets reported separately",
+    "Returns use current retrospective snapshots only after their last economics timestamp; later revisions may exist",
+    "Opening/schedule/closure metadata is retrospective; no historical publication snapshots",
+    "Repeated weekly training windows are dependent; 100 markets are not thousands of independent events",
+    "Resolved-only sampling and shared economic news limit generalization",
+    "Sparse skilled-proxy activity and a small later sample limit consistency claims"
+  ]
+}

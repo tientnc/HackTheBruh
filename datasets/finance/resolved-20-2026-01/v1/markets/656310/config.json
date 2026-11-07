@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/openai-ipo-by/will-openai-ipo-by-december-31-2025",
+  "condition_id": "0x8da154fd9e7dbe6b0f22ab3626f36da576bdbffe533e4528fa7fd3411ae898bc",
+  "start": 1761696000,
+  "end_exclusive": 1767260854,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 1000,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

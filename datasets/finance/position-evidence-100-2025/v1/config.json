@@ -1,0 +1,11 @@
+{
+  "dataset": "datasets/finance/resolved-100-2025/v1",
+  "status": [
+    "CLOSED",
+    "OPEN"
+  ],
+  "page_limit": 1000,
+  "max_pages": 100,
+  "open_include_archived": true,
+  "return_definition": "reported realized PnL / estimated cumulative acquisition basis; provisional"
+}

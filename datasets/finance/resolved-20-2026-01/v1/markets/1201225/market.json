@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/msft-week-january-23-2026/will-msft-close-between-490-and-500-week-january-23-2026",
+  "market_id": "1201225",
+  "condition_id": "0x2c16752e5cb4cd1edf865f9314694206b85b09ffb4227632e2f4b9d3c5e22c3a",
+  "event_id": "168975",
+  "slug": "will-msft-close-between-490-and-500-week-january-23-2026",
+  "question": "Will Microsoft (MSFT) close at $490-$500 on the final day of trading of the week of Jan 19 \u2013 Jan 23?",
+  "created_at": "2026-01-16T23:00:06.566136Z",
+  "start_date": "2026-01-16T23:25:40.837593Z",
+  "end_date": "2026-01-23T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve according to the official closing price for Microsoft (MSFT) on the final day of trading of the specified week (normally Friday).\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf the final session of the week is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Yahoo Finance after any adjustments have been applied.\n\nThe resolution source for this market is Yahoo Finance, specifically the Microsoft (MSFT) \"Close\" prices available at https://finance.yahoo.com/quote/MSFT/history, published under \"Historical Prices.\"",
+  "resolution_source": "https://finance.yahoo.com/quote/MSFT/history",
+  "outcomes": [
+    {
+      "condition_id": "0x2c16752e5cb4cd1edf865f9314694206b85b09ffb4227632e2f4b9d3c5e22c3a",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "29093648222301132112815450406912320543332797335058853604109485274769177658311"
+    },
+    {
+      "condition_id": "0x2c16752e5cb4cd1edf865f9314694206b85b09ffb4227632e2f4b9d3c5e22c3a",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "53194399863248164534216357207396779213992766575783905413184924286274931798998"
+    }
+  ]
+}

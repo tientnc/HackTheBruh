@@ -74,6 +74,29 @@ def summarize_wallets(legs, takers):
     return [wallets[key] for key in sorted(wallets)]
 
 
+def resume_trade_cache(cached, name, condition, start, end, max_pages):
+    remaining = max_pages - len(cached["raw_pages"])
+    if remaining <= 0:
+        return cached
+    cursor = cached["raw_pages"][-1]["pagination"]["next_cursor"]
+    if not cursor:
+        raise ValueError("Incomplete trade cache has no resume cursor")
+    rows, raw, exhausted = pages(Client(), "/v2/trades", {
+        "condition": condition, "taker_only": name == "trades", "limit": 1000, "cursor": cursor,
+    }, remaining)
+    cached["raw_pages"].extend(raw)
+    cached["trades"].extend(r for r in rows if start <= int(r["timestamp"]) < end)
+    cached.update(pagination_exhausted=exhausted, pages_fetched=len(cached["raw_pages"]),
+                  rows_scanned=cached["rows_scanned"]+len(rows), resumed_at=now())
+    for key, combine in (("earliest_scanned", min), ("latest_scanned", max)):
+        if key in cached:
+            clocks = [int(r["timestamp"]) for r in rows]
+            if cached[key] is not None:
+                clocks.append(cached[key])
+            cached[key] = combine(clocks) if clocks else None
+    return cached
+
+
 def build(root, url=MARKET_URL, max_pages=250):
     root.mkdir(parents=True, exist_ok=True)
     config_path = root / "config.json"
@@ -104,7 +127,11 @@ def build(root, url=MARKET_URL, max_pages=250):
     def fetch(name):
         path = root / "raw" / f"{name}.json.gz"
         if path.exists():
-            return gzread(path)
+            cached = gzread(path)
+            if name in ("trades", "wallet_trade_legs") and not cached["pagination_exhausted"]:
+                cached = resume_trade_cache(cached, name, condition, start, end, max_pages)
+                gzwrite(path, cached)
+            return cached
         client = Client()
         if name == "trades":
             result = collect_trades(client, condition, start, end, max_pages)

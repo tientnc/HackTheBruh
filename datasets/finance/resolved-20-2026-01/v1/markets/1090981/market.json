@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/nvda-week-january-9-2026/will-nvda-close-between-190-and-195-week-january-9-2026",
+  "market_id": "1090981",
+  "condition_id": "0xdd6f7268df9acd7cae54dfbc85cacabebfb64c9326639c769be4621adf9db319",
+  "event_id": "139642",
+  "slug": "will-nvda-close-between-190-and-195-week-january-9-2026",
+  "question": "Will NVIDIA (NVDA) close at $190-$195 on the final day of trading of the week of Jan 5 \u2013 Jan 9?",
+  "created_at": "2026-01-02T23:00:10.2802Z",
+  "start_date": "2026-01-02T23:24:44.235909Z",
+  "end_date": "2026-01-09T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve according to the official closing price for NVIDIA (NVDA) on the final day of trading of the specified week (normally Friday).\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf the final session of the week is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.\n\nThe target price will be adjusted proportionally to reflect any stock splits. Resolution will be based on the historical price data as shown on Yahoo Finance after any adjustments have been applied.\n\nThe resolution source for this market is Yahoo Finance, specifically the NVIDIA (NVDA) \"Close\" prices available at https://finance.yahoo.com/quote/NVDA/history, published under \"Historical Prices.\"",
+  "resolution_source": "https://finance.yahoo.com/quote/NVDA/history",
+  "outcomes": [
+    {
+      "condition_id": "0xdd6f7268df9acd7cae54dfbc85cacabebfb64c9326639c769be4621adf9db319",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "11016038731603899349372665284963985738007945762098279836945581592967906221035"
+    },
+    {
+      "condition_id": "0xdd6f7268df9acd7cae54dfbc85cacabebfb64c9326639c769be4621adf9db319",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "15292520159757776571735152183209440580080070063645443957976535600720271567303"
+    }
+  ]
+}

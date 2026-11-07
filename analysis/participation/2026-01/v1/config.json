@@ -1,0 +1,14 @@
+{
+  "earlier": "datasets/finance/resolved-100-2025/v1",
+  "later": "datasets/finance/resolved-20-2026-01/v1",
+  "return_dataset": "datasets/finance/position-evidence-100-2025/v1",
+  "fit_at": 1767225600,
+  "horizon_days": 7,
+  "candidate_wallets": 100,
+  "minimum_earlier_markets": 5,
+  "group_rule": "return above positive peers' mean in >50% of >=5 comparable earlier markets; proxy only",
+  "training_origins": "weekly after first 24 hours, no earlier than Aug 1 2025; complete windows before fit",
+  "test_origins": "one per market: max(fit time, trading start + 24h)",
+  "side_definition": "distinct wallets buying/selling either token, with token detail retained",
+  "model": "separate regularized binomial count models per group and side; pooled-side fallback; penalty .01"
+}

@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/what-price-will-nflx-hit-in-december-2025/will-nflx-dip-to-70-in-december",
+  "market_id": "702433",
+  "condition_id": "0x269f9ac24587b92a25b30037f5976b2beccc15aa93ff258f74e73d234f9dfd44",
+  "event_id": "89781",
+  "slug": "will-nflx-dip-to-70-in-december",
+  "question": "Will Netflix dip to $70 in December?",
+  "created_at": "2025-11-25T05:00:24.301949Z",
+  "start_date": "2025-11-25T05:08:23.530145Z",
+  "end_date": "2026-01-01T04:59:59.999Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if, at any point during December 2025 (ET), any 1-minute candle for Netflix, Inc. (NFLX) has a final \"Low\" price equal to or below the listed price. Otherwise, this market will resolve to \"No\".\n\nOnly prices achieved during regular trading hours (ET) will be considered.\n\nThe resolution source for this market is Yahoo Finance \u2014 specifically, the Netflix, Inc. (NFLX) \"Low\" prices available at https://finance.yahoo.com/quote/NFLX/, with the chart settings on \"1m\" for candle intervals.\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/NFLX/",
+  "outcomes": [
+    {
+      "condition_id": "0x269f9ac24587b92a25b30037f5976b2beccc15aa93ff258f74e73d234f9dfd44",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "18719907373544094049291466867946040219923019082435301966321435646084315228558"
+    },
+    {
+      "condition_id": "0x269f9ac24587b92a25b30037f5976b2beccc15aa93ff258f74e73d234f9dfd44",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "89004338474098579398395643480934369999744206080301856346484986408832019041710"
+    }
+  ]
+}

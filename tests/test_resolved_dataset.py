@@ -43,6 +43,14 @@ class ResolvedDatasetTests(unittest.TestCase):
     def test_numeric_and_iso_lifecycle_timestamps(self):
         self.assertEqual(parse_time("1756684800"), parse_time("2025-09-01T00:00:00Z"))
 
+    def test_explicit_later_window_is_used_by_selection_and_resolution(self):
+        market={**self.market(),"startDate":"2025-12-01","closedTime":"2026-01-15"}
+        start,end=timestamp("2026-01-01"),timestamp("2026-02-01")
+        self.assertEqual(candidates({"events":[{"id":"e","markets":[market]}]}),[])
+        self.assertEqual(len(candidates({"events":[{"id":"e","markets":[market]}]},start=start,end=end)),1)
+        resolution={"condition_id":"condition","status":"resolved","payouts":[1000000,0],"resolved_at":"2026-01-15"}
+        self.assertIsNotNone(verified_resolution(market,resolution,start,end))
+
     def test_same_asset_week_ladders_are_one_family_across_parent_ids(self):
         market = self.market()
         a = economic_cluster(market, {"id": "a", "title": "Will Apple (AAPL) finish week above $200?"})

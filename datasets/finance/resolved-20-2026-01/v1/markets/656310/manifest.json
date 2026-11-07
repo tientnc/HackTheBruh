@@ -1,0 +1,109 @@
+{
+  "dataset": "polymarket-656310-v1",
+  "built_at": "2026-11-07T21:25:00.012039+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/openai-ipo-by/will-openai-ipo-by-december-31-2025",
+    "condition_id": "0x8da154fd9e7dbe6b0f22ab3626f36da576bdbffe533e4528fa7fd3411ae898bc",
+    "start": 1761696000,
+    "end_exclusive": 1767260854,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 1000,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will OpenAI IPO by December 31 2025?",
+  "market_opened": "2025-10-30T00:29:30.880506Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 2425,
+    "wallet_trade_leg_rows": 5324,
+    "price_points": 262,
+    "wallets": 1718,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-10": 112,
+    "2025-11": 1881,
+    "2025-12": 432
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/openai-ipo-by/will-openai-ipo-by-december-31-2025",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 424,
+      "sha256": "d36b66f8ffc522c622fc306b573b834c8273f32136d900de3326a1c2916326a8"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 246,
+      "sha256": "1d1c13af6824bce5e7e0992ba3daf81afe6ecbbe372542381730436bc7d4a811"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1593,
+      "sha256": "d41a8ee9972ff24e91f37124956b2e9cd7dc5f456cffe923bb220d6bb67c22d7"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "2950036580f99cd59550e55c7811547411e6f5a050d82e206e421ccb7592ca83"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 3536,
+      "sha256": "a1978a1589f57b141617448a8c43732c06ea3f569b9575ea8b9da2fc6d03deec"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2421,
+      "sha256": "5a96d1dd321a47eea8d5d9c136636c68251774f9ef1ec8b8386cf23b91d8baf3"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1315,
+      "sha256": "b5a1a0bb05ac745293f4b4d2577515fb46d8440e26f8354a418b889a740627e3"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1321,
+      "sha256": "98bf1c1bffa2f3b1d8897756f4009b38fdebbafaba35445703c7162c0474d531"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 449982,
+      "sha256": "fddd7b9a27283f1923117cd0848309b90c34654a78def5c9e1e3597debff886b"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 567780,
+      "sha256": "09dcc371372182a79dcd24292e6d1ce7878d0e4cdf4da0cb02ed06dbbd960268"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 185788,
+      "sha256": "ddd013c6870399fc8df5ac13f36299841cdc05beffa3810cb8fc98195d74d734"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 224757,
+      "sha256": "2549d2c26a913fa90d74c653d9d12d79fca8e3a6d3c879fabdc34cc698ed73ce"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 175565,
+      "sha256": "0b356132dafe7a60e9f0fac30c0b6d8a2dc18b1f29f58272e6395b1ff40f9136"
+    }
+  ]
+}

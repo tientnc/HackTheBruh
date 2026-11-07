@@ -69,12 +69,12 @@ def subfield(question):
     return "equities_and_corporate"
 
 
-def catalog(client, max_events):
+def catalog(client, max_events, start=START, end=END):
     tag = client.get(GAMMA, "/tags/slug/finance")
     events, seen = [], set()
     exhausted = False
     params = {"tag_id": tag["id"], "order": "id", "ascending": True,
-              "start_date_max": iso(END), "end_date_min": iso(START)}
+              "start_date_max": iso(end), "end_date_min": iso(start)}
     while len(events) < max_events:
         limit = min(100, max_events - len(events))
         batch = client.get(GAMMA, "/events", **params, limit=limit, offset=len(events))

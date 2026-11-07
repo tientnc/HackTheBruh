@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/aapl-above-on-january-16-2026/aapl-above-260-on-january-16-2026",
+  "condition_id": "0x04a11d316b795abaf8ea0e291f86889d35949e6cd6c502b2b4b801fb4bddaf1b",
+  "start": 1767916800,
+  "end_exclusive": 1768606067,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 1000,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

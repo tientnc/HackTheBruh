@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/earnings-mentions-netflix-2026-01-20/earnings-mentions-netflix-2026-01-20-acquisition-1-times",
+  "condition_id": "0x113f09dc081bcd31beec8d594ca6a7488bc3e46ec690fa709014c228e60c8fe8",
+  "start": 1768176000,
+  "end_exclusive": 1768959591,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 1000,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

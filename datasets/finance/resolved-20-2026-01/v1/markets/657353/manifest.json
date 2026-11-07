@@ -1,0 +1,109 @@
+{
+  "dataset": "polymarket-657353-v1",
+  "built_at": "2026-11-07T21:25:01.554666+00:00",
+  "config": {
+    "schema_version": 1,
+    "source_url": "https://polymarket.com/event/will-consensys-ipo-by-december-31-2025/will-consensys-ipo-by-december-31-2025",
+    "condition_id": "0x35a5e1e8b3ca381b5197bc3d59e1f9cfb9b64273ba5ac749a144985508009a9d",
+    "start": 1761782400,
+    "end_exclusive": 1767260138,
+    "bucket_seconds": 10800,
+    "max_pages_per_feed": 1000,
+    "trade_feeds": {
+      "trades": "taker_only=true",
+      "wallet_trade_legs": "taker_only=false"
+    }
+  },
+  "question": "Will Consensys IPO by December 31 2025?",
+  "market_opened": "2025-10-30T20:24:57.274Z",
+  "counts": {
+    "markets": 1,
+    "outcomes": 2,
+    "taker_trade_rows": 655,
+    "wallet_trade_leg_rows": 1555,
+    "price_points": 259,
+    "wallets": 395,
+    "price_points_excluded_not_yet_available": 0
+  },
+  "taker_trade_rows_by_month": {
+    "2025-10": 48,
+    "2025-11": 467,
+    "2025-12": 140
+  },
+  "all_feeds_pagination_exhausted": true,
+  "scope": "Exactly the linked binary market; no sibling valuation brackets. Lifetime observations up to an exclusive frozen snapshot cutoff, reconstructed from the API.",
+  "wallet_scope": "Observed maker and taker activity in this market only. Not lifetime wallet profit or skill; historical wallet enrichment comes next. Roles are not exposed per row.",
+  "sources": [
+    "https://polymarket.com/event/will-consensys-ipo-by-december-31-2025/will-consensys-ipo-by-december-31-2025",
+    "https://gamma-api.polymarket.com/markets",
+    "https://data-api.polymarket.com/v2/trades",
+    "https://data-api.polymarket.com/v2/prices-history"
+  ],
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 452,
+      "sha256": "55abf53735f415972d9a2b10d49d61bc6e03ba6402301e5778e3cc26b08a3cb0"
+    },
+    {
+      "path": "coverage.csv",
+      "bytes": 245,
+      "sha256": "32885c67afe434b04475fac00bf39ae3cb8be02644da84bd33e5633670e8c40b"
+    },
+    {
+      "path": "market.json",
+      "bytes": 1679,
+      "sha256": "e0b6b76a22ef59d6c35608fc9d7cc8e883600e3f945808d79c30179348d85a3f"
+    },
+    {
+      "path": "outcomes.csv",
+      "bytes": 345,
+      "sha256": "9ed18b3277d8fb1a18f2ba89f9d572828dfb380dd9ea2050e0daeb3e0e946d1d"
+    },
+    {
+      "path": "prices.csv.gz",
+      "bytes": 3531,
+      "sha256": "738594d16b2bf2934bdc9ca0b9eed486632d34a45a9614606eff0448889799f8"
+    },
+    {
+      "path": "raw/market.json.gz",
+      "bytes": 2315,
+      "sha256": "1df73c757560df5a5648ac1fca8b3bfd67e196fd435c1de9a9600b7927d5cf48"
+    },
+    {
+      "path": "raw/prices-0.json.gz",
+      "bytes": 1343,
+      "sha256": "17d2dc7060c27bff1b8d18145de1f8a0f5a241ae6e110990c9e5e95a65c1dcba"
+    },
+    {
+      "path": "raw/prices-1.json.gz",
+      "bytes": 1332,
+      "sha256": "b2d406f7710c3849752815fdea4d1774ce1a81670503ae75edad51d6070be239"
+    },
+    {
+      "path": "raw/trades.json.gz",
+      "bytes": 115649,
+      "sha256": "0bd0013493be94b8bfb3237f03e4ec5ba4ef91428ac29e82af43a8049de87a4d"
+    },
+    {
+      "path": "raw/wallet_trade_legs.json.gz",
+      "bytes": 159442,
+      "sha256": "481a759a49fcaf75863a40e2def36a8115e581bac8e5742a51bc723de6f39649"
+    },
+    {
+      "path": "trades.csv.gz",
+      "bytes": 53174,
+      "sha256": "cba33b488bc743c61e251a6fe6b3e3ebf75a13300aa0bd895591c0bdda6d7484"
+    },
+    {
+      "path": "wallet_trade_legs.csv.gz",
+      "bytes": 67386,
+      "sha256": "1d673a3e2f76bebc4165b2ea93dc5148c9ff2a95381d3ec748f021809e4b384f"
+    },
+    {
+      "path": "wallets.csv",
+      "bytes": 43251,
+      "sha256": "330b12d495f78add83c758d7f2c61ed895725bf5a1e1ef4a7a4e43e9df877bb8"
+    }
+  ]
+}

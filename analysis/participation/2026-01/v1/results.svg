@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="730" viewBox="0 0 1200 730" role="img" aria-labelledby="title desc">
+<title id="title">Next-week wallet participation: first later-market test</title><desc id="desc">Train on 100 markets from 2025, test 20 markets in January 2026. Count MAE is 1.57 wallets versus historical rate baseline 1.80. Candidate groups are one stronger proxy, 26 other proxies and 73 unknown. Candidate coverage is five percent of observed participant-market pairs. This is an exploratory result.</desc>
+<rect width="1200" height="730" rx="24" fill="#101827"/>
+<g font-family="Arial, sans-serif">
+<text x="52" y="55" fill="#8ce1ce" font-size="17" letter-spacing="3">PREDICT BUYERS / SELLERS · NEXT 7 DAYS</text>
+<text x="52" y="107" fill="#ffffff" font-size="37" font-weight="700">100 earlier markets. 20 later reality checks.</text>
+<g fill="#1e2b40"><rect x="52" y="144" width="520" height="112" rx="16"/><rect x="628" y="144" width="520" height="112" rx="16"/></g>
+<g fill="#ffffff" font-size="27" font-weight="700"><text x="78" y="186">TRAIN · 2025</text><text x="654" y="186">TEST · JANUARY 2026</text></g>
+<g fill="#b8c9dc" font-size="20"><text x="78" y="226">100 markets · 100 candidate wallets</text><text x="654" y="226">20 markets · actual later trades</text></g>
+<path d="M583 200h32m-9-8 9 8-9 8" fill="none" stroke="#8ce1ce" stroke-width="3"/>
+<text x="52" y="303" fill="#b8c9dc" font-size="18">MEAN ABSOLUTE COUNT ERROR · LOWER IS BETTER</text>
+<text x="52" y="353" fill="#ffffff" font-size="23">Participation model</text><rect x="330" y="328" width="480" height="34" rx="7" fill="#1e2b40"/><rect x="330" y="328" width="301.57" height="34" rx="7" fill="#8ce1ce"/>
+<text x="847" y="354" fill="#ffffff" font-size="29" font-weight="700">1.57 wallets</text>
+<text x="52" y="411" fill="#ffffff" font-size="23">Historical-rate baseline</text><rect x="330" y="386" width="480" height="34" rx="7" fill="#1e2b40"/><rect x="330" y="386" width="344.85" height="34" rx="7" fill="#a6b8fb"/>
+<text x="847" y="412" fill="#ffffff" font-size="29" font-weight="700">1.80 wallets</text>
+<text x="330" y="450" fill="#a9bbcf" font-size="17">Same 80 group/side counts · bars start at zero</text>
+<text x="52" y="495" fill="#8ce1ce" font-size="22" font-weight="700">12.6% less average error · better in 14 / 20 markets</text>
+<rect x="52" y="531" width="1096" height="151" rx="16" fill="#3b3026"/>
+<text x="78" y="567" fill="#ffd29b" font-size="20" font-weight="700">PROVISIONAL LABELS · LIMITED COVERAGE</text>
+<text x="78" y="606" fill="#ffffff" font-size="24">1 stronger proxy · 26 other proxies · 73 unknown wallets</text>
+<text x="78" y="641" fill="#e5ccb0" font-size="18">Only 5.0% of observed participant-market pairs belong to these 100 candidates.</text>
+<text x="78" y="666" fill="#e5ccb0" font-size="18">Stronger-group predictions did not beat the baseline. Persistent skill is not established.</text>
+</g></svg>

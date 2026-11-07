@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/si-hit-jan-2026/si-hit-80-high-jan-2026-988-594-987",
+  "condition_id": "0x0b70b8a0aa7170a96f9eec711e77fd634b770a7c8d108d8643ad14b89518a35c",
+  "start": 1766707200,
+  "end_exclusive": 1767777570,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 1000,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

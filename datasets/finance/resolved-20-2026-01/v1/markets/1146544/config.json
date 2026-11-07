@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/googl-week-january-16-2026/will-googl-close-between-315-and-320-week-january-16-2026",
+  "condition_id": "0xaabf0828ac38bcf9e1a059c7ec2f41f6d4a9c7dcf6dcc9877d5f48b27c0730a4",
+  "start": 1767916800,
+  "end_exclusive": 1768610803,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 1000,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

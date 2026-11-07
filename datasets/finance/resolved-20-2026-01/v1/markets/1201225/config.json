@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/msft-week-january-23-2026/will-msft-close-between-490-and-500-week-january-23-2026",
+  "condition_id": "0x2c16752e5cb4cd1edf865f9314694206b85b09ffb4227632e2f4b9d3c5e22c3a",
+  "start": 1768521600,
+  "end_exclusive": 1769218291,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 1000,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}

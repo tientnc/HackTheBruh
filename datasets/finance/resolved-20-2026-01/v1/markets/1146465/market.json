@@ -1,0 +1,28 @@
+{
+  "source_url": "https://polymarket.com/event/aapl-above-on-january-16-2026/aapl-above-260-on-january-16-2026",
+  "market_id": "1146465",
+  "condition_id": "0x04a11d316b795abaf8ea0e291f86889d35949e6cd6c502b2b4b801fb4bddaf1b",
+  "event_id": "154115",
+  "slug": "aapl-above-260-on-january-16-2026",
+  "question": "Will Apple (AAPL) finish week of January 12 above $260?",
+  "created_at": "2026-01-09T23:00:02.329328Z",
+  "start_date": "2026-01-09T23:01:55.672674Z",
+  "end_date": "2026-01-16T21:00:00Z",
+  "closed_now": true,
+  "description": "This market will resolve to \"Yes\" if the official closing price for Apple (AAPL) on the final day of trading of the specified week (normally Friday) is higher than the listed price. Otherwise, this market will resolve to \"No.\"\n\nIf the final session is shortened (for example, due to a market-holiday schedule), the official closing price published for that shortened session will still be used for resolution.\n\nIf no official closing price is published for that session (for example, due to a trading halt into the close, system issue, delisting, or other disruption), the market will use the last valid on-exchange trade price of the regular session as the effective closing price.\n\nThe resolution source for this market is Yahoo Finance, specifically the Apple (AAPL) \"Close\" prices available at https://finance.yahoo.com/quote/AAPL/history, published under \"Historical Prices.\"\n\nIn the event of a stock split, reverse stock split, or similar corporate action affecting the listed company during the listed time frame, this market will resolve based on split-adjusted prices as displayed on Yahoo Finance.",
+  "resolution_source": "https://finance.yahoo.com/quote/AAPL/history",
+  "outcomes": [
+    {
+      "condition_id": "0x04a11d316b795abaf8ea0e291f86889d35949e6cd6c502b2b4b801fb4bddaf1b",
+      "outcome_index": 0,
+      "outcome": "Yes",
+      "token_id": "72625041936548613072169756136850559397789124300823312061865522167577969047029"
+    },
+    {
+      "condition_id": "0x04a11d316b795abaf8ea0e291f86889d35949e6cd6c502b2b4b801fb4bddaf1b",
+      "outcome_index": 1,
+      "outcome": "No",
+      "token_id": "67805581059136202276800520369764082145057127240902276115435973350381493209506"
+    }
+  ]
+}

@@ -17,7 +17,7 @@ flowchart LR
 
 ## Why the observation window matters
 
-For the same market, a model could predict 10 skilled buyers tomorrow, 30 over the next week, or 80 before trading closes. Each counts a different period. The window length **H remains undecided**; no deadline has been assumed from the clarification exchange. Fixed windows are easier to compare across markets with different closing dates. A closing-date horizon is also possible but requires modeling different exposure durations and schedule changes.
+For the same market, a model could predict 10 skilled buyers tomorrow, 30 over the next week, or 80 before trading closes. Each counts a different period. The user selected **the next seven days** for the first test. Fixed windows support comparisons across different closing dates. If a market closes during those seven days, no trades can occur after closure; keep the shorter trading exposure for audit.
 
 The forecast begins at time `t`. Only information available by `t` enters features and wallet groups. Actual trades in `[t, t + H)` supply action/count labels. If a market closes sooner, count activity up to actual closure and retain the shorter exposure duration. Training and test windows must have ended before their labels are evaluated; a trading-participation label does not itself require the market's final YES/NO result.
 
@@ -37,7 +37,7 @@ The user's suggested rule is implementable as an operational definition when com
 1. In each earlier resolved market, compute each wallet's **net realized ROI**, using reconciled profit, costs and a specified deployed-capital denominator. Dollar profit and profit percentage are different quantities.
 2. Let winners be wallets with positive ROI. Compute the mean ROI **among those winners**, not among all participants. If no winners exist, the winner mean is undefined and no above-winner-mean label is assigned for that market.
 3. A winner above that mean receives an `above_winner_mean` result for that earlier market. Other observed, reconciled participants receive `not_above_winner_mean`, including losing, breakeven and below-threshold profitable wallets. Missing returns stay unknown.
-4. Aggregate evidence across multiple earlier markets to define the wallet group at `t`. Keep event counts and uncertainty. The aggregation rule, minimum history, treatment of exact ties and eventual skill terminology remain to be chosen; a single market should not permanently determine the wallet's label.
+4. Aggregate evidence across multiple earlier markets to define the wallet group at `t`. The first provisional implementation requires at least five comparable earlier markets and an above-winner-mean result in more than half of them for the stronger group. Exact ties count as not above; insufficient histories remain unknown. Keep event counts and uncertainty. A single market does not permanently determine the wallet's label.
 
 This measures relative past profitability. Calling its two groups skilled/unskilled is a project convention, not statistical proof of underlying ability. For example, profitable ROIs of 2%, 4%, 6% and 88% average 25%: only the 88% wallet qualifies, even though the others profit. The average is sensitive to extreme winners; the median, or an equal-event average of each wallet's earlier market-relative ROI, are alternative baselines to compare on development data. Require multiple prior markets rather than changing a wallet's label after one result.
 
@@ -65,6 +65,6 @@ Evaluate buyer/seller **count MAE** on later markets; for per-wallet probabiliti
 
 ## Status
 
-This document changes the primary specification. The existing resolved-market dataset, activity rankings and wallet evidence remain useful inputs. A participation training table, reconciled ROI grouping and a trained participation model have **not** yet been implemented. The observation horizon and the per-wallet aggregation rule remain open.
+The [first participation model and held-out results](../../analysis/participation/2026-01/v1/README.md) are implemented: train on 100 earlier markets from 2025 and test next-seven-day buyer/seller counts in 20 separately collected January 2026 markets. It uses a clearly marked **provider-return proxy**, rather than reconciled ROI, for the above-winner-mean rule. The training table, candidates, group labels, model parameters, predictions, actual counts and baseline comparisons are published. After-cost ROI reconstruction and validated skill labels remain unavailable. All 100 candidates are selected from earlier data; coverage outside that universe is reported rather than silently ignored.
 
 References: [scikit-learn guidance on unavailable future information and leakage](https://scikit-learn.org/stable/common_pitfalls.html#data-leakage); [Who Calibrates Markets?](https://kalshi.com/research/kalshi-research-who-calibrates-markets.pdf), which distinguishes profitability from forecasting accuracy. Profitability-based groups are appropriate to study as their own operational definition here.

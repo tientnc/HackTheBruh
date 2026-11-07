@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from polyresearch.market_dataset import (MARKET_URL, build, normalize_trades, resolve,
-                                        summarize_wallets, url_parts, validate)
+                                        resume_trade_cache, summarize_wallets, url_parts, validate)
 from polyresearch.research import timestamp
 
 
@@ -34,6 +34,19 @@ class MarketDatasetTests(unittest.TestCase):
         self.assertEqual(result["market_trade_leg_rows"], 2)
         self.assertEqual(result["taker_trade_rows"], 1)
         self.assertEqual((result["first_seen"], result["last_seen"]), (10, 20))
+
+    def test_resume_incomplete_trade_feed_keeps_cursor_filters_and_window(self):
+        cached={"raw_pages":[{"pagination":{"next_cursor":"resume-here"}}],"trades":[{"timestamp":50}],
+                "pagination_exhausted":False,"rows_scanned":1,"earliest_scanned":50,"latest_scanned":50}
+        next_page={"pagination":{"next_cursor":None,"has_more":False}}
+        with patch("polyresearch.market_dataset.pages",return_value=([{"timestamp":40},{"timestamp":1}],[next_page],True)) as walk:
+            result=resume_trade_cache(cached,"wallet_trade_legs","condition",10,100,3)
+        self.assertEqual(walk.call_args.args[2],{"condition":"condition","taker_only":False,"limit":1000,"cursor":"resume-here"})
+        self.assertEqual(walk.call_args.args[3],2)
+        self.assertEqual(result["trades"],[{"timestamp":50},{"timestamp":40}])
+        self.assertTrue(result["pagination_exhausted"])
+        self.assertEqual(result["earliest_scanned"],1)
+        self.assertEqual(result["rows_scanned"],3)
 
     def test_complete_build_validates_and_detects_tampering(self):
         event_slug, market_slug = url_parts(MARKET_URL)

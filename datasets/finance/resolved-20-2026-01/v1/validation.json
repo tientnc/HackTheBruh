@@ -1,0 +1,17 @@
+{
+  "validated_at": "2026-11-07T21:25:44.096588+00:00",
+  "passed": true,
+  "issues": [],
+  "payload_checksums_verified": 307,
+  "per_market_validations": 20,
+  "checks": [
+    "payload SHA-256",
+    "20 selected markets",
+    "distinct parent event IDs",
+    "distinct heuristic economic families",
+    "binary settled labels",
+    "actual label timestamp window",
+    "all downloads succeeded",
+    "per-market trade, price and wallet validation during collection"
+  ]
+}

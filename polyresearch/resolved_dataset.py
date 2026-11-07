@@ -57,7 +57,7 @@ def economic_cluster(market, event):
     return "gamma-event:" + str(event["id"])
 
 
-def candidates(catalog, minimum_days=7):
+def candidates(catalog, minimum_days=7, start=START, end=END):
     rows, seen = [], set()
     for event in catalog["events"]:
         for market in event.get("markets", []):
@@ -74,7 +74,7 @@ def candidates(catalog, minimum_days=7):
             if not opened or not closed or len(tokens) != 2 or not condition or condition in seen:
                 continue
             opened, closed = timestamp(opened), timestamp(closed)
-            if not START <= closed < END or closed - opened < minimum_days * 86400:
+            if not start <= closed < end or closed - opened < minimum_days * 86400:
                 continue
             seen.add(condition)
             order = hashlib.sha256(f"{SEED}:{event['id']}:{condition}".encode()).hexdigest()
@@ -84,7 +84,7 @@ def candidates(catalog, minimum_days=7):
     return rows
 
 
-def verified_resolution(market, resolution):
+def verified_resolution(market, resolution, start=START, end=END):
     if resolution.get("status") != "resolved" or resolution.get("condition_id") != market.get("conditionId"):
         return None
     if resolution.get("payouts") is not None:
@@ -105,7 +105,7 @@ def verified_resolution(market, resolution):
         return None
     # Conservative label timestamp when the legacy lifecycle lacks resolved_at.
     label_time = max(parse_time(observed), timestamp(market["closedTime"]))
-    if not START <= label_time < END:
+    if not start <= label_time < end:
         return None
     return {"yes_outcome": yes, "label_available_at": label_time,
             "label_available_at_utc": iso(label_time),
@@ -113,8 +113,8 @@ def verified_resolution(market, resolution):
             "was_disputed": resolution.get("was_disputed"), "rules_updated": resolution.get("new_version_q")}
 
 
-def select_verified(root, raw, count, minimum_days):
-    pool = candidates(raw, minimum_days)
+def select_verified(root, raw, count, minimum_days, start=START, end=END):
+    pool = candidates(raw, minimum_days, start, end)
     buckets = defaultdict(list)
     for row in sorted(pool, key=lambda row: row["selection_order"]):
         buckets[row["subfield"]].append(row)
@@ -141,7 +141,7 @@ def select_verified(root, raw, count, minimum_days):
                 rejection_counts["same_economic_family"] += 1
                 continue
             resolution = resolved.get(market["conditionId"], {})
-            label = verified_resolution(market, resolution)
+            label = verified_resolution(market, resolution, start, end)
             if not label:
                 rejection_counts["unverified_or_out_of_window_resolution"] += 1
                 continue
@@ -181,9 +181,10 @@ def collect_one(root, chosen, max_pages, cache_source=None):
     return manifest
 
 
-def build(root, source_catalog, count=100, minimum_days=7, max_pages=250, workers=3, cache_source=None):
+def build(root, source_catalog, count=100, minimum_days=7, max_pages=250, workers=3, cache_source=None,
+          start=START, end=END):
     root.mkdir(parents=True, exist_ok=True)
-    settings = {"count": count, "resolution_start": START, "resolution_end_exclusive": END,
+    settings = {"count": count, "resolution_start": start, "resolution_end_exclusive": end,
                 "minimum_trading_lifetime_days": minimum_days, "selection_seed": SEED,
                 "max_pages_per_feed": max_pages, "one_market_per_gamma_event": True,
                 "economic_grouping_version": 1}
@@ -201,9 +202,9 @@ def build(root, source_catalog, count=100, minimum_days=7, max_pages=250, worker
         if not source_catalog.exists():
             # Rebuild the documented discovery input without relying on local archives.
             from .dataset import catalog
-            gzwrite(discovery_path, catalog(Client(), 10000))
+            gzwrite(discovery_path, catalog(Client(), 10000, start, end))
             source_catalog = discovery_path
-        chosen = select_verified(root, gzread(source_catalog), count, minimum_days)
+        chosen = select_verified(root, gzread(source_catalog), count, minimum_days, start, end)
     print(f"SELECTED {len(chosen)} markets from {len({r['event']['id'] for r in chosen})} parent events", flush=True)
     results, errors = {}, []
     with ThreadPoolExecutor(max_workers=workers) as executor:
@@ -254,11 +255,12 @@ def build(root, source_catalog, count=100, minimum_days=7, max_pages=250, worker
              "taker_trade_rows": sum(r["taker_trade_rows"] for r in coverages),
              "wallet_activity_rows": sum(r["wallet_trade_leg_rows"] for r in coverages),
              "price_points": sum(r["price_points"] for r in coverages), "errors": len(errors)}
-    manifest = {"dataset": "finance-resolved-100-2025-v1", "built_at": now(), "settings": settings,
+    dataset_id = "finance-resolved-100-2025-v1" if (count, start, end) == (100, START, END) else f"finance-resolved-{count}-{iso(start)[:10]}-{iso(end)[:10]}-v1"
+    manifest = {"dataset": dataset_id, "built_at": now(), "settings": settings,
                 "counts": total, "subfields": dict(Counter(r["subfield"] for r in chosen)),
                 "selection": "Seeded hash order and round-robin title-based subfields, one market per parent event. "
-                             "Only verified binary outcomes; actual conservative label timestamps inside Aug-Dec 2025; "
-                             "at least seven days of reported trading lifetime before closure. No selection on winner, volume or P&L.",
+                             f"Only verified binary outcomes; label timestamps in [{iso(start)}, {iso(end)}); "
+                             f"at least {minimum_days} days of reported trading lifetime before closure. No selection on winner, volume or P&L.",
                 "independence": "One per Gamma event and heuristic economic group. Asset-week price ladders, "
                                 "IPO/acquisition families and same-day Fed decisions are grouped across IDs. "
                                 "These rules do not establish statistical independence; common news and aliases remain.",
@@ -290,7 +292,7 @@ def validate(root):
     if len({r["economic_cluster_id"] for r in rows}) != len(rows):
         problems.append("Repeated economic family")
     for row in rows:
-        if not START <= int(row["label_available_at"]) < END or row["yes_outcome"] not in ("0", "1"):
+        if not manifest["settings"]["resolution_start"] <= int(row["label_available_at"]) < manifest["settings"]["resolution_end_exclusive"] or row["yes_outcome"] not in ("0", "1"):
             problems.append(f"Invalid label for {row['market_id']}")
         child = root / row["folder"]
         if not (child / "manifest.json").exists():
@@ -304,7 +306,7 @@ def validate(root):
     return {"validated_at": now(), "passed": not problems, "issues": problems[:100],
             "payload_checksums_verified": len(manifest["files"]),
             "per_market_validations": manifest["counts"]["markets_downloaded"],
-            "checks": ["payload SHA-256", "100 selected markets", "distinct parent event IDs",
+            "checks": ["payload SHA-256", f"{manifest['settings']['count']} selected markets", "distinct parent event IDs",
                        "distinct heuristic economic families", "binary settled labels", "actual label timestamp window", "all downloads succeeded",
                        "per-market trade, price and wallet validation during collection"]}
 
@@ -314,6 +316,8 @@ def main():
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
     parser.add_argument("--source-catalog", type=Path, default=DEFAULT_CATALOG)
     parser.add_argument("--count", type=int, default=100)
+    parser.add_argument("--start", type=timestamp, default=START)
+    parser.add_argument("--end", type=timestamp, default=END)
     parser.add_argument("--max-pages", type=int, default=250)
     parser.add_argument("--workers", type=int, default=3)
     parser.add_argument("--cache-source", type=Path)
@@ -325,8 +329,10 @@ def main():
         return 0 if result["passed"] else 1
     if min(args.count, args.max_pages, args.workers) < 1:
         parser.error("limits must be positive")
+    if args.start >= args.end:
+        parser.error("start must precede end")
     build(args.out, args.source_catalog, args.count, max_pages=args.max_pages, workers=args.workers,
-          cache_source=args.cache_source)
+          cache_source=args.cache_source, start=args.start, end=args.end)
     return 0 if json.loads((args.out / "validation.json").read_text())["passed"] else 1
 
 

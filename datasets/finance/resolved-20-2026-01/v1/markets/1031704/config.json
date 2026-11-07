@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "source_url": "https://polymarket.com/event/tsla-week-january-2-2026/will-tsla-close-between-490-and-495-week-january-2-2026",
+  "condition_id": "0x5022326060f0c6fb5ee86e507305d2b1a357f8081f76c3720059e0fd6dacc89d",
+  "start": 1766707200,
+  "end_exclusive": 1767400432,
+  "bucket_seconds": 10800,
+  "max_pages_per_feed": 1000,
+  "trade_feeds": {
+    "trades": "taker_only=true",
+    "wallet_trade_legs": "taker_only=false"
+  }
+}
