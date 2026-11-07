@@ -1,0 +1,962 @@
+[
+ {
+  "id": "fed-dec-cut",
+  "question": "Will the Fed cut rates at its December meeting?",
+  "category": "Economy",
+  "closes_at": "2026-12-09T00:00:00Z",
+  "yes_price": 0.54,
+  "volume_usd": 1130000,
+  "yes": {
+   "skilled_usd": 410000,
+   "unskilled_usd": 220000,
+   "new_usd": 60000,
+   "skilled_wallets": 38,
+   "unskilled_wallets": 412,
+   "new_wallets": 9
+  },
+  "no": {
+   "skilled_usd": 115000,
+   "unskilled_usd": 300000,
+   "new_usd": 25000,
+   "skilled_wallets": 11,
+   "unskilled_wallets": 520,
+   "new_wallets": 3
+  },
+  "skilled_share_history": [
+   {
+    "date": "2026-10-01",
+    "skilled_yes_share": 0.489,
+    "yes_price": 0.486
+   },
+   {
+    "date": "2026-10-07",
+    "skilled_yes_share": 0.54,
+    "yes_price": 0.487
+   },
+   {
+    "date": "2026-10-13",
+    "skilled_yes_share": 0.565,
+    "yes_price": 0.504
+   },
+   {
+    "date": "2026-10-19",
+    "skilled_yes_share": 0.567,
+    "yes_price": 0.514
+   },
+   {
+    "date": "2026-10-25",
+    "skilled_yes_share": 0.597,
+    "yes_price": 0.515
+   },
+   {
+    "date": "2026-11-01",
+    "skilled_yes_share": 0.63,
+    "yes_price": 0.506
+   },
+   {
+    "date": "2026-11-07",
+    "skilled_yes_share": 0.683,
+    "yes_price": 0.54
+   },
+   {
+    "date": "2026-11-13",
+    "skilled_yes_share": 0.696,
+    "yes_price": 0.52
+   },
+   {
+    "date": "2026-11-19",
+    "skilled_yes_share": 0.757,
+    "yes_price": 0.553
+   },
+   {
+    "date": "2026-11-25",
+    "skilled_yes_share": 0.781,
+    "yes_price": 0.54
+   }
+  ],
+  "top_positions": [
+   {
+    "wallet": "0xBBF33FEFF9243A8F506B40928B5B7A767C76FB00",
+    "tier": "new",
+    "side": "no",
+    "stake_usd": 58000,
+    "entry_price": 0.35
+   },
+   {
+    "wallet": "0x149D439536B3216FDAEEB975729FAE923D5A4FD1",
+    "tier": "skilled",
+    "side": "yes",
+    "stake_usd": 50000,
+    "entry_price": 0.24
+   },
+   {
+    "wallet": "0x4770F58904DBA41ECCCC3FC1626E53A13043B026",
+    "tier": "unskilled",
+    "side": "yes",
+    "stake_usd": 47000,
+    "entry_price": 0.41
+   },
+   {
+    "wallet": "0x6BEBB2737F6A6F0FB23C6F5DA2CEC255404E4FB4",
+    "tier": "skilled",
+    "side": "no",
+    "stake_usd": 43000,
+    "entry_price": 0.5
+   },
+   {
+    "wallet": "0x034D6608697A8D41BED440E50454F31AF3176813",
+    "tier": "unskilled",
+    "side": "yes",
+    "stake_usd": 40000,
+    "entry_price": 0.45
+   },
+   {
+    "wallet": "0xABFE228F219E9CB0EB53F16947CCF25EC84D8DBC",
+    "tier": "skilled",
+    "side": "no",
+    "stake_usd": 22000,
+    "entry_price": 0.28
+   }
+  ]
+ },
+ {
+  "id": "btc-120k",
+  "question": "Will Bitcoin close above $120k on 31 December?",
+  "category": "Crypto",
+  "closes_at": "2026-12-31T00:00:00Z",
+  "yes_price": 0.31,
+  "volume_usd": 952000,
+  "yes": {
+   "skilled_usd": 30000,
+   "unskilled_usd": 390000,
+   "new_usd": 140000,
+   "skilled_wallets": 6,
+   "unskilled_wallets": 1204,
+   "new_wallets": 27
+  },
+  "no": {
+   "skilled_usd": 170000,
+   "unskilled_usd": 210000,
+   "new_usd": 12000,
+   "skilled_wallets": 21,
+   "unskilled_wallets": 688,
+   "new_wallets": 2
+  },
+  "skilled_share_history": [
+   {
+    "date": "2026-10-01",
+    "skilled_yes_share": 0.472,
+    "yes_price": 0.516
+   },
+   {
+    "date": "2026-10-07",
+    "skilled_yes_share": 0.435,
+    "yes_price": 0.472
+   },
+   {
+    "date": "2026-10-13",
+    "skilled_yes_share": 0.451,
+    "yes_price": 0.462
+   },
+   {
+    "date": "2026-10-19",
+    "skilled_yes_share": 0.365,
+    "yes_price": 0.428
+   },
+   {
+    "date": "2026-10-25",
+    "skilled_yes_share": 0.345,
+    "yes_price": 0.428
+   },
+   {
+    "date": "2026-11-01",
+    "skilled_yes_share": 0.306,
+    "yes_price": 0.384
+   },
+   {
+    "date": "2026-11-07",
+    "skilled_yes_share": 0.268,
+    "yes_price": 0.388
+   },
+   {
+    "date": "2026-11-13",
+    "skilled_yes_share": 0.253,
+    "yes_price": 0.369
+   },
+   {
+    "date": "2026-11-19",
+    "skilled_yes_share": 0.212,
+    "yes_price": 0.319
+   },
+   {
+    "date": "2026-11-25",
+    "skilled_yes_share": 0.15,
+    "yes_price": 0.31
+   }
+  ],
+  "top_positions": [
+   {
+    "wallet": "0x969E58B081006F7E3DFC967A64CB14028D512C97",
+    "tier": "unskilled",
+    "side": "no",
+    "stake_usd": 52000,
+    "entry_price": 0.36
+   },
+   {
+    "wallet": "0x40F1F836F99EEE3692F09E2E8C662248B483B7FF",
+    "tier": "unskilled",
+    "side": "no",
+    "stake_usd": 33000,
+    "entry_price": 0.21
+   },
+   {
+    "wallet": "0x1D4072014B3CE107F80E222F828767EFC2F91624",
+    "tier": "skilled",
+    "side": "yes",
+    "stake_usd": 29000,
+    "entry_price": 0.34
+   },
+   {
+    "wallet": "0x558E08BAA7196B50AC2F86702824C1C099724CAF",
+    "tier": "new",
+    "side": "no",
+    "stake_usd": 17000,
+    "entry_price": 0.36
+   },
+   {
+    "wallet": "0xEA27D26934B484E73CF575DCAD6BA2B0AEE0CA92",
+    "tier": "skilled",
+    "side": "no",
+    "stake_usd": 15000,
+    "entry_price": 0.74
+   },
+   {
+    "wallet": "0x32881584D8C4FA2815D2802827283E0AD8417358",
+    "tier": "skilled",
+    "side": "yes",
+    "stake_usd": 11000,
+    "entry_price": 0.3
+   }
+  ]
+ },
+ {
+  "id": "warmest-2026",
+  "question": "Will 2026 be the warmest year on record globally?",
+  "category": "Climate",
+  "closes_at": "2027-01-15T00:00:00Z",
+  "yes_price": 0.67,
+  "volume_usd": 468000,
+  "yes": {
+   "skilled_usd": 140000,
+   "unskilled_usd": 160000,
+   "new_usd": 8000,
+   "skilled_wallets": 17,
+   "unskilled_wallets": 301,
+   "new_wallets": 1
+  },
+  "no": {
+   "skilled_usd": 60000,
+   "unskilled_usd": 95000,
+   "new_usd": 5000,
+   "skilled_wallets": 8,
+   "unskilled_wallets": 190,
+   "new_wallets": 1
+  },
+  "skilled_share_history": [
+   {
+    "date": "2026-10-01",
+    "skilled_yes_share": 0.47,
+    "yes_price": 0.5
+   },
+   {
+    "date": "2026-10-07",
+    "skilled_yes_share": 0.519,
+    "yes_price": 0.511
+   },
+   {
+    "date": "2026-10-13",
+    "skilled_yes_share": 0.523,
+    "yes_price": 0.532
+   },
+   {
+    "date": "2026-10-19",
+    "skilled_yes_share": 0.556,
+    "yes_price": 0.57
+   },
+   {
+    "date": "2026-10-25",
+    "skilled_yes_share": 0.559,
+    "yes_price": 0.586
+   },
+   {
+    "date": "2026-11-01",
+    "skilled_yes_share": 0.631,
+    "yes_price": 0.579
+   },
+   {
+    "date": "2026-11-07",
+    "skilled_yes_share": 0.659,
+    "yes_price": 0.622
+   },
+   {
+    "date": "2026-11-13",
+    "skilled_yes_share": 0.68,
+    "yes_price": 0.624
+   },
+   {
+    "date": "2026-11-19",
+    "skilled_yes_share": 0.67,
+    "yes_price": 0.647
+   },
+   {
+    "date": "2026-11-25",
+    "skilled_yes_share": 0.7,
+    "yes_price": 0.67
+   }
+  ],
+  "top_positions": [
+   {
+    "wallet": "0x26F7EAED46725A2A7B860DCD6C8A1F8B46287CCE",
+    "tier": "skilled",
+    "side": "yes",
+    "stake_usd": 35000,
+    "entry_price": 0.72
+   },
+   {
+    "wallet": "0x41DFF02CEE737443E210471948D33296C87009E8",
+    "tier": "unskilled",
+    "side": "yes",
+    "stake_usd": 28000,
+    "entry_price": 0.55
+   },
+   {
+    "wallet": "0xF770D9106FD287DB7F1ADBC60926F6967E7893F5",
+    "tier": "new",
+    "side": "yes",
+    "stake_usd": 22000,
+    "entry_price": 0.47
+   },
+   {
+    "wallet": "0x6BE6ABF0D7C1C1E21862AB8A18A8902073FEC8DF",
+    "tier": "unskilled",
+    "side": "no",
+    "stake_usd": 16000,
+    "entry_price": 0.71
+   },
+   {
+    "wallet": "0xD818319478DA6BD0C621DE49F145FDA9988C79FC",
+    "tier": "skilled",
+    "side": "no",
+    "stake_usd": 15000,
+    "entry_price": 0.29
+   },
+   {
+    "wallet": "0x4C1604D115CEA325A65E19CBAE530282BD36CB9D",
+    "tier": "skilled",
+    "side": "yes",
+    "stake_usd": 13000,
+    "entry_price": 0.23
+   }
+  ]
+ },
+ {
+  "id": "eth-etf-flows",
+  "question": "Will Ether ETFs see net inflows in December?",
+  "category": "Crypto",
+  "closes_at": "2026-12-31T00:00:00Z",
+  "yes_price": 0.62,
+  "volume_usd": 595000,
+  "yes": {
+   "skilled_usd": 95000,
+   "unskilled_usd": 180000,
+   "new_usd": 40000,
+   "skilled_wallets": 12,
+   "unskilled_wallets": 402,
+   "new_wallets": 6
+  },
+  "no": {
+   "skilled_usd": 150000,
+   "unskilled_usd": 120000,
+   "new_usd": 10000,
+   "skilled_wallets": 16,
+   "unskilled_wallets": 250,
+   "new_wallets": 2
+  },
+  "skilled_share_history": [
+   {
+    "date": "2026-10-01",
+    "skilled_yes_share": 0.481,
+    "yes_price": 0.512
+   },
+   {
+    "date": "2026-10-07",
+    "skilled_yes_share": 0.502,
+    "yes_price": 0.526
+   },
+   {
+    "date": "2026-10-13",
+    "skilled_yes_share": 0.491,
+    "yes_price": 0.531
+   },
+   {
+    "date": "2026-10-19",
+    "skilled_yes_share": 0.452,
+    "yes_price": 0.533
+   },
+   {
+    "date": "2026-10-25",
+    "skilled_yes_share": 0.442,
+    "yes_price": 0.565
+   },
+   {
+    "date": "2026-11-01",
+    "skilled_yes_share": 0.412,
+    "yes_price": 0.555
+   },
+   {
+    "date": "2026-11-07",
+    "skilled_yes_share": 0.44,
+    "yes_price": 0.57
+   },
+   {
+    "date": "2026-11-13",
+    "skilled_yes_share": 0.387,
+    "yes_price": 0.575
+   },
+   {
+    "date": "2026-11-19",
+    "skilled_yes_share": 0.403,
+    "yes_price": 0.6
+   },
+   {
+    "date": "2026-11-25",
+    "skilled_yes_share": 0.388,
+    "yes_price": 0.62
+   }
+  ],
+  "top_positions": [
+   {
+    "wallet": "0x3CF6941FA1C257C6F561C5CB347611A3CE9D97DC",
+    "tier": "new",
+    "side": "yes",
+    "stake_usd": 50000,
+    "entry_price": 0.4
+   },
+   {
+    "wallet": "0xE48F687AB165C58AC5831BE38CB8CB4BA2E75198",
+    "tier": "unskilled",
+    "side": "no",
+    "stake_usd": 27000,
+    "entry_price": 0.55
+   },
+   {
+    "wallet": "0x25C8D99D19BDD0B6CC60D5D32CBE54014C2B54B9",
+    "tier": "unskilled",
+    "side": "yes",
+    "stake_usd": 18000,
+    "entry_price": 0.49
+   },
+   {
+    "wallet": "0x500FE7EE5FC324BDB2E1142A21C402364F9572B8",
+    "tier": "skilled",
+    "side": "no",
+    "stake_usd": 18000,
+    "entry_price": 0.38
+   },
+   {
+    "wallet": "0xEB19731662B5E803B61BA4168160ADB59261FF2D",
+    "tier": "skilled",
+    "side": "yes",
+    "stake_usd": 14000,
+    "entry_price": 0.64
+   },
+   {
+    "wallet": "0x8263DFE574DE739988B886E7577496A2C8773E13",
+    "tier": "skilled",
+    "side": "yes",
+    "stake_usd": 8000,
+    "entry_price": 0.46
+   }
+  ]
+ },
+ {
+  "id": "uk-cpi-3",
+  "question": "Will UK CPI inflation print below 3% in November?",
+  "category": "Economy",
+  "closes_at": "2026-12-16T00:00:00Z",
+  "yes_price": 0.41,
+  "volume_usd": 605000,
+  "yes": {
+   "skilled_usd": 150000,
+   "unskilled_usd": 140000,
+   "new_usd": 15000,
+   "skilled_wallets": 24,
+   "unskilled_wallets": 280,
+   "new_wallets": 2
+  },
+  "no": {
+   "skilled_usd": 90000,
+   "unskilled_usd": 190000,
+   "new_usd": 20000,
+   "skilled_wallets": 9,
+   "unskilled_wallets": 340,
+   "new_wallets": 4
+  },
+  "skilled_share_history": [
+   {
+    "date": "2026-10-01",
+    "skilled_yes_share": 0.529,
+    "yes_price": 0.503
+   },
+   {
+    "date": "2026-10-07",
+    "skilled_yes_share": 0.539,
+    "yes_price": 0.483
+   },
+   {
+    "date": "2026-10-13",
+    "skilled_yes_share": 0.528,
+    "yes_price": 0.461
+   },
+   {
+    "date": "2026-10-19",
+    "skilled_yes_share": 0.565,
+    "yes_price": 0.475
+   },
+   {
+    "date": "2026-10-25",
+    "skilled_yes_share": 0.611,
+    "yes_price": 0.461
+   },
+   {
+    "date": "2026-11-01",
+    "skilled_yes_share": 0.667,
+    "yes_price": 0.435
+   },
+   {
+    "date": "2026-11-07",
+    "skilled_yes_share": 0.656,
+    "yes_price": 0.446
+   },
+   {
+    "date": "2026-11-13",
+    "skilled_yes_share": 0.672,
+    "yes_price": 0.41
+   },
+   {
+    "date": "2026-11-19",
+    "skilled_yes_share": 0.721,
+    "yes_price": 0.404
+   },
+   {
+    "date": "2026-11-25",
+    "skilled_yes_share": 0.625,
+    "yes_price": 0.41
+   }
+  ],
+  "top_positions": [
+   {
+    "wallet": "0x57A683536C4499D863386CE10CD79E048C07DD77",
+    "tier": "unskilled",
+    "side": "no",
+    "stake_usd": 51000,
+    "entry_price": 0.3
+   },
+   {
+    "wallet": "0x46BF54074E3248C801BEF750110C57513064D6D5",
+    "tier": "skilled",
+    "side": "no",
+    "stake_usd": 40000,
+    "entry_price": 0.37
+   },
+   {
+    "wallet": "0x1F0CDE2E5738713A818D8962058765A6CA7CFF00",
+    "tier": "skilled",
+    "side": "no",
+    "stake_usd": 35000,
+    "entry_price": 0.73
+   },
+   {
+    "wallet": "0x96C25410335B400141212B62C376631129F34369",
+    "tier": "unskilled",
+    "side": "yes",
+    "stake_usd": 28000,
+    "entry_price": 0.39
+   },
+   {
+    "wallet": "0xF3AB3CC2D0B698D5C7E41BA4EA5EE874AE768944",
+    "tier": "skilled",
+    "side": "yes",
+    "stake_usd": 23000,
+    "entry_price": 0.6
+   },
+   {
+    "wallet": "0x0B891BAF90D0D3BF16295D06910BF3F5FB85967F",
+    "tier": "new",
+    "side": "no",
+    "stake_usd": 18000,
+    "entry_price": 0.26
+   }
+  ]
+ },
+ {
+  "id": "senate-bill",
+  "question": "Will the Grid Modernisation Act pass the Senate this year?",
+  "category": "Politics",
+  "closes_at": "2026-12-20T00:00:00Z",
+  "yes_price": 0.28,
+  "volume_usd": 443000,
+  "yes": {
+   "skilled_usd": 45000,
+   "unskilled_usd": 110000,
+   "new_usd": 30000,
+   "skilled_wallets": 7,
+   "unskilled_wallets": 210,
+   "new_wallets": 5
+  },
+  "no": {
+   "skilled_usd": 160000,
+   "unskilled_usd": 90000,
+   "new_usd": 8000,
+   "skilled_wallets": 19,
+   "unskilled_wallets": 150,
+   "new_wallets": 1
+  },
+  "skilled_share_history": [
+   {
+    "date": "2026-10-01",
+    "skilled_yes_share": 0.477,
+    "yes_price": 0.497
+   },
+   {
+    "date": "2026-10-07",
+    "skilled_yes_share": 0.454,
+    "yes_price": 0.484
+   },
+   {
+    "date": "2026-10-13",
+    "skilled_yes_share": 0.461,
+    "yes_price": 0.441
+   },
+   {
+    "date": "2026-10-19",
+    "skilled_yes_share": 0.401,
+    "yes_price": 0.435
+   },
+   {
+    "date": "2026-10-25",
+    "skilled_yes_share": 0.355,
+    "yes_price": 0.416
+   },
+   {
+    "date": "2026-11-01",
+    "skilled_yes_share": 0.343,
+    "yes_price": 0.359
+   },
+   {
+    "date": "2026-11-07",
+    "skilled_yes_share": 0.335,
+    "yes_price": 0.354
+   },
+   {
+    "date": "2026-11-13",
+    "skilled_yes_share": 0.292,
+    "yes_price": 0.344
+   },
+   {
+    "date": "2026-11-19",
+    "skilled_yes_share": 0.274,
+    "yes_price": 0.298
+   },
+   {
+    "date": "2026-11-25",
+    "skilled_yes_share": 0.22,
+    "yes_price": 0.28
+   }
+  ],
+  "top_positions": [
+   {
+    "wallet": "0x1CC1C93016F1C4261E5351D30B49895D1A0D1F13",
+    "tier": "skilled",
+    "side": "yes",
+    "stake_usd": 57000,
+    "entry_price": 0.65
+   },
+   {
+    "wallet": "0x5B001A3FF416D4A3BAF69DAD8199BFCA8B6F3A6A",
+    "tier": "new",
+    "side": "yes",
+    "stake_usd": 53000,
+    "entry_price": 0.36
+   },
+   {
+    "wallet": "0xE20C4FD32F640D0032634F087E51B429FE811010",
+    "tier": "unskilled",
+    "side": "no",
+    "stake_usd": 49000,
+    "entry_price": 0.58
+   },
+   {
+    "wallet": "0x3475EB46C5296F62E338D74FF1FE4F7F505AEF9E",
+    "tier": "unskilled",
+    "side": "no",
+    "stake_usd": 31000,
+    "entry_price": 0.43
+   },
+   {
+    "wallet": "0x18656B3E6F0BADE65C3B188CC102DDB8379C7CE6",
+    "tier": "skilled",
+    "side": "yes",
+    "stake_usd": 18000,
+    "entry_price": 0.27
+   },
+   {
+    "wallet": "0x6F74BDE94FB78C8D5F08B79AFFD2B49C12A4B006",
+    "tier": "skilled",
+    "side": "yes",
+    "stake_usd": 12000,
+    "entry_price": 0.56
+   }
+  ]
+ },
+ {
+  "id": "ai-model-launch",
+  "question": "Will Lumen Labs release its next flagship model before 1 January?",
+  "category": "Tech",
+  "closes_at": "2026-12-31T00:00:00Z",
+  "yes_price": 0.47,
+  "volume_usd": 785000,
+  "yes": {
+   "skilled_usd": 120000,
+   "unskilled_usd": 200000,
+   "new_usd": 180000,
+   "skilled_wallets": 14,
+   "unskilled_wallets": 360,
+   "new_wallets": 22
+  },
+  "no": {
+   "skilled_usd": 110000,
+   "unskilled_usd": 160000,
+   "new_usd": 15000,
+   "skilled_wallets": 12,
+   "unskilled_wallets": 300,
+   "new_wallets": 3
+  },
+  "skilled_share_history": [
+   {
+    "date": "2026-10-01",
+    "skilled_yes_share": 0.507,
+    "yes_price": 0.496
+   },
+   {
+    "date": "2026-10-07",
+    "skilled_yes_share": 0.491,
+    "yes_price": 0.501
+   },
+   {
+    "date": "2026-10-13",
+    "skilled_yes_share": 0.532,
+    "yes_price": 0.507
+   },
+   {
+    "date": "2026-10-19",
+    "skilled_yes_share": 0.514,
+    "yes_price": 0.483
+   },
+   {
+    "date": "2026-10-25",
+    "skilled_yes_share": 0.537,
+    "yes_price": 0.496
+   },
+   {
+    "date": "2026-11-01",
+    "skilled_yes_share": 0.51,
+    "yes_price": 0.47
+   },
+   {
+    "date": "2026-11-07",
+    "skilled_yes_share": 0.542,
+    "yes_price": 0.465
+   },
+   {
+    "date": "2026-11-13",
+    "skilled_yes_share": 0.544,
+    "yes_price": 0.463
+   },
+   {
+    "date": "2026-11-19",
+    "skilled_yes_share": 0.537,
+    "yes_price": 0.472
+   },
+   {
+    "date": "2026-11-25",
+    "skilled_yes_share": 0.522,
+    "yes_price": 0.47
+   }
+  ],
+  "top_positions": [
+   {
+    "wallet": "0xE2B27C8AF6666259BBC471FB3BE24A0B80316F68",
+    "tier": "skilled",
+    "side": "no",
+    "stake_usd": 57000,
+    "entry_price": 0.35
+   },
+   {
+    "wallet": "0xE4E48DD74089A58F3AEF3416F9386BD8773C9D51",
+    "tier": "skilled",
+    "side": "yes",
+    "stake_usd": 54000,
+    "entry_price": 0.74
+   },
+   {
+    "wallet": "0xA981A049D7CCC7E90A88D519448FB2FC6791CE68",
+    "tier": "skilled",
+    "side": "no",
+    "stake_usd": 45000,
+    "entry_price": 0.61
+   },
+   {
+    "wallet": "0x0EA4E095BD1D6854575622F856469602D1BA9F20",
+    "tier": "unskilled",
+    "side": "yes",
+    "stake_usd": 34000,
+    "entry_price": 0.7
+   },
+   {
+    "wallet": "0x69E3FAB8C3BFC5E740E61572B4E3C02EAA7F3B4A",
+    "tier": "new",
+    "side": "yes",
+    "stake_usd": 22000,
+    "entry_price": 0.6
+   },
+   {
+    "wallet": "0xE481A65C2011BEF2C328A72C5E5B77518B1018F1",
+    "tier": "unskilled",
+    "side": "yes",
+    "stake_usd": 14000,
+    "entry_price": 0.28
+   }
+  ]
+ },
+ {
+  "id": "arctic-ice",
+  "question": "Will Arctic sea ice extent hit a record low in March?",
+  "category": "Climate",
+  "closes_at": "2027-03-31T00:00:00Z",
+  "yes_price": 0.36,
+  "volume_usd": 334000,
+  "yes": {
+   "skilled_usd": 80000,
+   "unskilled_usd": 70000,
+   "new_usd": 5000,
+   "skilled_wallets": 10,
+   "unskilled_wallets": 140,
+   "new_wallets": 1
+  },
+  "no": {
+   "skilled_usd": 90000,
+   "unskilled_usd": 85000,
+   "new_usd": 4000,
+   "skilled_wallets": 11,
+   "unskilled_wallets": 160,
+   "new_wallets": 1
+  },
+  "skilled_share_history": [
+   {
+    "date": "2026-10-01",
+    "skilled_yes_share": 0.499,
+    "yes_price": 0.515
+   },
+   {
+    "date": "2026-10-07",
+    "skilled_yes_share": 0.483,
+    "yes_price": 0.472
+   },
+   {
+    "date": "2026-10-13",
+    "skilled_yes_share": 0.513,
+    "yes_price": 0.464
+   },
+   {
+    "date": "2026-10-19",
+    "skilled_yes_share": 0.47,
+    "yes_price": 0.448
+   },
+   {
+    "date": "2026-10-25",
+    "skilled_yes_share": 0.493,
+    "yes_price": 0.418
+   },
+   {
+    "date": "2026-11-01",
+    "skilled_yes_share": 0.485,
+    "yes_price": 0.42
+   },
+   {
+    "date": "2026-11-07",
+    "skilled_yes_share": 0.481,
+    "yes_price": 0.391
+   },
+   {
+    "date": "2026-11-13",
+    "skilled_yes_share": 0.49,
+    "yes_price": 0.404
+   },
+   {
+    "date": "2026-11-19",
+    "skilled_yes_share": 0.496,
+    "yes_price": 0.368
+   },
+   {
+    "date": "2026-11-25",
+    "skilled_yes_share": 0.471,
+    "yes_price": 0.36
+   }
+  ],
+  "top_positions": [
+   {
+    "wallet": "0xBE0273DBC46DFCEA25BAB29539AD5966D513B1D0",
+    "tier": "unskilled",
+    "side": "yes",
+    "stake_usd": 58000,
+    "entry_price": 0.2
+   },
+   {
+    "wallet": "0xC50CD1C1BAC7ADAC1A4B7D0B352AD6074DCE1118",
+    "tier": "skilled",
+    "side": "no",
+    "stake_usd": 51000,
+    "entry_price": 0.54
+   },
+   {
+    "wallet": "0xC0B57AAF89691052BE1CEB374DAB4683F84D30D3",
+    "tier": "new",
+    "side": "no",
+    "stake_usd": 39000,
+    "entry_price": 0.42
+   },
+   {
+    "wallet": "0xD83CEE9B9BCCA0FCE9594DC72AA7A6D0018F99DD",
+    "tier": "skilled",
+    "side": "yes",
+    "stake_usd": 32000,
+    "entry_price": 0.46
+   },
+   {
+    "wallet": "0x3830D71939B53182E4E349D98729E7C6BE9FF907",
+    "tier": "unskilled",
+    "side": "yes",
+    "stake_usd": 29000,
+    "entry_price": 0.32
+   },
+   {
+    "wallet": "0x93FE04072755398003680E7E3B35183EF8333C47",
+    "tier": "skilled",
+    "side": "yes",
+    "stake_usd": 22000,
+    "entry_price": 0.28
+   }
+  ]
+ }
+]

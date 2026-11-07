@@ -7,3 +7,5 @@ dist/
 .env
 data/
 .pytest_cache/
+
+!frontend/src/data/
