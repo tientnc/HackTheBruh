@@ -1,0 +1,6 @@
+{
+  "dataset": "datasets/finance/resolved-100-2025/v1",
+  "as_of": 1764547200,
+  "top": 100,
+  "order": "markets"
+}

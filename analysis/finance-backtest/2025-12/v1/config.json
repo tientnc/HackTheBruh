@@ -1,0 +1,12 @@
+{
+  "dataset": "datasets/finance/resolved-100-2025/v1",
+  "wallet_metrics": "analysis/finance-wallets/2025-12-01/v1",
+  "cohort_cutoff": 1764547200,
+  "model_fit_cutoff": 1765756800,
+  "forecast_rule": "reported scheduled end minus lead_hours; retrospective metadata",
+  "lead_hours": 24,
+  "max_price_age_hours": 24,
+  "flow_window_days": 7,
+  "wallet_cap_shares": 1000,
+  "logistic_l2_penalty": 0.1
+}

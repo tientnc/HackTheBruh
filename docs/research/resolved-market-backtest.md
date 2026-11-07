@@ -51,7 +51,7 @@ Do not score a wallet on its performance across all 100 markets and then replay 
 
 An ended-market dataset supports both, but their targets and scores must stay separate. Closed-only selection also omits still-open, delayed or unresolved events; this first historical test cannot by itself establish performance on the full live market population.
 
-The immediate milestone is the verified 100-market dataset and its coverage report. Wallet ranking and prediction results should be published only after their score, cutoff protocol, eligibility and held-out evaluation are implemented.
+Implementation is now available: [wallet evidence](../../analysis/finance-wallets/2025-12-01/v1/README.md) and [first forecast results](../../analysis/finance-backtest/2025-12/v1/README.md). The original proposal above remains the research context. The implemented pilot uses one shrunken edge ranking and an explicit scheduled-end-minus-24-hours forecast rule; it does not compare all proposed variants or establish live-replay validity. There are 20 calibration and 20 test forecasts after cutoff checks, versus the source label-date counts of 26 and 23. The cohort model shows no improvement over the market baseline. No parameters were tuned after seeing those held-out scores.
 
 The completed sample has 51 labels before December 1, 26 during December 1–14 and 23 during December 15–31. At December 1, 93 wallets have activity in at least five earlier markets; only 43 meet that floor using taker records, giving four wallets per decile with `floor(10%)`. This supports a small pilot, not a strong population-wide claim. More prior history for recurring wallets may help more than merely increasing the number of thinly traded markets.
 

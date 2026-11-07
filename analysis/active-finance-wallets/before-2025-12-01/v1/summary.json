@@ -1,0 +1,12 @@
+{
+  "as_of": "2025-12-01T00:00:00+00:00",
+  "source_resolved_markets": 51,
+  "observed_wallets": 8790,
+  "selected_wallets": 100,
+  "order": "markets",
+  "minimum_selected_resolved_markets": 4,
+  "selected_with_at_least_5_markets": 93,
+  "selected_with_at_least_5_taker_markets": 43,
+  "scope": "Observed addresses in this selected resolved Finance sample; not a platform-wide top 100",
+  "warning": "Activity is not skill. Use a cutoff before forecast/model training to avoid future selection."
+}

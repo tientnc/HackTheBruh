@@ -1,0 +1,15 @@
+{
+  "algorithm": "sha256",
+  "sources": {
+    "datasets/finance/resolved-100-2025/v1/manifest.json": "8f37e7a0dc7ac5b4025a1e4b843c7967fa03ff4b7722dbf03d5afb60af93cfc2",
+    "datasets/finance/resolved-100-2025/v1/markets.csv": "1d4ea33e791351ff3371b420b874a98c58641ceb4f2bffa183fa130617c1ad6f",
+    "polyresearch/active_wallets.py": "d50ba03bc4dff4ffddb79824aa9fd3748076e638683f79c0ce4505d73efa7429",
+    "polyresearch/artifacts.py": "621e2401b92396113e53ba103ff0db004efcdd0bf74a8af929951c0497c41b1c"
+  },
+  "files": {
+    "config.json": "b0c8e5de0e4976aae64d2181281f003d585642adc74ce87d39cb3b1622329348",
+    "summary.json": "6ef6f95e6a52b6c48b53eda0b8f86ff1d0f8077db4c307e54ffab36f6f9b9428",
+    "top_wallets.csv": "f97ad4fb7591206e7ffefe4250203b41f5a4e4609321f6b0ddbce32229e1093f",
+    "wallet_ids.txt": "aa770fe16ef3c3ed8cd0939ce826d535c4a42b9810975ac7eeb5983af5cb2f6d"
+  }
+}

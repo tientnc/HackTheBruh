@@ -1,0 +1,19 @@
+{
+  "fit_cutoff": 1765756800,
+  "fit_markets": 20,
+  "fields": [
+    "top_decile_flow",
+    "bottom_decile_flow"
+  ],
+  "coefficients": [
+    1.1249038320424181e-05,
+    0.0
+  ],
+  "all_wallet_coefficient": [
+    0.22096208077495746
+  ],
+  "penalty": 0.1,
+  "intercept": "not fitted; quoted price is the offset",
+  "probability_model": "sigmoid(logit(market_probability) + coefficient dot flow)",
+  "zero_signal": "exactly the quoted market probability"
+}

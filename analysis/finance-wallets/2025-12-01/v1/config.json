@@ -1,0 +1,11 @@
+{
+  "as_of": 1764547200,
+  "dataset": "datasets/finance/resolved-100-2025/v1",
+  "min_events_for_pilot_ranking": 5,
+  "shrinkage_prior_events": 10,
+  "minimum_lead_hours": 0,
+  "score": "equal-event mean signed settlement edge, shrunk toward zero",
+  "fdr_diagnostic": "BY at 5%; event-sign symmetry null; diagnostic only",
+  "enrich_reported_pnl": true,
+  "audited_evidence_sha256": null
+}

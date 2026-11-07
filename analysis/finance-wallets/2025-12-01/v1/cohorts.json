@@ -1,0 +1,358 @@
+{
+  "as_of": 1764547200,
+  "decile_size": 4,
+  "members": {
+    "top_decile": [
+      "0x8936214e1dab02e74e5469d76b4c55cfe99cd010",
+      "0xe4ca3841ade21e05cbd5786dd5feea5d65c01383",
+      "0x4b92a2d2fd3807981a5dddae7315122530a542e6",
+      "0x4b8ae011176b76888949476d7fb7a56985faf4a4"
+    ],
+    "middle": [
+      "0xbb015bb4009b6a48bfb9363d9c9b1d54e9ab02e5",
+      "0x3bef39e74640f5af9522663400e161f9d2f29a71",
+      "0x31974a9cf9e06cc1cf84e22a4955c69d7415b9ac",
+      "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
+      "0xa3e22cd32aa9238ef7dbcfb4761e33b9eaa1fdf8",
+      "0xcaab19659b995951a44cc992447cb2ad5be324dd",
+      "0x969fae0a3a93778adc42178f72c612ed8c4e4d55",
+      "0xcbc7c4c3c1c06ad97e3f6a5a9088ae8317b58f89",
+      "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
+      "0x93f939a8394ef6ddc76d126fbf03719c0d55e350",
+      "0x5f390e4b7d6f06d6756a6c92afdbf7b3176aa78c",
+      "0x30cecdf29f069563ea21b8ae94492e41e53a6b2b",
+      "0xb02ea57dbc3e69e08e7aaee78ef6122e301f25e5",
+      "0xb6fa57039ea79185895500dbd0067c288594abcf",
+      "0xd5555147366b7e5bfcea444f4a06a745c18be28a",
+      "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
+      "0xcdb1f1ef8213c06911e4ba6a884176c5571e276c",
+      "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+      "0xf0b0ef1d6320c6be896b4c9c54dd74407e7f8cab",
+      "0xe3726a1b9c6ba2f06585d1c9e01d00afaedaeb38",
+      "0x6e8f80ca0cddb8d3f207dc5147ac0e6062ae162c",
+      "0xd218e474776403a330142299f7796e8ba32eb5c9",
+      "0xadaeb85821f6dad7ca44f2018f5cb61602019be6",
+      "0x7dd4fa5c3ecc4c27a476abbd5febf53eba692bd4",
+      "0x08ffd16cacd8864d57143caa8735e65887387840",
+      "0x70bbae8501e8f346168c06c32e9f7d42afc1b180",
+      "0x364f935ccafae7bb980616b81999239ed816562c",
+      "0x3f4f9145904c7b3261c3bbe05fcea64d9d91b4b3",
+      "0x8209baa2350bb748cc33d72f7a80a72f8a5896f2",
+      "0xc602e34792d9a5e129f3404daef2df43d1d37fc1",
+      "0x4745bed9080a47cdf2e8280fd57dd49237305916",
+      "0x8cb4cd50c5cbc231d5df93c097b605fdf116b997",
+      "0xa58d4f278d7953cd38eeb929f7e242bfc7c0b9b8",
+      "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
+      "0xdfaacceff09ac2c037393eee387e81ea024679a7"
+    ],
+    "bottom_decile": [
+      "0xcceb22d524e186153cffe79f13c0aeb75889f030",
+      "0x5fe50c22621779e031322c5becb110d1fa0d8b99",
+      "0x8fdccd4ebc2be61691231e98a26f0d2c41e35d91",
+      "0x1534aac78e168038bd277813acff6156e435f40f"
+    ]
+  },
+  "ranking": [
+    {
+      "wallet": "0x8936214e1dab02e74e5469d76b4c55cfe99cd010",
+      "rank": 1,
+      "ranking_score": 0.05405151097446408,
+      "resolved_markets_in_sample": 5,
+      "cohort": "top_decile"
+    },
+    {
+      "wallet": "0xe4ca3841ade21e05cbd5786dd5feea5d65c01383",
+      "rank": 2,
+      "ranking_score": 0.053830231950092705,
+      "resolved_markets_in_sample": 8,
+      "cohort": "top_decile"
+    },
+    {
+      "wallet": "0x4b92a2d2fd3807981a5dddae7315122530a542e6",
+      "rank": 3,
+      "ranking_score": 0.051850449632291705,
+      "resolved_markets_in_sample": 6,
+      "cohort": "top_decile"
+    },
+    {
+      "wallet": "0x4b8ae011176b76888949476d7fb7a56985faf4a4",
+      "rank": 4,
+      "ranking_score": 0.04784461168385299,
+      "resolved_markets_in_sample": 9,
+      "cohort": "top_decile"
+    },
+    {
+      "wallet": "0xbb015bb4009b6a48bfb9363d9c9b1d54e9ab02e5",
+      "rank": 5,
+      "ranking_score": 0.046466505642277965,
+      "resolved_markets_in_sample": 13,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x3bef39e74640f5af9522663400e161f9d2f29a71",
+      "rank": 6,
+      "ranking_score": 0.03384228166796399,
+      "resolved_markets_in_sample": 7,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x31974a9cf9e06cc1cf84e22a4955c69d7415b9ac",
+      "rank": 7,
+      "ranking_score": 0.03239235548083033,
+      "resolved_markets_in_sample": 6,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x4ffe49ba2a4cae123536a8af4fda48faeb609f71",
+      "rank": 8,
+      "ranking_score": 0.028090103982677563,
+      "resolved_markets_in_sample": 9,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xa3e22cd32aa9238ef7dbcfb4761e33b9eaa1fdf8",
+      "rank": 9,
+      "ranking_score": 0.0267287059116885,
+      "resolved_markets_in_sample": 6,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xcaab19659b995951a44cc992447cb2ad5be324dd",
+      "rank": 10,
+      "ranking_score": 0.026230839837216934,
+      "resolved_markets_in_sample": 5,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x969fae0a3a93778adc42178f72c612ed8c4e4d55",
+      "rank": 11,
+      "ranking_score": 0.025635894125061037,
+      "resolved_markets_in_sample": 9,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xcbc7c4c3c1c06ad97e3f6a5a9088ae8317b58f89",
+      "rank": 12,
+      "ranking_score": 0.02285299469135849,
+      "resolved_markets_in_sample": 5,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x21ffd2b7a212a6f277ed3eca1a9f8efcbca90d71",
+      "rank": 13,
+      "ranking_score": 0.02237503684517716,
+      "resolved_markets_in_sample": 8,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x93f939a8394ef6ddc76d126fbf03719c0d55e350",
+      "rank": 14,
+      "ranking_score": 0.022319878727042476,
+      "resolved_markets_in_sample": 6,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x5f390e4b7d6f06d6756a6c92afdbf7b3176aa78c",
+      "rank": 15,
+      "ranking_score": 0.021639514976385846,
+      "resolved_markets_in_sample": 7,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x30cecdf29f069563ea21b8ae94492e41e53a6b2b",
+      "rank": 16,
+      "ranking_score": 0.019578729047072328,
+      "resolved_markets_in_sample": 6,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xb02ea57dbc3e69e08e7aaee78ef6122e301f25e5",
+      "rank": 17,
+      "ranking_score": 0.015814230317064696,
+      "resolved_markets_in_sample": 6,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xb6fa57039ea79185895500dbd0067c288594abcf",
+      "rank": 18,
+      "ranking_score": 0.013295203081232498,
+      "resolved_markets_in_sample": 5,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xd5555147366b7e5bfcea444f4a06a745c18be28a",
+      "rank": 19,
+      "ranking_score": 0.012047231257327283,
+      "resolved_markets_in_sample": 5,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xc8ab97a9089a9ff7e6ef0688e6e591a066946418",
+      "rank": 20,
+      "ranking_score": 0.006158586054301213,
+      "resolved_markets_in_sample": 20,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xcdb1f1ef8213c06911e4ba6a884176c5571e276c",
+      "rank": 21,
+      "ranking_score": 0.005451997075485712,
+      "resolved_markets_in_sample": 7,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+      "rank": 22,
+      "ranking_score": 0.0048550323381014995,
+      "resolved_markets_in_sample": 10,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xf0b0ef1d6320c6be896b4c9c54dd74407e7f8cab",
+      "rank": 23,
+      "ranking_score": 0.003429502782168021,
+      "resolved_markets_in_sample": 19,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xe3726a1b9c6ba2f06585d1c9e01d00afaedaeb38",
+      "rank": 24,
+      "ranking_score": 0.0024963994307921795,
+      "resolved_markets_in_sample": 7,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x6e8f80ca0cddb8d3f207dc5147ac0e6062ae162c",
+      "rank": 25,
+      "ranking_score": 0.0009190626545670427,
+      "resolved_markets_in_sample": 6,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xd218e474776403a330142299f7796e8ba32eb5c9",
+      "rank": 26,
+      "ranking_score": 0.0004933278546384584,
+      "resolved_markets_in_sample": 6,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xadaeb85821f6dad7ca44f2018f5cb61602019be6",
+      "rank": 27,
+      "ranking_score": 0.0004117647058823533,
+      "resolved_markets_in_sample": 7,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x7dd4fa5c3ecc4c27a476abbd5febf53eba692bd4",
+      "rank": 28,
+      "ranking_score": 0.0004117645882352979,
+      "resolved_markets_in_sample": 7,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x08ffd16cacd8864d57143caa8735e65887387840",
+      "rank": 29,
+      "ranking_score": 0.00037500000000000033,
+      "resolved_markets_in_sample": 6,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x70bbae8501e8f346168c06c32e9f7d42afc1b180",
+      "rank": 30,
+      "ranking_score": 0.0003750000000000002,
+      "resolved_markets_in_sample": 6,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x364f935ccafae7bb980616b81999239ed816562c",
+      "rank": 31,
+      "ranking_score": -0.0007618732651533575,
+      "resolved_markets_in_sample": 5,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x3f4f9145904c7b3261c3bbe05fcea64d9d91b4b3",
+      "rank": 32,
+      "ranking_score": -0.002375189721693107,
+      "resolved_markets_in_sample": 8,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x8209baa2350bb748cc33d72f7a80a72f8a5896f2",
+      "rank": 33,
+      "ranking_score": -0.00785895497041526,
+      "resolved_markets_in_sample": 5,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xc602e34792d9a5e129f3404daef2df43d1d37fc1",
+      "rank": 34,
+      "ranking_score": -0.015910433741292116,
+      "resolved_markets_in_sample": 6,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x4745bed9080a47cdf2e8280fd57dd49237305916",
+      "rank": 35,
+      "ranking_score": -0.02070370105230498,
+      "resolved_markets_in_sample": 8,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x8cb4cd50c5cbc231d5df93c097b605fdf116b997",
+      "rank": 36,
+      "ranking_score": -0.022061156061699026,
+      "resolved_markets_in_sample": 9,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xa58d4f278d7953cd38eeb929f7e242bfc7c0b9b8",
+      "rank": 37,
+      "ranking_score": -0.02344487336605851,
+      "resolved_markets_in_sample": 8,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0x1cfc260bfa2b5ae89377863180ca3b4f5c862111",
+      "rank": 38,
+      "ranking_score": -0.029983558011032526,
+      "resolved_markets_in_sample": 5,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xdfaacceff09ac2c037393eee387e81ea024679a7",
+      "rank": 39,
+      "ranking_score": -0.03798473916039437,
+      "resolved_markets_in_sample": 10,
+      "cohort": "middle"
+    },
+    {
+      "wallet": "0xcceb22d524e186153cffe79f13c0aeb75889f030",
+      "rank": 40,
+      "ranking_score": -0.040737566513636025,
+      "resolved_markets_in_sample": 6,
+      "cohort": "bottom_decile"
+    },
+    {
+      "wallet": "0x5fe50c22621779e031322c5becb110d1fa0d8b99",
+      "rank": 41,
+      "ranking_score": -0.05213535666922475,
+      "resolved_markets_in_sample": 12,
+      "cohort": "bottom_decile"
+    },
+    {
+      "wallet": "0x8fdccd4ebc2be61691231e98a26f0d2c41e35d91",
+      "rank": 42,
+      "ranking_score": -0.057999994313333345,
+      "resolved_markets_in_sample": 5,
+      "cohort": "bottom_decile"
+    },
+    {
+      "wallet": "0x1534aac78e168038bd277813acff6156e435f40f",
+      "rank": 43,
+      "ranking_score": -0.0708220676980771,
+      "resolved_markets_in_sample": 5,
+      "cohort": "bottom_decile"
+    }
+  ]
+}

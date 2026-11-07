@@ -6,4 +6,7 @@
 datasets/** -text
 datasets/**/README.md text eol=lf
 datasets/**/overview.svg text eol=lf
+analysis/** -text
+analysis/**/README.md text eol=lf
+analysis/**/*.svg text eol=lf
 *.gz binary

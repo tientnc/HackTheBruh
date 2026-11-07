@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+<title id="title">From earlier trades to wallet evidence</title><desc id="desc">51 markets before December 1 yield 43 eligible wallets and four wallets per decile. Counts, edge and descriptive consistency are measured. Net profit, ROI and subjective probabilities require more data.</desc>
+<rect width="1200" height="640" rx="24" fill="#101827"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="52" y="58" fill="#8ce1ce" font-size="17" letter-spacing="3">WALLET EVIDENCE · DECEMBER 1, 2025</text>
+<text x="52" y="108" fill="#ffffff" font-size="36" font-weight="700">Rank earlier. Predict later. Keep uncertainty.</text>
+<g fill="#1e2b40"><rect x="52" y="145" width="340" height="135" rx="16"/><rect x="430" y="145" width="340" height="135" rx="16"/><rect x="808" y="145" width="340" height="135" rx="16"/></g>
+<g fill="#ffffff" font-size="54" font-weight="700"><text x="78" y="210">51</text><text x="456" y="210">43</text><text x="834" y="210">4 + 4</text></g>
+<g fill="#b8c9dc" font-size="19"><text x="78" y="250">earlier resolved markets</text><text x="456" y="250">wallets with ≥ 5 markets</text><text x="834" y="250">top / bottom cohort sizes</text></g>
+<path d="M398 210h24m-9-8 9 8-9 8M776 210h24m-9-8 9 8-9 8" fill="none" stroke="#8ce1ce" stroke-width="3"/>
+<rect x="52" y="320" width="535" height="206" rx="16" fill="#163a39"/>
+<rect x="613" y="320" width="535" height="206" rx="16" fill="#3b3026"/>
+<text x="78" y="360" fill="#8ce1ce" font-size="20" font-weight="700">MEASURED NOW</text>
+<text x="78" y="401" fill="#ffffff" font-size="21">Event counts · signed edge · category edge</text>
+<text x="78" y="441" fill="#ffffff" font-size="21">Descriptive consistency · historical PnL report</text>
+<text x="78" y="486" fill="#b8d8d1" font-size="17">Reported PnL available for all 43 eligible wallets</text>
+<text x="639" y="360" fill="#ffd29b" font-size="20" font-weight="700">REQUIRES MORE EVIDENCE</text>
+<text x="639" y="401" fill="#ffffff" font-size="21">After-cost net PnL · ROI · profitable bets</text>
+<text x="639" y="441" fill="#ffffff" font-size="21">Wallet probability forecasts · timing advantage</text>
+<text x="639" y="486" fill="#e5ccb0" font-size="17">Missing inputs stay missing; zero is not a substitute</text>
+<text x="52" y="577" fill="#ffffff" font-size="23" font-weight="600">0 wallets pass the adjusted sign diagnostic.</text>
+<text x="52" y="610" fill="#a9bbcf" font-size="18">Pilot rank ≠ proven skill. Five markets is an eligibility floor, not a confidence guarantee.</text>
+</g></svg>

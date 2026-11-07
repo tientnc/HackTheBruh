@@ -84,6 +84,10 @@ Only after calibration, materialize optional labels:
 
 Retain the continuous estimate and uncertainty alongside the label. Do not automatically invert a negative-score wallet's trades; whether that improves forecasts is a separate hypothesis. A continuously weighted signal is another experiment, not a guaranteed improvement over these groups.
 
+## Implemented finance pilot
+
+The newer [100-market wallet analysis](../../analysis/finance-wallets/2025-12-01/v1/README.md) implements point-in-time event counts, signed edge, descriptive consistency, category metrics, historical reported PnL and an explicitly exploratory sign diagnostic. Its 43 eligible wallets form four-member deciles. Complete after-cost ROI and individual probability-based Brier skill remain unavailable. The [later-outcome pilot](../../analysis/finance-backtest/2025-12/v1/README.md) finds no forecast improvement over market prices. These updates supersede the single-market next-step recommendation below; the Anthropic audit remains specific to that earlier snapshot.
+
 ## What our current dataset can support
 
 Audit of the committed Anthropic snapshot, not a population-wide study:

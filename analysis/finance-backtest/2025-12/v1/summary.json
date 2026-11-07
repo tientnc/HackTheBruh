@@ -1,0 +1,38 @@
+{
+  "status": "exploratory retrospective backtest, not proof of wallet skill",
+  "cohort_as_of": "2025-12-01T00:00:00+00:00",
+  "fit_as_of": "2025-12-15T00:00:00+00:00",
+  "wallets_per_decile": 4,
+  "calibration_markets": 20,
+  "test_markets": 20,
+  "excluded_markets": 9,
+  "test_market_baseline": {
+    "markets": 20,
+    "brier_score": 0.070786425,
+    "log_loss": 0.2158219167575198,
+    "brier_skill_vs_market": 0.0
+  },
+  "test_all_wallet_model": {
+    "markets": 20,
+    "brier_score": 0.07126423633772722,
+    "log_loss": 0.21688716377256276,
+    "brier_skill_vs_market": -0.006750041942748419
+  },
+  "test_top_bottom_model": {
+    "markets": 20,
+    "brier_score": 0.0707864254458632,
+    "log_loss": 0.21582191801600276,
+    "brier_skill_vs_market": -6.298710442109723e-09
+  },
+  "test_markets_with_cohort_activity": 7,
+  "test_prediction_calendar_weeks": 3,
+  "confidence_interval": null,
+  "uncertainty_reason": "pilot has few markets/time blocks; no robust confidence claim is made",
+  "limitations": [
+    "Schedules/rules are collection-time metadata, not historical schedule snapshots",
+    "Formal resolution can lag public outcome knowledge; public announcement timestamps not fully collected",
+    "Quoted benchmark is a sparse historical price, not a pre-trade order-book midpoint",
+    "Deciles are relative rankings, not statistically established skilled/unskilled groups",
+    "Complete wallet inventory/cost histories and individual wallet probability forecasts unavailable"
+  ]
+}

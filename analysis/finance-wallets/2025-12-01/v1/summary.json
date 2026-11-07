@@ -1,0 +1,19 @@
+{
+  "built_at": "2026-11-07T20:56:37.250221+00:00",
+  "as_of": "2025-12-01T00:00:00+00:00",
+  "source_markets_resolved_before_cutoff": 51,
+  "wallets_seen_in_earlier_markets": 8790,
+  "pilot_eligible_wallets": 43,
+  "wallets_per_decile": 4,
+  "reported_historical_pnl_available": 43,
+  "sign_diagnostic_by_q_le_005": 0,
+  "statistically_confirmed_skilled_wallets": 0,
+  "status": "pilot rankings; sign-symmetry diagnostic assumptions and out-of-sample persistence not established",
+  "missing_net_roi_or_bss": {
+    "net_realized_pnl": 43,
+    "roi": 43,
+    "bss": 43
+  },
+  "ties_at_top_boundary": false,
+  "fdr_note": "BY controls dependence only with valid p-values; sign-symmetry null is an exploratory assumption, not verified skill"
+}

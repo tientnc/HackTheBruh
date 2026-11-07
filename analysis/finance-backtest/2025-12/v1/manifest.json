@@ -1,0 +1,18 @@
+{
+  "algorithm": "sha256",
+  "sources": {
+    "datasets/finance/resolved-100-2025/v1/manifest.json": "8f37e7a0dc7ac5b4025a1e4b843c7967fa03ff4b7722dbf03d5afb60af93cfc2",
+    "analysis/finance-wallets/2025-12-01/v1/cohorts.json": "100ca4bb181b8dcc493417c760dba21cb6548eaf89837c50278b2e7bbaa1358a",
+    "analysis/finance-wallets/2025-12-01/v1/manifest.json": "81b2c152a79175f5c7b78c4636311b2a348fd63cb8059b052ae862fb63b4c052",
+    "polyresearch/backtest.py": "182add40f4b49e4ffdea649da870a1bb624f64981b51de9358db78a8431d5c34",
+    "polyresearch/wallet_metrics.py": "a89df7a294d23ebe218cd7938d931532ff56996b652939cfa0172751572e3637",
+    "polyresearch/artifacts.py": "621e2401b92396113e53ba103ff0db004efcdd0bf74a8af929951c0497c41b1c"
+  },
+  "files": {
+    "config.json": "aa60f7d38d74139488818e83944a635a3f310ec87e808230afe2c231b22c4632",
+    "excluded_markets.csv": "fe848097bf190d59d3f7f35d0842f115c3cb1d5f6255fe0338e95052080461f7",
+    "forecasts.csv": "1bbfa81836304666ca3b63b403e2988a7a77ff192adf29761cf39f81b23e6a44",
+    "model.json": "21d571c12e9772d0786b8eb34a2efbcc8343502a0a90aef8e7d1d09a5d77f5ec",
+    "summary.json": "0431d4c458860d052850bc06b0aa7628e80227445321d41194f7f6375ddffbf0"
+  }
+}
