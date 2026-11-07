@@ -1,3 +1,4 @@
+import { createServerFn } from "@tanstack/react-start";
 import raw from "@/data/markets.json";
 
 export type Tier = "skilled" | "unskilled" | "new";
@@ -22,13 +23,49 @@ export type Market = {
   top_positions: { wallet: string; tier: Tier; side: "yes" | "no"; stake_usd: number; entry_price: number }[];
 };
 
-// Single data entry point: swap this for a fetch to the real markets.json or an API.
+// The demo's wallet positions are separate from the historical research market records.
 export async function getMarkets(): Promise<Market[]> {
   return raw as Market[];
 }
 export async function getMarket(id: string): Promise<Market | undefined> {
   return (await getMarkets()).find((m) => m.id === id);
 }
+
+type ResearchMarket = {
+  dataset_key: string;
+  market_id: string;
+  question: string;
+  label_available_at: number;
+  yes_outcome: 0 | 1;
+};
+
+type ResearchMarketRead =
+  | { status: "connected"; markets: ResearchMarket[] }
+  | { status: "unconfigured" | "unavailable" };
+
+export const getResearchMarkets = createServerFn({ method: "GET" }).handler(
+  async (): Promise<ResearchMarketRead> => {
+    const { SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY } = process.env;
+    if (!SUPABASE_URL || !SUPABASE_PUBLISHABLE_KEY) return { status: "unconfigured" };
+
+    try {
+      const url = new URL("/rest/v1/research_markets", SUPABASE_URL);
+      url.search = new URLSearchParams({
+        select: "dataset_key,market_id,question,label_available_at,yes_outcome",
+        order: "label_available_at.desc,dataset_key,market_id",
+        limit: "20",
+      }).toString();
+      const response = await fetch(url, {
+        headers: { apikey: SUPABASE_PUBLISHABLE_KEY },
+        signal: AbortSignal.timeout(5000),
+      });
+      if (response.ok) return { status: "connected", markets: await response.json() };
+    } catch {
+      return { status: "unavailable" };
+    }
+    return { status: "unavailable" };
+  },
+);
 
 export function skilledYesShare(m: Pick<Market, "yes" | "no">): number {
   const total = m.yes.skilled_usd + m.no.skilled_usd;

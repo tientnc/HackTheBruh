@@ -47,7 +47,7 @@ function TablePage() {
     <div className="space-y-10">
       <section className="space-y-4">
         <p className="caption">
-          {m.category} · Closes {fmtDate(m.closes_at)} · {fmtUsd(m.volume_usd)} volume
+          Demo market · {m.category} · Closes {fmtDate(m.closes_at)} · {fmtUsd(m.volume_usd)} volume
         </p>
         <h1 className="max-w-4xl text-4xl leading-tight md:text-5xl">{m.question}</h1>
         <p className="text-gold-light">{verdict(skillGap(m))}</p>

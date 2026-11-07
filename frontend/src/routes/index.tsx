@@ -12,9 +12,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Lobby · Jett Showdown" },
-      { name: "description", content: "Tonight's highest-stakes prediction markets, with skilled, unskilled and new money laid out on the table." },
+      { name: "description", content: "Explore how Jett Showdown displays prediction-market positions with demo data." },
       { property: "og:title", content: "Lobby · Jett Showdown" },
-      { property: "og:description", content: "See where the sharps sit on every live prediction market, next to the price." },
+      { property: "og:description", content: "Explore how Jett Showdown displays prediction-market positions with demo data." },
     ],
   }),
   component: Lobby,
@@ -54,7 +54,7 @@ function Lobby() {
     <div className="space-y-12">
       <section className="space-y-4">
         <p className="caption">
-          Highest stakes tonight · {top.category} · Closes {fmtDate(top.closes_at)}
+          Demo market · {top.category} · Closes {fmtDate(top.closes_at)}
         </p>
         <h1 className="max-w-4xl text-4xl leading-tight md:text-6xl">{top.question}</h1>
         <Legend />
