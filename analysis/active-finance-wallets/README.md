@@ -16,6 +16,9 @@ flowchart LR
 | December 1, 2025 | 51 | 4 | 93 | 43 | [CSV](before-2025-12-01/v1/top_wallets.csv) · [IDs only](before-2025-12-01/v1/wallet_ids.txt) |
 | January 1, 2026 | 100 | 7 | 100 | 55 | [CSV](before-2026-01-01/v1/top_wallets.csv) · [IDs only](before-2026-01-01/v1/wallet_ids.txt) |
 
+<details>
+<summary>Tables, definitions and reproducibility</summary>
+
 For the December backtest, use the December 1 list. The year-end list is descriptive or usable for a new later evaluation; it cannot retrospectively select wallets for forecasts earlier in December. A market must have a final label strictly before cutoff; included trade rows must precede both cutoff and formal resolution. Trades span each selected market's available history, not exclusively the month in the output folder.
 
 The CSV contains market counts, taker-only market counts, all-side trade-leg counts, taker counts, observed notional and first/last trade timestamps. It includes both market-count and trade-count ranks across the eligible source population, although the exported 100 are selected by the configured ordering. Taker rows overlap the all-side feed; never add their counts to all-side counts. These are API records, not necessarily distinct economic bets. Summing notional across wallets double-counts counterparties and is not market volume.
@@ -51,3 +54,5 @@ For example, with market probability 0.60, model probability 0.70 and eventual Y
 **Predicting profit is a separate target.** In that experiment, the label could be a wallet's net realized PnL during a fixed later period, and a regression minimizes prediction error between predicted and measured profit. Define positions, exposure, accounting, fees and the time window first; use only earlier features. Current lifetime PnL is not the target for an earlier forecast, and raw dollar profit favors larger wallets. Capital-normalized performance is more comparable when reliable capital data exists. A prediction is evaluated against realized profit; equality is an idealized zero-error case, not the training signal itself.
 
 Profitability can inform the earlier wallet-group definition. The current project succeeds when those groups and market features support useful **later buyer/seller count predictions**. Outcome forecasting and fixed-horizon price forecasting remain separate possible experiments.
+
+</details>

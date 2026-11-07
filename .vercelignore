@@ -1,0 +1,13 @@
+.git
+.venv
+data
+!web/public/data/
+!web/public/data/snapshot.json
+datasets
+analysis
+notebooks
+tests
+polyresearch
+supabase
+.env*
+docs

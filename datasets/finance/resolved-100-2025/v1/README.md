@@ -4,7 +4,10 @@
 
 **Start:** [Markets + final outcomes](markets.csv) → [Wallet index](wallets.csv) → [Per-market tables](markets/) → [Coverage](coverage.csv)
 
-This snapshot supports the first historical experiment: **rank wallets using earlier performance, freeze the top/bottom deciles, and compare their predictions on later markets.** Wallet rankings and forecasts have not been assigned yet.
+This is the earlier dataset for the [implemented next-week participation test](../../../../analysis/participation/2026-01/v1/README.md). It also supports a separate [earlier outcome-forecasting experiment](../../../../analysis/finance-backtest/2025-12/v1/README.md).
+
+<details>
+<summary>Tables, definitions and reproducibility</summary>
 
 ## What's collected
 
@@ -133,3 +136,5 @@ For historical features, require prices to be fully available at the prediction 
 [Manifest](manifest.json) · [Validation](validation.json) · [Settings](config.json) · [Download errors](errors.json)
 
 Sources: [Polymarket Finance](https://polymarket.com/finance), [resolution documentation](https://docs.polymarket.com/concepts/resolution), [Data API v2](https://data-api.polymarket.com/v2/openapi.json). Source data belongs to its respective providers; no additional rights are granted here.
+
+</details>

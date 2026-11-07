@@ -6,6 +6,9 @@
 
 [Predicted versus actual counts](predictions.csv) · [Per-market errors](per_market_errors.csv) · [Per-week errors](per_week_errors.csv) · [Wallet groups](candidate_wallets.csv) · [Summary](summary.json) · [Model](model.json)
 
+<details>
+<summary>Tables, definitions and reproducibility</summary>
+
 ## Earlier data → frozen model → later actual trades
 
 | Stage | Evidence |
@@ -79,3 +82,5 @@ python -c "from pathlib import Path; from polyresearch.artifacts import verify; 
 ```
 
 Run from the repository root. Source hashes, settings, model coefficients, training counts and held-out observations are published. Use a new `--out` for a changed experiment.
+
+</details>

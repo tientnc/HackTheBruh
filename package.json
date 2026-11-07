@@ -1,0 +1,10 @@
+{
+  "name": "hackthebruh-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-demo.mjs",
+    "preview": "node scripts/preview-demo.mjs"
+  },
+  "engines": {"node": ">=20"}
+}

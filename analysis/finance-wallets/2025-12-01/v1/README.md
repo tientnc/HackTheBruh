@@ -6,6 +6,9 @@
 
 [Ranked cohorts](cohorts.json) · [All wallet metrics](wallet_metrics.csv) · [Category metrics](category_metrics.csv) · [Summary](summary.json) · [Later forecast results](../../../finance-backtest/2025-12/v1/README.md)
 
+<details>
+<summary>Tables, definitions and reproducibility</summary>
+
 ## What is measured?
 
 | Metric | This snapshot | Meaning / benchmark |
@@ -76,3 +79,5 @@ Cached raw responses are reused. Use a new `--out` for changed settings or evide
 ```
 
 Cost basis excludes separately supplied fees/other costs. Only closed, available, explicitly reconciled positions enter the supplied-position metrics. That does not establish complete lifetime coverage or portfolio time-weighted ROI. Forecasts must use an already available quote and precede the outcome; labels must mature before the ranking cutoff. Forecast rows receive equal total weight per economic group. Brier skill is `1 − wallet_Brier / market_Brier` on those identical observations; it is undefined when benchmark Brier is zero.
+
+</details>
