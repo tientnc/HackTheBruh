@@ -7,6 +7,7 @@ import {
   filterMarkets,
   readGap,
   scoreboard,
+  sharpsBoard,
   topDisagreements,
   fmtGap,
   fmtUsd,
@@ -15,6 +16,7 @@ import {
   skillGap,
   suitFor,
   verdict,
+  type CallFilter,
   type Market,
   type Side,
 } from "@/lib/data";
@@ -186,7 +188,7 @@ describe("lobby lists", () => {
     expect(filterMarkets(ms, { query: "FED" }).map((m) => m.id)).toEqual(["fed"]);
   });
   it("filters by the sharps' call", () => {
-    const ids = (call: Parameters<typeof filterMarkets>[1]["call"]) =>
+    const ids = (call: CallFilter) =>
       filterMarkets(ms, { call })
         .map((m) => m.id)
         .sort();
@@ -255,4 +257,37 @@ describe("scoreboard", () => {
     expect(big!.sharpSideWon).toBe(0.5);
     expect(big!.priceImplied).toBeCloseTo((0.5 + 0.4) / 2);
   });
+});
+
+describe("the sharps", () => {
+  const seat = (wallet: string, side: "yes" | "no", stake_usd: number, entry_price: number) => ({
+    wallet,
+    side,
+    stake_usd,
+    entry_price,
+  });
+  const ms = [
+    market("a", side(1), side(1), 0.5, {
+      outcome: "yes",
+      sharps: [seat("0xA", "yes", 300, 0.4), seat("0xB", "no", 50, 0.6)],
+    }),
+    market("b", side(1), side(1), 0.5, { outcome: "no", sharps: [seat("0xA", "yes", 100, 0.2)] }),
+  ];
+  it("groups hands per wallet, most tables first, with how they turned out", () => {
+    const [a, b] = sharpsBoard(ms);
+    expect(a).toMatchObject({
+      wallet: "0xA",
+      tables: 2,
+      staked: 400,
+      yes: 2,
+      no: 0,
+      won: 1,
+      resolved: 2,
+    });
+    expect(a!.priceImplied).toBeCloseTo(0.3);
+    expect(a!.hands[0]!.id).toBe("a");
+    expect(b).toMatchObject({ wallet: "0xB", tables: 1, won: 0 });
+  });
+  it("no sharps, empty board", () =>
+    expect(sharpsBoard([market("c", side(1), side(1), 0.5)])).toEqual([]));
 });

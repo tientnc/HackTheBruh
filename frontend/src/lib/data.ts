@@ -30,6 +30,8 @@ export type Market = {
     stake_usd: number;
     entry_price: number;
   }[];
+  /** Every skilled wallet's position at the snapshot, not just the biggest. */
+  sharps?: { wallet: string; side: "yes" | "no"; stake_usd: number; entry_price: number }[];
   // Replays of resolved markets (built by polyresearch/backtest/lobby.py)
   snapshot_at?: string;
   resolved_at?: string;
@@ -45,6 +47,8 @@ export type DataMeta = {
   tiers_source: string; // "none" = no ratings yet, "fake" = random preview tiers, else the tiers file name
   dataset: string;
   markets: number;
+  rated_wallets?: number;
+  skilled_wallets?: number;
   generated_at: string;
 };
 
@@ -426,4 +430,58 @@ export function scoreboard(markets: Market[]): ScoreboardData {
     buckets,
     notable: topDisagreements(resolved, 6),
   };
+}
+
+export type SharpHand = {
+  id: string;
+  question: string;
+  side: "yes" | "no";
+  stake_usd: number;
+  entry_price: number;
+  outcome?: "yes" | "no" | undefined;
+};
+export type SharpRow = {
+  wallet: string;
+  tables: number;
+  staked: number;
+  yes: number;
+  no: number;
+  /** Showdown only: hands whose side won, out of resolved hands */
+  won: number;
+  resolved: number;
+  /** Average price paid for the side taken: the chance the market gave it */
+  priceImplied: number | null;
+  hands: SharpHand[];
+};
+
+/**
+ * Every skilled wallet seated at these tables at the snapshot, most active first:
+ * how many tables, how much it staked, which way it leaned, and how its hands turned out.
+ */
+export function sharpsBoard(markets: Market[]): SharpRow[] {
+  const by = new Map<string, SharpHand[]>();
+  for (const m of markets)
+    for (const s of m.sharps ?? []) {
+      const hands = by.get(s.wallet) ?? [];
+      hands.push({ id: m.id, question: m.question, ...s, outcome: m.outcome });
+      by.set(s.wallet, hands);
+    }
+  return [...by]
+    .map(([wallet, hands]) => {
+      const done = hands.filter((h) => h.outcome);
+      return {
+        wallet,
+        tables: new Set(hands.map((h) => h.id)).size,
+        staked: hands.reduce((t, h) => t + h.stake_usd, 0),
+        yes: hands.filter((h) => h.side === "yes").length,
+        no: hands.filter((h) => h.side === "no").length,
+        won: done.filter((h) => h.side === h.outcome).length,
+        resolved: done.length,
+        priceImplied: done.length
+          ? done.reduce((t, h) => t + h.entry_price, 0) / done.length
+          : null,
+        hands: hands.sort((a, b) => b.stake_usd - a.stake_usd),
+      };
+    })
+    .sort((a, b) => b.tables - a.tables || b.staked - a.staked);
 }

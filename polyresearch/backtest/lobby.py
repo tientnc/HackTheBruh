@@ -158,6 +158,7 @@ def build_snapshot(legs, trades, points, chart, question, tier_of):
         "skilled_share": skilled_share(numbers),
         "skilled_share_history": history,
         "top_positions": seats[:TOP_POSITIONS],
+        "sharps": [{k: v for k, v in seat.items() if k != "tier"} for seat in seats if seat["tier"] == "skilled"],
         "spark": downsample(spark, SPARK_POINTS),
     }
 
@@ -189,11 +190,13 @@ def build_market(dataset, market, questions, tier_of, prices_dir):
 
 def run(dataset=DEFAULT_DATASET, out=DEFAULT_OUT, tiers_path=None, fake=False):
     dataset, out = Path(dataset), Path(out)
+    rated = {}
     if fake:
         tier_of, source = fake_tier, "fake"
         print("Using FAKE random wallet tiers: layout preview only, never present these.")
     elif tiers_path:
         tiers = load_tiers(tiers_path)
+        rated = {"rated_wallets": len(tiers), "skilled_wallets": sum(t == "skilled" for t in tiers.values())}
         tier_of, source = (lambda w: tiers.get(w, "unknown")), Path(tiers_path).name
         print(f"Loaded {len(tiers)} rated wallets from {tiers_path}")
     else:
@@ -225,6 +228,7 @@ def run(dataset=DEFAULT_DATASET, out=DEFAULT_OUT, tiers_path=None, fake=False):
         "tiers_source": source,
         "dataset": dataset.as_posix(),
         "markets": len(rows),
+        **rated,
         "generated_at": iso(datetime.now(tz=timezone.utc).timestamp()),
     }
     (out / "meta.json").write_text(json.dumps(info, indent=1) + "\n", encoding="utf-8")
