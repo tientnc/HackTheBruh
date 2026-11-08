@@ -7,8 +7,12 @@ export function BrowserNews({ headlines }: { headlines: NewsHeadline[] | undefin
       <p className="caption">Experimental</p>
       <h2 className="text-2xl text-gold-light">Browser Integration</h2>
       <p className="mt-1 text-sm text-text-3">
-        Related headlines from the seven complete days before this snapshot (UTC). The prediction
-        stays the same.
+        Related headlines from the seven complete days before this snapshot (UTC).
+      </p>
+      <p className="mt-2 text-sm text-text-3">
+        In an offline test on 20 markets, headline volume reduced seven-day wallet count forecast
+        error by 0.49%. This first version shows headlines as context while we test where news can
+        make a bigger difference.
       </p>
       {headlines?.length ? (
         <ul className="mt-4 space-y-3">
