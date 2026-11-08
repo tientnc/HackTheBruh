@@ -171,9 +171,9 @@ export function verdict(gap: number | null): string {
     ? "Sharps are more confident in YES than the house"
     : "Sharps are more confident in NO than the house";
 }
-export function suitFor(gap: number | null): "♠" | "♣" | "♥" {
-  if (gap === null || Math.abs(gap) <= 5) return "♥";
-  return gap > 0 ? "♠" : "♣";
+export function suitFor(gap: number | null): "♣" | "♦" | "♠" {
+  if (gap === null || Math.abs(gap) <= 5) return "♠";
+  return gap > 0 ? "♣" : "♦";
 }
 export const fmtGap = (gap: number | null) =>
   gap === null ? "?" : gap > 0 ? `+${gap}` : gap < 0 ? `−${-gap}` : "0";

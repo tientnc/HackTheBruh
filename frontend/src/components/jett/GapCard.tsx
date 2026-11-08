@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 type Props = {
   gap?: number | null;
   rank?: string;
-  suit?: "♠" | "♣" | "♥";
+  suit?: "♠" | "♣" | "♥" | "♦";
   size?: "sm" | "md" | "lg";
   tilt?: number;
   label?: string;
@@ -16,7 +16,7 @@ export function GapCard({ gap, rank, suit, size = "md", tilt = -6, label }: Prop
   const isGap = gap !== undefined;
   const s = suit ?? suitFor(gap ?? null);
   const value = rank ?? (isGap ? fmtGap(gap) : "");
-  const red = s === "♥";
+  const red = s === "♦" || s === "♥";
   const ink = red ? "text-card-red" : "text-card-ink";
   const aria =
     label ??

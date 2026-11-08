@@ -96,13 +96,13 @@ describe("showdown", () => {
 });
 
 describe("suits and verdicts", () => {
-  it("within ±5 is a heart and agree", () => {
-    expect(suitFor(5)).toBe("♥");
+  it("within ±5 is a spade and agree", () => {
+    expect(suitFor(5)).toBe("♠");
     expect(verdict(-5)).toBe("Sharps and the house agree");
   });
-  it("positive spade, negative club", () => {
-    expect(suitFor(6)).toBe("♠");
-    expect(suitFor(-6)).toBe("♣");
+  it("positive club, negative diamond", () => {
+    expect(suitFor(6)).toBe("♣");
+    expect(suitFor(-6)).toBe("♦");
     expect(verdict(-6)).toBe("Sharps are more confident in NO than the house");
   });
 });
