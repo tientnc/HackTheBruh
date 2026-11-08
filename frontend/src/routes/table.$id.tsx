@@ -25,6 +25,7 @@ import {
 } from "@/lib/data";
 import { useMode } from "@/hooks/use-mode";
 import { ModeBar } from "@/components/jett/ModeBar";
+import { BackToLobby } from "@/components/jett/BackToLobby";
 import { PokerTable } from "@/components/jett/PokerTable";
 import { PriceChart } from "@/components/jett/PriceChart";
 import { TiersBanner } from "@/components/jett/TiersBanner";
@@ -73,6 +74,7 @@ function TablePage() {
     const other = snaps[0];
     return (
       <div className="space-y-8">
+        <BackToLobby />
         <ModeBar />
         <Panel className="space-y-4 py-12 text-center">
           <h1 className="text-3xl">{question}</h1>
@@ -105,6 +107,7 @@ function TablePage() {
   return (
     <div className="space-y-10">
       <section className="space-y-4">
+        <BackToLobby />
         <ModeBar />
         <p className="caption">
           {live

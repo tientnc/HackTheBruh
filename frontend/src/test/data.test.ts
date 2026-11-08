@@ -4,6 +4,8 @@ import {
   chipCount,
   chipUnit,
   featured,
+  filterMarkets,
+  topDisagreements,
   fmtGap,
   fmtUsd,
   getMarkets,
@@ -146,5 +148,46 @@ describe("generated lobby data", () => {
     const [m] = await getMarkets("24h");
     const pts = await getPriceHistory(m!.id);
     expect(pts.length).toBeGreaterThan(1);
+  });
+});
+
+describe("lobby lists", () => {
+  const ms = [
+    market("fed", side(700), side(300), 0.5, {
+      call: "YES",
+      question: "Fed cut in March?",
+      category: "Rates & macro",
+    }),
+    market("gold", side(100), side(900), 0.6, {
+      call: "INSUFFICIENT",
+      question: "Gold above $5,000?",
+      category: "Commodities",
+    }),
+    market("apple", side(0, 10), side(0, 10), 0.5, {
+      question: "Apple largest company?",
+      volume_usd: 9_000,
+    }),
+    market("oil", side(450), side(550), 0.5, {
+      call: "NO",
+      question: "Oil above $90?",
+      category: "Commodities",
+    }),
+  ];
+  it("biggest disagreements: sharp calls first, then by gap; unrated tables never appear", () => {
+    expect(topDisagreements(ms).map((m) => m.id)).toEqual(["fed", "oil", "gold"]);
+    expect(topDisagreements([ms[2]!])).toEqual([]);
+  });
+  it("search matches every word, case-insensitive", () => {
+    expect(filterMarkets(ms, { query: "gold 5,000" }).map((m) => m.id)).toEqual(["gold"]);
+    expect(filterMarkets(ms, { query: "FED" }).map((m) => m.id)).toEqual(["fed"]);
+  });
+  it("category filter and sorts", () => {
+    expect(
+      filterMarkets(ms, { category: "Commodities" })
+        .map((m) => m.id)
+        .sort(),
+    ).toEqual(["gold", "oil"]);
+    expect(filterMarkets(ms, { sort: "volume" })[0]!.id).toBe("apple");
+    expect(filterMarkets(ms, { sort: "gap" }).at(-1)!.id).toBe("apple");
   });
 });

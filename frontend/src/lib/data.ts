@@ -227,3 +227,40 @@ export function predictionText(m: Market): string {
   if (tiersPending) return "Waiting for wallet ratings";
   return "Not enough sharp money to call";
 }
+
+/**
+ * The tables where the sharps disagree most with the price: biggest absolute skill gap,
+ * tables with a sharp call first. Uses only pre-snapshot data, so it is safe in Live mode.
+ * Empty until wallet ratings give some table a skill gap.
+ */
+export function topDisagreements(markets: Market[], n = 3): Market[] {
+  const withGap = markets.filter((m) => skillGap(m) !== null);
+  const called = (m: Market) => (m.call === "YES" || m.call === "NO" ? 1 : 0);
+  return [...withGap]
+    .sort((a, b) => called(b) - called(a) || Math.abs(skillGap(b)!) - Math.abs(skillGap(a)!))
+    .slice(0, n);
+}
+
+/** Search, category and sort for the Lobby list. */
+export type LobbySort = "gap" | "volume" | "closing";
+export function filterMarkets(
+  markets: Market[],
+  {
+    query = "",
+    category = "All",
+    sort = "gap",
+  }: { query?: string; category?: string; sort?: LobbySort },
+): Market[] {
+  const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+  const absGap = (m: Market) => Math.abs(skillGap(m) ?? -1);
+  return markets
+    .filter((m) => category === "All" || m.category === category)
+    .filter((m) => words.every((w) => `${m.question} ${m.category}`.toLowerCase().includes(w)))
+    .sort((a, b) =>
+      sort === "gap"
+        ? absGap(b) - absGap(a) || b.volume_usd - a.volume_usd
+        : sort === "volume"
+          ? b.volume_usd - a.volume_usd
+          : b.closes_at.localeCompare(a.closes_at),
+    );
+}
