@@ -6,6 +6,7 @@ import {
   featured,
   filterMarkets,
   readGap,
+  scoreboard,
   topDisagreements,
   fmtGap,
   fmtUsd,
@@ -208,5 +209,37 @@ describe("plain-language readings", () => {
   it("uses the same ±5 boundary as the verdict", () => {
     expect(readGap(0.59, 0.54).kind).toBe("agree");
     expect(readGap(0.6, 0.54).kind).toBe("yes-cheap");
+  });
+});
+
+describe("scoreboard", () => {
+  const ms = [
+    // sharps 70% vs 50¢ → +20, called YES, YES won
+    market("a", side(700), side(300), 0.5, { call: "YES", outcome: "yes" }),
+    // sharps 20% vs 60¢ → −40, called NO, YES won (miss); crowd favourite YES was right
+    market("b", side(200), side(800), 0.6, { call: "NO", outcome: "yes" }),
+    // sharps 52% vs 50¢ → +2 (small), no call, NO won
+    market("c", side(520), side(480), 0.5, { call: "INSUFFICIENT", outcome: "no" }),
+    // unrated, crowd favourite NO (20¢), NO won
+    market("d", side(0, 10), side(0, 10), 0.2, { outcome: "no" }),
+  ];
+  const s = scoreboard(ms);
+  it("crowd baseline counts only tables with a favourite", () => {
+    expect(s.crowd.favouriteTables).toBe(2);
+    expect(s.crowd.favouriteRight).toBe(2);
+    expect(s.crowd.brier).toBeCloseTo((0.25 + 0.16 + 0.25 + 0.04) / 4);
+  });
+  it("sharps' calls compared with the crowd on the same tables", () => {
+    expect(s.calls).toEqual({ made: 2, right: 1, crowdRightSameTables: 1 });
+  });
+  it("buckets by gap size, sharp side vs price-implied chance", () => {
+    const [small, medium, big] = s.buckets;
+    expect(small!.tables).toBe(1);
+    expect(small!.sharpSideWon).toBe(0);
+    expect(medium!.tables).toBe(0);
+    expect(medium!.sharpSideWon).toBeNull();
+    expect(big!.tables).toBe(2);
+    expect(big!.sharpSideWon).toBe(0.5);
+    expect(big!.priceImplied).toBeCloseTo((0.5 + 0.4) / 2);
   });
 });
