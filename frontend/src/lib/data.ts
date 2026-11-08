@@ -264,3 +264,50 @@ export function filterMarkets(
           : b.closes_at.localeCompare(a.closes_at),
     );
 }
+
+export type Reading = {
+  kind: "yes-cheap" | "no-cheap" | "agree" | "no-signal";
+  /** One short headline, e.g. "YES looks cheap" */
+  headline: string;
+  /** What the numbers mean, in plain language */
+  means: string;
+  /** What someone who trusts the sharps might consider. Information, not advice. */
+  might: string;
+};
+
+/**
+ * Plain-language reading of a skill gap. `share` is skilled money on YES (0–1, null if none),
+ * `price` is the YES price (0–1). Shared by the How to Play page and every table.
+ */
+export function readGap(share: number | null, price: number): Reading {
+  if (share === null)
+    return {
+      kind: "no-signal",
+      headline: "No reliable signal",
+      means: "There isn't enough skilled money at this table to say what the proven traders think.",
+      might: "ignore the sharps here and judge the market on its own.",
+    };
+  const sharp = Math.round(share * 100);
+  const yes = Math.round(price * 100);
+  const gap = sharp - yes;
+  if (Math.abs(gap) <= 5)
+    return {
+      kind: "agree",
+      headline: "The price already matches the sharps",
+      means: `Skilled money is ${sharp}% on YES and the price says ${yes}%. The crowd and the proven traders broadly agree.`,
+      might: "do nothing: there's no edge either way.",
+    };
+  if (gap > 0)
+    return {
+      kind: "yes-cheap",
+      headline: "YES looks cheap",
+      means: `Skilled money is ${sharp}% on YES, but YES costs only ${yes}¢. The proven traders think YES is more likely than its price suggests.`,
+      might: "buy YES, or keep YES shares they already hold.",
+    };
+  return {
+    kind: "no-cheap",
+    headline: "NO looks cheap",
+    means: `Skilled money is ${sharp}% on YES, below the ${yes}% the YES price implies. A NO share costs ${100 - yes}¢, and the proven traders think NO is more likely than that price suggests.`,
+    might: "buy NO, or sell YES shares they already hold.",
+  };
+}

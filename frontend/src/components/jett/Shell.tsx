@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 
 const links = [
   { to: "/", label: "Lobby" },
+  { to: "/how-to-play", label: "How to Play" },
   { to: "/sharps", label: "The Sharps" },
   { to: "/scoreboard", label: "Scoreboard" },
   { to: "/house-rules", label: "House Rules" },
@@ -23,7 +24,9 @@ export function Header() {
               to={l.to}
               activeOptions={{ exact: l.to === "/" }}
               className="rounded-full border border-border px-4 py-1.5 text-sm text-text-2 transition-colors hover:border-gold hover:text-gold-light"
-              activeProps={{ className: "!bg-gold !text-primary-foreground !border-gold font-semibold" }}
+              activeProps={{
+                className: "!bg-gold !text-primary-foreground !border-gold font-semibold",
+              }}
             >
               {l.label}
             </Link>
@@ -38,7 +41,8 @@ export function Footer() {
   return (
     <footer className="mt-20 border-t border-border">
       <p className="mx-auto max-w-6xl px-4 py-6 text-center text-sm text-text-3">
-        For information only. Not financial advice. Past performance does not predict future results.
+        For information only. Not financial advice. Past performance does not predict future
+        results.
       </p>
     </footer>
   );
@@ -56,5 +60,9 @@ export function GoldLink({ children }: { children: ReactNode; to: "/" }) {
 }
 
 export function Panel({ children, className = "" }: { children: ReactNode; className?: string }) {
-  return <section className={`rounded-xl border border-border bg-panel p-6 ${className}`}>{children}</section>;
+  return (
+    <section className={`rounded-xl border border-border bg-panel p-6 ${className}`}>
+      {children}
+    </section>
+  );
 }

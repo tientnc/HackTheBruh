@@ -1,4 +1,4 @@
-import { createFileRoute, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import {
   CartesianGrid,
   Legend as RLegend,
@@ -17,6 +17,9 @@ import {
   fmtUsd,
   getMarket,
   getPriceHistory,
+  readGap,
+  skilledYesShare,
+  type Market,
   shortWallet,
   skillGap,
   snapLabel,
@@ -115,7 +118,7 @@ function TablePage() {
             : `Replay · ${m.category} · Frozen ${snapLabel[at]} before close · ${fmtDateYear(m.closes_at)} · ${fmtUsd(m.volume_usd)} traded by then`}
         </p>
         <h1 className="max-w-4xl text-4xl leading-tight md:text-5xl">{m.question}</h1>
-        <p className="text-gold-light">{verdict(skillGap(m))}</p>
+        <TableReading m={m} />
         <TiersBanner />
         <Legend unit={chipUnit(m)} />
         {m.source_url && (
@@ -254,6 +257,24 @@ function TablePage() {
           )}
         </Panel>
       </div>
+    </div>
+  );
+}
+
+/** Plain-language reading of this table, with a link to the full explanation. */
+function TableReading({ m }: { m: Market }) {
+  const r = readGap(skilledYesShare(m), m.yes_price);
+  return (
+    <div className="max-w-3xl space-y-1">
+      <p className="text-xl text-gold-light">{r.headline}</p>
+      <p className="text-text-2">{r.means}</p>
+      <Link
+        to="/how-to-play"
+        hash="scenarios"
+        className="inline-block text-sm text-text-2 underline underline-offset-4 hover:text-gold-light"
+      >
+        What does this mean? How to read a table
+      </Link>
     </div>
   );
 }

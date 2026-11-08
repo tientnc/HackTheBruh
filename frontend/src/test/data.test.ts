@@ -5,6 +5,7 @@ import {
   chipUnit,
   featured,
   filterMarkets,
+  readGap,
   topDisagreements,
   fmtGap,
   fmtUsd,
@@ -189,5 +190,23 @@ describe("lobby lists", () => {
     ).toEqual(["gold", "oil"]);
     expect(filterMarkets(ms, { sort: "volume" })[0]!.id).toBe("apple");
     expect(filterMarkets(ms, { sort: "gap" }).at(-1)!.id).toBe("apple");
+  });
+});
+
+describe("plain-language readings", () => {
+  it("covers every kind of table", () => {
+    expect(readGap(0.78, 0.54).kind).toBe("yes-cheap");
+    expect(readGap(0.15, 0.31).kind).toBe("no-cheap");
+    expect(readGap(0.7, 0.67).kind).toBe("agree");
+    expect(readGap(null, 0.4).kind).toBe("no-signal");
+  });
+  it("the trap: sharps mostly on YES but YES dearer than they think reads as NO-cheap", () => {
+    const r = readGap(0.78, 0.9);
+    expect(r.kind).toBe("no-cheap");
+    expect(r.means).toContain("NO share costs 10¢");
+  });
+  it("uses the same ±5 boundary as the verdict", () => {
+    expect(readGap(0.59, 0.54).kind).toBe("agree");
+    expect(readGap(0.6, 0.54).kind).toBe("yes-cheap");
   });
 });

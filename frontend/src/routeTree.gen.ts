@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as HouseRulesRouteImport } from './routes/house-rules'
+import { Route as HowToPlayRouteImport } from './routes/how-to-play'
 import { Route as ScoreboardRouteImport } from './routes/scoreboard'
 import { Route as SharpsRouteImport } from './routes/sharps'
 import { Route as TableIdRouteImport } from './routes/table.$id'
@@ -23,6 +24,11 @@ const IndexRoute = IndexRouteImport.update({
 const HouseRulesRoute = HouseRulesRouteImport.update({
   id: '/house-rules',
   path: '/house-rules',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HowToPlayRoute = HowToPlayRouteImport.update({
+  id: '/how-to-play',
+  path: '/how-to-play',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ScoreboardRoute = ScoreboardRouteImport.update({
@@ -44,6 +50,7 @@ const TableIdRoute = TableIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/house-rules': typeof HouseRulesRoute
+  '/how-to-play': typeof HowToPlayRoute
   '/scoreboard': typeof ScoreboardRoute
   '/sharps': typeof SharpsRoute
   '/table/$id': typeof TableIdRoute
@@ -51,6 +58,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/house-rules': typeof HouseRulesRoute
+  '/how-to-play': typeof HowToPlayRoute
   '/scoreboard': typeof ScoreboardRoute
   '/sharps': typeof SharpsRoute
   '/table/$id': typeof TableIdRoute
@@ -59,22 +67,42 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/house-rules': typeof HouseRulesRoute
+  '/how-to-play': typeof HowToPlayRoute
   '/scoreboard': typeof ScoreboardRoute
   '/sharps': typeof SharpsRoute
   '/table/$id': typeof TableIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/house-rules' | '/scoreboard' | '/sharps' | '/table/$id'
+  fullPaths:
+    | '/'
+    | '/house-rules'
+    | '/how-to-play'
+    | '/scoreboard'
+    | '/sharps'
+    | '/table/$id'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/house-rules' | '/scoreboard' | '/sharps' | '/table/$id'
+  to:
+    | '/'
+    | '/house-rules'
+    | '/how-to-play'
+    | '/scoreboard'
+    | '/sharps'
+    | '/table/$id'
   id:
-    '__root__' | '/' | '/house-rules' | '/scoreboard' | '/sharps' | '/table/$id'
+    | '__root__'
+    | '/'
+    | '/house-rules'
+    | '/how-to-play'
+    | '/scoreboard'
+    | '/sharps'
+    | '/table/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   HouseRulesRoute: typeof HouseRulesRoute
+  HowToPlayRoute: typeof HowToPlayRoute
   ScoreboardRoute: typeof ScoreboardRoute
   SharpsRoute: typeof SharpsRoute
   TableIdRoute: typeof TableIdRoute
@@ -94,6 +122,13 @@ declare module '@tanstack/react-router' {
       path: '/house-rules'
       fullPath: '/house-rules'
       preLoaderRoute: typeof HouseRulesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/how-to-play': {
+      id: '/how-to-play'
+      path: '/how-to-play'
+      fullPath: '/how-to-play'
+      preLoaderRoute: typeof HowToPlayRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/scoreboard': {
@@ -123,6 +158,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   HouseRulesRoute: HouseRulesRoute,
+  HowToPlayRoute: HowToPlayRoute,
   ScoreboardRoute: ScoreboardRoute,
   SharpsRoute: SharpsRoute,
   TableIdRoute: TableIdRoute,
