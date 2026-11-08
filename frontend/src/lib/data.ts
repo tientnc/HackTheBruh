@@ -320,3 +320,88 @@ export function readGap(share: number | null, price: number): Reading {
     might: "buy NO, or sell YES shares they already hold.",
   };
 }
+
+export type GapBucket = {
+  label: string;
+  min: number;
+  max: number;
+  /** tables with a skill gap in this range */
+  tables: number;
+  /** how often the side the sharps favoured (relative to the price) won */
+  sharpSideWon: number | null;
+  /** the average price of that side, i.e. how often the crowd expected it to win */
+  priceImplied: number | null;
+};
+export type ScoreboardData = {
+  tables: number;
+  crowd: { favouriteRight: number; favouriteTables: number; brier: number };
+  calls: { made: number; right: number; crowdRightSameTables: number };
+  buckets: GapBucket[];
+  notable: Market[];
+};
+
+/** Same skill-gap ranges as the backtest (polyresearch/backtest/evaluate.py GAP_BUCKETS). */
+const GAP_RANGES: [string, number, number][] = [
+  ["Small gap (0–5)", 0, 5],
+  ["Medium gap (5–15)", 5, 15],
+  ["Big gap (15+)", 15, 101],
+];
+
+/**
+ * The track record on resolved markets at one snapshot: how well the crowd's price did,
+ * how often the sharps' calls were right, and whether bigger skill gaps were more reliable.
+ */
+export function scoreboard(markets: Market[]): ScoreboardData {
+  const resolved = markets.filter((m) => m.outcome);
+  const won = (m: Market, side: "yes" | "no") => m.outcome === side;
+  const favourite = (m: Market): "yes" | "no" | null =>
+    m.yes_price > 0.5 ? "yes" : m.yes_price < 0.5 ? "no" : null;
+
+  const favTables = resolved.filter((m) => favourite(m) !== null);
+  const brier =
+    resolved.reduce((s, m) => s + (m.yes_price - (m.outcome === "yes" ? 1 : 0)) ** 2, 0) /
+    Math.max(1, resolved.length);
+
+  const called = resolved.filter((m) => m.call === "YES" || m.call === "NO");
+  const calls = {
+    made: called.length,
+    right: called.filter((m) => won(m, m.call!.toLowerCase() as "yes" | "no")).length,
+    crowdRightSameTables: called.filter((m) => {
+      const f = favourite(m);
+      return f !== null && won(m, f);
+    }).length,
+  };
+
+  const buckets = GAP_RANGES.map(([label, min, max]) => {
+    const inRange = resolved.filter((m) => {
+      const g = skillGap(m);
+      if (g === null) return false;
+      const a = Math.abs(g);
+      return min === 0 ? a <= max : a > min && a <= max;
+    });
+    const side = (m: Market): "yes" | "no" => ((skillGap(m) ?? 0) >= 0 ? "yes" : "no");
+    const n = inRange.length;
+    return {
+      label,
+      min,
+      max,
+      tables: n,
+      sharpSideWon: n ? inRange.filter((m) => won(m, side(m))).length / n : null,
+      priceImplied: n
+        ? inRange.reduce((s, m) => s + (side(m) === "yes" ? m.yes_price : 1 - m.yes_price), 0) / n
+        : null,
+    };
+  });
+
+  return {
+    tables: resolved.length,
+    crowd: {
+      favouriteRight: favTables.filter((m) => won(m, favourite(m)!)).length,
+      favouriteTables: favTables.length,
+      brier,
+    },
+    calls,
+    buckets,
+    notable: topDisagreements(resolved, 6),
+  };
+}

@@ -75,3 +75,16 @@ export function ModeBar() {
     </div>
   );
 }
+
+/** Just the snapshot toggle, for pages where Showdown/Live doesn't apply (the Scoreboard). */
+export function SnapToggle() {
+  const { at, set } = useMode();
+  return (
+    <Segment
+      label="Frozen"
+      options={SNAPS.map((k) => ({ k, l: `${snapLabel[k]} before close` }))}
+      value={at}
+      onPick={(k) => set({ at: k })}
+    />
+  );
+}
