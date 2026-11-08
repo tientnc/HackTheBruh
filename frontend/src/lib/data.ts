@@ -100,6 +100,15 @@ export async function getPriceHistory(id: string): Promise<[number, number][]> {
   const load = priceFiles[`../data/prices/${id}.json`];
   return load ? (await load()).points : [];
 }
+
+export type NewsHeadline = { title: string; publisher: string; date: string; url: string };
+
+export async function getMarketNews(market: Pick<Market, "id" | "snapshot_at">) {
+  if (!market.snapshot_at) return undefined;
+  const { default: archive } = await import("@/data/browser-news.json");
+  const byMarket: Record<string, Record<string, NewsHeadline[]>> = archive;
+  return byMarket[market.id]?.[market.snapshot_at];
+}
 export const dataMeta = rawMeta as DataMeta;
 export const tiersPending = dataMeta.tiers_source === "none";
 export const tiersFake = dataMeta.tiers_source === "fake";

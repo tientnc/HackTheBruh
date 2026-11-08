@@ -11,6 +11,10 @@ const VIEWS: { k: View; l: string; hint: string }[] = [
   },
 ];
 const SNAPS: Snap[] = ["24h", "7d"];
+const NEWS = [
+  { k: "off", l: "Off" },
+  { k: "on", l: "On" },
+] as const;
 
 function Segment<T extends string>({
   label,
@@ -19,7 +23,7 @@ function Segment<T extends string>({
   onPick,
 }: {
   label: string;
-  options: { k: T; l: string }[];
+  options: readonly { k: T; l: string }[];
   value: T;
   onPick: (k: T) => void;
 }) {
@@ -48,9 +52,8 @@ function Segment<T extends string>({
   );
 }
 
-/** The two app-wide toggles: Showdown/Live and how long before close the markets are frozen. */
 export function ModeBar() {
-  const { view, at, set } = useMode();
+  const { view, at, news, set } = useMode();
   return (
     <div className="space-y-2 rounded-xl border border-border bg-panel/60 px-4 py-3">
       <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
@@ -60,6 +63,12 @@ export function ModeBar() {
           options={SNAPS.map((k) => ({ k, l: `${snapLabel[k]} before close` }))}
           value={at}
           onPick={(k) => set({ at: k })}
+        />
+        <Segment
+          label="Browser Integration"
+          options={NEWS}
+          value={news ? "on" : "off"}
+          onPick={(k) => set({ news: k })}
         />
       </div>
       <p className="text-xs text-text-3">{VIEWS.find((v) => v.k === view)?.hint}</p>
