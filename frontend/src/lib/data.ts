@@ -261,18 +261,31 @@ export function topDisagreements(markets: Market[], n = 3): Market[] {
 
 /** Search, category and sort for the Lobby list. */
 export type LobbySort = "gap" | "volume" | "closing";
+/** Filter by the sharps' prediction: any call, a YES or NO call, or no call (not enough skilled money). */
+export type CallFilter = "all" | "called" | "YES" | "NO" | "none";
+const hasCall = (m: Market) => m.call === "YES" || m.call === "NO";
 export function filterMarkets(
   markets: Market[],
   {
     query = "",
     category = "All",
     sort = "gap",
-  }: { query?: string; category?: string; sort?: LobbySort },
+    call = "all",
+  }: { query?: string; category?: string; sort?: LobbySort; call?: CallFilter },
 ): Market[] {
   const words = query.toLowerCase().split(/\s+/).filter(Boolean);
   const absGap = (m: Market) => Math.abs(skillGap(m) ?? -1);
   return markets
     .filter((m) => category === "All" || m.category === category)
+    .filter((m) =>
+      call === "all"
+        ? true
+        : call === "called"
+          ? hasCall(m)
+          : call === "none"
+            ? !hasCall(m)
+            : m.call === call,
+    )
     .filter((m) => words.every((w) => `${m.question} ${m.category}`.toLowerCase().includes(w)))
     .sort((a, b) =>
       sort === "gap"

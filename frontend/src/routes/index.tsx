@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useMemo } from "react";
 import {
   filterMarkets,
+  type CallFilter,
   getMarkets,
   snapLabel,
   topDisagreements,
@@ -43,6 +44,14 @@ const SORTS: { k: LobbySort; l: string }[] = [
   { k: "closing", l: "Newest" },
 ];
 
+const CALLS: { k: CallFilter; l: string }[] = [
+  { k: "all", l: "All" },
+  { k: "called", l: "Any call" },
+  { k: "YES", l: "Sharps say YES" },
+  { k: "NO", l: "Sharps say NO" },
+  { k: "none", l: "No call" },
+];
+
 const pill = (on: boolean) =>
   cn(
     "min-h-9 rounded-full border px-3 py-1 text-sm transition-colors",
@@ -63,8 +72,9 @@ function Lobby() {
   );
   const category = cats.includes(state.category) ? state.category : "All";
   const list = useMemo(
-    () => filterMarkets(markets, { query: state.query, category, sort: state.sort }),
-    [markets, state.query, category, state.sort],
+    () =>
+      filterMarkets(markets, { query: state.query, category, call: state.call, sort: state.sort }),
+    [markets, state.query, category, state.call, state.sort],
   );
   const disagreements = useMemo(() => topDisagreements(markets), [markets]);
 
@@ -73,7 +83,9 @@ function Lobby() {
       <section className="space-y-4">
         <ModeBar />
         {news && (
-          <p className="text-sm text-text-3">Experimental news is on. Open a table to see archived headlines for its snapshot.</p>
+          <p className="text-sm text-text-3">
+            Experimental news is on. Open a table to see archived headlines for its snapshot.
+          </p>
         )}
         <p className="caption">
           {live ? "Live markets" : "Replay"} · frozen {snapLabel[at]} before close
@@ -143,6 +155,27 @@ function Lobby() {
               </button>
             ))}
           </div>
+        </div>
+
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div
+            className="flex flex-wrap items-center gap-2"
+            role="group"
+            aria-label="Filter by the sharps' call"
+          >
+            <span className="text-sm text-text-3">Sharps' call:</span>
+            {CALLS.map((c) => (
+              <button
+                key={c.k}
+                type="button"
+                aria-pressed={state.call === c.k}
+                className={pill(state.call === c.k)}
+                onClick={() => update({ call: c.k, shown: LOBBY_PAGE })}
+              >
+                {c.l}
+              </button>
+            ))}
+          </div>
           <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Sort tables">
             <span className="text-sm text-text-3">Sort:</span>
             {SORTS.map((s) => (
@@ -160,7 +193,7 @@ function Lobby() {
         </div>
 
         {list.length === 0 ? (
-          <p className="text-text-3">No tables match that search.</p>
+          <p className="text-text-3">No tables match these filters.</p>
         ) : (
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {list.slice(0, state.shown).map((m) => (

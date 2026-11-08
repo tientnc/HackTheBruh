@@ -1,11 +1,23 @@
 import { useEffect, useState } from "react";
-import type { LobbySort } from "@/lib/data";
+import type { CallFilter, LobbySort } from "@/lib/data";
 
-export type LobbyState = { query: string; category: string; sort: LobbySort; shown: number };
+export type LobbyState = {
+  query: string;
+  category: string;
+  call: CallFilter;
+  sort: LobbySort;
+  shown: number;
+};
 const KEY = "jett-lobby";
 const SCROLL_KEY = "jett-lobby-scroll";
 export const LOBBY_PAGE = 12;
-const initial: LobbyState = { query: "", category: "All", sort: "gap", shown: LOBBY_PAGE };
+const initial: LobbyState = {
+  query: "",
+  category: "All",
+  call: "all",
+  sort: "gap",
+  shown: LOBBY_PAGE,
+};
 
 function read<T>(key: string): T | null {
   try {

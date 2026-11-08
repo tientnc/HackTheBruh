@@ -185,6 +185,17 @@ describe("lobby lists", () => {
     expect(filterMarkets(ms, { query: "gold 5,000" }).map((m) => m.id)).toEqual(["gold"]);
     expect(filterMarkets(ms, { query: "FED" }).map((m) => m.id)).toEqual(["fed"]);
   });
+  it("filters by the sharps' call", () => {
+    const ids = (call: Parameters<typeof filterMarkets>[1]["call"]) =>
+      filterMarkets(ms, { call })
+        .map((m) => m.id)
+        .sort();
+    expect(ids("YES")).toEqual(["fed"]);
+    expect(ids("NO")).toEqual(["oil"]);
+    expect(ids("called")).toEqual(["fed", "oil"]);
+    expect(ids("none")).toEqual(["apple", "gold"]);
+    expect(ids("all")).toHaveLength(4);
+  });
   it("category filter and sorts", () => {
     expect(
       filterMarkets(ms, { category: "Commodities" })
