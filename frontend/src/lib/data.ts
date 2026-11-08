@@ -1,6 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import raw from "@/data/markets.json";
 import rawMeta from "@/data/meta.json";
+export { default as ratingSnapshot } from "@/data/sharp-ratings.json";
 
 // "new" holds wallets with no rating (not in the tiers file). The UI labels it "Unrated".
 export type Tier = "skilled" | "unskilled" | "new";

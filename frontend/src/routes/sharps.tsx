@@ -9,6 +9,7 @@ import {
   dataMeta,
   fmtUsd,
   getMarkets,
+  ratingSnapshot,
   sharpsBoard,
   snapLabel,
   type SharpRow,
@@ -79,9 +80,8 @@ function Sharps() {
         <p className="caption">Frozen {snapLabel[at]} before close</p>
         <h1 className="text-5xl leading-tight md:text-6xl">The Sharps</h1>
         <p className="max-w-3xl text-text-2">
-          A sharp is a wallet that made more per dollar than almost everyone else on Polymarket
-          markets that finished before 2026. Nothing from 2026 went into choosing them. Here is
-          every sharp who sat at one of our 2026 tables, and the side they took.
+          Sharps cleared four peer benchmarks using {ratingSnapshot.markets} finance markets
+          resolved before 2026. Here are the rated sharps who took positions at our 2026 tables.
         </p>
         <TiersBanner />
       </section>

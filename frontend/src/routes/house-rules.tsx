@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import { GapCard } from "@/components/jett/GapCard";
 import { Chip } from "@/components/jett/Chips";
 import { GoldLink, Panel } from "@/components/jett/Shell";
-import type { Tier } from "@/lib/data";
+import { dataMeta, fmtDateYear, ratingSnapshot, type Tier } from "@/lib/data";
 
 export const Route = createFileRoute("/house-rules")({
   head: () => ({
@@ -44,9 +44,9 @@ const bets = [
 ];
 
 const tiers: { t: Tier; name: string; desc: string }[] = [
-  { t: "skilled", name: "Skilled", desc: "Top 10% of rated wallets by edge, with 30+ resolved bets, and the edge passes the statistical test." },
-  { t: "unskilled", name: "Unskilled", desc: "Rated wallets with 30+ resolved bets that are not in the top 10% by edge." },
-  { t: "new", name: "New", desc: "Fewer than 30 resolved bets. Shown separately because we cannot rate them yet. We never label anyone an insider." },
+  { t: "skilled", name: "Skilled", desc: "The wallet clears all four peer benchmarks and has enough history to rate." },
+  { t: "unskilled", name: "Unskilled", desc: "The wallet has enough history to rate and falls short on one or more benchmarks." },
+  { t: "new", name: "Unrated", desc: "The wallet has too few resolved events or lacks usable data for a peer comparison." },
 ];
 
 function HouseRules() {
@@ -65,9 +65,9 @@ function HouseRules() {
         <h2 className="text-3xl text-gold-light">The short version</h2>
         <div className="grid gap-8 md:grid-cols-3">
           {[
-            ["A", "♠", "Read every hand", "We pull every resolved trade from every wallet on Polymarket: what they bought, at what price, and how it turned out.", -4],
-            ["K", "♥", "Rate every player", "Each wallet gets a score for how often it beats the price it paid. Proven players become Skilled.", 2],
-            ["Q", "♣", "Show where they sit", "On every live market, we show how much skilled, unskilled and new money is on YES and NO, next to the price.", 4],
+            ["A", "♠", "Read the hands", `We use trade histories and verified outcomes from ${ratingSnapshot.markets} resolved finance markets.`, -4],
+            ["K", "♥", "Rate the wallets", "We compare four measures of historical performance against eligible finance peers.", 2],
+            ["Q", "♣", "Show where they sit", "On each replay, we show skilled, unskilled and unrated positions on YES and NO next to the market price.", 4],
           ].map(([r, s, t, d, tilt]) => (
             <div key={r as string} className="flex gap-4">
               <div className="shrink-0"><GapCard rank={r as string} suit={s as "♠"} size="sm" tilt={tilt as number} /></div>
@@ -80,7 +80,7 @@ function HouseRules() {
         </div>
       </section>
 
-      <Rule n={1} title="We rate players on edge, not wins.">
+      <Rule n={1} title="How we measure buy-side edge">
         <div className="grid gap-6 lg:grid-cols-[3fr_2fr]">
           <div className="felt space-y-4 rounded-2xl p-6">
             <p className="text-text-2">
@@ -99,7 +99,8 @@ function HouseRules() {
               </tbody>
             </table>
             <p className="text-xs text-text-3">
-              Edge on a bet = result (1 if it won, 0 if not) minus the price paid. In the real model, bigger stakes count for more.
+              Buy-side edge is the payout per share minus the purchase price. We weight by shares
+              and use markets where the wallet only bought.
             </p>
           </div>
           <div className="space-y-5">
@@ -116,9 +117,9 @@ function HouseRules() {
       <Rule n={2} title="You have to earn a seat.">
         <div className="grid gap-5 md:grid-cols-3">
           {[
-            ["30+", "resolved bets", "A wallet needs at least 30 finished bets before we rate it."],
-            ["Real", "It has to be real", "The edge must pass a statistical test, so a short lucky streak is not enough."],
-            ["0", "look-ahead", "Only markets that have already finished count towards a rating."],
+            ["14+", "resolved events", "A wallet needs at least 14 distinct resolved events and usable data for all four measures."],
+            ["4", "peer benchmarks", "Skilled wallets beat the median of eligible finance peers on estimated profit, ROI, profitable-market rate, and buy-side edge. We exclude each wallet from its own benchmark."],
+            ["0", "future results", `The rating snapshot uses outcomes available before ${fmtDateYear(ratingSnapshot.asOf)} UTC.`],
           ].map(([big, t, d]) => (
             <Panel key={t}>
               <p className="font-display text-4xl text-gold">{big}</p>
@@ -167,15 +168,10 @@ function HouseRules() {
 
       <Rule n={5} title="We test it on hands already played.">
         <p className="max-w-3xl text-text-2">
-          To check the model, we go back to markets that have already resolved and rebuild each one as it looked at the
-          time, using only trades and ratings that existed on that date. Nothing from the future leaks in. Then we compare
-          what skilled money said with what actually happened.
+          The Scoreboard replays {dataMeta.markets} resolved markets using the frozen wallet ratings
+          and the trades available at each snapshot. It compares the sharps’ calls with the
+          market favorite on the same tables.
         </p>
-        <div className="grid gap-5 md:grid-cols-3">
-          <Cream title="Resolved markets tested"><p className="font-display text-3xl">[YOUR NUMBER]</p></Cream>
-          <Cream title="Skilled money accuracy vs price"><p className="font-display text-3xl">[YOUR RESULT]</p></Cream>
-          <Cream title="When the gap was 15+ points"><p className="font-display text-3xl">[YOUR RESULT]</p></Cream>
-        </div>
         <Link to="/scoreboard" className="inline-block text-gold-light underline underline-offset-4 hover:text-gold">
           See the full Scoreboard
         </Link>
@@ -202,8 +198,8 @@ function HouseRules() {
       <section className="space-y-4">
         <h2 className="text-3xl text-gold-light">Where the cards come from</h2>
         <p className="max-w-3xl text-text-2">
-          All trades and market prices come from Polymarket's public Data API. Wallet ratings are refreshed [HOW OFTEN];
-          live market positions and prices are refreshed [HOW OFTEN].
+          Trades and prices come from Polymarket’s public Data API. Wallet ratings and replay
+          positions come from published snapshots.
         </p>
         <GoldLink to="/">Back to the Lobby</GoldLink>
       </section>

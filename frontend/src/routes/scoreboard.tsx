@@ -18,8 +18,10 @@ import { useMode } from "@/hooks/use-mode";
 import {
   callResult,
   fmtDate,
+  fmtDateYear,
   getMarkets,
   getResearchMarkets,
+  ratingSnapshot,
   scoreboard,
   skillGap,
   snapLabel,
@@ -99,6 +101,10 @@ function Scoreboard() {
           Every table here has already ended. We froze each one {snapLabel[at]} before it closed,
           using only what was known then, and checked who was right: the crowd's price, or the
           proven traders.
+        </p>
+        <p className="text-sm text-text-3">
+          Wallet ratings use {ratingSnapshot.markets} historical finance markets and were frozen on{" "}
+          {fmtDateYear(ratingSnapshot.asOf)} UTC.
         </p>
         <SnapToggle />
         <TiersBanner />
