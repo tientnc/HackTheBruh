@@ -1,32 +1,26 @@
-# Wallet ratings v1
+# Finance wallet tiers
 
-**284 wallets rated from 100 Finance markets that resolved before 1 January 2026: 28 skilled, 256 unskilled.** Nothing from the 2026 test markets is used. Every other wallet is Unrated.
+Run the API from the repository root, then export its finance wallet list and
+classifications:
 
-[tiers.csv](tiers.csv) (what the app and backtest read) · [tiers_details.csv](tiers_details.csv) (every wallet, with the reason) · [summary.json](summary.json) · [Code](../../../polyresearch/backtest/tiers.py)
-
-## How a wallet is scored
-
-1. Replay every fill in each pre-2026 market in time order. Buying adds shares at their cost. Selling realises the sale price minus the average cost. Shares still held at the end are settled at $1 (side won) or $0.
-2. Add up profit and money spent (total bought) per independent event.
-3. Score = profit ÷ money spent, shrunk towards zero for short records: × n ÷ (n + 5), where n is the number of events.
-
-## Tiers
-
-| Tier | Rule |
-|---|---|
-| Unrated | fewer than 3 events, under $100 spent, or a market maker (buys both YES and NO in most of its markets, 200+ fills) |
-| Skilled | top 10% of rated wallets by score, with a positive score |
-| Unskilled | every other rated wallet |
-
-## Limits
-
-- Only 100 pre-2026 markets are in the repo, so the history bar is low (3 events). Older years can be added with `--history` once collected.
-- Profit is rebuilt from trades: fees, rewards, transfers, splits and merges are not included.
-- Rated wallets cover part of the 2026 money; most wallets there have no pre-2026 history.
-
-Rebuild:
-
-```powershell
-python -m polyresearch.backtest.tiers
-python -m polyresearch.backtest.lobby --tiers analysis/wallet-tiers/v1/tiers.csv
+```sh
+.venv/bin/python -m uvicorn backend.main:app --reload
 ```
+
+In another terminal, run:
+
+```sh
+.venv/bin/python analysis/wallet-tiers/v1/export_tiers.py
+```
+
+The script calls `GET /wallets/finance` and
+`GET /wallets/finance/results`, then writes `tiers.csv` beside the script with
+the columns `wallet,tier`. The API must be able to finish its finance
+classification before the export request times out. The default timeout is
+600 seconds per request; override it with `--timeout` or point to another
+server with `--api-url`.
+
+For frontend integration testing, `tiers.frontend-test.csv` is a synthetic
+copy with 400 dispersed tier labels changed from `unskilled` to `skilled`.
+It preserves the `wallet,tier` schema; the original `tiers.csv` remains
+unchanged. Do not use the test copy as classification or research output.

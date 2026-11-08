@@ -1,0 +1,42 @@
+{
+  "dataset": "datasets/finance/resolved-2026/v1",
+  "predictions": "datasets/finance/resolved-2026/v1/recommendations.csv",
+  "mode": "right_or_wrong",
+  "scored_at": "2026-11-08T08:40:54Z",
+  "problems": [],
+  "snapshots": {
+    "T-24h": {
+      "markets": 94,
+      "recommendations_made": 3,
+      "insufficient_data": 91,
+      "model_right": 2,
+      "model_accuracy": 0.6666666666666666,
+      "model_accuracy_95_range": [
+        0.2076549551264879,
+        0.9385096847238394
+      ],
+      "crowd_accuracy_same_markets": 1.0,
+      "disagreed_with_crowd": 1,
+      "model_right_when_disagreeing": 0.0,
+      "model_right_when_disagreeing_95_range": [
+        0.0,
+        0.7934567085261071
+      ]
+    },
+    "T-7d": {
+      "markets": 96,
+      "recommendations_made": 3,
+      "insufficient_data": 93,
+      "model_right": 2,
+      "model_accuracy": 0.6666666666666666,
+      "model_accuracy_95_range": [
+        0.2076549551264879,
+        0.9385096847238394
+      ],
+      "crowd_accuracy_same_markets": 0.6666666666666666,
+      "disagreed_with_crowd": 0,
+      "model_right_when_disagreeing": null,
+      "model_right_when_disagreeing_95_range": null
+    }
+  }
+}
