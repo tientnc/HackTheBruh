@@ -14,6 +14,7 @@ import { GapCard } from "@/components/jett/GapCard";
 import { SnapToggle } from "@/components/jett/ModeBar";
 import { GoldLink, Panel } from "@/components/jett/Shell";
 import { TiersBanner } from "@/components/jett/TiersBanner";
+import { FollowTheMoney } from "@/components/jett/FollowTheMoney";
 import { useMode } from "@/hooks/use-mode";
 import {
   callResult,
@@ -146,6 +147,8 @@ function Scoreboard() {
           The real test is below: does the sharps' side win more often than its price expected?
         </p>
       </section>
+
+      <FollowTheMoney markets={markets} at={at} />
 
       <Panel className="space-y-6">
         <div>

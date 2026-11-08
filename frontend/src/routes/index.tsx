@@ -14,6 +14,7 @@ import { LOBBY_PAGE, useLobbyState } from "@/hooks/use-lobby-state";
 import { ModeBar } from "@/components/jett/ModeBar";
 import { MarketCard } from "@/components/jett/MarketCard";
 import { TiersBanner } from "@/components/jett/TiersBanner";
+import { FollowTheMoney } from "@/components/jett/FollowTheMoney";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
@@ -38,7 +39,8 @@ export const Route = createFileRoute("/")({
   component: Lobby,
 });
 
-const SORTS: { k: LobbySort; l: string }[] = [
+const SORTS: { k: LobbySort; l: string; showdownOnly?: boolean }[] = [
+  { k: "hits", l: "Sharps' best calls", showdownOnly: true },
   { k: "gap", l: "Skill gap" },
   { k: "volume", l: "Volume" },
   { k: "closing", l: "Newest" },
@@ -71,10 +73,11 @@ function Lobby() {
     [markets],
   );
   const category = cats.includes(state.category) ? state.category : "All";
+  // Live mode hides results, so it can't sort by them
+  const sort: LobbySort = live && state.sort === "hits" ? "gap" : state.sort;
   const list = useMemo(
-    () =>
-      filterMarkets(markets, { query: state.query, category, call: state.call, sort: state.sort }),
-    [markets, state.query, category, state.call, state.sort],
+    () => filterMarkets(markets, { query: state.query, category, call: state.call, sort }),
+    [markets, state.query, category, state.call, sort],
   );
   const disagreements = useMemo(() => topDisagreements(markets), [markets]);
 
@@ -99,23 +102,7 @@ function Lobby() {
         <TiersBanner />
       </section>
 
-      {disagreements.length > 0 && (
-        <section aria-labelledby="disagreements" className="space-y-4">
-          <div>
-            <h2 id="disagreements" className="text-3xl text-gold-light">
-              Biggest disagreements
-            </h2>
-            <p className="text-sm text-text-3">
-              Where proven traders differ most from the market price.
-            </p>
-          </div>
-          <div className="grid gap-5 lg:grid-cols-3">
-            {disagreements.map((m) => (
-              <MarketCard key={m.id} m={m} view={view} featured />
-            ))}
-          </div>
-        </section>
-      )}
+      {!live && <FollowTheMoney markets={markets} at={at} />}
 
       <section aria-labelledby="all-tables" className="space-y-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
@@ -178,12 +165,12 @@ function Lobby() {
           </div>
           <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Sort tables">
             <span className="text-sm text-text-3">Sort:</span>
-            {SORTS.map((s) => (
+            {SORTS.filter((s) => !(live && s.showdownOnly)).map((s) => (
               <button
                 key={s.k}
                 type="button"
-                aria-pressed={state.sort === s.k}
-                className={pill(state.sort === s.k)}
+                aria-pressed={sort === s.k}
+                className={pill(sort === s.k)}
                 onClick={() => update({ sort: s.k, shown: LOBBY_PAGE })}
               >
                 {s.l}
@@ -213,6 +200,24 @@ function Lobby() {
           </div>
         )}
       </section>
+
+      {disagreements.length > 0 && (
+        <section aria-labelledby="disagreements" className="space-y-4">
+          <div>
+            <h2 id="disagreements" className="text-3xl text-gold-light">
+              Biggest disagreements
+            </h2>
+            <p className="text-sm text-text-3">
+              Where proven traders differ most from the market price.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-3">
+            {disagreements.map((m) => (
+              <MarketCard key={m.id} m={m} view={view} featured />
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   );
 }

@@ -7,6 +7,7 @@ import {
   filterMarkets,
   readGap,
   scoreboard,
+  followTheMoney,
   sharpsBoard,
   topDisagreements,
   fmtGap,
@@ -290,4 +291,30 @@ describe("the sharps", () => {
   });
   it("no sharps, empty board", () =>
     expect(sharpsBoard([market("c", side(1), side(1), 0.5)])).toEqual([]));
+});
+
+describe("follow the money", () => {
+  const ms = [
+    // sharps call YES at 10¢, YES wins: +$9 per $1; crowd backs NO at 90¢ and loses $1
+    market("long", side(900), side(100), 0.1, { call: "YES", outcome: "yes" }),
+    // sharps call NO at 40¢ (YES 60¢), YES wins: −$1; crowd backs YES at 60¢: +67¢
+    market("miss", side(100), side(900), 0.6, { call: "NO", outcome: "yes" }),
+    // near-certain: left out of both
+    market("sure", side(900), side(100), 0.999, { call: "YES", outcome: "yes" }),
+  ];
+  const f = followTheMoney(ms);
+  it("averages $1 bets at the frozen price, leaving out near-certain tables", () => {
+    expect(f.sharps.bets).toBe(2);
+    expect(f.sharps.perDollar).toBeCloseTo((9 - 1) / 2);
+    expect(f.crowd.bets).toBe(2);
+    expect(f.crowd.perDollar).toBeCloseTo((-1 + (1 / 0.6 - 1)) / 2);
+    expect(f.best!.market.id).toBe("long");
+  });
+  it("sorts the sharps' correct calls first in Showdown", () => {
+    expect(
+      filterMarkets(ms, { sort: "hits" })
+        .map((m) => m.id)
+        .at(-1),
+    ).toBe("miss");
+  });
 });

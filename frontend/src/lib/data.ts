@@ -265,10 +265,12 @@ export function topDisagreements(markets: Market[], n = 3): Market[] {
 }
 
 /** Search, category and sort for the Lobby list. */
-export type LobbySort = "gap" | "volume" | "closing";
+/** "hits" (Showdown only): the sharps' correct calls first, then tables with no call, then misses. */
+export type LobbySort = "hits" | "gap" | "volume" | "closing";
 /** Filter by the sharps' prediction: any call, a YES or NO call, or no call (not enough skilled money). */
 export type CallFilter = "all" | "called" | "YES" | "NO" | "none";
 const hasCall = (m: Market) => m.call === "YES" || m.call === "NO";
+const HIT_RANK = { hit: 0, none: 1, miss: 2 } as const;
 export function filterMarkets(
   markets: Market[],
   {
@@ -293,11 +295,15 @@ export function filterMarkets(
     )
     .filter((m) => words.every((w) => `${m.question} ${m.category}`.toLowerCase().includes(w)))
     .sort((a, b) =>
-      sort === "gap"
-        ? absGap(b) - absGap(a) || b.volume_usd - a.volume_usd
-        : sort === "volume"
-          ? b.volume_usd - a.volume_usd
-          : b.closes_at.localeCompare(a.closes_at),
+      sort === "hits"
+        ? HIT_RANK[callResult(a)] - HIT_RANK[callResult(b)] ||
+          absGap(b) - absGap(a) ||
+          b.volume_usd - a.volume_usd
+        : sort === "gap"
+          ? absGap(b) - absGap(a) || b.volume_usd - a.volume_usd
+          : sort === "volume"
+            ? b.volume_usd - a.volume_usd
+            : b.closes_at.localeCompare(a.closes_at),
     );
 }
 
@@ -486,3 +492,44 @@ export function sharpsBoard(markets: Market[]): SharpRow[] {
     })
     .sort((a, b) => b.tables - a.tables || b.staked - a.staked);
 }
+
+export type MoneyLine = { bets: number; perDollar: number | null };
+export type FollowTheMoney = {
+  sharps: MoneyLine;
+  crowd: MoneyLine;
+  /** The sharps' most profitable call */
+  best: { market: Market; price: number; perDollar: number } | null;
+};
+
+/**
+ * The money test on resolved tables: $1 at the frozen price on each side, held to the result.
+ * "sharps" follows every sharp call, "crowd" always backs the favourite. Tables priced at
+ * 0.5¢ or less, or 99.5¢ or more, are left out: there is nothing to win there.
+ */
+export function followTheMoney(markets: Market[]): FollowTheMoney {
+  const resolved = markets.filter((m) => m.outcome);
+  const bet = (m: Market, side: "yes" | "no") => {
+    const price = side === "yes" ? m.yes_price : 1 - m.yes_price;
+    if (price <= 0.005 || price >= 0.995) return null;
+    return { market: m, price, perDollar: m.outcome === side ? 1 / price - 1 : -1 };
+  };
+  const line = (bets: NonNullable<ReturnType<typeof bet>>[]): MoneyLine => ({
+    bets: bets.length,
+    perDollar: bets.length ? bets.reduce((t, b) => t + b.perDollar, 0) / bets.length : null,
+  });
+  const sharpBets = resolved.flatMap((m) =>
+    m.call === "YES" || m.call === "NO" ? (bet(m, m.call === "YES" ? "yes" : "no") ?? []) : [],
+  );
+  const crowdBets = resolved.flatMap((m) =>
+    m.yes_price === 0.5 ? [] : (bet(m, m.yes_price > 0.5 ? "yes" : "no") ?? []),
+  );
+  const best = [...sharpBets].sort((a, b) => b.perDollar - a.perDollar)[0];
+  return {
+    sharps: line(sharpBets),
+    crowd: line(crowdBets),
+    best: best && best.perDollar > 0 ? best : null,
+  };
+}
+
+export const fmtCentsPerDollar = (x: number | null) =>
+  x === null ? "—" : `${x >= 0 ? "+" : "−"}${Math.abs(Math.round(x * 100))}¢`;

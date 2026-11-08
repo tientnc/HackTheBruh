@@ -15,7 +15,7 @@ const initial: LobbyState = {
   query: "",
   category: "All",
   call: "all",
-  sort: "gap",
+  sort: "hits",
   shown: LOBBY_PAGE,
 };
 
