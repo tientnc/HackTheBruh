@@ -1,8 +1,6 @@
 .git
 .venv
-data
-!web/public/data/
-!web/public/data/snapshot.json
+/data/
 datasets
 analysis
 notebooks
