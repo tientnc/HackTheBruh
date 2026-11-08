@@ -6,6 +6,7 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  retainSearchParams,
   type ErrorComponentProps,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
@@ -13,6 +14,17 @@ import { useEffect, type ReactNode } from "react";
 import { Header, Footer } from "../components/jett/Shell";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import type { Snap, View } from "../lib/data";
+
+// App-wide toggles kept in the URL (?view=live&at=7d) so they survive navigation and sharing.
+// Missing values mean the defaults: showdown, 24h.
+type AppSearch = { view?: View; at?: Snap };
+function validateAppSearch(search: Record<string, unknown>): AppSearch {
+  const out: AppSearch = {};
+  if (search["view"] === "live" || search["view"] === "showdown") out.view = search["view"];
+  if (search["at"] === "7d" || search["at"] === "24h") out.at = search["at"];
+  return out;
+}
 
 function NotFoundComponent() {
   return (
@@ -75,6 +87,8 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
+  validateSearch: validateAppSearch,
+  search: { middlewares: [retainSearchParams(["view", "at"])] },
   head: () => ({
     // Replace these placeholders with the app's name and description when first building the app.
     // Each content route, / included, must still set its own head(). Never add og:image or
@@ -83,16 +97,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Jett Showdown" },
-      { name: "description", content: "See how skilled, unskilled and new traders are positioned on prediction markets." },
+      {
+        name: "description",
+        content: "See how skilled, unskilled and new traders are positioned on prediction markets.",
+      },
       { property: "og:title", content: "Jett Showdown" },
-      { property: "og:description", content: "See how skilled, unskilled and new traders are positioned on prediction markets." },
+      {
+        property: "og:description",
+        content: "See how skilled, unskilled and new traders are positioned on prediction markets.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Limelight&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Limelight&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,

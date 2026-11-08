@@ -4,15 +4,20 @@ import {
   callResult,
   cents,
   chipUnit,
-  dataMeta,
   featured,
   fmtDateYear,
   getMarkets,
+  predictionText,
   skillGap,
   skilledYesShare,
+  snapLabel,
   verdict,
   type Market,
+  type Snap,
 } from "@/lib/data";
+import { useMode } from "@/hooks/use-mode";
+import { ModeBar } from "@/components/jett/ModeBar";
+import { Sparkline } from "@/components/jett/Sparkline";
 import { PokerTable } from "@/components/jett/PokerTable";
 import { Legend } from "@/components/jett/Chips";
 import { GapCard } from "@/components/jett/GapCard";
@@ -21,7 +26,8 @@ import { goldLinkClass } from "@/components/jett/Shell";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
-  loader: () => getMarkets(),
+  loaderDeps: ({ search }) => ({ at: ((search as { at?: Snap }).at ?? "24h") as Snap }),
+  loader: ({ deps }) => getMarkets(deps.at),
   head: () => ({
     meta: [
       { title: "Lobby · Jett Showdown" },
@@ -45,7 +51,7 @@ const PAGE = 12;
 const SORTS = [
   { k: "gap", l: "Skill gap" },
   { k: "volume", l: "Volume" },
-  { k: "recent", l: "Most recent" },
+  { k: "recent", l: "Closing date" },
 ] as const;
 
 function resultText(m: Market): string {
@@ -57,6 +63,8 @@ function resultText(m: Market): string {
 
 function Lobby() {
   const markets = Route.useLoaderData();
+  const { view, at } = useMode();
+  const live = view === "live";
   const top = featured(markets);
   const cats = useMemo(
     () => ["All", ...Array.from(new Set(markets.map((m) => m.category))).sort()],
@@ -89,19 +97,23 @@ function Lobby() {
   return (
     <div className="space-y-12">
       <section className="space-y-4">
+        <ModeBar />
         <p className="caption">
-          Replay · {top.category} · Frozen 24h before close · {fmtDateYear(top.closes_at)}
+          {live
+            ? `Live · ${top.category} · Closes ${fmtDateYear(top.closes_at)} · in ${snapLabel[at]}`
+            : `Replay · ${top.category} · Frozen ${snapLabel[at]} before close · ${fmtDateYear(top.closes_at)}`}
         </p>
         <h1 className="max-w-4xl text-4xl leading-tight md:text-6xl">{top.question}</h1>
         <p className="max-w-3xl text-text-2">
-          Every table is a real Polymarket market from 2026, frozen 24 hours before it closed. See
-          where the money sat, then the showdown.
+          {live
+            ? `Every table is a real Polymarket market from 2026, shown as it stood ${snapLabel[at]} before it closed. You see the money and the sharps' prediction, but not the result, just as you would on a live market.`
+            : `Every table is a real Polymarket market from 2026, frozen ${snapLabel[at]} before it closed. See where the money sat, then the showdown.`}
         </p>
         <TiersBanner />
         <Legend unit={chipUnit(top)} />
       </section>
 
-      <PokerTable m={top} />
+      <PokerTable m={top} view={view} />
       <div className="flex justify-center">
         <Link to="/table/$id" params={{ id: top.id }} className={goldLinkClass}>
           See every hand at this table
@@ -113,7 +125,8 @@ function Lobby() {
           <div>
             <h2 className="text-3xl text-gold-light">Other tables</h2>
             <p className="text-sm text-text-3">
-              {dataMeta.markets} resolved markets · each frozen 24 hours before close
+              {markets.length} {live ? "markets" : "resolved markets"} · each frozen {snapLabel[at]}{" "}
+              before close
             </p>
           </div>
           <div className="flex flex-col gap-2 sm:items-end">
@@ -175,7 +188,8 @@ function Lobby() {
                   </div>
                   <div className="min-w-0 space-y-2">
                     <p className="text-[11px] uppercase tracking-widest text-text-3">
-                      {m.category} · {fmtDateYear(m.closes_at)}
+                      {m.category} · {live ? "Closes " : ""}
+                      {fmtDateYear(m.closes_at)}
                     </p>
                     <h3 className="font-sans text-base font-semibold text-foreground group-hover:text-gold-light">
                       {m.question}
@@ -186,11 +200,18 @@ function Lobby() {
                         ? "Sharps: no rated money"
                         : `Sharps: ${Math.round(share * 100)}% on YES`}
                     </p>
+                    {m.spark && <Sparkline points={m.spark} />}
                     <p className="text-sm text-gold-light">{verdict(g)}</p>
-                    {m.outcome && (
+                    {live ? (
                       <p className="text-xs font-semibold uppercase tracking-wider text-text-2">
-                        {resultText(m)}
+                        Prediction: {predictionText(m)}
                       </p>
+                    ) : (
+                      m.outcome && (
+                        <p className="text-xs font-semibold uppercase tracking-wider text-text-2">
+                          {resultText(m)}
+                        </p>
+                      )
                     )}
                   </div>
                 </Link>

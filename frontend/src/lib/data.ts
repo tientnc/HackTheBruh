@@ -37,22 +37,68 @@ export type Market = {
   call?: Call;
   skilled_share?: number | null;
   source_url?: string | null;
+  /** [unix seconds, YES price] up to the snapshot, for the small Lobby chart */
+  spark?: [number, number][];
 };
 export type DataMeta = {
-  snapshot: string;
+  snapshots: Record<Snap, number>;
   tiers_source: string; // "none" = no ratings yet, "fake" = random preview tiers, else the tiers file name
   dataset: string;
   markets: number;
-  skipped_unusable: number;
   generated_at: string;
 };
 
-// Snapshots of resolved 2026 markets, frozen 24 hours before each one closed.
-export async function getMarkets(): Promise<Market[]> {
-  return raw as Market[];
+/** How long before close a market is frozen. */
+export type Snap = "24h" | "7d";
+/** Showdown reveals the result (proof of concept); Live hides it (simulated product). */
+export type View = "showdown" | "live";
+export const snapLabel: Record<Snap, string> = { "24h": "24 hours", "7d": "7 days" };
+
+type SnapshotData = Omit<
+  Market,
+  "id" | "question" | "category" | "closes_at" | "resolved_at" | "outcome" | "source_url"
+>;
+type RawMarket = Pick<Market, "id" | "question" | "category" | "closes_at"> & {
+  resolved_at: string;
+  outcome: "yes" | "no";
+  source_url: string | null;
+  snapshots: Partial<Record<Snap, SnapshotData>>;
+};
+const rawMarkets = raw as unknown as RawMarket[];
+
+function atSnapshot(r: RawMarket, snap: Snap): Market | undefined {
+  const s = r.snapshots[snap];
+  if (!s) return undefined;
+  const { snapshots: _ignored, ...base } = r;
+  return { ...base, ...s };
 }
-export async function getMarket(id: string): Promise<Market | undefined> {
-  return (await getMarkets()).find((m) => m.id === id);
+
+// Resolved 2026 markets, each frozen 24 hours or 7 days before it closed.
+export async function getMarkets(snap: Snap = "24h"): Promise<Market[]> {
+  return rawMarkets.flatMap((r) => atSnapshot(r, snap) ?? []);
+}
+/** The market at this snapshot, plus which snapshots exist for it (undefined if the id is unknown). */
+export async function getMarket(
+  id: string,
+  snap: Snap = "24h",
+): Promise<{ market: Market | undefined; question: string; snaps: Snap[] } | undefined> {
+  const r = rawMarkets.find((m) => m.id === id);
+  if (!r) return undefined;
+  return {
+    market: atSnapshot(r, snap),
+    question: r.question,
+    snaps: Object.keys(r.snapshots) as Snap[],
+  };
+}
+
+// Full YES price history per market (the data behind Polymarket's chart), loaded only when needed.
+const priceFiles = import.meta.glob<{ points: [number, number][] }>("../data/prices/*.json", {
+  import: "default",
+});
+/** [unix seconds, YES price] for the whole life of the market. */
+export async function getPriceHistory(id: string): Promise<[number, number][]> {
+  const load = priceFiles[`../data/prices/${id}.json`];
+  return load ? (await load()).points : [];
 }
 export const dataMeta = rawMeta as DataMeta;
 export const tiersPending = dataMeta.tiers_source === "none";
@@ -174,3 +220,10 @@ export const fmtDateYear = (iso: string) =>
   });
 export const shortWallet = (w: string) => `${w.slice(0, 4)}…${w.slice(-2)}`;
 export const cents = (p: number) => `${Math.round(p * 100)}¢`;
+
+/** What the sharps' call says, before anyone knows the result. */
+export function predictionText(m: Market): string {
+  if (m.call === "YES" || m.call === "NO") return `Sharps lean ${m.call}`;
+  if (tiersPending) return "Waiting for wallet ratings";
+  return "Not enough sharp money to call";
+}

@@ -1,5 +1,4 @@
 import { describe, expect, it } from "vitest";
-import raw from "@/data/markets.json";
 import {
   callResult,
   chipCount,
@@ -7,6 +6,8 @@ import {
   featured,
   fmtGap,
   fmtUsd,
+  getMarkets,
+  getPriceHistory,
   skillGap,
   suitFor,
   verdict,
@@ -118,15 +119,32 @@ describe("chips", () => {
 });
 
 describe("generated lobby data", () => {
-  const ms = raw as Market[];
-  it("has resolved markets with outcomes and snapshot prices", () => {
-    expect(ms.length).toBeGreaterThan(0);
-    for (const m of ms) {
-      expect(["yes", "no"]).toContain(m.outcome);
-      expect(m.yes_price).toBeGreaterThanOrEqual(0);
-      expect(m.yes_price).toBeLessThanOrEqual(1);
-      expect(m.snapshot_at! < m.closes_at).toBe(true);
+  for (const snap of ["24h", "7d"] as const) {
+    it(`${snap}: resolved markets frozen before close, with prices and sparklines`, async () => {
+      const ms = await getMarkets(snap);
+      expect(ms.length).toBeGreaterThan(0);
+      expect(new Set(ms.map((m) => m.id)).size).toBe(ms.length);
+      for (const m of ms) {
+        expect(["yes", "no"]).toContain(m.outcome);
+        expect(m.yes_price).toBeGreaterThanOrEqual(0);
+        expect(m.yes_price).toBeLessThanOrEqual(1);
+        expect(m.snapshot_at! < m.closes_at).toBe(true);
+        // no peeking: the small chart never goes past the snapshot
+        const snapTs = new Date(m.snapshot_at!).getTime() / 1000;
+        for (const [t] of m.spark ?? []) expect(t).toBeLessThanOrEqual(snapTs);
+      }
+    });
+  }
+  it("7 days before is earlier than 24 hours before", async () => {
+    const day = new Map((await getMarkets("24h")).map((m) => [m.id, m]));
+    for (const m of await getMarkets("7d")) {
+      const d = day.get(m.id);
+      if (d) expect(m.snapshot_at! < d.snapshot_at!).toBe(true);
     }
   });
-  it("has unique ids", () => expect(new Set(ms.map((m) => m.id)).size).toBe(ms.length));
+  it("loads a market's full price history", async () => {
+    const [m] = await getMarkets("24h");
+    const pts = await getPriceHistory(m!.id);
+    expect(pts.length).toBeGreaterThan(1);
+  });
 });

@@ -16,27 +16,34 @@ import {
   fmtDateYear,
   fmtUsd,
   getMarket,
+  getPriceHistory,
   shortWallet,
   skillGap,
+  snapLabel,
   verdict,
+  type Snap,
 } from "@/lib/data";
+import { useMode } from "@/hooks/use-mode";
+import { ModeBar } from "@/components/jett/ModeBar";
 import { PokerTable } from "@/components/jett/PokerTable";
+import { PriceChart } from "@/components/jett/PriceChart";
 import { TiersBanner } from "@/components/jett/TiersBanner";
 import { Chip, Legend, tierLabel } from "@/components/jett/Chips";
 import { GoldLink, Panel } from "@/components/jett/Shell";
 
 export const Route = createFileRoute("/table/$id")({
-  loader: async ({ params }) => {
-    const m = await getMarket(params.id);
-    if (!m) throw notFound();
-    return m;
+  loaderDeps: ({ search }) => ({ at: ((search as { at?: Snap }).at ?? "24h") as Snap }),
+  loader: async ({ params, deps }) => {
+    const found = await getMarket(params.id, deps.at);
+    if (!found) throw notFound();
+    return { ...found, prices: await getPriceHistory(params.id) };
   },
   head: ({ loaderData }) => {
     const t = loaderData
       ? `${loaderData.question} · Jett Showdown`
       : "Table unavailable · Jett Showdown";
-    const d = loaderData
-      ? `${verdict(skillGap(loaderData))}. See every hand at this table.`
+    const d = loaderData?.market
+      ? `${verdict(skillGap(loaderData.market))}. See every hand at this table.`
       : "This table could not be found.";
     return {
       meta: [
@@ -58,7 +65,35 @@ export const Route = createFileRoute("/table/$id")({
 });
 
 function TablePage() {
-  const m = Route.useLoaderData();
+  const { market: m, question, snaps, prices } = Route.useLoaderData();
+  const { view, at, set } = useMode();
+  const live = view === "live";
+
+  if (!m) {
+    const other = snaps[0];
+    return (
+      <div className="space-y-8">
+        <ModeBar />
+        <Panel className="space-y-4 py-12 text-center">
+          <h1 className="text-3xl">{question}</h1>
+          <p className="text-text-2">
+            We have no reliable price for this market {snapLabel[at]} before it closed, so it has no
+            table at that time.
+          </p>
+          {other && (
+            <button
+              type="button"
+              onClick={() => set({ at: other })}
+              className="rounded-full bg-gold px-6 py-3 font-semibold text-primary-foreground"
+            >
+              See it {snapLabel[other]} before close
+            </button>
+          )}
+        </Panel>
+      </div>
+    );
+  }
+
   const data = m.skilled_share_history.map((h) => ({
     date: fmtDate(h.date),
     skilled: h.skilled_yes_share === null ? null : Math.round(h.skilled_yes_share * 100),
@@ -70,9 +105,11 @@ function TablePage() {
   return (
     <div className="space-y-10">
       <section className="space-y-4">
+        <ModeBar />
         <p className="caption">
-          Replay · {m.category} · Frozen 24h before close · {fmtDateYear(m.closes_at)} ·{" "}
-          {fmtUsd(m.volume_usd)} traded by then
+          {live
+            ? `Live · ${m.category} · Closes ${fmtDateYear(m.closes_at)} · in ${snapLabel[at]} · ${fmtUsd(m.volume_usd)} traded so far`
+            : `Replay · ${m.category} · Frozen ${snapLabel[at]} before close · ${fmtDateYear(m.closes_at)} · ${fmtUsd(m.volume_usd)} traded by then`}
         </p>
         <h1 className="max-w-4xl text-4xl leading-tight md:text-5xl">{m.question}</h1>
         <p className="text-gold-light">{verdict(skillGap(m))}</p>
@@ -89,10 +126,25 @@ function TablePage() {
           </a>
         )}
       </section>
-      <PokerTable m={m} />
+      <PokerTable m={m} view={view} />
 
       <Panel>
-        <h2 className="mb-4 text-2xl text-gold-light">How the hand played out</h2>
+        <h2 className="mb-1 text-2xl text-gold-light">Market price</h2>
+        <p className="mb-4 text-sm text-text-3">
+          {live
+            ? "The crowd's chance of YES, up to now."
+            : "The crowd's chance of YES over the market's life. The dashed line marks the snapshot."}
+        </p>
+        <PriceChart
+          points={prices}
+          snapshotAt={m.snapshot_at ?? m.closes_at}
+          view={view}
+          outcome={m.outcome}
+        />
+      </Panel>
+
+      <Panel>
+        <h2 className="mb-4 text-2xl text-gold-light">Sharps vs the price</h2>
         <div className="h-72">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={data} margin={{ left: -10, right: 10 }}>

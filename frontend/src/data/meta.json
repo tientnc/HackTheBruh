@@ -1,8 +1,10 @@
 {
- "snapshot": "T-24h",
+ "snapshots": {
+  "24h": 94,
+  "7d": 96
+ },
  "tiers_source": "none",
  "dataset": "datasets/finance/resolved-2026/v1",
- "markets": 94,
- "skipped_unusable": 6,
- "generated_at": "2026-11-07T23:38:51Z"
+ "markets": 98,
+ "generated_at": "2026-11-08T00:18:01Z"
 }

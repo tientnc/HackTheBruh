@@ -6,8 +6,10 @@ import {
   sideTotal,
   skillGap,
   skilledYesShare,
+  predictionText,
   tiersPending,
   type Market,
+  type View,
 } from "@/lib/data";
 import { ChipStack } from "./Chips";
 import { GapCard } from "./GapCard";
@@ -35,7 +37,7 @@ function TableSide({ m, side, unit }: { m: Market; side: "yes" | "no"; unit: num
   );
 }
 
-export function callLine(m: Market): string {
+function callLine(m: Market): string {
   const r = callResult(m);
   if (r === "hit") return `Sharps called ${m.call}, and they were right.`;
   if (r === "miss") return `Sharps called ${m.call}, and they were wrong.`;
@@ -43,7 +45,7 @@ export function callLine(m: Market): string {
   return "Not enough sharp money to make a call.";
 }
 
-export function Showdown({ m }: { m: Market }) {
+function Showdown({ m }: { m: Market }) {
   if (!m.outcome) return null;
   return (
     <div className="flex flex-col items-center gap-1">
@@ -55,10 +57,20 @@ export function Showdown({ m }: { m: Market }) {
   );
 }
 
-export function PokerTable({ m }: { m: Market }) {
+function Prediction({ m }: { m: Market }) {
+  return (
+    <span className="rounded-full border border-gold px-3 py-1 text-xs font-bold uppercase tracking-widest text-gold-light">
+      {predictionText(m)}
+    </span>
+  );
+}
+
+export function PokerTable({ m, view = "showdown" }: { m: Market; view?: View }) {
   const gap = skillGap(m);
   const share = skilledYesShare(m);
   const unit = chipUnit(m);
+  const live = view === "live";
+  const price = cents(m.yes_price);
   return (
     <div className="rail rounded-[3rem] p-3 sm:p-5 md:rounded-[999px]">
       <div className="felt grid items-center gap-8 rounded-[2.4rem] px-6 py-10 md:grid-cols-[1fr_auto_1fr] md:rounded-[999px] md:px-16">
@@ -68,10 +80,12 @@ export function PokerTable({ m }: { m: Market }) {
           <span className="caption">Skill gap</span>
           <p className="text-sm text-text-2">
             {share === null
-              ? `No rated sharps at this table yet. The house priced YES at ${cents(m.yes_price)}.`
-              : `Sharps had ${Math.round(share * 100)}% of their chips on YES. The house priced YES at ${cents(m.yes_price)}.`}
+              ? `No rated sharps at this table yet. The house ${live ? "prices" : "priced"} YES at ${price}.`
+              : live
+                ? `Sharps have ${Math.round(share * 100)}% of their chips on YES. The house prices YES at ${price}.`
+                : `Sharps had ${Math.round(share * 100)}% of their chips on YES. The house priced YES at ${price}.`}
           </p>
-          <Showdown m={m} />
+          {live ? <Prediction m={m} /> : <Showdown m={m} />}
         </div>
         <TableSide m={m} side="no" unit={unit} />
       </div>
