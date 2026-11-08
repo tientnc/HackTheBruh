@@ -227,3 +227,87 @@ export function predictionText(m: Market): string {
   if (tiersPending) return "Waiting for wallet ratings";
   return "Not enough sharp money to call";
 }
+
+/**
+ * The tables where the sharps disagree most with the price: biggest absolute skill gap,
+ * tables with a sharp call first. Uses only pre-snapshot data, so it is safe in Live mode.
+ * Empty until wallet ratings give some table a skill gap.
+ */
+export function topDisagreements(markets: Market[], n = 3): Market[] {
+  const withGap = markets.filter((m) => skillGap(m) !== null);
+  const called = (m: Market) => (m.call === "YES" || m.call === "NO" ? 1 : 0);
+  return [...withGap]
+    .sort((a, b) => called(b) - called(a) || Math.abs(skillGap(b)!) - Math.abs(skillGap(a)!))
+    .slice(0, n);
+}
+
+/** Search, category and sort for the Lobby list. */
+export type LobbySort = "gap" | "volume" | "closing";
+export function filterMarkets(
+  markets: Market[],
+  {
+    query = "",
+    category = "All",
+    sort = "gap",
+  }: { query?: string; category?: string; sort?: LobbySort },
+): Market[] {
+  const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+  const absGap = (m: Market) => Math.abs(skillGap(m) ?? -1);
+  return markets
+    .filter((m) => category === "All" || m.category === category)
+    .filter((m) => words.every((w) => `${m.question} ${m.category}`.toLowerCase().includes(w)))
+    .sort((a, b) =>
+      sort === "gap"
+        ? absGap(b) - absGap(a) || b.volume_usd - a.volume_usd
+        : sort === "volume"
+          ? b.volume_usd - a.volume_usd
+          : b.closes_at.localeCompare(a.closes_at),
+    );
+}
+
+export type Reading = {
+  kind: "yes-cheap" | "no-cheap" | "agree" | "no-signal";
+  /** One short headline, e.g. "YES looks cheap" */
+  headline: string;
+  /** What the numbers mean, in plain language */
+  means: string;
+  /** What someone who trusts the sharps might consider. Information, not advice. */
+  might: string;
+};
+
+/**
+ * Plain-language reading of a skill gap. `share` is skilled money on YES (0–1, null if none),
+ * `price` is the YES price (0–1). Shared by the How to Play page and every table.
+ */
+export function readGap(share: number | null, price: number): Reading {
+  if (share === null)
+    return {
+      kind: "no-signal",
+      headline: "No reliable signal",
+      means: "There isn't enough skilled money at this table to say what the proven traders think.",
+      might: "ignore the sharps here and judge the market on its own.",
+    };
+  const sharp = Math.round(share * 100);
+  const yes = Math.round(price * 100);
+  const gap = sharp - yes;
+  if (Math.abs(gap) <= 5)
+    return {
+      kind: "agree",
+      headline: "The price already matches the sharps",
+      means: `Skilled money is ${sharp}% on YES and the price says ${yes}%. The crowd and the proven traders broadly agree.`,
+      might: "do nothing: there's no edge either way.",
+    };
+  if (gap > 0)
+    return {
+      kind: "yes-cheap",
+      headline: "YES looks cheap",
+      means: `Skilled money is ${sharp}% on YES, but YES costs only ${yes}¢. The proven traders think YES is more likely than its price suggests.`,
+      might: "buy YES, or keep YES shares they already hold.",
+    };
+  return {
+    kind: "no-cheap",
+    headline: "NO looks cheap",
+    means: `Skilled money is ${sharp}% on YES, below the ${yes}% the YES price implies. A NO share costs ${100 - yes}¢, and the proven traders think NO is more likely than that price suggests.`,
+    might: "buy NO, or sell YES shares they already hold.",
+  };
+}
