@@ -3,8 +3,8 @@
   "24h": 94,
   "7d": 96
  },
- "tiers_source": "none",
+ "tiers_source": "tiers.csv",
  "dataset": "datasets/finance/resolved-2026/v1",
  "markets": 98,
- "generated_at": "2026-11-08T00:18:01Z"
+ "generated_at": "2026-11-08T08:42:00Z"
 }
