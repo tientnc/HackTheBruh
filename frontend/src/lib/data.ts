@@ -498,7 +498,7 @@ export type FollowTheMoney = {
   sharps: MoneyLine;
   crowd: MoneyLine;
   /** The sharps' most profitable call */
-  best: { market: Market; price: number; perDollar: number } | null;
+  best: { market: Market; side: "yes" | "no"; price: number; perDollar: number } | null;
 };
 
 /**
@@ -511,7 +511,7 @@ export function followTheMoney(markets: Market[]): FollowTheMoney {
   const bet = (m: Market, side: "yes" | "no") => {
     const price = side === "yes" ? m.yes_price : 1 - m.yes_price;
     if (price <= 0.005 || price >= 0.995) return null;
-    return { market: m, price, perDollar: m.outcome === side ? 1 / price - 1 : -1 };
+    return { market: m, side, price, perDollar: m.outcome === side ? 1 / price - 1 : -1 };
   };
   const line = (bets: NonNullable<ReturnType<typeof bet>>[]): MoneyLine => ({
     bets: bets.length,

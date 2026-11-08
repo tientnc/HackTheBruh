@@ -49,7 +49,9 @@ export function FollowTheMoney({
             <p className="text-sm font-semibold text-text-2">Best hand</p>
             <p className="font-display text-5xl text-gold-light">{cents(f.best.price)}</p>
             <p className="text-sm text-text-2">
-              Sharps backed “{f.best.market.question}” at {cents(f.best.price)}. It came in.
+              The crowd priced {f.best.side === "yes" ? "NO" : "YES"} at {cents(1 - f.best.price)}.
+              The sharps backed {f.best.side.toUpperCase()} at {cents(f.best.price)} on “
+              {f.best.market.question}”, and {f.best.side.toUpperCase()} won.
             </p>
           </Link>
         )}
