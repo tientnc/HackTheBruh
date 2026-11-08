@@ -93,8 +93,8 @@ function SkillGapExplainer() {
             leaning NO more heavily than the price suggests. Gap is negative.
           </p>
           <p>
-            <strong className="text-foreground">Sharp edge</strong> badge = gap &ge;15 with an
-            explicit sharps' call. High disagreement between proven traders and the crowd.
+            <strong className="text-foreground">Sharps' best call</strong> badge highlights tables
+            where the proven traders made a winning call (or have an active call in Live mode).
           </p>
           <p className="text-text-3">
             This is information, not financial advice. Open any table for the full breakdown.

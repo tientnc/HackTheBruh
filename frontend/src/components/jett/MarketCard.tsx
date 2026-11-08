@@ -24,10 +24,9 @@ function resultText(m: Market): string {
   return `Result: ${m.outcome.toUpperCase()} · ${tail}`;
 }
 
-/** A market card is "hot" when the skill gap is large (>=15) and sharps made a clear call. */
-function isHot(m: Market): boolean {
-  const g = skillGap(m);
-  return g !== null && Math.abs(g) >= 15 && (m.call === "YES" || m.call === "NO");
+/** Whether this market is one of the sharps' best calls (a winning call in Showdown, or an active call in Live). */
+function isBestCall(m: Market, live: boolean): boolean {
+  return live ? (m.call === "YES" || m.call === "NO") : callResult(m) === "hit";
 }
 
 /** One market in the Lobby. `featured` is the larger version used for Biggest disagreements. */
@@ -43,7 +42,7 @@ export function MarketCard({
   const live = view === "live";
   const g = skillGap(m);
   const share = skilledYesShare(m);
-  const hot = isHot(m);
+  const bestCall = isBestCall(m, live);
   const tilt = useTilt(3.5, 700);
 
   return (
@@ -58,7 +57,7 @@ export function MarketCard({
         "group flex gap-4 rounded-xl border bg-panel p-5 tilt-card",
         "transition-colors hover:border-gold",
         featured ? "border-gold/60" : "border-border",
-        hot && !featured && "border-gold/40 glow-pulse",
+        bestCall && !featured && "border-gold/70 glow-pulse",
       )}
     >
       <div className="shrink-0 pt-1">
@@ -83,9 +82,9 @@ export function MarketCard({
         </p>
         {m.spark && <Sparkline points={m.spark} />}
         <p className="text-sm text-gold-light">{verdict(g)}</p>
-        {hot && (
-          <span className="inline-block rounded-full border border-gold/50 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest text-gold-light">
-            Sharp edge
+        {bestCall && (
+          <span className="inline-block rounded-full border border-gold bg-gold/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-gold-light">
+            {live ? `Sharps call ${m.call}` : "Sharps' best call"}
           </span>
         )}
         <p className="text-xs font-semibold uppercase tracking-wider text-text-2">
