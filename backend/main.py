@@ -1,52 +1,4 @@
 
-# import logging
-# import os
-# from pathlib import Path
-# from typing import Any
-# from urllib.parse import urlsplit, urlunsplit
-
-# from dotenv import load_dotenv
-# from fastapi import FastAPI, HTTPException
-# from supabase import create_client
-
-# load_dotenv(Path(__file__).resolve().parent.parent / ".env")
-
-# logger = logging.getLogger(__name__)
-# app = FastAPI(title="HackTheBruh Markets API")
-
-
-# @app.get("/markets")
-# def get_markets() -> list[dict[str, Any]]:
-#     supabase_url = os.getenv("SUPABASE_URL")
-#     supabase_key = os.getenv("SUPABASE_KEY")
-#     if not supabase_url or not supabase_key:
-#         raise HTTPException(
-#             status_code=503,
-#             detail="Markets API is unavailable: Supabase is not configured.",
-#         )
-
-#     parsed_url = urlsplit(supabase_url)
-#     path = parsed_url.path.rstrip("/")
-#     if path.endswith("/rest/v1"):
-#         supabase_url = urlunsplit(parsed_url._replace(path=path[:-len("/rest/v1")]))
-
-#     try:
-#         response = (
-#             create_client(supabase_url, supabase_key)
-#             .table("research_markets")
-#             .select("*")
-#             .execute()
-#         )
-#         return response.data
-#     except Exception as exc:
-#         logger.exception("Failed to fetch markets from Supabase")
-#         raise HTTPException(
-#             status_code=502,
-#             detail="Failed to fetch markets from Supabase.",
-#         ) from exc
-
-
-
 import logging
 import os
 from datetime import datetime, timezone
@@ -129,7 +81,7 @@ def get_market_wallets(market_id: str) -> dict[str, Any]:
         # Remove duplicate wallet IDs
         wallet_ids = list(dict.fromkeys(
             row["wallet"] for row in response.data
-        ))[:5]
+        ))[:]
 
         return {
             "market_id": market_id,
