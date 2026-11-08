@@ -1,22 +1,20 @@
 import { useNavigate, useSearch } from "@tanstack/react-router";
 import type { Snap, View } from "@/lib/data";
 
-/** The app-wide toggles, read from the URL (?view=live&at=7d). */
-export function useMode(): {
-  view: View;
-  at: Snap;
-  set: (next: { view?: View; at?: Snap }) => void;
-} {
-  const search = useSearch({ strict: false }) as { view?: View; at?: Snap };
+type ModeSearch = { view?: View; at?: Snap; news?: "on" | "off" };
+
+/** The app-wide toggles, read from the URL (?view=live&at=7d&news=on). */
+export function useMode() {
+  const search = useSearch({ strict: false }) as ModeSearch;
   const navigate = useNavigate();
   const view = search.view ?? "showdown";
   const at = search.at ?? "24h";
-  const set = (next: { view?: View; at?: Snap }) =>
+  const set = (next: ModeSearch) =>
     void navigate({
       to: ".",
       search: ((prev: Record<string, unknown>) => ({ ...prev, view, at, ...next })) as never,
       replace: true,
       resetScroll: false,
     });
-  return { view, at, set };
+  return { view, at, news: search.news === "on", set };
 }

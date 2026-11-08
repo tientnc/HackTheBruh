@@ -16,6 +16,7 @@ import {
   fmtDateYear,
   fmtUsd,
   getMarket,
+  getMarketNews,
   getPriceHistory,
   readGap,
   skilledYesShare,
@@ -24,11 +25,11 @@ import {
   skillGap,
   snapLabel,
   verdict,
-  type Snap,
 } from "@/lib/data";
 import { useMode } from "@/hooks/use-mode";
 import { ModeBar } from "@/components/jett/ModeBar";
 import { BackToLobby } from "@/components/jett/BackToLobby";
+import { BrowserNews } from "@/components/jett/BrowserNews";
 import { PokerTable } from "@/components/jett/PokerTable";
 import { PriceChart } from "@/components/jett/PriceChart";
 import { TiersBanner } from "@/components/jett/TiersBanner";
@@ -36,11 +37,15 @@ import { Chip, Legend, tierLabel } from "@/components/jett/Chips";
 import { GoldLink, Panel } from "@/components/jett/Shell";
 
 export const Route = createFileRoute("/table/$id")({
-  loaderDeps: ({ search }) => ({ at: ((search as { at?: Snap }).at ?? "24h") as Snap }),
+  loaderDeps: ({ search }) => ({ at: search.at ?? "24h", news: search.news === "on" }),
   loader: async ({ params, deps }) => {
     const found = await getMarket(params.id, deps.at);
     if (!found) throw notFound();
-    return { ...found, prices: await getPriceHistory(params.id) };
+    const [prices, headlines] = await Promise.all([
+      getPriceHistory(params.id),
+      deps.news && found.market ? getMarketNews(found.market) : undefined,
+    ]);
+    return { ...found, prices, headlines };
   },
   head: ({ loaderData }) => {
     const t = loaderData
@@ -69,8 +74,8 @@ export const Route = createFileRoute("/table/$id")({
 });
 
 function TablePage() {
-  const { market: m, question, snaps, prices } = Route.useLoaderData();
-  const { view, at, set } = useMode();
+  const { market: m, question, snaps, prices, headlines } = Route.useLoaderData();
+  const { view, at, news, set } = useMode();
   const live = view === "live";
 
   if (!m) {
@@ -133,6 +138,7 @@ function TablePage() {
         )}
       </section>
       <PokerTable m={m} view={view} />
+      {news && <BrowserNews headlines={headlines} />}
 
       <Panel>
         <h2 className="mb-1 text-2xl text-gold-light">Market price</h2>

@@ -17,12 +17,13 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import type { Snap, View } from "../lib/data";
 
 // App-wide toggles kept in the URL (?view=live&at=7d) so they survive navigation and sharing.
-// Missing values mean the defaults: showdown, 24h.
-type AppSearch = { view?: View; at?: Snap };
+// Missing values mean the defaults: showdown, 24h, news off.
+type AppSearch = { view?: View; at?: Snap; news?: "on" | "off" };
 function validateAppSearch(search: Record<string, unknown>): AppSearch {
   const out: AppSearch = {};
   if (search["view"] === "live" || search["view"] === "showdown") out.view = search["view"];
   if (search["at"] === "7d" || search["at"] === "24h") out.at = search["at"];
+  if (search["news"] === "on" || search["news"] === "off") out.news = search["news"];
   return out;
 }
 
@@ -88,7 +89,7 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   validateSearch: validateAppSearch,
-  search: { middlewares: [retainSearchParams(["view", "at"])] },
+  search: { middlewares: [retainSearchParams(["view", "at", "news"])] },
   head: () => ({
     // Replace these placeholders with the app's name and description when first building the app.
     // Each content route, / included, must still set its own head(). Never add og:image or

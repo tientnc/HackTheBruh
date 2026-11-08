@@ -53,7 +53,7 @@ const pill = (on: boolean) =>
 
 function Lobby() {
   const markets = Route.useLoaderData();
-  const { view, at } = useMode();
+  const { view, at, news } = useMode();
   const live = view === "live";
   const [state, update] = useLobbyState();
 
@@ -72,6 +72,9 @@ function Lobby() {
     <div className="space-y-12">
       <section className="space-y-4">
         <ModeBar />
+        {news && (
+          <p className="text-sm text-text-3">Experimental news is on. Open a table to see archived headlines for its snapshot.</p>
+        )}
         <p className="caption">
           {live ? "Live markets" : "Replay"} · frozen {snapLabel[at]} before close
         </p>
