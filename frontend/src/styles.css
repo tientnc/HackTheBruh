@@ -167,6 +167,37 @@
   color: var(--gold-light);
 }
 
+/* ── Animations ─────────────────────────────────────────────────── */
+
+@keyframes float-bob {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
+}
+@keyframes float-bob-sm {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-3px); }
+}
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 8px 0 oklch(0.78 0.16 85 / 0.3); }
+  50%       { box-shadow: 0 0 20px 4px oklch(0.78 0.16 85 / 0.6); }
+}
+
+@utility float-bob {
+  animation: float-bob 3.6s ease-in-out infinite;
+  will-change: transform;
+}
+@utility float-bob-sm {
+  animation: float-bob-sm 4s ease-in-out infinite;
+  will-change: transform;
+}
+@utility tilt-card {
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+  will-change: transform;
+}
+@utility glow-pulse {
+  animation: glow-pulse 2.4s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }

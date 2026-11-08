@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import {
   filterMarkets,
   type CallFilter,
@@ -62,6 +62,49 @@ const pill = (on: boolean) =>
       : "border-border text-text-2 hover:border-gold",
   );
 
+/** Inline explainer shown collapsed by default — click to expand. */
+function SkillGapExplainer() {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="rounded-xl border border-border bg-panel px-4 py-3 text-sm">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="flex w-full items-center justify-between gap-2 text-left text-text-2 hover:text-foreground"
+        aria-expanded={open}
+      >
+        <span>How to read the skill gap — what does "YES looks cheap" mean?</span>
+        <span className="shrink-0 text-gold-light">{open ? "▲" : "▼"}</span>
+      </button>
+      {open && (
+        <div className="mt-3 space-y-2 text-text-2">
+          <p>
+            <strong className="text-foreground">Skill gap</strong> = % of proven-trader money on
+            YES minus the YES price in cents. A positive gap means proven traders have more of their
+            money on YES than the market price implies they should.
+          </p>
+          <p>
+            <strong className="text-foreground">YES looks cheap</strong> — the market is pricing YES
+            lower than the proven traders think it deserves. Example: sharps have 70% of their chips
+            on YES, but YES only costs 50¢. Gap = +20.
+          </p>
+          <p>
+            <strong className="text-foreground">NO looks cheap</strong> — the reverse: sharps are
+            leaning NO more heavily than the price suggests. Gap is negative.
+          </p>
+          <p>
+            <strong className="text-foreground">Sharp edge</strong> badge = gap &ge;15 with an
+            explicit sharps' call. High disagreement between proven traders and the crowd.
+          </p>
+          <p className="text-text-3">
+            This is information, not financial advice. Open any table for the full breakdown.
+          </p>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function Lobby() {
   const markets = Route.useLoaderData();
   const { view, at, news } = useMode();
@@ -100,6 +143,7 @@ function Lobby() {
             : `Every table is a real Polymarket market from 2026, frozen ${snapLabel[at]} before it closed. Pick one to see where the money sat, then the showdown.`}
         </p>
         <TiersBanner />
+        <SkillGapExplainer />
       </section>
 
       {!live && <FollowTheMoney markets={markets} at={at} />}

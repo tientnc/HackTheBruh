@@ -1,3 +1,4 @@
+import React from "react";
 import {
   callResult,
   cents,
@@ -13,6 +14,7 @@ import {
 } from "@/lib/data";
 import { ChipStack } from "./Chips";
 import { GapCard } from "./GapCard";
+import { useTilt } from "@/hooks/use-tilt";
 
 function TableSide({ m, side, unit }: { m: Market; side: "yes" | "no"; unit: number }) {
   const s = m[side];
@@ -71,12 +73,20 @@ export function PokerTable({ m, view = "showdown" }: { m: Market; view?: View })
   const unit = chipUnit(m);
   const live = view === "live";
   const price = cents(m.yes_price);
+  const tilt = useTilt(4, 900);
   return (
-    <div className="rail rounded-[3rem] p-3 sm:p-5 md:rounded-[999px]">
+    <div
+      ref={tilt.ref as React.RefObject<HTMLDivElement>}
+      onMouseMove={tilt.onMouseMove}
+      onMouseLeave={tilt.onMouseLeave}
+      className="rail tilt-card rounded-[3rem] p-3 sm:p-5 md:rounded-[999px]"
+    >
       <div className="felt grid items-center gap-8 rounded-[2.4rem] px-6 py-10 md:grid-cols-[1fr_auto_1fr] md:rounded-[999px] md:px-16">
         <TableSide m={m} side="yes" unit={unit} />
         <div className="flex max-w-60 flex-col items-center gap-4 text-center">
-          <GapCard gap={gap} size="lg" />
+          <div className="float-bob" style={{ animationDelay: "0.2s" }}>
+            <GapCard gap={gap} size="lg" />
+          </div>
           <span className="caption">Skill gap</span>
           <p className="text-sm text-text-2">
             {share === null
