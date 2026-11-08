@@ -1,0 +1,20 @@
+{
+ "history": [
+  "datasets/finance/resolved-100-2025/v1"
+ ],
+ "markets_used": 100,
+ "only_resolved_before": "2026-01-01T00:00:00Z",
+ "wallets_seen": 12282,
+ "rated": 284,
+ "skilled": 28,
+ "unskilled": 256,
+ "market_makers_excluded": 2,
+ "skilled_score_floor": 0.0782,
+ "rules": {
+  "min_events": 3,
+  "min_spent_usdc": 100.0,
+  "shrink": 5,
+  "skilled_share": 0.1
+ },
+ "generated_at": "2026-11-08T08:28:31Z"
+}

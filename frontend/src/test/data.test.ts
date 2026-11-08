@@ -175,9 +175,11 @@ describe("lobby lists", () => {
       category: "Commodities",
     }),
   ];
-  it("biggest disagreements: sharp calls first, then by gap; unrated tables never appear", () => {
-    expect(topDisagreements(ms).map((m) => m.id)).toEqual(["fed", "oil", "gold"]);
+  it("biggest disagreements: real gaps (over 5) with enough skilled money, biggest first", () => {
+    expect(topDisagreements(ms).map((m) => m.id)).toEqual(["gold", "fed"]);
     expect(topDisagreements([ms[2]!])).toEqual([]);
+    // a near-certain market (YES at 1¢) never counts, however lopsided the cheap tickets look
+    expect(topDisagreements([market("lotto", side(900), side(0), 0.01)])).toEqual([]);
   });
   it("search matches every word, case-insensitive", () => {
     expect(filterMarkets(ms, { query: "gold 5,000" }).map((m) => m.id)).toEqual(["gold"]);

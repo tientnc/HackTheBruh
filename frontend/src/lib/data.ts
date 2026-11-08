@@ -239,15 +239,24 @@ export function predictionText(m: Market): string {
 
 /**
  * The tables where the sharps disagree most with the price: biggest absolute skill gap,
- * tables with a sharp call first. Uses only pre-snapshot data, so it is safe in Live mode.
- * Empty until wallet ratings give some table a skill gap.
+ * counting only real disagreements (gap over 5) backed by at least $100 of skilled money,
+ * on markets still in doubt (YES between 3¢ and 97¢). At 0¢ a few cheap long-shot tickets
+ * can make "skilled money" look 100% YES without anyone expecting YES to happen.
+ * Uses only pre-snapshot data, so it is safe in Live mode. Empty until wallet ratings exist.
  */
+export const MIN_DISAGREEMENT_SKILLED_USD = 100;
 export function topDisagreements(markets: Market[], n = 3): Market[] {
-  const withGap = markets.filter((m) => skillGap(m) !== null);
-  const called = (m: Market) => (m.call === "YES" || m.call === "NO" ? 1 : 0);
-  return [...withGap]
-    .sort((a, b) => called(b) - called(a) || Math.abs(skillGap(b)!) - Math.abs(skillGap(a)!))
-    .slice(0, n);
+  const real = markets.filter((m) => {
+    const g = skillGap(m);
+    return (
+      g !== null &&
+      Math.abs(g) > 5 &&
+      m.yes_price >= 0.03 &&
+      m.yes_price <= 0.97 &&
+      m.yes.skilled_usd + m.no.skilled_usd >= MIN_DISAGREEMENT_SKILLED_USD
+    );
+  });
+  return [...real].sort((a, b) => Math.abs(skillGap(b)!) - Math.abs(skillGap(a)!)).slice(0, n);
 }
 
 /** Search, category and sort for the Lobby list. */
