@@ -37,8 +37,8 @@ except ImportError:  # run as a plain script
     from evaluate import DEFAULT_DATASET, read_csv, write_csv
 
 # ---------------------------------------------------------------- the rule
-MIN_SKILLED_USD = 1000      # less skilled money than this -> INSUFFICIENT
-MIN_SKILLED_WALLETS = 3     # fewer skilled wallets than this -> INSUFFICIENT
+MIN_SKILLED_USD = 100       # less skilled money than this -> INSUFFICIENT
+MIN_SKILLED_WALLETS = 1     # fewer skilled wallets than this -> INSUFFICIENT
 MIN_LEAN = 0.10             # skilled share must be at least 60/40 one way, else INSUFFICIENT
 MIN_POSITION_USD = 1.0      # ignore dust positions
 
