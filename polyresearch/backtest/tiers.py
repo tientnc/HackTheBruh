@@ -88,12 +88,15 @@ def replay(legs, yes_won):
 def score_wallets(history_dirs):
     per_wallet = defaultdict(lambda: {"events": defaultdict(lambda: [0.0, 0.0]), "markets": 0,
                                       "two_sided": 0, "fills": 0})
-    used = 0
+    used, seen = 0, set()
     for ds in history_dirs:
         ds = Path(ds)
         for m in read_csv(ds / "markets.csv"):
             if int(m["label_available_at"]) >= TEST_START:
                 continue  # resolved in the test period: never use
+            if m["condition_id"] in seen:
+                continue  # the same market in two history folders counts once
+            seen.add(m["condition_id"])
             used += 1
             m.setdefault("folder", f"markets/{m['market_id']}")
             result = replay(load_legs(ds, m), m["yes_outcome"] == "1")
