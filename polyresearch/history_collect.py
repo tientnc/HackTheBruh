@@ -82,7 +82,7 @@ def discover(client, root, count, start, min_volume, min_days, tag_ids):
     found = read_jsonl(path)
     state = json.loads(state_path.read_text()) if state_path.exists() else {"cursor": None, "done": False}
     seen = {m["conditionId"] for m in found}
-    params = {"closed": True, "limit": 100, "order": "volume_num", "ascending": False,
+    params = {"closed": True, "limit": 100,
               "end_date_min": iso(start), "end_date_max": iso(CUTOFF), "volume_num_min": min_volume,
               "tag_id": tag_ids or None}
     pages_read = 0
